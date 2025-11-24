@@ -1,0 +1,35 @@
+services:
+  postgres: # Nombre genérico en cada proyecto
+    image: postgres:15
+    container_name: odoo17_db
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo17
+      POSTGRES_PASSWORD: odoo17
+    volumes:
+      - postgres-data:/var/lib/postgresql/data # Volume interno de Docker
+    restart: unless-stopped
+
+  odoo: # Nombre genérico en cada proyecto
+    image: odoo:17
+    container_name: odoo17_app
+    depends_on:
+      - postgres
+    ports:
+      - "8069:8069" # Puerto para Odoo 17
+      - "8072:8072"
+    # environment:
+      # Ahora apunta al nuevo nombre 'postgres'
+      # HOST: postgres
+      # USER: odoo17
+      # PASSWORD: odoo17
+    volumes:
+      - odoo-data:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
+      - ./config/odoo17.conf:/etc/odoo/odoo.conf # Montar el archivo de configuración
+    command: /usr/bin/odoo --config=/etc/odoo/odoo.conf
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  odoo-data:
