@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ========== VISTA DE ÁRBOL (LISTA) ========== -->
+    <!-- Muestra las tareas en formato de lista/tabla -->
+    <record id="view_tarea_tree" model="ir.ui.view">
+        <field name="name">ctree</field>
+        <field name="model">mi.gestor.tareas.tarea</field>
+        <field name="arch" type="xml">
+            <tree string="Lista de Tareas" 
+                  decoration-success="estado=='completada'"
+                  decoration-danger="estado=='pendiente' and es_importante">
+                <!-- decoration-success: pone la fila en verde si está completada -->
+                <!-- decoration-danger: pone la fila en rojo si es pendiente e importante -->
+                
+                <field name="name"/>
+                <field name="fecha_limite"/>
+                <field name="estado"/>
+                <field name="es_importante"/>
+                <field name="prioridad"/>
+                <field name="dias_restantes"/>
+            </tree>
+        </field>
+    </record>
+    
+    
+    <!-- ========== VISTA DE FORMULARIO ========== -->
+    <!-- Formulario para crear/editar una tarea -->
+    <record id="view_tarea_form" model="ir.ui.view">
+        <field name="name">mi.gestor.tareas.tarea.form</field>
+        <field name="model">mi.gestor.tareas.tarea</field>
+        <field name="arch" type="xml">
+            <form string="Tarea">
+                <!-- Encabezado con botones de acción -->
+                <header>
+                    <!-- Botón para marcar como completada -->
+                    <button name="action_marcar_completada" 
+                            type="object" 
+                            string="Marcar Completada"
+                            class="oe_highlight"
+                            invisible="estado == 'completada'"/>
+                    <!-- invisible: oculta el botón si ya está completada -->
+                    
+                    <!-- Botón para marcar como pendiente -->
+                    <button name="action_marcar_pendiente" 
+                            type="object" 
+                            string="Marcar Pendiente"
+                            invisible="estado == 'pendiente'"/>
+                    
+                    <!-- Campo de estado como barra de progreso -->
+                    <field name="estado" widget="statusbar" 
+                           statusbar_visible="pendiente,en_progreso,completada"/>
+                </header>
+                
+                <!-- Cuerpo del formulario -->
+                <sheet>
+                    <!-- Título principal -->
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Nombre de la tarea..."/>
+                        </h1>
+                    </div>
+                    
+                    <!-- Agrupación de campos -->
+                    <group>
+                        <group string="Información General">
+                            <field name="fecha_limite"/>
+                            <field name="prioridad"/>
+                            <field name="dias_restantes"/>
+                        </group>
+                        
+                        <group string="Configuración">
+                            <field name="es_importante"/>
+                        </group>
+                    </group>
+                    
+                    <!-- Campo de texto largo en página completa -->
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="descripcion" placeholder="Describe tu tarea aquí..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    
+    <!-- ========== VISTA DE BÚSQUEDA (FILTROS) ========== -->
+    <!-- Define los filtros y búsquedas disponibles -->
+    <record id="view_tarea_search" model="ir.ui.view">
+        <field name="name">mi.gestor.tareas.tarea.search</field>
+        <field name="model">mi.gestor.tareas.tarea</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Tareas">
+                <!-- Campo de búsqueda general -->
+                <field name="name" string="Tarea" 
+                       filter_domain="[('name', 'ilike', self)]"/>
+                
+                <!-- Filtros predefinidos -->
+                <filter string="Pendientes" name="pendientes" 
+                        domain="[('estado', '=', 'pendiente')]"/>
+                
+                <filter string="Completadas" name="completadas" 
+                        domain="[('estado', '=', 'completada')]"/>
+                
+                <filter string="Importantes" name="importantes" 
+                        domain="[('es_importante', '=', True)]"/>
+                
+                <separator/>
+                
+                <filter string="Vencidas" name="vencidas" 
+                        domain="[('fecha_limite', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                
+                <!-- Agrupaciones -->
+                <group expand="0" string="Agrupar Por">
+                    <filter string="Estado" name="group_estado" 
+                            context="{'group_by': 'estado'}"/>
+                    <filter string="Fecha Límite" name="group_fecha" 
+                            context="{'group_by': 'fecha_limite'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    
+    
+    <!-- ========== ACCIÓN DE VENTANA ========== -->
+    <!-- Define cómo se abre el módulo -->
+    <record id="action_tarea" model="ir.actions.act_window">
+        <field name="name">Mis Tareas</field>
+        <field name="res_model">mi.gestor.tareas.tarea</field>
+        <field name="view_mode">tree,form</field>  <!-- Primero lista, luego formulario -->
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea tu primera tarea
+            </p>
+            <p>
+                Haz clic en "Nuevo" para agregar una tarea.
+            </p>
+        </field>
+    </record>
+    
+    
+    <!-- ========== MENÚ ========== -->
+    <!-- Crea el menú en la barra superior -->
+    
+    <!-- Menú principal (raíz) -->
+    <menuitem id="menu_gestor_tareas_root" 
+              name="Gestor de Tareas"
+              sequence="10"/>
+    
+    <!-- Submenú -->
+    <menuitem id="menu_tareas" 
+              name="Tareas"
+              parent="menu_gestor_tareas_root"
+              action="action_tarea"
+              sequence="10"/>
+
+</odoo>

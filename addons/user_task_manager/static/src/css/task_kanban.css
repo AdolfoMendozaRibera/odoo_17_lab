@@ -1,62 +1,135 @@
-/* Estilo general de la tarjeta */
+/* ==========================================
+   ESTILOS GENERALES DE TARJETA KANBAN
+   ========================================== */
 .o_kanban_card.user_task_kanban {
+  position: relative;
   border-radius: 12px;
   padding: 15px;
   margin: 5px 0;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-  border-left: 6px solid #6c757d; /* default */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #6c757d;
   transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.o_kanban_card.user_task_kanban:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   COLORES POR PRIORIDAD
+   ========================================== */
+.priority_0 {
+  border-left-color: #adb5bd; /* Baja - Gris */
+}
+
+.priority_1 {
+  border-left-color: #ffc107; /* Media - Amarillo */
+}
+
+.priority_2 {
+  border-left-color: #dc3545; /* Alta - Rojo */
+}
+
+/* ==========================================
+   TAREAS VENCIDAS
+   ========================================== */
+.task-overdue {
+  background-color: #fff5f5;
+  border-left-color: #dc3545 !important;
+  border-left-width: 8px !important;
+}
+
+.task-overdue-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #dc3545;
+  font-size: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ==========================================
+   CONTENIDO DE LA TARJETA
+   ========================================== */
+.user_task_kanban .o_kanban_details {
+  margin-bottom: 10px;
+}
+
+.user_task_kanban .o_kanban_details > div {
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.user_task_kanban strong {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 /* Íconos dentro del contenido */
 .user_task_kanban .fa {
   margin-right: 6px;
   color: #6c757d;
+  font-size: 12px;
 }
 
-/* Colores por prioridad */
-.priority_0 {
-  border-left-color: #adb5bd; /* Baja */
-}
-.priority_1 {
-  border-left-color: #ffc107; /* Media */
-}
-.priority_2 {
-  border-left-color: #dc3545; /* Alta */
+/* Descripción con ellipsis si es muy larga */
+.user_task_kanban .o_kanban_details > div:nth-child(2) {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #666;
+  font-size: 12px;
 }
 
-/* Footer del kanban */
+/* ==========================================
+   FOOTER DEL KANBAN
+   ========================================== */
 .user_task_kanban .oe_kanban_footer {
-  border-top: 1px solid #e0e0e0;
-  padding-top: 8px;
-  margin-top: 10px;
-  font-size: 13px;
-  color: #444;
+  border-top: 1px solid #e9ecef;
+  padding-top: 10px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #495057;
 }
 
-/* Título más destacado */
-.user_task_kanban strong {
-  font-size: 16px;
-  color: #333;
+.user_task_kanban .oe_kanban_footer span {
+  display: flex;
+  align-items: center;
 }
 
-/* Mostrar check si está completada */
-.user_task_kanban .task-done {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #28a745;
-  font-size: 18px;
-}
-
+/* ==========================================
+   BADGES DE ESTADO
+   ========================================== */
 .task-state-badge {
   font-size: 11px;
   font-weight: 600;
-  padding: 3px 7px;
-  border-radius: 10px;
+  padding: 4px 10px;
+  border-radius: 12px;
   color: white;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .state-draft {
@@ -69,4 +142,103 @@
 
 .state-done {
   background-color: #28a745;
+}
+
+.state-cancelled {
+  background-color: #6c757d;
+  opacity: 0.7;
+}
+
+/* ==========================================
+   ICONO DE TAREA COMPLETADA
+   ========================================== */
+.user_task_kanban .task-done {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #28a745;
+  font-size: 22px;
+  z-index: 10;
+}
+
+/* ==========================================
+   ADVERTENCIAS Y ALERTAS EN TEXTO
+   ========================================== */
+.text-danger {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+/* ==========================================
+   VISTA LISTA (TREE)
+   ========================================== */
+.o_list_view .o_data_row.text-danger {
+  background-color: #fff5f5;
+}
+
+.o_list_view .o_data_row.text-success {
+  background-color: #f0f9f4;
+}
+
+.o_list_view .o_data_row.text-muted {
+  opacity: 0.6;
+}
+
+/* ==========================================
+   COLUMNAS KANBAN
+   ========================================== */
+.o_kanban_small_column {
+  min-width: 250px;
+}
+
+.o_kanban_group {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 768px) {
+  .o_kanban_card.user_task_kanban {
+    padding: 12px;
+    min-height: 100px;
+  }
+
+  .user_task_kanban strong {
+    font-size: 14px;
+  }
+
+  .task-overdue-icon,
+  .user_task_kanban .task-done {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   RIBBON DE VENCIDO (EN FORMULARIO)
+   ========================================== */
+.oe_ribbon.oe_ribbon_topright {
+  right: -5px;
+  top: 10px;
+}
+
+.oe_ribbon span {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
 }

@@ -1,38 +1,158 @@
 <odoo>
-    <!-- vista tipo formulario -->
+    <!-- Vista tipo formulario -->
     <record id='view_user_task_form' model='ir.ui.view'>
         <field name='name'>user.task.form</field>
         <field name='model'>user.task</field>
         <field name='arch' type='xml'>
             <form string="Tarea">
+                <header>
+                    <!-- Botones de acción -->
+                    <button name="action_start" string="Iniciar" type="object"
+                        class="btn-primary"
+                        invisible="state != 'draft'" />
+
+                    <button name="action_complete" string="Completar" type="object"
+                        class="btn-success"
+                        invisible="state not in ['draft', 'in_progress']" />
+
+                    <button name="action_reopen" string="Reabrir" type="object"
+                        class="btn-warning"
+                        invisible="state != 'done'" />
+
+                    <button name="action_cancel" string="Cancelar" type="object"
+                        class="btn-secondary"
+                        invisible="state in ['done', 'cancelled']" />
+
+                    <button name="action_reset_to_draft" string="Volver a Borrador" type="object"
+                        class="btn-secondary"
+                        invisible="state == 'draft'" />
+
+                    <!-- Statusbar -->
+                    <field name="state" widget="statusbar"
+                        statusbar_visible="draft,in_progress,done" />
+                </header>
+
                 <sheet>
+                    <!-- Ribbon de advertencia para tareas vencidas -->
+                    <div class="oe_ribbon oe_ribbon_topright"
+                        invisible="not is_overdue or state in ['done', 'cancelled']"
+                        style="background-color: #dc3545;">
+                        <span>VENCIDA</span>
+                    </div>
+
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Título de la tarea..." />
+                        </h1>
+                    </div>
+
                     <group>
-                        <field name="name" />
-                        <field name="description" />
-                        <field name='priority' />
-                        <field name='state' />
-                        <field name='deadline' />
-                        <field name="user_id" readonly='1' />
-                        <field name="is_done" readonly='1' />
+                        <group>
+                            <field name='priority' widget="priority" />
+                            <field name='deadline' />
+                            <field name="user_id" />
+                        </group>
+                        <group>
+                            <field name="is_done" />
+                            <field name="completed_date" invisible="not is_done" />
+                            <field name="is_overdue" invisible="1" />
+                            <field name="days_remaining"
+                                invisible="not deadline or state in ['done', 'cancelled']" />
+                            <field name="duration_days" />
+                            <field name="active" />
+                        </group>
                     </group>
+
+                    <notebook>
+                        <page string="Descripción" name="description">
+                            <field name="description" placeholder="Describe los detalles de la tarea..." />
+                        </page>
+                        <page string="Notas Adicionales" name="notes">
+                            <field name="notes" placeholder="Agrega notas, enlaces o información relevante..." />
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
     </record>
 
 
-    <!-- Vista tipo lista (CAMBIADO: list -> tree) -->
+    <!-- Vista tipo lista -->
     <record id='view_user_task_list' model='ir.ui.view'>
         <field name='name'>user.task.tree</field>
         <field name='model'>user.task</field>
         <field name='arch' type='xml'>
-            <tree string='Tareas'>
+            <tree string='Tareas'
+                decoration-danger="is_overdue and state not in ['done', 'cancelled']"
+                decoration-success="state == 'done'"
+                decoration-muted="state == 'cancelled'"
+                decoration-bf="priority == '2'">
+
                 <field name="name" />
-                <field name='priority' />
-                <field name='state' />
+                <field name='priority' widget="priority" />
+                <field name='state'
+                    decoration-info="state == 'draft'"
+                    decoration-warning="state == 'in_progress'"
+                    decoration-success="state == 'done'"
+                    decoration-muted="state == 'cancelled'" />
                 <field name='deadline' />
-                <field name="is_done" readonly='1' />
+                <field name="days_remaining" optional="show"
+                    invisible="state in ['done', 'cancelled']" />
+                <field name="is_overdue" invisible="1" />
+                <field name="is_done" optional="hide" />
+                <field name="user_id" optional="show" />
+                <field name="completed_date" optional="hide" />
             </tree>
+        </field>
+    </record>
+
+    <!-- Vista tipo búsqueda (filtros y agrupaciones) -->
+    <record id="view_user_task_search" model="ir.ui.view">
+        <field name="name">user.task.search</field>
+        <field name="model">user.task</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Tareas">
+                <field name="name" string="Tarea"
+                    filter_domain="['|', ('name', 'ilike', self), ('description', 'ilike', self)]" />
+                <field name="user_id" />
+                <field name="priority" />
+                <field name="state" />
+
+                <!-- Filtros predefinidos -->
+                <filter string="Mis Tareas" name="my_tasks"
+                    domain="[('user_id', '=', uid)]" />
+                <separator />
+                <filter string="Borradores" name="draft"
+                    domain="[('state', '=', 'draft')]" />
+                <filter string="En Progreso" name="in_progress"
+                    domain="[('state', '=', 'in_progress')]" />
+                <filter string="Completadas" name="done"
+                    domain="[('state', '=', 'done')]" />
+                <filter string="Canceladas" name="cancelled"
+                    domain="[('state', '=', 'cancelled')]" />
+                <separator />
+                <filter string="Prioridad Alta" name="high_priority"
+                    domain="[('priority', '=', '2')]" />
+                <filter string="Vencidas" name="overdue"
+                    domain="[('deadline', '&lt;', context_today().strftime('%Y-%m-%d')), ('state', 'in', ['draft', 'in_progress'])]" />
+                <filter string="Por Vencer (7 días)" name="due_soon"
+                    domain="[('deadline', '&lt;=', (context_today() + datetime.timedelta(days=7)).strftime('%Y-%m-%d')), ('deadline', '&gt;=', context_today().strftime('%Y-%m-%d')), ('state', 'in', ['draft', 'in_progress'])]" />
+                <separator />
+                <filter string="Archivadas" name="inactive"
+                    domain="[('active', '=', False)]" />
+
+                <!-- Agrupaciones -->
+                <group expand="0" string="Agrupar Por">
+                    <filter string="Estado" name="group_state"
+                        context="{'group_by': 'state'}" />
+                    <filter string="Prioridad" name="group_priority"
+                        context="{'group_by': 'priority'}" />
+                    <filter string="Usuario" name="group_user"
+                        context="{'group_by': 'user_id'}" />
+                    <filter string="Fecha Límite" name="group_deadline"
+                        context="{'group_by': 'deadline'}" />
+                </group>
+            </search>
         </field>
     </record>
 
@@ -49,25 +169,17 @@
                 <field name='deadline' />
                 <field name="user_id" />
                 <field name="is_done" />
+                <field name="is_overdue" />
+                <field name="days_remaining" />
 
                 <templates>
                     <t t-name='kanban-box'>
-                        <t t-if='record.priority and record.priority.raw_value'>
-                            <div
-                                t-att-class="'oe_kanban_card user_task_kanban oe_kanban_global_click priority_' + record.priority.raw_value ">
-                                <t t-call="user_task_manager.kanban_content" />
-                            </div>
-                        </t>
-
-                        <t t-if='!(record.priority and record.priority.raw_value)'>
-                            <div
-                                t-att-class="'oe_kanban_card user_task_kanban oe_kanban_global_click priority_0'">
-                                <t t-call="user_task_manager.kanban_content" />
-                            </div>
-                        </t>
+                        <div t-attf-class="oe_kanban_card user_task_kanban oe_kanban_global_click priority_#{record.priority.raw_value or '0'} #{record.is_overdue.raw_value and (record.state.raw_value == 'draft' or record.state.raw_value == 'in_progress') ? 'task-overdue' : ''}">
+                            <t t-call="user_task_manager.kanban_content" />
+                        </div>
                     </t>
 
-                    <!-- crear plantilla reutilizable -->
+                    <!-- Plantilla reutilizable -->
                     <t t-name="user_task_manager.kanban_content">
                         <div class="o_kanban_details">
                             <div>
@@ -80,9 +192,18 @@
                                 <field name="description" />
                             </div>
 
-                            <div>
+                            <div t-if="record.deadline.raw_value">
                                 <i class='fa fa-calendar' />
                                 <field name="deadline" />
+                                <span t-if="record.days_remaining.raw_value and (record.state.raw_value == 'draft' or record.state.raw_value == 'in_progress')" class="ms-2">
+                                    <span t-if="record.days_remaining.raw_value &lt; 0" class="text-danger">
+                                        (<t t-esc="Math.abs(record.days_remaining.raw_value)" /> días de retraso)
+                                    </span>
+                                    <span t-elif="record.days_remaining.raw_value == 0" class="text-warning">(Hoy)</span>
+                                    <span t-elif="record.days_remaining.raw_value &lt;= 3" class="text-warning">
+                                        (<t t-esc="record.days_remaining.raw_value" /> días)
+                                    </span>
+                                </span>
                             </div>
 
                             <div>
@@ -99,18 +220,21 @@
                             </span>
 
                             <t t-if='record.state and record.state.raw_value'>
-                                <span class="badge badge-primary"
+                                <span class="badge"
                                     t-attf-class="task-state-badge state-#{record.state.raw_value}">
                                     <t t-esc='record.state.value' />
                                 </span>
                             </t>
-
                         </div>
 
+                        <!-- Icono de completado -->
                         <t t-if='record.is_done and record.is_done.raw_value'>
                             <i class='fa fa-check-circle task-done' title='Tarea completada' />
                         </t>
 
+                        <!-- Icono de vencido -->
+                        <i t-if='record.is_overdue.raw_value and (record.state.raw_value == "draft" or record.state.raw_value == "in_progress")' 
+                           class='fa fa-exclamation-triangle task-overdue-icon' title='Tarea vencida' />
                     </t>
 
                 </templates>
@@ -118,18 +242,39 @@
         </field>
     </record>
 
-    <!-- Accion (CAMBIADO: list -> tree) -->
+    <!-- Acción principal -->
     <record id='action_user_task' model='ir.actions.act_window'>
         <field name='name'>Mis Tareas</field>
         <field name='res_model'>user.task</field>
         <field name='view_mode'>kanban,tree,form</field>
+        <field name='context'>{'search_default_my_tasks': 1, 'search_default_in_progress': 1}</field>
         <field name='help' type='html'>
-            <p>Desde aqui puedes gestionar tus tareas personales.</p>
+            <p class="o_view_nocontent_smiling_face">
+                ¡Crea tu primera tarea!
+            </p>
+            <p>
+                Desde aquí puedes gestionar tus tareas personales de forma eficiente.
+                Organízalas por prioridad, estado y fechas límite.
+            </p>
         </field>
     </record>
 
-    <!-- Menu -->
-    <menuitem id="menu_user_task_root" name="Gestor de Tareas" sequence="10" />
+    <!-- Acción para tareas vencidas -->
+    <record id='action_user_task_overdue' model='ir.actions.act_window'>
+        <field name='name'>Tareas Vencidas</field>
+        <field name='res_model'>user.task</field>
+        <field name='view_mode'>tree,kanban,form</field>
+        <field name='context'>{'search_default_my_tasks': 1, 'search_default_overdue': 1}</field>
+        <field name='domain'>[('is_overdue', '=', True), ('state', 'in', ['draft', 'in_progress'])]</field>
+    </record>
+
+    <!-- Menu principal -->
+    <menuitem id="menu_user_task_root" name="Gestor de Tareas" sequence="10"
+        web_icon="user_task_manager,static/description/icon.png" />
+
     <menuitem id="menu_user_task" name="Mis Tareas" parent='menu_user_task_root'
-        action='action_user_task' sequence="20" />
+        action='action_user_task' sequence="10" />
+
+    <menuitem id="menu_user_task_overdue" name="Tareas Vencidas" parent='menu_user_task_root'
+        action='action_user_task_overdue' sequence="20" />
 </odoo>

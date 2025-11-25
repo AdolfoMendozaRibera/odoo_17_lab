@@ -1,24 +1,31 @@
 {
     "name": "User Task Manager",
-    "version": "1.0",
+    "version": "1.1.0",
     "category": "Productivity",
-    "summary": "Modulo para gestionar tareas asignadas por usuario",
+    "summary": "Módulo para gestionar tareas personales",
     "description": """
-        Gestor de tareas asignadas por usuario.
+        Gestor de Tareas Personales
+        ============================
+        * Gestión de tareas por usuario
+        * Estados y prioridades
+        * Alertas de vencimiento
+        * Filtros inteligentes
     """,
-    "author": "BlueHat",
+    "author": "Adolfo",
     "website": "https://yourwebsite.com",
+    "license": "LGPL-3",
     "depends": ["base"],
     "data": [
         "security/task_security.xml",
         "security/ir.model.access.csv",
         "views/task_views.xml",
     ],
-    "installable": True,
-    "application": True,
     "assets": {
         "web.assets_backend": [
             "user_task_manager/static/src/css/task_kanban.css",
         ],
     },
+    "installable": True,
+    "application": True,
+    "auto_install": False,
 }
