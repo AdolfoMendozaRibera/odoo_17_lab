@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Personalización del documento de venta (Cotización y Orden de Venta) -->
+        <template id="jah_report_saleorder_document" inherit_id="sale.report_saleorder_document">
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 1: PERSONALIZAR INFORMACIÓN DEL CLIENTE -->
+            <!-- ========================================= -->
+            
+            <!-- Reemplazar la sección de informaciones para estructura JAH -->
+            <xpath expr="//div[@id='informations']" position="replace">
+                <div id="informations" class="row mt-4 mb-2">
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Cliente:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.name"/>
+                    </div>
+                    
+                    <div t-if="doc.partner_id.vat" class="col-auto col-3 mw-100 mb-2">
+                        <strong>NIT:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.vat"/>
+                    </div>
+                    
+                    <div t-if="doc.partner_id.street" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Dirección:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.street"/>
+                    </div>
+                    
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Fecha:</strong><br/>
+                        <span class="m-0" t-field="doc.date_order" t-options='{"widget": "date"}'/>
+                    </div>
+                    
+                    <div t-if="doc.partner_id.ref" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Código Cliente:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.ref"/>
+                    </div>
+                    
+                    <div t-if="doc.client_order_ref" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Referencia:</strong><br/>
+                        <span class="m-0" t-field="doc.client_order_ref"/>
+                    </div>
+                    
+                    <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Válido hasta:</strong><br/>
+                        <span class="m-0" t-field="doc.validity_date"/>
+                    </div>
+                    
+                    <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Vendedor:</strong><br/>
+                        <span class="m-0" t-field="doc.user_id"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 2: AGREGAR COLUMNAS A LA TABLA -->
+            <!-- ========================================= -->
+            
+            <!-- Agregar columna de Código del Producto -->
+            <xpath expr="//th[@name='th_description']" position="before">
+                <th name="th_code" class="text-start" style="width: 10%;">Código</th>
+            </xpath>
+            
+            <!-- Agregar columna de Unidad -->
+            <xpath expr="//th[@name='th_quantity']" position="after">
+                <th name="th_unit" class="text-center" style="width: 8%;">Unidad</th>
+            </xpath>
+
+            <!-- Agregar celda de Código en las filas de productos -->
+            <xpath expr="//td[@name='td_name']" position="before">
+                <td name="td_code">
+                    <span t-field="line.product_id.default_code"/>
+                </td>
+            </xpath>
+            
+            <!-- Agregar celda de Unidad después de Cantidad -->
+            <xpath expr="//td[@name='td_quantity']" position="after">
+                <td name="td_unit" class="text-center">
+                    <span t-field="line.product_uom"/>
+                </td>
+            </xpath>
+            
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 3: AJUSTAR COLSPAN PARA SECCIONES Y NOTAS -->
+            <!-- ========================================= -->
+            
+            <!-- Ajustar colspan de las secciones (ahora hay más columnas) -->
+            <xpath expr="//td[@name='td_section_line']" position="attributes">
+                <attribute name="colspan">99</attribute>
+            </xpath>
+            
+            <xpath expr="//td[@name='td_note_line']" position="attributes">
+                <attribute name="colspan">99</attribute>
+            </xpath>
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 4: AGREGAR FIRMA PARA ÓRDENES DE VENTA -->
+            <!-- ========================================= -->
+            
+            <!-- Agregar firma al final del documento solo para órdenes confirmadas -->
+            <xpath expr="//p[@id='fiscal_position_remark']" position="after">
+                <t t-if="doc.state == 'sale'">
+                    <div class="row mt-5" style="page-break-inside: avoid;">
+                        <div class="col-6 offset-6">
+                            <div style="border-top: 2px solid black; margin-top: 60px; text-align: center; padding-top: 10px;">
+                                <p style="margin: 0; font-weight: bold;">
+                                    Firma del Cliente
+                                </p>
+                                <p style="margin: 0; font-size: 9pt; color: #666;">
+                                    Nombre: _______________________________
+                                </p>
+                                <p style="margin: 0; font-size: 9pt; color: #666;">
+                                    CI: _______________
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </xpath>
+
+        </template>
+
+    </data>
+</odoo>

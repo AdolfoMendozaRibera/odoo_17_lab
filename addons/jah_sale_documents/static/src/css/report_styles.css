@@ -1,0 +1,64 @@
+/* ============================================
+   JAH - Estilos personalizados para reportes
+   ============================================ */
+
+/* Encabezado */
+.header.o_company_1_layout {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Tabla de productos */
+.o_main_table thead th {
+    border-bottom: 2px solid #000 !important;
+    padding: 8px 4px !important;
+    font-weight: bold !important;
+}
+
+.o_main_table tbody td {
+    padding: 6px 4px !important;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* Secciones y notas en tabla */
+.o_line_section {
+    background-color: #f8f9fa !important;
+    font-weight: bold !important;
+}
+
+.o_line_note {
+    font-style: italic !important;
+    color: #666 !important;
+}
+
+/* Totales */
+#total {
+    page-break-inside: avoid;
+}
+
+/* Firma */
+.signature-section {
+    page-break-inside: avoid;
+    margin-top: 40px;
+}
+
+/* Footer */
+.o_standard_footer {
+    font-size: 9pt;
+}
+
+/* Ajustes de impresión */
+@media print {
+    .header.o_company_1_layout {
+        min-height: 30mm !important;
+    }
+    
+    .o_main_table {
+        page-break-inside: auto;
+    }
+    
+    .o_main_table tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+}

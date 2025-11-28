@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ========================================= -->
+    <!-- REPORT ACTION: Acción para generar PDF -->
+    <!-- ========================================= -->
+    
+    <record id="action_report_tarea" model="ir.actions.report">
+        <!-- ir.actions.report: define un reporte PDF/HTML -->
+        
+        <field name="name">Reporte de Tarea</field>
+        
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <!-- Modelo del que se generará el reporte -->
+        
+        <field name="report_type">qweb-pdf</field>
+        <!-- Tipo de reporte:
+             - qweb-pdf: genera PDF
+             - qweb-html: genera HTML
+        -->
+        
+        <field name="report_name">mi_gestor_tareas.report_tarea_template</field>
+        <!-- Nombre del template QWeb que se usará -->
+        
+        <field name="report_file">mi_gestor_tareas.report_tarea_template</field>
+        <!-- Nombre del archivo generado -->
+        
+        <field name="binding_model_id" ref="model_mi_gestor_tareas_tarea"/>
+        <!-- Hace que aparezca en el menú "Imprimir" -->
+        
+        <field name="binding_type">report</field>
+        <!-- Tipo de binding: report -->
+    </record>
+    
+    <!-- ========================================= -->
+    <!-- TEMPLATE QWEB: Diseño del PDF -->
+    <!-- ========================================= -->
+    
+    <!-- 
+        QWeb es el motor de plantillas HTML de Odoo.
+        Se usa para generar PDFs, emails, páginas web.
+        
+        Directivas principales:
+        - t-foreach: bucle for
+        - t-if: condicional if
+        - t-esc: imprimir texto escapado
+        - t-raw: imprimir HTML sin escapar
+        - t-set: definir variable
+    -->
+    
+    <template id="report_tarea_template">
+        <!-- template: define un template QWeb -->
+        <!-- id: identificador único -->
+        
+        <t t-call="web.html_container">
+            <!-- t-call: llama a otro template (hereda diseño base) -->
+            <!-- web.html_container: template base de Odoo para PDFs -->
+            
+            <t t-foreach="docs" t-as="tarea">
+                <!-- t-foreach: itera sobre 'docs' -->
+                <!-- docs: variable automática que contiene los registros -->
+                <!-- t-as="tarea": cada elemento se llama 'tarea' -->
+                
+                <t t-call="web.external_layout">
+                    <!-- external_layout: incluye header/footer de la empresa -->
+                    
+                    <div class="page">
+                        <!-- Clase 'page': cada iteración es una página -->
+                        
+                        <!-- TÍTULO -->
+                        <h2>Reporte de Tarea</h2>
+                        
+                        <!-- INFORMACIÓN PRINCIPAL -->
+                        <div class="row mt16 mb16">
+                            <div class="col-6">
+                                <strong>Nombre:</strong>
+                                <span t-field="tarea.nombre"/>
+                                <!-- t-field: imprime el valor del campo formateado -->
+                            </div>
+                            <div class="col-6">
+                                <strong>Estado:</strong>
+                                <span t-field="tarea.estado"/>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb16">
+                            <div class="col-6">
+                                <strong>Categoría:</strong>
+                                <span t-field="tarea.categoria_id"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Responsable:</strong>
+                                <span t-field="tarea.responsable_id"/>
+                            </div>
+                        </div>
+                        
+                        <!-- FECHAS -->
+                        <div class="row mb16">
+                            <div class="col-4">
+                                <strong>Fecha Creación:</strong>
+                                <span t-field="tarea.fecha_creacion"/>
+                            </div>
+                            <div class="col-4">
+                                <strong>Fecha Límite:</strong>
+                                <span t-field="tarea.fecha_limite"/>
+                            </div>
+                            <div class="col-4">
+                                <strong>Días Restantes:</strong>
+                                <span t-esc="tarea.dias_restantes"/>
+                                <!-- t-esc: imprime texto escapado -->
+                            </div>
+                        </div>
+                        
+                        <!-- PROGRESO -->
+                        <div class="row mb16">
+                            <div class="col-6">
+                                <strong>Progreso:</strong>
+                                <span t-esc="tarea.progreso"/>%
+                            </div>
+                            <div class="col-6">
+                                <strong>Prioridad:</strong>
+                                <t t-if="tarea.prioridad == '3'">
+                                    <span class="badge badge-danger">Urgente</span>
+                                </t>
+                                <t t-elif="tarea.prioridad == '2'">
+                                    <span class="badge badge-warning">Alta</span>
+                                </t>
+                                <t t-elif="tarea.prioridad == '1'">
+                                    <span class="badge badge-info">Media</span>
+                                </t>
+                                <t t-else="">
+                                    <span class="badge badge-secondary">Baja</span>
+                                </t>
+                                <!-- t-if, t-elif, t-else: condicionales -->
+                            </div>
+                        </div>
+                        
+                        <!-- HORAS -->
+                        <div class="row mb16">
+                            <div class="col-6">
+                                <strong>Horas Estimadas:</strong>
+                                <span t-esc="tarea.horas_estimadas"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Horas Reales:</strong>
+                                <span t-esc="tarea.horas_reales"/>
+                            </div>
+                        </div>
+                        
+                        <!-- ETIQUETAS -->
+                        <div class="row mb16" t-if="tarea.etiqueta_ids">
+                            <!-- t-if: muestra solo si hay etiquetas -->
+                            <div class="col-12">
+                                <strong>Etiquetas:</strong>
+                                <t t-foreach="tarea.etiqueta_ids" t-as="etiqueta">
+                                    <span class="badge badge-primary mr-1">
+                                        <t t-esc="etiqueta.nombre"/>
+                                    </span>
+                                </t>
+                            </div>
+                        </div>
+                        
+                        <!-- DESCRIPCIÓN -->
+                        <div class="row mb16" t-if="tarea.descripcion">
+                            <div class="col-12">
+                                <strong>Descripción:</strong>
+                                <div t-field="tarea.descripcion"/>
+                                <!-- t-field renderiza HTML correctamente -->
+                            </div>
+                        </div>
+                        
+                        <!-- ALERTA SI ESTÁ VENCIDA -->
+                        <div class="row" t-if="tarea.vencida">
+                            <div class="col-12">
+                                <div class="alert alert-danger">
+                                    <strong>⚠️ ATENCIÓN:</strong> Esta tarea está vencida.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    
+    <!-- ========================================= -->
+    <!-- REPORTE MÚLTIPLE: Lista de tareas -->
+    <!-- ========================================= -->
+    
+    <record id="action_report_tareas_lista" model="ir.actions.report">
+        <field name="name">Lista de Tareas</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">mi_gestor_tareas.report_tareas_lista_template</field>
+        <field name="report_file">mi_gestor_tareas.report_tareas_lista_template</field>
+        <field name="binding_model_id" ref="model_mi_gestor_tareas_tarea"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+    <template id="report_tareas_lista_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Lista de Tareas</h2>
+                    
+                    <!-- Tabla de tareas -->
+                    <table class="table table-sm table-bordered mt-4">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Estado</th>
+                                <th>Progreso</th>
+                                <th>Fecha Límite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="tarea">
+                                <tr>
+                                    <td><span t-field="tarea.nombre"/></td>
+                                    <td><span t-field="tarea.categoria_id"/></td>
+                                    <td>
+                                        <span class="badge" 
+                                              t-attf-class="badge badge-{{
+                                                  'success' if tarea.estado == 'completado'
+                                                  else 'primary' if tarea.estado == 'en_progreso'
+                                                  else 'secondary'
+                                              }}">
+                                            <t t-esc="dict(tarea._fields['estado'].selection).get(tarea.estado)"/>
+                                        </span>
+                                        <!-- t-attf-class: atributo con expresión Python -->
+                                    </td>
+                                    <td><span t-esc="tarea.progreso"/>%</td>
+                                    <td><span t-field="tarea.fecha_limite"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                    
+                    <!-- Resumen -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <strong>Total de tareas: </strong>
+                            <t t-set="total" t-value="len(docs)"/>
+                            <!-- t-set: define variable -->
+                            <span t-esc="total"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+    
+</odoo>

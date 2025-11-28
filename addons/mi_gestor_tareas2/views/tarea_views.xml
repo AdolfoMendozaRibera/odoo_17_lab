@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- VISTA TREE -->
+    <record id="view_tarea_tree" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.tarea.tree</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="arch" type="xml">
+            <tree string="Tareas" 
+                  decoration-danger="vencida" 
+                  decoration-success="estado == 'completado'"
+                  decoration-muted="estado == 'cancelado'">
+                <!-- decoration-*: aplica estilos CSS según condiciones -->
+                <!-- decoration-danger: texto rojo si vencida=True -->
+                <!-- decoration-success: texto verde si completado -->
+                <!-- decoration-muted: texto gris si cancelado -->
+                
+                <field name="nombre"/>
+                <field name="categoria_id"/>
+                <field name="responsable_id"/>
+                <field name="estado"/>
+                <field name="prioridad" widget="priority"/>
+                <!-- widget="priority": muestra estrellas -->
+                
+                <field name="progreso" widget="progressbar"/>
+                <!-- widget="progressbar": barra de progreso visual -->
+                
+                <field name="fecha_limite"/>
+                <field name="dias_restantes"/>
+                <field name="vencida" invisible="1"/>
+                <!-- invisible="1": oculta la columna pero permite usarla en decorations -->
+            </tree>
+        </field>
+    </record>
+    
+    <!-- VISTA FORM -->
+    <record id="view_tarea_form" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.tarea.form</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="arch" type="xml">
+            <form string="Tarea">
+                <!-- Header con botones de estado -->
+                <header>
+                    <!-- Botones de acción -->
+                    <button name="action_marcar_en_progreso" 
+                            type="object" 
+                            string="Iniciar" 
+                            class="btn-primary"
+                            invisible="estado != 'nuevo'"/>
+                    <!-- name: método Python a ejecutar -->
+                    <!-- type="object": llama un método del modelo -->
+                    <!-- invisible: muestra/oculta según condición -->
+                    
+                    <button name="action_marcar_completada" 
+                            type="object" 
+                            string="Completar" 
+                            class="btn-success"
+                            invisible="estado == 'completado'"/>
+                    
+                    <button name="action_cancelar" 
+                            type="object" 
+                            string="Cancelar" 
+                            invisible="estado in ['completado', 'cancelado']"/>
+                    
+                    <!-- Campo de estado como statusbar -->
+                    <field name="estado" widget="statusbar" 
+                           statusbar_visible="nuevo,en_progreso,completado"/>
+                    <!-- widget="statusbar": muestra estados como pestañas -->
+                </header>
+                
+                <sheet>
+                    <!-- Título -->
+                    <div class="oe_title">
+                        <h1>
+                            <field name="nombre" placeholder="Ej: Llamar a cliente"/>
+                        </h1>
+                    </div>
+                    
+                    <!-- Campos principales en grupos -->
+                    <group>
+                        <group string="Información General">
+                            <field name="categoria_id"/>
+                            <field name="responsable_id"/>
+                            <field name="prioridad" widget="priority"/>
+                            <field name="etiqueta_ids" widget="many2many_tags" 
+                                   options="{'color_field': 'color'}"/>
+                            <!-- widget="many2many_tags": muestra como etiquetas de colores -->
+                        </group>
+                        
+                        <group string="Fechas y Progreso">
+                            <field name="fecha_creacion"/>
+                            <field name="fecha_limite"/>
+                            <field name="fecha_completado" invisible="estado != 'completado'"/>
+                            <field name="dias_restantes" 
+                                   decoration-danger="dias_restantes &lt; 0"
+                                   decoration-warning="dias_restantes &lt;= 3 and dias_restantes &gt;= 0"/>
+                            <field name="progreso" widget="percentpie"/>
+                            <!-- widget="percentpie": gráfico circular de porcentaje -->
+                        </group>
+                    </group>
+                    
+                    <group string="Tiempo">
+                        <field name="horas_estimadas"/>
+                        <field name="horas_reales"/>
+                    </group>
+                    
+                    <!-- Notebook con pestañas -->
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="descripcion"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                
+                <!-- Chatter (mensajes y actividades) -->
+                <!-- Gracias a heredar de mail.thread -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    
+    <!-- VISTA KANBAN -->
+    <record id="view_tarea_kanban" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.tarea.kanban</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="estado" class="o_kanban_small_column">
+                <!-- kanban: vista de tarjetas estilo Trello -->
+                <!-- default_group_by: agrupa por este campo (columnas) -->
+                
+                <field name="id"/>
+                <field name="nombre"/>
+                <field name="estado"/>
+                <field name="progreso"/>
+                <field name="prioridad"/>
+                <field name="color_categoria"/>
+                
+                <!-- QWeb template para cada tarjeta -->
+                <templates>
+                    <t t-name="kanban-box">
+                        <!-- t-name: nombre del template QWeb -->
+                        
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <div class="oe_kanban_content">
+                                <div class="o_kanban_record_top">
+                                    <div class="o_kanban_record_headings">
+                                        <strong class="o_kanban_record_title">
+                                            <field name="nombre"/>
+                                        </strong>
+                                    </div>
+                                    
+                                    <!-- Prioridad con estrellas -->
+                                    <field name="prioridad" widget="priority"/>
+                                </div>
+                                
+                                <div class="o_kanban_record_body">
+                                    <field name="etiqueta_ids" widget="many2many_tags" 
+                                           options="{'color_field': 'color'}"/>
+                                </div>
+                                
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <field name="progreso" widget="progressbar"/>
+                                    </div>
+                                    <div class="oe_kanban_bottom_right">
+                                        <field name="responsable_id" widget="many2one_avatar_user"/>
+                                        <!-- widget="many2one_avatar_user": muestra avatar del usuario -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    
+    <!-- VISTA SEARCH -->
+    <record id="view_tarea_search" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.tarea.search</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Tareas">
+                <field name="nombre"/>
+                <field name="responsable_id"/>
+                <field name="categoria_id"/>
+                
+                <!-- Filtros -->
+                <filter string="Mis Tareas" name="mis_tareas" 
+                        domain="[('responsable_id', '=', uid)]"/>
+                <!-- uid: ID del usuario actual -->
+                
+                <filter string="Nuevas" name="nuevas" 
+                        domain="[('estado', '=', 'nuevo')]"/>
+                
+                <filter string="En Progreso" name="en_progreso" 
+                        domain="[('estado', '=', 'en_progreso')]"/>
+                
+                <filter string="Vencidas" name="vencidas" 
+                        domain="[('vencida', '=', True)]"/>
+                
+                <separator/>
+                
+                <filter string="Alta Prioridad" name="alta_prioridad" 
+                        domain="[('prioridad', 'in', ['2', '3'])]"/>
+                
+                <separator/>
+                
+                <!-- Agrupaciones -->
+                <group expand="0" string="Agrupar Por">
+                    <filter string="Estado" name="group_estado" 
+                            context="{'group_by': 'estado'}"/>
+                    <filter string="Categoría" name="group_categoria" 
+                            context="{'group_by': 'categoria_id'}"/>
+                    <filter string="Responsable" name="group_responsable" 
+                            context="{'group_by': 'responsable_id'}"/>
+                    <filter string="Fecha Límite" name="group_fecha" 
+                            context="{'group_by': 'fecha_limite'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    
+    <!-- VISTA CALENDAR -->
+    <record id="view_tarea_calendar" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.tarea.calendar</field>
+        <field name="model">mi_gestor_tareas.tarea</field>
+        <field name="arch" type="xml">
+            <calendar string="Calendario de Tareas" 
+                      date_start="fecha_limite" 
+                      color="categoria_id" 
+                      mode="month">
+                <!-- calendar: vista de calendario -->
+                <!-- date_start: campo de fecha para posicionar eventos -->
+                <!-- color: campo para colorear eventos -->
+                
+                <field name="nombre"/>
+                <field name="responsable_id"/>
+            </calendar>
+        </field>
+    </record>
+    
+    <!-- ACCIÓN -->
+    <record id="action_tarea" model="ir.actions.act_window">
+        <field name="name">Tareas</field>
+        <field name="res_model">mi_gestor_tareas.tarea</field>
+        <field name="view_mode">kanban,tree,form,calendar</field>
+        <!-- Orden de vistas: kanban primero, luego tree, form, calendar -->
+        
+        <field name="context">{'search_default_en_progreso': 1}</field>
+        <!-- Activa el filtro "en_progreso" por defecto -->
+        
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea tu primera tarea
+            </p>
+            <p>
+                Organiza tu trabajo con tareas, categorías y etiquetas.
+            </p>
+        </field>
+    </record>
+    
+    <!-- MENÚ PRINCIPAL -->
+    <menuitem id="menu_tarea" 
+              name="Tareas" 
+              parent="menu_gestor_tareas_root" 
+              action="action_tarea" 
+              sequence="10"/>
+    
+</odoo>

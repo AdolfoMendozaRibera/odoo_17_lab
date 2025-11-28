@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- VISTA TREE -->
+    <record id="view_etiqueta_tree" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.etiqueta.tree</field>
+        <field name="model">mi_gestor_tareas.etiqueta</field>
+        <field name="arch" type="xml">
+            <tree string="Etiquetas" editable="bottom">
+                <!-- editable="bottom": permite editar directamente en la lista -->
+                <!-- Alternativas: editable="top" o sin editable -->
+                
+                <field name="nombre"/>
+                <field name="color" widget="color_picker"/>
+                <!-- widget: cambia cómo se ve/edita el campo -->
+                <!-- color_picker: selector de color visual -->
+            </tree>
+        </field>
+    </record>
+    
+    <!-- VISTA FORM -->
+    <record id="view_etiqueta_form" model="ir.ui.view">
+        <field name="name">mi_gestor_tareas.etiqueta.form</field>
+        <field name="model">mi_gestor_tareas.etiqueta</field>
+        <field name="arch" type="xml">
+            <form string="Etiqueta">
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="color" widget="color_picker"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- ACCIÓN -->
+    <record id="action_etiqueta" model="ir.actions.act_window">
+        <field name="name">Etiquetas</field>
+        <field name="res_model">mi_gestor_tareas.etiqueta</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- MENÚ -->
+    <menuitem id="menu_etiqueta" 
+              name="Etiquetas" 
+              parent="menu_gestor_tareas_root" 
+              action="action_etiqueta" 
+              sequence="30"/>
+    
+</odoo>

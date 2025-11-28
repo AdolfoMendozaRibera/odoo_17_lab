@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <!-- ============================================ -->
+        <!-- REDEFINIR EL REPORTE DE COTIZACIÓN/VENTA -->
+        <!-- ============================================ -->
+        
+        <record id="sale.action_report_saleorder" model="ir.actions.report">
+            <field name="name">Cotización / Orden de Venta</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">jah_sale_documents.jah_report_saleorder</field>
+            <field name="report_file">jah_sale_documents.jah_report_saleorder</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Cotización - %s' or 'Orden - %s') % (object.name)</field>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

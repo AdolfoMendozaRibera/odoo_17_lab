@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_categoria_user,mi_gestor_tareas.categoria.user,model_mi_gestor_tareas_categoria,base.group_user,1,1,1,1
+access_etiqueta_user,mi_gestor_tareas.etiqueta.user,model_mi_gestor_tareas_etiqueta,base.group_user,1,1,1,1
+access_tarea_user,mi_gestor_tareas.tarea.user,model_mi_gestor_tareas_tarea,base.group_user,1,1,1,1
