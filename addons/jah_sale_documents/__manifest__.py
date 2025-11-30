@@ -26,6 +26,7 @@
         'web',
     ],
     'data': [
+        'views/sale_order_views.xml',
         'views/report_layout.xml',
         'views/report_sale_document.xml',
         'views/report_templates.xml',

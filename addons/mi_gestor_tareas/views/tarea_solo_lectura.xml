@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- ========== VISTA DE ÁRBOL SOLO LECTURA ========== -->
+    <record id="view_tarea_solo_lectura_tree" model="ir.ui.view">
+        <field name="name">mi.gestor.tareas.tarea.solo.lectura.tree</field>
+        <field name="model">mi.gestor.tareas.tarea</field>
+        <field name="arch" type="xml">
+            <tree string="Lista de Tareas (Solo Lectura)" 
+                  decoration-success="estado=='completada'"
+                  decoration-danger="estado=='pendiente' and es_importante"
+                  create="false" 
+                  edit="false" 
+                  delete="false">
+                <field name="name" readonly="1"/>
+                <field name="fecha_limite" readonly="1"/>
+                <field name="estado" readonly="1"/>
+                <field name="es_importante" readonly="1"/>
+                <field name="prioridad" optional="show" readonly="1"/>
+                <field name="dias_restantes" optional="hide" readonly="1"/>
+            </tree>
+        </field>
+    </record>
+    
+    
+    <!-- ========== VISTA DE FORMULARIO SOLO LECTURA ========== -->
+    <record id="view_tarea_solo_lectura_form" model="ir.ui.view">
+        <field name="name">mi.gestor.tareas.tarea.solo.lectura.form</field>
+        <field name="model">mi.gestor.tareas.tarea</field>
+        <field name="arch" type="xml">
+            <form string="Tarea (Solo Lectura)" create="false" edit="false">
+                <header>
+                    <field name="estado" widget="statusbar" 
+                           statusbar_visible="pendiente,en_progreso,completada" 
+                           readonly="1"/>
+                </header>
+                
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    
+                    <group>
+                        <group string="Información General">
+                            <field name="fecha_limite" readonly="1"/>
+                            <field name="prioridad" readonly="1"/>
+                            <field name="dias_restantes" readonly="1"/>
+                        </group>
+                        
+                        <group string="Configuración">
+                            <field name="es_importante" readonly="1"/>
+                        </group>
+                    </group>
+                    
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="descripcion" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user" readonly="1"/>
+                    <field name="activity_ids" readonly="1"/>
+                    <field name="message_ids" readonly="1"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    
+    
+    <!-- ========== ACCIÓN DE SOLO LECTURA ========== -->
+    <record id="action_tarea_solo_lectura" model="ir.actions.act_window">
+        <field name="name">Tareas (Solo Lectura)</field>
+        <field name="res_model">mi.gestor.tareas.tarea</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_tarea_solo_lectura_tree"/>
+        <field name="context">{'create': False}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Vista de solo lectura
+            </p>
+            <p>
+                Esta vista permite consultar tareas pero no modificarlas.
+            </p>
+        </field>
+    </record>
+    
+    <!-- Especificar explícitamente la vista de formulario -->
+    <record id="action_tarea_solo_lectura_view_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_tarea_solo_lectura_form"/>
+        <field name="act_window_id" ref="action_tarea_solo_lectura"/>
+    </record>
+    
+    <record id="action_tarea_solo_lectura_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_tarea_solo_lectura_tree"/>
+        <field name="act_window_id" ref="action_tarea_solo_lectura"/>
+    </record>
+    
+    
+    <!-- ========== MENÚ SOLO LECTURA ========== -->
+    <menuitem id="menu_tareas_solo_lectura" 
+              name="Consultar Tareas"
+              parent="menu_gestor_tareas_root"
+              action="action_tarea_solo_lectura"
+              sequence="20"/>
+
+</odoo>

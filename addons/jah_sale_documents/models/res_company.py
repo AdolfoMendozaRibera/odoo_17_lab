@@ -1,13 +1,7 @@
-# -*- coding: utf-8 -*-
-
-from odoo import fields, models
-
+from odoo import fields, models, api
+from odoo.exceptions import ValidationError
 
 class ResCompany(models.Model):
-    """
-    Extiende el modelo res.company para agregar campos de identificación fiscal
-    y configuración necesarios para el encabezado de los reportes JAH.
-    """
     _inherit = 'res.company'
 
     company_nit = fields.Char(
@@ -19,3 +13,10 @@ class ResCompany(models.Model):
         string='Dirección Casa Matriz', 
         help="Dirección específica a mostrar en el encabezado de los reportes."
     )
+    
+    @api.constrains('company_nit')
+    def _check_nit_format(self):
+        """Validación básica del NIT (opcional según Bolivia)"""
+        for record in self:
+            if record.company_nit and not record.company_nit.replace('-', '').isdigit():
+                raise ValidationError("El NIT debe contener solo números y guiones")

@@ -27,12 +27,14 @@
     'category': 'Productivity',
     
     # Versión de Odoo compatible
-    'depends': ['base'],  # 'base' es el módulo básico de Odoo (siempre necesario)
+    'depends': ['base', 'mail'],  # 'base' es el módulo básico de Odoo (siempre necesario)
     
     # Archivos de datos que se cargarán (en orden)
     'data': [
         'security/ir.model.access.csv',  # Permisos de acceso
         'views/tarea_views.xml',         # Vistas (formularios, listas, etc)
+        'views/tarea_solo_lectura.xml', # Vistas solo lectura
+        
     ],
     
     # Si es True, el módulo se instala automáticamente

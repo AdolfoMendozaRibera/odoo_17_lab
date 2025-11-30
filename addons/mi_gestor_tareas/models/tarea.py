@@ -7,6 +7,9 @@ class Tarea(models.Model):
     # _name: nombre técnico del modelo (se convierte en tabla: mi_gestor_tareas_tarea)
     _name = 'mi.gestor.tareas.tarea'
     
+    # Hereda funcionalidades de seguimiento de mensajes
+    _inherit = ['mail.thread','mail.activity.mixin']  
+    
     # _description: descripción del modelo
     _description = 'Tarea Personal'
     
@@ -20,6 +23,7 @@ class Tarea(models.Model):
     name = fields.Char(
         string='Nombre de la Tarea',  # Etiqueta que se muestra
         required=True,                 # No puede estar vacío
+        tracking=True,
         help='Ingresa el nombre de tu tarea'  # Texto de ayuda
     )
     
@@ -65,6 +69,19 @@ class Tarea(models.Model):
         compute='_compute_dias_restantes',  # Función que lo calcula
         store=False  # No se guarda en BD, se calcula siempre
     )
+    
+    #
+    # ========= BASE DE DATOS =============
+    #CREATE TABLE mi_gestor_tareas_tarea (
+    #    id SERIAL PRIMARY KEY,
+    #    name VARCHAR NOT NULL,
+    #    descripcion TEXT,
+    #    fecha_limite DATE,
+    #    estado VARCHAR,
+    #    es_importante BOOLEAN,
+    #    prioridad INTEGER,
+    #    -- dias_restantes NO se guarda (se calcula)
+    #);
     
     
     # ========== MÉTODOS (FUNCIONES) ==========

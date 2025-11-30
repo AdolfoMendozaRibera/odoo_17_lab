@@ -101,9 +101,7 @@
                     <div t-if="doc_model in ['sale.order']" 
                          style="font-size: 9pt; margin-top: 10px; padding-top: 5px; color: #666;">
                         <p>
-                            Este documento es una representación impresa de un documento electrónico generado en Odoo.
-                            <br/>
-                            Para mayor información contacte con nuestro equipo de ventas.
+                            [TEXTO PERSONALIZADO JAH - PENDIENTE DE DEFINIR]
                         </p>
                     </div>
 

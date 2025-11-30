@@ -4,7 +4,7 @@
     <!-- ========== VISTA DE ÁRBOL (LISTA) ========== -->
     <!-- Muestra las tareas en formato de lista/tabla -->
     <record id="view_tarea_tree" model="ir.ui.view">
-        <field name="name">ctree</field>
+        <field name="name">mi.gestor.tareas.tarea.tree</field>
         <field name="model">mi.gestor.tareas.tarea</field>
         <field name="arch" type="xml">
             <tree string="Lista de Tareas" 
@@ -17,8 +17,8 @@
                 <field name="fecha_limite"/>
                 <field name="estado"/>
                 <field name="es_importante"/>
-                <field name="prioridad"/>
-                <field name="dias_restantes"/>
+                <field name="prioridad" optional="show"/>
+                <field name="dias_restantes" optional="hide"/>
             </tree>
         </field>
     </record>
@@ -81,6 +81,12 @@
                         </page>
                     </notebook>
                 </sheet>
+
+                <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>
@@ -156,5 +162,6 @@
               parent="menu_gestor_tareas_root"
               action="action_tarea"
               sequence="10"/>
+
 
 </odoo>
