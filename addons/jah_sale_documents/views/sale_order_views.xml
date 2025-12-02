@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_order_form_jah" model="ir.ui.view">
-        <model>ir.ui.view</model>
-        <field name="name">sale.order.form.jah</field>
-        <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//field[@name='require_payment']" position="after">
-                <field name="require_signature"/>
-            </xpath>
-        </field>
-    </record>
+    <data>
+        <record id="view_order_form_jah" model="ir.ui.view">
+            <field name="name">sale.order.form.jah</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='require_payment']" position="after">
+                    <field name="require_signature"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
 </odoo>

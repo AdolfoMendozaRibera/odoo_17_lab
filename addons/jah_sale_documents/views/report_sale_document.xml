@@ -54,54 +54,59 @@
             </xpath>
 
             <!-- ========================================= -->
-            <!-- SECCIÓN 2: AGREGAR COLUMNAS A LA TABLA -->
+            <!-- SECCIÓN 2: AGREGAR COLUMNAS A LA TABLA - CORREGIDO -->
             <!-- ========================================= -->
 
-            <!-- Agregar columna de Unidad -->
-            <xpath expr="//th[@name='th_quantity']" position="after">
-                <th name="th_unit" class="text-center" style="width: 8%;">Unidad</th>
-            </xpath>
+            <!-- ✅ CORREGIDO: SOLO UNA VEZ cada columna -->
             
-            <!-- Agregar columna de Código del Producto -->
+            <!-- 1. Código ANTES de Descripción -->
             <xpath expr="//th[@name='th_description']" position="before">
                 <th name="th_code" class="text-start" style="width: 10%;">Código</th>
             </xpath>
             
-            
-
-            <!-- Agregar celda de Código en las filas de productos -->
-            <xpath expr="//td[@name='td_name']" position="before">
-                <td name="td_code">
-                    <span t-field="line.product_id.default_code"/>
-                </td>
-                <td name="td_unit" class="text-center">
-                    <span t-field="line.product_uom"/>
-                </td>
-            </xpath>
-            
-            <!-- Agregar celda de Unidad después de Cantidad -->
-            <xpath expr="//td[@name='td_quantity']" position="after">
-                <td name="td_unit" class="text-center">
-                    <span t-field="line.product_uom"/>
-                </td>
+            <!-- 2. Unidad DESPUÉS de Cantidad -->
+            <xpath expr="//th[@name='th_quantity']" position="after">
+                <th name="th_unit" class="text-center" style="width: 8%;">Unidad</th>
             </xpath>
 
-            <!-- Después de la columna de Precio Unitario, agregar: -->
+            <!-- 3. Descuento DESPUÉS de Precio Unitario -->
             <xpath expr="//th[@name='th_priceunit']" position="after">
                 <th name="th_discount" class="text-end" style="width: 8%;">
                     <span groups="product.group_discount_per_so_line">Desc.%</span>
                 </th>
             </xpath>
 
-            <!-- Y en las filas de productos: -->
+            <!-- ========================================= -->
+            <!-- SECCIÓN 3: AGREGAR CELDAS EN LAS FILAS - CORREGIDO -->
+            <!-- ========================================= -->
+
+            <!-- ✅ CORREGIDO: Sin duplicación -->
+            
+            <!-- Código ANTES de Descripción -->
+            <xpath expr="//td[@name='td_name']" position="before">
+                <td name="td_code">
+                    <span t-field="line.product_id.default_code"/>
+                </td>
+            </xpath>
+
+            <!-- Unidad DESPUÉS de Cantidad -->
+            <xpath expr="//td[@name='td_quantity']" position="after">
+                <td name="td_unit" class="text-center">
+                    <span t-field="line.product_uom.name"/>
+                </td>
+            </xpath>
+
+            <!-- Descuento DESPUÉS de Precio Unitario -->
             <xpath expr="//td[@name='td_priceunit']" position="after">
                 <td name="td_discount" class="text-end">
                     <span groups="product.group_discount_per_so_line" t-if="line.discount" t-field="line.discount"/>
                 </td>
             </xpath>
 
-            <!-- Ocultar campos fiscales que solo aplican a facturas -->
-     
+            <!-- ========================================= -->
+            <!-- SECCIÓN 4: OCULTAR CAMPOS FISCALES -->
+            <!-- ========================================= -->
+            
             <!-- Ocultar campos fiscales solo en cotizaciones -->
             <xpath expr="//div[@name='so_total_summary']" position="inside">
                 <!-- Ocultar monto de gift card si existe -->
@@ -115,33 +120,26 @@
                 </xpath>
             </xpath>
 
-            <!--
-            <xpath expr="//div[@name='so_total_summary']" position="attributes">
-                <attribute name="t-if">doc.state in ['sale', 'done']</attribute>
-            </xpath>
-            -->
-            
-
             <!-- ========================================= -->
-            <!-- SECCIÓN 3: AJUSTAR COLSPAN PARA SECCIONES Y NOTAS -->
+            <!-- SECCIÓN 5: AJUSTAR COLSPAN PARA SECCIONES Y NOTAS -->
             <!-- ========================================= -->
             
-            <!-- Ajustar colspan de las secciones (ahora hay más columnas) -->
+            <!-- Ajustar colspan de las secciones (ahora hay 7 columnas) -->
             <xpath expr="//td[@name='td_section_line']" position="attributes">
-                <attribute name="colspan">99</attribute>
+                <attribute name="colspan">7</attribute>  <!-- Cambiado de 99 a 7 -->
             </xpath>
             
             <xpath expr="//td[@name='td_note_line']" position="attributes">
-                <attribute name="colspan">99</attribute>
+                <attribute name="colspan">7</attribute>  <!-- Cambiado de 99 a 7 -->
             </xpath>
 
             <!-- ========================================= -->
-            <!-- SECCIÓN 4: AGREGAR FIRMA PARA ÓRDENES DE VENTA -->
+            <!-- SECCIÓN 6: AGREGAR FIRMA PARA ÓRDENES DE VENTA -->
             <!-- ========================================= -->
             
             <!-- Agregar firma al final del documento solo para órdenes confirmadas -->
-            <xpath expr="//p[@id='fiscal_position_remark']" position="after">
-                <t t-if="doc.state in ['sale', 'done'] and doc.require_signature">
+            <xpath expr="//div[contains(@class, 'page')]" position="inside">
+                <t t-if="doc.state in ['sale', 'done']">
                     <div class="row mt-5" style="page-break-inside: avoid;">
                         <div class="col-6 offset-6">
                             <div style="border-top: 2px solid black; margin-top: 60px; text-align: center; padding-top: 10px;">
@@ -152,7 +150,7 @@
                                     Nombre: _______________________________
                                 </p>
                                 <p style="margin: 0; font-size: 9pt; color: #666;">
-                                    CI: _______________
+                                    CI/NIT: _______________
                                 </p>
                             </div>
                         </div>

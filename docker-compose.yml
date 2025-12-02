@@ -27,7 +27,6 @@ services:
       - odoo-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
       - ./config/odoo17.conf:/etc/odoo/odoo.conf # Montar el archivo de configuración
-    command: /usr/bin/odoo --config=/etc/odoo/odoo.conf
     restart: unless-stopped
 
 volumes:

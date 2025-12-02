@@ -9,16 +9,24 @@
         <field name="arch" type="xml">
             <tree string="Lista de Tareas" 
                   decoration-success="estado=='completada'"
-                  decoration-danger="estado=='pendiente' and es_importante">
+                  decoration-danger="estado=='pendiente' and es_importante"
+                  create="true" edit="true" delete="true">
                 <!-- decoration-success: pone la fila en verde si está completada -->
                 <!-- decoration-danger: pone la fila en rojo si es pendiente e importante -->
                 
                 <field name="name"/>
-                <field name="fecha_limite"/>
-                <field name="estado"/>
-                <field name="es_importante"/>
+                <field name="fecha_inicio" optional="hide"/>
+                <field name="fecha_limite" optional="show"/>
+                <field name="estado" optional="show"/>
+                <field name="es_importante" optional="show"/>
                 <field name="prioridad" optional="show"/>
                 <field name="dias_restantes" optional="hide"/>
+
+                <button name="action_marcar_completada" 
+                    type="object" 
+                    class="btn-success"
+                    icon="fa-check"
+                    invisible="estado == 'completada'"/>
             </tree>
         </field>
     </record>
@@ -33,23 +41,40 @@
             <form string="Tarea">
                 <!-- Encabezado con botones de acción -->
                 <header>
+
                     <!-- Botón para marcar como completada -->
                     <button name="action_marcar_completada" 
                             type="object" 
                             string="Marcar Completada"
                             class="oe_highlight"
-                            invisible="estado == 'completada'"/>
-                    <!-- invisible: oculta el botón si ya está completada -->
-                    
-                    <!-- Botón para marcar como pendiente -->
-                    <button name="action_marcar_pendiente" 
-                            type="object" 
-                            string="Marcar Pendiente"
-                            invisible="estado == 'pendiente'"/>
+                            invisible="estado in ['borrador', 'completada']"
+                            confirm="¿Esta seguro que deseas continuar?"/>
+                            <!-- invisible: oculta el botón si ya está completada -->
+
+
+                    <!-- Botón para marcar como PENDIENTE (solo visible en estado "borrador") -->
+                    <button name="action_marcar_pendiente"
+                            type="object"
+                            string="Marcar como Pendiente"
+                            class="btn-primary"
+                            invisible="estado != 'borrador'"/>
+
+
+                    <button name='action_marcar_en_progreso'
+                            type='object'
+                            string='Marcar en Progreso'
+                            class='btn-warning'
+                            invisible="estado != 'pendiente'"/>
+
+                    <button name="action_imprimir_reporte"
+                            type="object"
+                            string="Imprimir"
+                            class="btn-secondary"
+                            icon="fa-print"/>
                     
                     <!-- Campo de estado como barra de progreso -->
                     <field name="estado" widget="statusbar" 
-                           statusbar_visible="pendiente,en_progreso,completada"/>
+                           statusbar_visible="borrador,pendiente,en_progreso,completada"/>
                 </header>
                 
                 <!-- Cuerpo del formulario -->
@@ -65,7 +90,7 @@
                     <group>
                         <group string="Información General">
                             <field name="fecha_limite"/>
-                            <field name="prioridad"/>
+                            <field name="prioridad" widget="priority"/>
                             <field name="dias_restantes"/>
                         </group>
                         

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import date
 
 # Esta clase define el modelo de datos (la tabla en la base de datos)
 class Tarea(models.Model):
@@ -14,7 +15,32 @@ class Tarea(models.Model):
     _description = 'Tarea Personal'
     
     # _order: cómo se ordenan los registros por defecto
-    _order = 'fecha_limite desc, name'
+    _order = 'fecha_limite desc, name asc'
+    
+    # 3. Las constraints SQL NO se pueden desactivar fácilmente:
+       # Una vez creadas, son difíciles de modificar
+
+       # Requieren migración de base de datos
+
+       # Los constraints Python son más flexibles
+
+    # ========== SQL CONSTRAINTS (CORREGIDOS) ==========
+    #_sql_constraints = [
+    #    # 1. Nombre único por usuario (más lógico)
+    #    ('name_user_uniq', 
+    #     'UNIQUE(name, create_uid)', 
+    #     '¡Ya tienes una tarea con este nombre!'),
+    #    
+    #    # 2. Validación de prioridad
+    #    ('prioridad_range_check',
+    #     'CHECK(prioridad::integer BETWEEN 1 AND 5)',
+    #     'La prioridad debe estar entre 1 y 5'),
+    #    
+    #    # 3. Fechas lógicas (Opcional - complementa la restricción Python)
+    #    ('fecha_limite_check',
+    #     'CHECK(fecha_limite IS NULL OR fecha_inicio IS NULL OR fecha_limite >= fecha_inicio)',
+    #     'La fecha límite debe ser posterior a la fecha de inicio'),
+    #]
     
     
     # ========== CAMPOS (COLUMNAS DE LA TABLA) ==========
@@ -33,6 +59,14 @@ class Tarea(models.Model):
         help='Descripción detallada de la tarea'
     )
     
+    # Campo de fecha inicio
+    fecha_inicio = fields.Date(
+        string = 'Fecha de Inicio',
+        required = True,
+        default = fields.Date.context_today,
+        help='Cuando comenzo la tarea',
+    )
+    
     # Campo de fecha
     fecha_limite = fields.Date(
         string='Fecha Límite',
@@ -41,12 +75,13 @@ class Tarea(models.Model):
     
     # Campo de selección (como un dropdown)
     estado = fields.Selection([
+        ('borrador', 'Borrador'),
         ('pendiente', 'Pendiente'),      # (valor_interno, 'Texto que se muestra')
         ('en_progreso', 'En Progreso'),
         ('completada', 'Completada'),
     ], 
         string='Estado',
-        default='pendiente',  # Valor por defecto
+        default='borrador',  # Valor por defecto
         required=True
     )
     
@@ -57,12 +92,20 @@ class Tarea(models.Model):
     )
     
     # Campo numérico entero
-    prioridad = fields.Integer(
+    prioridad = fields.Selection(
+        selection=[
+            ('1', 'Muy Baja'),
+            ('2', 'Baja'),
+            ('3', 'Media'),
+            ('4', 'Alto'),
+            ('5', 'Muy Alto'),
+        ],
         string='Prioridad',
-        default=1,
-        help='1=Baja, 2=Media, 3=Alta'
+        help='Nivel de prioridad de la tarea',
+        default='3'
     )
     
+
     # Campo calculado (se calcula automáticamente)
     dias_restantes = fields.Integer(
         string='Días Restantes',
@@ -89,24 +132,67 @@ class Tarea(models.Model):
     # Método para calcular días restantes
     @api.depends('fecha_limite')  # Se recalcula cuando cambia fecha_limite
     def _compute_dias_restantes(self):
+        hoy = date.today()
         # 'self' representa el registro actual (puede ser uno o varios)
         for tarea in self:
             if tarea.fecha_limite:
-                # Calcula la diferencia entre fecha límite y hoy
-                from datetime import date
-                hoy = date.today()
                 delta = tarea.fecha_limite - hoy
                 tarea.dias_restantes = delta.days
             else:
                 tarea.dias_restantes = 0
     
     # Método que se ejecuta al hacer clic en un botón (lo veremos en la vista)
+    def action_marcar_borrador(self):
+        # Cambia el estado a borrador
+        self.estado = 'borrador'
+        return True
+    
     def action_marcar_completada(self):
         # Cambia el estado a completada
-        for tarea in self:
-            tarea.estado = 'completada'
+        self.estado = 'completada'
+        return True
     
-    # Método para marcar como pendiente
     def action_marcar_pendiente(self):
+        # Cambia el estado a pendiente
+        self.estado = 'pendiente'
+        return True
+    
+    def action_marcar_en_progreso(self):
+        # Cambia el estado a en progreso
+        self.estado = 'en_progreso'
+        return True
+    
+    
+    def action_imprimir_reporte(self):
+        """Acción para imprimir reporte"""
+        return self.env.ref('mi_gestor_tareas.action_report_tarea').report_action(self)
+    
+    
+    
+    # Restricciones
+    
+    @api.constrains('fecha_limite','fecha_inicio')
+    def _check_fechas(self):
         for tarea in self:
-            tarea.estado = 'pendiente'
+            if tarea.fecha_limite and tarea.fecha_inicio:
+                if tarea.fecha_limite < tarea.fecha_inicio:
+                    raise models.ValidationError("La fecha límite no puede ser anterior a la fecha de inicio.")
+                
+    """
+    @api.constrains('prioridad')
+    def _check_prioridad(self):
+        for tarea in self:
+            if tarea.prioridad and not tarea.prioridad.isDigit():
+                raise models.ValidationError("La prioridad debe ser un número entre 1 y 5.")
+    """
+            
+    @api.constrains('name')
+    def _check_nombre(self):
+        for tarea in self:
+            if len(tarea.name.strip()) < 3:
+                raise models.ValidationError("El nombre de la tarea debe tener al menos 3 caracteres.")
+            
+            if not tarea.name.strip():
+                raise models.ValidationError("El nombre de la tarea no puede estar vacío o contener solo espacios.")
+                
+  
