@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_jah_saleorder_document" inherit_id="sale.report_saleorder_document">
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 1: PERSONALIZAR INFORMACIÓN DEL CLIENTE -->
+            <!-- ========================================= -->
+
+            <xpath expr="//div[@id='informations']" position="replace">
+                <div id="informations" class="row mt-4 mb-2">
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Nombre:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.name"/>
+                    </div>
+
+                    <div t-if="doc.partner_id.vat" class="col-auto col-3 mw-100 mb-2">
+                        <strong>NIT:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.vat"/>
+                    </div>
+
+                    <div t-if="doc.partner_id.street" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Dirección:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.street"/>
+                    </div>
+
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Fecha:</strong><br/>
+                        <span class="m-0" t-field="doc.date_order" t-options='{"widget": "date"}'/>
+                    </div>
+
+                    <div t-if="doc.partner_id.ref" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Código Cliente:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.ref"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 2: AGREGAR COLUMNAS EN EL ENCABEZADO DE LA TABLA -->
+            <!-- ========================================= -->
+
+            <!-- 1. Código ANTES de Descripción -->
+            <xpath expr="//th[@name='th_description']" position="before">
+                <th name="th_code" class="text-start" style="width: 10%;">
+                    Código
+                </th>
+            </xpath>
+
+            <!-- 2. Unidad DESPUÉS de Cantidad -->
+            <xpath expr="//th[@name='th_quantity']" position="after">
+                <th name="th_unit" class="text-center" style="width: 8%;">
+                    Unidad
+                </th>
+            </xpath>
+
+            <!-- 3. Descuento DESPUÉS de Precio Unitario -->
+            <!-- 
+            <xpath expr="//th[@name='th_priceunit']" position="after">
+                <th name="th_discount" class="text-end" style="width: 8%;">
+                    <span groups="product.group_discount_per_so_line">Desc.%</span>
+                </th>
+            </xpath>
+            -->
+
+            <!-- 4. CAMBIAR EL TÍTULO DE "Amount" A "Sub Total" -->
+            <xpath expr="//th[@name='th_subtotal']/span" position="replace">
+                <span>Sub Total</span>
+            </xpath>
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 3: AGREGAR CELDAS EN LAS FILAS -->
+            <!-- ========================================= -->
+
+            <!-- Código ANTES de Descripción -->
+            <xpath expr="//td[@name='td_name']" position="before">
+                <td name="td_code" class="text-start">
+                    <span t-field="line.product_id.default_code"/>
+                </td>
+            </xpath>
+
+            <!-- Unidad DESPUÉS de Cantidad -->
+            <xpath expr="//td[@name='td_quantity']" position="after">
+                <td name="td_unit" class="text-center">
+                    <span t-field="line.product_uom"/>
+                </td>
+            </xpath>
+
+            <!-- Descuento DESPUÉS de Precio Unitario -->
+            <!--
+            <xpath expr="//td[@name='td_priceunit']" position="after">
+                <td name="td_discount" class="text-end">
+                    <span groups="product.group_discount_per_so_line" t-if="line.discount">
+                        <t t-out="line.discount"/>%
+                    </span>
+                </td>
+            </xpath>
+
+            -->
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 4: AJUSTAR COLSPAN PARA SECCIONES Y NOTAS -->
+            <!-- ========================================= -->
+            
+            <!-- Ajustar colspan según columnas visibles -->
+            <xpath expr="//td[@name='td_section_line']" position="attributes">
+                <attribute name="colspan">8</attribute>
+            </xpath>
+            
+            <xpath expr="//td[@name='td_note_line']" position="attributes">
+                <attribute name="colspan">8</attribute>
+            </xpath>
+
+            <!-- Ajustar colspan del subtotal de sección -->
+            <xpath expr="//td[@name='td_section_subtotal']" position="attributes">
+                <attribute name="colspan">8</attribute>
+            </xpath>
+
+            <!-- ========================================= -->
+            <!-- SECCIÓN 5: AGREGAR FIRMA PARA ÓRDENES DE VENTA -->
+            <!-- ========================================= -->
+            
+            <!-- ========================================= -->
+            <!-- SECCIÓN 5: AGREGAR FIRMA PARA ÓRDENES DE VENTA -->
+            <!-- ========================================= -->
+
+            <xpath expr="//div[contains(@class, 'page')]" position="inside">
+    
+            <!-- OPCIÓN A: Solo para Órdenes de Venta (confirmadas/completadas) -->
+            <t t-if="doc.state in ['sale', 'done']">
+                <div class="row mt-5" style="page-break-inside: avoid;">
+                    <div class="col-6 offset-6">
+                        <div style="border-top: 2px solid black; margin-top: 60px; text-align: center; padding-top: 10px;">
+                            <p style="margin: 0; font-weight: bold;">
+                                FIRMA DE APROBACIÓN
+                            </p>
+                            <p style="margin: 5px 0; font-size: 10pt;">
+                                <strong>Cliente:</strong> _______________________________
+                            </p>
+                            <p style="margin: 5px 0; font-size: 10pt;">
+                                <strong>NIT/CI:</strong> _______________________________
+                            </p>
+                            <p style="margin: 5px 0; font-size: 10pt;">
+                                <strong>Fecha:</strong> <span t-field="doc.date_order" t-options='{"widget": "date"}'/>
+                            </p>
+                            <p style="margin-top: 10px; font-size: 9pt; color: #666;">
+                                *Esta firma autoriza la ejecución de la orden de venta*
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    
+    <!-- OPCIÓN B: Mensaje para Cotizaciones (opcional) -->
+    <t t-if="doc.state in ['draft', 'sent']">
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <p style="font-style: italic; color: #666; font-size: 10pt;">
+                    Esta cotización requiere aprobación del cliente para convertirse en orden de venta.
+                </p>
+            </div>
+        </div>
+    </t>
+    
+</xpath>
+
+        </template>
+    </data>
+</odoo>

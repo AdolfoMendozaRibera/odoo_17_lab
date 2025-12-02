@@ -32,8 +32,9 @@
     # Archivos de datos que se cargarán (en orden)
     'data': [
         'security/ir.model.access.csv',  # Permisos de acceso
-        'views/tarea_report.xml',
         'views/tarea_views.xml',         # Vistas (formularios, listas, etc)
+        'reports/tarea_report.xml',
+        'reports/tarea_report_heredado.xml',
         #'views/tarea_solo_lectura.xml', # Vistas solo lectura
         
     ],
