@@ -1,0 +1,157 @@
+/* Estilos para reportes JAH - Versión simple y elegante */
+
+/* ==================== TABLA PRINCIPAL ==================== */
+.o_report_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado de la tabla */
+.o_report_table thead th {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: white;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 3px solid #3498db; /* Azul brillante */
+}
+
+/* Columnas específicas del encabezado */
+.o_report_table th[name="th_code"] {
+    background-color: #34495e;
+}
+
+.o_report_table th[name="th_unit"] {
+    background-color: #34495e;
+}
+
+.o_report_table th[name="th_subtotal"] {
+    background-color: #2980b9;
+}
+
+/* Filas de la tabla */
+.o_report_table tbody tr {
+    border-bottom: 1px solid #ecf0f1; /* Gris claro */
+}
+
+.o_report_table tbody tr:hover {
+    background-color: #f8f9fa; /* Gris muy claro al pasar el mouse */
+}
+
+/* Celdas de la tabla */
+.o_report_table td {
+    padding: 10px 8px;
+    vertical-align: top;
+}
+
+/* Columnas específicas */
+.o_report_table td[name="td_code"] {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.o_report_table td[name="td_unit"] {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.o_report_table td[name="td_subtotal"] {
+    font-weight: bold;
+    color: #27ae60; /* Verde */
+}
+
+/* ==================== TOTALES ==================== */
+.table-total {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.table-total td {
+    font-weight: bold;
+    padding: 8px 4px;
+}
+
+.table-total .amount {
+    color: #e74c3c; /* Rojo para totales */
+    font-size: 1.1em;
+}
+
+/* ==================== SECCIONES Y NOTAS ==================== */
+td[name="td_section_line"],
+td[name="td_note_line"] {
+    background-color: #f1c40f; /* Amarillo */
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 12px;
+    border-left: 4px solid #f39c12;
+}
+
+td[name="td_section_subtotal"] {
+    background-color: #d5dbdb;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ==================== INFORMACIÓN DEL CLIENTE ==================== */
+#informations {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+}
+
+#informations strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#informations span {
+    color: #34495e;
+    font-size: 14px;
+}
+
+/* ==================== FIRMA ==================== */
+div[style*="border-top: 2px solid black"] {
+    font-family: Arial, sans-serif;
+}
+
+div[style*="border-top: 2px solid black"] p[style*="margin: 0; font-weight: bold;"] {
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media print {
+    .o_report_table {
+        font-size: 12px;
+    }
+    
+    .o_report_table thead th {
+        background-color: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Bordes redondeados para mejor apariencia */
+.o_report_table,
+#informations,
+.table-total {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo alternado para filas (opcional) */
+.o_report_table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.o_report_table tbody tr:nth-child(odd) {
+    background-color: white;
+}

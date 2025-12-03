@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- ========================================================= -->
+        <!--  TEMPLATE PERSONALIZADO PARA COMPROBANTE DE PAGO         -->
+        <!--  Hereda del template nativo de Odoo                      -->
+        <!--  Requerimientos:                                         -->
+        <!--  - Encabezado unificado                                  -->
+        <!--  - Mostrar firma cliente/proveedor/usuario               -->
+        <!--  - Mostrar usuario que registra el pago y su cargo       -->
+        <!--  - Cambiar título dinámicamente                          -->
+        <!-- ========================================================= -->
+
+        <template id="report_jah_payment_receipt_document" 
+                 inherit_id="account.report_payment_receipt_document">
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 1: CAMBIAR EL TÍTULO DEL COMPROBANTE             -->
+            <!-- HU-CP-01 y HU-CP-02                                      -->
+            <!-- Según partner_type se muestra:                           -->
+            <!--  * Recibo de Ingreso → Cliente                           -->
+            <!--  * Recibo de Pago   → Proveedor                          -->
+            <!--  * Comprobante de Pago (fallback)                        -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//div[@class='page']/h3[1]" position="replace">
+                <h3 class="mt-4 mb-4">
+                    <strong id="payment_title">
+                        <!-- Título dinámico sin alterar lógica contable -->
+                        <span t-if="o.partner_type == 'customer'">RECIBO DE INGRESO</span>
+                        <span t-elif="o.partner_type == 'supplier'">RECIBO DE PAGO</span>
+                        <span t-else="">COMPROBANTE DE PAGO</span>
+                        : <span t-field="o.name"/>
+                    </strong>
+                </h3>
+            </xpath>
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 2: MOSTRAR USUARIO QUE REGISTRA O IMPRIME EL PAGO -->
+            <!-- HU-CP-02                                                  -->
+            <!-- Se imprimen:                                              -->
+            <!--  - Nombre del usuario (create_uid)                        -->
+            <!--  - Cargo del usuario (function)                           -->
+            <!-- Mantiene el diseño contable nativo.                       -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//div[@name='date']" position="after">
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Registrado por:</strong><br/>
+                        <span t-field="o.create_uid.name"/>
+                    </div>
+
+                    <!-- Cargo solo si existe -->
+                    <div class="col-6" t-if="o.create_uid.function">
+                        <strong>Cargo:</strong><br/>
+                        <span t-field="o.create_uid.function"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 3: DATOS DE CLIENTE O PROVEEDOR                   -->
+            <!-- Conserva estructura estándar de Odoo                      -->
+            <!-- Solo se reemplaza el bloque para personalizar etiquetas   -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//div[@class='row'][div[@name='payment_method']]" position="replace">
+                <div class="row">
+
+                    <!-- Columna del contacto -->
+                    <div class="col-6">
+                        <strong>
+                            <span t-if="o.partner_type == 'customer'">Cliente:</span>
+                            <span t-elif="o.partner_type == 'supplier'">Proveedor:</span>
+                            <span t-else="">Contacto:</span>
+                        </strong><br/>
+                        <span t-field="o.partner_id.name"/>
+
+                        <!-- NIT/CI si existe -->
+                        <p t-if="o.partner_id.vat" class="mb-0 mt-1">
+                            <strong>NIT/CI:</strong> <span t-field="o.partner_id.vat"/>
+                        </p>
+                    </div>
+
+                    <!-- Método de pago nativo -->
+                    <div name="payment_method" 
+                         t-if="values['display_payment_method'] and o.payment_method_id" 
+                         class="col-6">
+                        <strong>Método de Pago:</strong><br/>
+                        <span t-field="o.payment_method_id.name"/>
+                    </div>
+
+                </div>
+            </xpath>
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 4: FIRMAS                                         -->
+            <!-- HU-CP-01: Deben aparecer 3 líneas de firma                -->
+            <!-- 1. Firma Cliente/Proveedor                                -->
+            <!-- 2. Firma Usuario/Cajero                                   -->
+            <!-- 3. Firma "Recibido por" (cuando otro agente recibe pago)  -->
+            <!-- Sin afectar asiento contable ni totales de Odoo           -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//div[@class='oe_structure'][last()]" position="after">
+
+                <div class="signatures mt-5 pt-4"
+                     style="border-top: 2px solid #dee2e6; page-break-inside: avoid;">
+
+                    <div class="row d-flex justify-content-between">
+
+                        <!-- 1. Firma Cliente o Proveedor -->
+                        <div t-if="o.partner_type in ['customer', 'supplier']" class="col-4">
+                            <!-- Línea para firma -->
+                            <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
+
+                            <p class="mt-2 mb-1">
+                                <strong>
+                                    <span t-if="o.partner_type == 'customer'">Firma del Cliente</span>
+                                    <span t-elif="o.partner_type == 'supplier'">Firma del Proveedor</span>
+                                    <span t-else="">Firma del Contacto</span>
+                                </strong>
+                            </p>
+
+                            <!-- Datos informativos -->
+                            <p class="mb-0" style="font-size: 9pt;">Nombre: 
+                                <span t-field="o.partner_id.name"/>
+                            </p>
+
+                            <p class="mb-0" style="font-size: 9pt;">CI/NIT: 
+                                <span t-field="o.partner_id.vat"/>
+                            </p>
+                        </div>
+
+                        <!-- 2. Firma Usuario -->
+                        <div class="col-4">
+                            <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
+
+                            <p class="mt-2 mb-1"><strong>Firma Usuario (Cajero)</strong></p>
+
+                            <p class="mb-0" style="font-size: 9pt;">
+                                Nombre: <span t-field="o.create_uid.name"/>
+                            </p>
+
+                            <p class="mb-0" style="font-size: 9pt;">
+                                Cargo:
+                                <span t-field="o.create_uid.function" t-if="o.create_uid.function"/>
+                                <span t-else="">_________________</span>
+                            </p>
+                        </div>
+
+                        <!-- 3. Firma de quien recibe (manual) -->
+                        <div class="col-4">
+                            <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
+
+                            <p class="mt-2 mb-1">
+                                <strong>Recibido por (Nombre y CI)</strong>
+                            </p>
+
+                            <!-- Campos manuales para llenado -->
+                            <p class="mb-0" style="font-size: 9pt;">Nombre: _______________________</p>
+                            <p class="mb-0" style="font-size: 9pt;">CI: _________________</p>
+                        </div>
+
+                    </div>
+
+                    <!-- ========================================================= -->
+                    <!-- SECCIÓN 5: OBSERVACIONES                                 -->
+                    <!-- Área opcional para notas internas                        -->
+                    <!-- ========================================================= -->
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <p class="mb-2"><strong>Observaciones:</strong></p>
+
+                            <div style="min-height: 50px; border: 1px solid #dee2e6; 
+                                        padding: 10px; background-color: #f8f9fa;">
+                                <!-- Si tiene referencia -->
+                                <span t-if="o.ref" t-field="o.ref"/>
+
+                                <!-- Si no tiene -->
+                                <span t-else="" style="color: #999;">Sin observaciones adicionales</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
