@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- Menús -->
+    <!-- Nombre que aparecera al activar el modulo-->
+    <menuitem id="menu_hospital_paciente_root" 
+              name="Hospital Paciente" 
+              sequence="10"/>
+
+    <menuitem id="menu_escritorio"
+              name="Escritorio"
+              parent="menu_hospital_paciente_root"
+              sequence="5"/>
+      
+    <menuitem id="menu_pacientes" name="Pacientes"
+            parent="menu_escritorio"
+            action="action_hospital3_window"
+            sequence="10"/>
+
+    <menuitem id="menu_pacientes_sololectura" 
+            name="Solo Lectura"
+            parent="menu_escritorio"
+            action="action_hospital3_sololectura_window"
+            sequence="5"/>
+
+  </data>
+</odoo>

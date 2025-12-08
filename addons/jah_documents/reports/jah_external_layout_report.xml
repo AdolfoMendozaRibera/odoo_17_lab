@@ -30,6 +30,7 @@
                                 Teléfono: <t t-esc="company.phone or '-'"/>
                             </p>
                         </div>
+    
                     </div>
                 </div>
             </div>

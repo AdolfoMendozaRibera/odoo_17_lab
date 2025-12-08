@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_jah_common_header" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
+            <!-- NUEVO HEADER CORPORATIVO JAH - SIN ESTILOS INLINE -->
+            <div class="header o_company_layout jah-header" 
+                 t-attf-class="header o_company_#{company.id or '1'}_layout jah-header"
+                 t-att-style="report_header_style">
+                
+                <t t-set="company" t-value="o.company_id or doc.company_id or company"/>
+                
+                <div class="jah-header-flex">
+                    <!-- LOGO -->
+                    <div class="jah-header-logo">
+                        <img t-if="company.logo" 
+                             t-att-src="image_data_uri(company.logo)" 
+                             alt="Logo" 
+                             class="jah-logo-img"/>
+                        <div t-if="not company.logo" class="jah-no-logo">
+                            [LOGO]
+                        </div>
+                    </div>
+                    
+                    <!-- DATOS EMPRESA -->
+                    <div class="jah-header-company">
+                        <div class="jah-company-name">
+                            <t t-esc="company.name or 'JAH'"/>
+                        </div>
+                        
+                        <t t-if="company.street or company.street2">
+                            <div class="jah-company-address">
+                                <t t-esc="company.street or ''"/>
+                                <t t-if="company.street2">, <t t-esc="company.street2"/></t>
+                                <t t-if="company.city">, <t t-esc="company.city"/></t>
+                                <t t-if="company.state_id">, <t t-esc="company.state_id.name"/></t>
+                            </div>
+                        </t>
+                        
+                        <div class="jah-company-nit">
+                            <span t-if="company.vat">NIT: <t t-esc="company.vat"/></span>
+                            <span t-if="not company.vat">NIT: No registrado</span>
+                        </div>
+                        
+                        <div class="jah-company-phone">
+                            Teléfono: <t t-esc="company.phone or 'No registrado'"/>
+                        </div>
+
+                        <div class="jah-company-date">
+                            Fecha: <t t-esc="o.date or o.date_order or o.invoice_date or o.scheduled_date"/>
+                        </div>
+                        
+                        <div class="jah-company-branch">
+                            Casa Matriz
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

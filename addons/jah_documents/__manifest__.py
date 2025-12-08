@@ -21,17 +21,16 @@
     'website': 'https://jah.com',
     'depends': [
         'base',
+        'web',
         'account',
         'sale',
         'sale_management',
-        'web',
     ],
     'data': [
-        #'reports/report_jah_external_layout.xml',
-        #'reports/report_jah_common_header.xml',
-        'reports/report_jah_external_layout.xml',
-        'reports/report_jah_saleorder_document.xml',
-        'reports/report_jah_account_document.xml',
+        'reports/jah_common_header_report.xml',
+        'reports/jah_common_footer_report.xml',
+        'reports/jah_saleorder_document_report.xml',
+        'reports/jah_account_document_report.xml',
         #'reports/report_jah_stock_document.xml',
     ],
    
@@ -41,11 +40,12 @@
     #    ],
     
     
-    #'assets': {
-    #    'web.report_assets_common': [
-    #        'jah_sale_documents/static/src/css/jah_reports.css',
-    #    ],
-    #},
+    'assets': {
+        'web.report_assets_common': [
+            'jah_documents/static/src/scss/jah_header_style.scss',
+            'jah_documents/static/src/scss/jah_footer_style.scss',
+        ],
+    },
     
     
     

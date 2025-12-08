@@ -1,0 +1,47 @@
+/* ======================================================= */
+/* ESTILOS GENERALES PARA DOCUMENTOS JAH                  */
+/* ======================================================= */
+
+/* Eliminar línea roja de Odoo */
+.o_report_layout_standard {
+    border: none !important;
+}
+
+.o_report_layout_standard .header,
+.o_report_layout_standard .footer {
+    border: none !important;
+}
+
+/* Información del cliente homogénea */
+#informations {
+    padding: 5mm 10mm;
+}
+
+#informations .col-auto {
+    margin-bottom: 3mm;
+}
+
+#informations strong {
+    display: block;
+    font-size: 10pt;
+    color: #000;
+    margin-bottom: 1mm;
+}
+
+#informations span {
+    display: block;
+    font-size: 10pt;
+    color: #333;
+}
+
+/* Estilos para impresión */
+@media print {
+    @page {
+        margin-top: 3.5cm;  /* Header 3cm + margen */
+        margin-bottom: 2cm; /* Footer */
+    }
+    
+    body {
+        margin: 0;
+    }
+}

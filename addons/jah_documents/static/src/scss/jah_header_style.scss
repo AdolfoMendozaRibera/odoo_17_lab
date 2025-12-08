@@ -1,0 +1,101 @@
+// ===================================
+// HEADER CORPORATIVO JAH
+// ===================================
+
+.jah-header {
+    height: 3cm;
+    padding: 10px 15px;
+    border-bottom: 2px solid #2c3e50;
+    background-color: #ffffff;
+    
+    .jah-header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+    }
+    
+    // ===================================
+    // SECCIÓN LOGO
+    // ===================================
+    .jah-header-logo {
+        flex: 0 0 auto;
+        max-width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .jah-logo-img {
+            max-height: 2.5cm;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .jah-no-logo {
+            width: 120px;
+            height: 80px;
+            border: 2px dashed #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999999;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    
+    // ===================================
+    // SECCIÓN DATOS EMPRESA
+    // ===================================
+    .jah-header-company {
+        flex: 1;
+        text-align: right;
+        line-height: 1.4;
+        
+        .jah-company-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        
+        .jah-company-address {
+            font-size: 11px;
+            color: #555555;
+            margin-bottom: 4px;
+        }
+        
+        .jah-company-nit {
+            font-size: 11px;
+            color: #555555;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+        
+        .jah-company-phone {
+            font-size: 11px;
+            color: #555555;
+            margin-bottom: 4px;
+        }
+        
+        .jah-company-branch {
+            font-size: 10px;
+            color: #777777;
+            font-style: italic;
+            margin-top: 4px;
+        }
+    }
+}
+
+// ===================================
+// RESPONSIVE (opcional)
+// ===================================
+@media print {
+    .jah-header {
+        page-break-inside: avoid;
+    }
+}

@@ -86,7 +86,10 @@
                         </h1>
                     </div>
                     
+
                     <!-- Agrupación de campos -->
+                    <p>Recuerda revisar las fechas antes de guardar la tarea.</p>
+                    <field name="dias_restantes" readonly="1"/>
                     <group>
                         <group string="Información General">
                             <field name="fecha_limite"/>

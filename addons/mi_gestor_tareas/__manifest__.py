@@ -34,10 +34,16 @@
         'security/ir.model.access.csv',  # Permisos de acceso
         'views/tarea_views.xml',         # Vistas (formularios, listas, etc)
         'reports/tarea_report.xml',
-        'reports/tarea_report_heredado.xml',
+        #'reports/tarea_report_heredado.xml',
         #'views/tarea_solo_lectura.xml', # Vistas solo lectura
         
     ],
+    
+    'assets': {
+        'web.report_assets_common': [
+            'mi_gestor_tareas/static/src/css/report_tarea.css',
+        ],
+    },
     
     # Si es True, el módulo se instala automáticamente
     'installable': True,

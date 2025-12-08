@@ -63,7 +63,7 @@
             </xpath>
 
             <!-- Columna: Unidad (después de cantidad) -->
-            <xpath expr="//th[@name='th_quantity']" position="after">
+            <xpath expr="//th[@name='th_code']" position="after">
                 <th name="th_unit" class="text-center" style="width: 8%;">
                     Unidad
                 </th>
@@ -98,7 +98,7 @@
             </xpath>
 
             <!-- Unidad del producto -->
-            <xpath expr="//td[@name='td_quantity']" position="after">
+            <xpath expr="//td[@name='td_code']" position="after">
                 <td name="td_unit" class="text-center">
                     <span t-field="line.product_uom"/>
                 </td>
@@ -189,6 +189,8 @@
                 </t>
 
             </xpath>
+
+
 
         </template>
     </data>

@@ -1,0 +1,245 @@
+
+
+
+/* Footer corporativo JAH */
+
+
+
+
+
+
+/*--------------------------------------------- */
+/*--------------------------------------------- */
+/*--------------------------------------------- */
+/*--------------------------------------------- */
+/*--------------------------------------------- */
+/* ========================================================= */
+/*  ESTILOS PERSONALIZADOS PARA REPORTES JAH                */
+/*  Módulo: jah_sale_report                                 */
+/*  Odoo 17                                                  */
+/* ========================================================= */
+
+/* ========================================================= */
+/* SECCIÓN 1: AJUSTE DE INFORMACIÓN DE EMPRESA EN HEADER    */
+/* - Alinea la dirección de la empresa a la izquierda       */
+/* - Solo afecta al reporte personalizado                   */
+/* ========================================================= */
+
+.o_report_layout_standard {
+    
+    /* Contenedor principal de dirección de empresa */
+    .header {
+        div[name="company_address"] {
+            /* Eliminar padding/margin que centra el contenido */
+            padding-left: 0 !important;
+            text-align: left !important;
+            
+            ul[name="company_address_list"] {
+                /* Asegurar alineación a la izquierda */
+                text-align: left !important;
+                padding-left: 0 !important;
+                margin-left: 0 !important;
+                
+                li {
+                    text-align: left !important;
+                    
+                    /* Estilos para el span de dirección */
+                    span {
+                        display: block;
+                        text-align: left !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ========================================================= */
+/* SECCIÓN 2: MEJORAS VISUALES PARA INFORMACIÓN DEL CLIENTE */
+/* - Asegura que los campos se vean bien organizados        */
+/* ========================================================= */
+
+#informations {
+    /* Asegurar espacio consistente entre campos */
+    .col-auto {
+        padding-right: 15px;
+        
+        strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #000;
+            font-size: 12pt;
+        }
+        
+        span {
+            display: block;
+            color: #333;
+            font-size: 12pt;
+        }
+    }
+}
+
+/* ========================================================= */
+/* SECCIÓN 3: AJUSTES PARA LA TABLA DE PRODUCTOS            */
+/* - Mejora la legibilidad de las columnas agregadas        */
+/* - Agrega bordes para mejor visualización                 */
+/* ========================================================= */
+
+.o_main_table {
+    /* Eliminar la clase table-borderless y agregar bordes */
+    border-collapse: collapse !important;
+    border: 1px solid #dee2e6 !important;
+    
+    /* Encabezado de la tabla */
+    thead {
+        background-color: #f8f9fa;
+        
+        th {
+            border: 1px solid #dee2e6 !important;
+            padding: 10px 8px !important;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+    
+    /* Cuerpo de la tabla */
+    tbody {
+        tr {
+            border-bottom: 1px solid #dee2e6;
+            
+            td {
+                border: 1px solid #dee2e6 !important;
+                padding: 8px !important;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    /* Columna de código de producto */
+    th[name="th_code"],
+    td[name="td_code"] {
+        font-size: 9pt;
+        vertical-align: middle;
+    }
+    
+    /* Columna de unidad */
+    th[name="th_unit"],
+    td[name="td_unit"] {
+        font-size: 9pt;
+        vertical-align: middle;
+    }
+    
+    /* Asegurar que las columnas numéricas estén bien alineadas */
+    .text-end {
+        text-align: right !important;
+    }
+    
+    .text-center {
+        text-align: center !important;
+    }
+    
+    /* Mejorar legibilidad de líneas de sección y notas */
+    .o_line_section {
+        background-color: #f8f9fa !important;
+        font-weight: bold;
+        
+        td {
+            border-left: 3px solid #007bff !important;
+        }
+    }
+    
+    .o_line_note {
+        font-style: italic;
+        color: #666;
+        background-color: #fffef7;
+    }
+    
+    /* Fila de subtotal de sección */
+    .is-subtotal {
+        background-color: #f1f3f5;
+        font-weight: bold;
+        
+        td {
+            border-top: 2px solid #adb5bd !important;
+        }
+    }
+}
+
+/* ========================================================= */
+/* SECCIÓN 4: ESTILOS PARA BLOQUE DE FIRMA                  */
+/* - Firma centrada y profesional                           */
+/* ========================================================= */
+
+/* Contenedor de firma para órdenes confirmadas */
+.row.mt-5 {
+    padding-top: 50px;
+    /* Centrar la firma */
+    .col-6.offset-6 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        max-width: 400px;
+    }
+    
+    div[style*="border-top: 2px solid black"] {
+        text-align: center;
+        
+        p {
+            line-height: 1.6;
+            margin: 5px 0;
+            
+            strong {
+                display: inline-block;
+                min-width: 80px;
+            }
+        }
+    }
+}
+
+/* ========================================================= */
+/* SECCIÓN 5: AJUSTES RESPONSIVE (OPCIONAL)                 */
+/* - Mejora la visualización en diferentes tamaños          */
+/* ========================================================= */
+
+@media print {
+    /* Asegurar que todo se imprima correctamente */
+    .o_report_layout_standard {
+        .header div[name="company_address"] {
+            text-align: left !important;
+        }
+    }
+    
+    /* Evitar quiebres de página indeseados */
+    #informations,
+    .o_main_table thead {
+        page-break-inside: avoid;
+    }
+}
+
+/* ========================================================= */
+/* SECCIÓN 6: FINE-TUNING (AJUSTES FINOS)                   */
+/* ========================================================= */
+
+/* Asegurar que el encabezado no tenga márgenes extraños */
+.o_company_1_layout .header {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Mejorar espaciado general del documento */
+.page {
+    padding: 0 15px;
+}
+
+/* Ajustar tabla de totales */
+#total {
+    margin-top: 20px;
+    
+    .table {
+        td, th {
+            padding: 5px 0;
+        }
+    }
+}

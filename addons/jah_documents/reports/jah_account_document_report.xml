@@ -107,7 +107,7 @@
             <xpath expr="//div[@class='oe_structure'][last()]" position="after">
 
                 <div class="signatures mt-5 pt-4"
-                     style="border-top: 2px solid #dee2e6; page-break-inside: avoid;">
+                     style="border-top: 15px solid #ffffffff; page-break-inside: avoid;">
 
                     <div class="row d-flex justify-content-between">
 
