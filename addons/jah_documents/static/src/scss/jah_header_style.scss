@@ -3,11 +3,12 @@
 // ===================================
 
 .jah-header {
-    height: 3cm;
-    padding: 10px 15px;
+    height: 3cm; // altura fija
+    padding: 8px 15px;
     border-bottom: 2px solid #2c3e50;
     background-color: #ffffff;
-    
+    box-sizing: border-box;
+
     .jah-header-flex {
         display: flex;
         align-items: center;
@@ -15,25 +16,22 @@
         height: 100%;
         gap: 20px;
     }
-    
+
     // ===================================
     // SECCIÓN LOGO
     // ===================================
     .jah-header-logo {
-        flex: 0 0 auto;
-        max-width: 180px;
+        flex: 0 0 25%; // ocupa un cuarto del ancho
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         .jah-logo-img {
             max-height: 2.5cm;
             max-width: 100%;
-            height: auto;
-            width: auto;
             object-fit: contain;
         }
-        
+
         .jah-no-logo {
             width: 120px;
             height: 80px;
@@ -46,15 +44,15 @@
             font-weight: bold;
         }
     }
-    
+
     // ===================================
-    // SECCIÓN DATOS EMPRESA
+    // SECCIÓN DATOS EMPRESA + CLIENTE
     // ===================================
     .jah-header-company {
         flex: 1;
         text-align: right;
         line-height: 1.4;
-        
+
         .jah-company-name {
             font-size: 16px;
             font-weight: bold;
@@ -62,37 +60,52 @@
             margin-bottom: 6px;
             text-transform: uppercase;
         }
-        
-        .jah-company-address {
+
+        .jah-company-address,
+        .jah-client-address {
             font-size: 11px;
             color: #555555;
             margin-bottom: 4px;
         }
-        
+
         .jah-company-nit {
             font-size: 11px;
             color: #555555;
             margin-bottom: 3px;
             font-weight: 600;
         }
-        
+
         .jah-company-phone {
             font-size: 11px;
             color: #555555;
             margin-bottom: 4px;
         }
-        
+
         .jah-company-branch {
             font-size: 10px;
             color: #777777;
             font-style: italic;
             margin-top: 4px;
         }
+
+        .jah-client-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 8px;
+        }
+
+        .jah-company-date,
+        .jah-company-client-id {
+            font-size: 11px;
+            color: #444444;
+            margin-top: 3px;
+        }
     }
 }
 
 // ===================================
-// RESPONSIVE (opcional)
+// RESPONSIVE / PRINT
 // ===================================
 @media print {
     .jah-header {

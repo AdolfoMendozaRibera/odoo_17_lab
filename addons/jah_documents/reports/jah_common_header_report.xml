@@ -23,10 +23,18 @@
                     
                     <!-- DATOS EMPRESA -->
                     <div class="jah-header-company">
+
+                        <!-- Razón social -->
                         <div class="jah-company-name">
                             <t t-esc="company.name or 'JAH'"/>
                         </div>
+
+                        <!-- Casa Matriz -->
+                        <div class="jah-company-branch">
+                            <t t-esc="company.partner_id.name or 'Casa Matriz'"/>
+                        </div>
                         
+                        <!-- Dirección -->
                         <t t-if="company.street or company.street2">
                             <div class="jah-company-address">
                                 <t t-esc="company.street or ''"/>
@@ -35,22 +43,63 @@
                                 <t t-if="company.state_id">, <t t-esc="company.state_id.name"/></t>
                             </div>
                         </t>
-                        
-                        <div class="jah-company-nit">
-                            <span t-if="company.vat">NIT: <t t-esc="company.vat"/></span>
-                            <span t-if="not company.vat">NIT: No registrado</span>
-                        </div>
-                        
+
+                        <!-- Teléfono -->
                         <div class="jah-company-phone">
                             Teléfono: <t t-esc="company.phone or 'No registrado'"/>
                         </div>
 
-                        <div class="jah-company-date">
-                            Fecha: <t t-esc="o.date or o.date_order or o.invoice_date or o.scheduled_date"/>
+
+
+                        <!-- ########################3-->
+                        <!-- Cliente -->
+                        <!-- ########################3-->
+                        
+                        <!-- Razon Social  -->
+                        <div class="jah-client-name">
+                            Cliente: <t t-esc="o.partner_id.name or 'No registrado'"/>
+                        </div>
+
+                        <!-- NIT Cliente -->
+                        <div class="jah-company-nit">
+                            <span t-if="o.partner_id.vat">NIT: <t t-esc="o.partner_id.vat"/></span>
+                            <span t-if="not o.partner_id.vat">NIT: No registrado</span>
+                        </div>
+
+                        <div class="jah-client-address">
+                            <t t-esc="o.partner_id.street or ''"/>
+                            <t t-if="o.partner_id.street2">, <t t-esc="o.partner_id.street2"/></t>
+                            <t t-if="o.partner_id.city">, <t t-esc="o.partner_id.city"/></t>
+                            <t t-if="o.partner_id.state_id">, <t t-esc="o.partner_id.state_id.name"/></t>
                         </div>
                         
-                        <div class="jah-company-branch">
-                            Casa Matriz
+                        <!-- Fecha de creacion -->
+                        <div class="jah-company-date">
+                            <t t-if="o._name == 'sale.order' and o.date_order">
+                                Fecha de Orden: <span t-field="o.date_order"/>
+                            </t>
+                            <t t-elif="o._name == 'account.move' and o.invoice_date">
+                                Fecha de Factura: <span t-field="o.invoice_date"/>
+                            </t>
+                            <t t-elif="o._name == 'stock.picking' and o.scheduled_date">
+                                Fecha de Entrega: <span t-field="o.scheduled_date"/>
+                            </t>
+                            <t t-elif="o._name == 'account.payment' and o.date">
+                                Fecha de Pago: <span t-field="o.date"/>
+                            </t>
+                            <t t-else="">
+                                Fecha: No hay fecha o no se encontró
+                            </t>
+                        </div>
+
+                        <!-- Código Cliente -->
+                        <div class="jah-company-client-id">
+                            <t t-if="o.partner_id.ref">
+                                Código Cliente: <t t-esc="o.partner_id.ref"/>
+                            </t>
+                            <t t-else="">
+                                Código Cliente: <t t-esc="o.partner_id.id"/>
+                            </t>
                         </div>
                     </div>
                 </div>
