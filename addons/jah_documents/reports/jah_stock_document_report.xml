@@ -1,289 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="report_jah_stock_document"
-                  inherit_id="stock.report_delivery_document">
 
-            <!-- ========================= -->
-            <!-- 1. ENCABEZADO UNIFICADO -->
-            <!-- ========================= -->
-            <xpath expr="//div[@class='page']/h2" position="replace">
-                <div class="row mb-3">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-1">
-                            <span t-if="o.picking_type_id.code == 'outgoing'">NOTA DE ENTREGA</span>
-                            <span t-elif="o.picking_type_id.code == 'incoming'">RECEPCIÓN DE MATERIALES</span>
-                            <span t-else="">TRANSFERENCIA INTERNA</span>
-                        </h2>
-                        <h4><span t-field="o.name"/></h4>
-                    </div>
-                </div>
+        <!-- ========================================================= -->
+        <!--   TEMPLATE HEREDADO DEL REPORTE ORIGINAL DE DELIVERY     -->
+        <!-- ========================================================= -->
+
+        <template id="report_jah_delivery_document" inherit_id="stock.report_delivery_document">
+
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 2: TABLA SIMPLIFICADA PARA ESTADO != 'done'       -->
+            <!-- - Agregar columnas: Código, Descripción, Unidad,         -->
+            <!--   Ordenado, Entregado (sin precios)                      -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//table[@name='stock_move_table']//thead" position="replace">
+                <thead>
+                    <tr>
+                        <th name="th_code" class="text-start" style="width: 12%;">
+                            <strong>Código</strong>
+                        </th>
+                        <th name="th_product" class="text-start" style="width: 45%;">
+                            <strong>Descripción</strong>
+                        </th>
+                        <th name="th_unit" class="text-center" style="width: 10%;">
+                            <strong>Unidad</strong>
+                        </th>
+                        <th name="th_ordered" class="text-center" style="width: 12%;">
+                            <strong>Ordenado</strong>
+                        </th>
+                        <th name="th_delivered" class="text-center" style="width: 12%;">
+                            <strong>Entregado</strong>
+                        </th>
+                    </tr>
+                </thead>
             </xpath>
 
-            <!-- ========================= -->
-            <!-- 2. ESTRUCTURA CLIENTE/PROVEEDOR ESTANDARIZADA -->
-            <!-- ========================= -->
-            <xpath expr="//div[@class='report-wrapping-flexbox clearfix row mt32 mb32']" position="replace">
-                <div class="row mb-4">
-                    <!-- DATOS DEL CLIENTE/PROVEEDOR -->
-                    <div class="col-6" t-if="partner">
-                        <div style="border: 1px solid #dee2e6; padding: 10px; background-color: #f8f9fa;">
-                            <h5 class="mb-3">
-                                <span t-if="o.picking_type_id.code == 'outgoing'">DATOS DEL CLIENTE</span>
-                                <span t-elif="o.picking_type_id.code == 'incoming'">DATOS DEL PROVEEDOR</span>
-                                <span t-else="">DATOS DEL DESTINATARIO</span>
-                            </h5>
-
-                            <p class="mb-1"><strong>Nombre / Razón Social:</strong></p>
-                            <p class="mb-2" t-field="partner.name"/>
-
-                            <p class="mb-1" t-if="partner.vat"><strong>NIT:</strong></p>
-                            <p class="mb-2" t-if="partner.vat" t-field="partner.vat"/>
-
-                            <p class="mb-1"><strong>Dirección:</strong></p>
-                            <p class="mb-2">
-                                <span t-field="partner.street"/>
-                                <t t-if="partner.street2">
-                                    <br/><span t-field="partner.street2"/>
-                                </t>
-                                <t t-if="partner.city">
-                                    <br/><span t-field="partner.city"/>
-                                </t>
-                                <t t-if="partner.state_id">
-                                    , <span t-field="partner.state_id.name"/>
-                                </t>
-                                <t t-if="partner.country_id">
-                                    - <span t-field="partner.country_id.name"/>
-                                </t>
-                            </p>
-
-                            <p class="mb-1" t-if="partner.ref"><strong>Código Cliente:</strong></p>
-                            <p class="mb-0" t-if="partner.ref" t-field="partner.ref"/>
-                        </div>
-                    </div>
-
-                    <!-- INFORMACIÓN DE LA OPERACIÓN -->
-                    <div t-att-class="'col-6' if partner else 'col-12'">
-                        <div style="border: 1px solid #dee2e6; padding: 10px; background-color: #f8f9fa;">
-                            <h5 class="mb-3">INFORMACIÓN DE LA OPERACIÓN</h5>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="mb-1"><strong>Referencia:</strong></p>
-                                    <p class="mb-3" t-field="o.name"/>
-
-                                    <p class="mb-1" t-if="o.origin"><strong>Orden de Origen:</strong></p>
-                                    <p class="mb-3" t-if="o.origin" t-field="o.origin"/>
-                                </div>
-
-                                <div class="col-6">
-                                    <p class="mb-1"><strong>Fecha:</strong></p>
-                                    <p class="mb-3">
-                                        <span t-if="o.state == 'done'" t-field="o.date_done" t-options='{"widget": "date"}'/>
-                                        <span t-else="" t-field="o.scheduled_date" t-options='{"widget": "date"}'/>
-                                    </p>
-
-                                    <p class="mb-1"><strong>Estado:</strong></p>
-                                    <p class="mb-0">
-                                        <span t-if="o.state == 'done'" class="badge badge-success">Completado</span>
-                                        <span t-elif="o.state == 'cancel'" class="badge badge-danger">Cancelado</span>
-                                        <span t-else="" class="badge badge-warning">Pendiente</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </xpath>
-
-            <!-- ========================= -->
-            <!-- 3. TABLA PARA TRANSFERENCIAS NO COMPLETADAS -->
-            <!-- ========================= -->
-            <xpath expr="//table[@name='stock_move_table']" position="replace">
-                <table class="table table-sm table-bordered" t-if="o.state != 'done'" name="stock_move_table">
-                    <thead style="background-color: #343a40; color: white;">
-                        <tr>
-                            <th style="width: 12%;">Código</th>
-                            <th style="width: 40%;">Descripción</th>
-                            <th style="width: 12%; text-align:center;">Unidad</th>
-                            <th style="width: 12%; text-align:center;">Ordenado</th>
-                            <th style="width: 12%; text-align:center;">Entregado</th>
-                            <th style="width: 12%; text-align:center;">Diferencia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <t t-set="lines" t-value="o.move_ids.filtered(lambda x: x.product_uom_qty)"/>
-                        <tr t-foreach="lines" t-as="move">
-                            <!-- CÓDIGO -->
-                            <td>
-                                <span t-field="move.product_id.default_code"/>
-                            </td>
-
-                            <!-- DESCRIPCIÓN -->
-                            <td>
-                                <strong><span t-field="move.product_id.name"/></strong>
-                                <p t-if="move.description_picking and move.description_picking != move.product_id.name and move.description_picking != move.product_id.display_name"
-                                   class="mb-0 text-muted small">
-                                    <em><span t-field="move.description_picking"/></em>
-                                </p>
-                            </td>
-
-                            <!-- UNIDAD -->
-                            <td style="text-align:center;">
-                                <span t-field="move.product_uom"/>
-                            </td>
-
-                            <!-- ORDENADO -->
-                            <td style="text-align:center;">
-                                <span t-field="move.product_uom_qty" t-options='{"widget": "float", "precision": 2}'/>
-                            </td>
-
-                            <!-- ENTREGADO -->
-                            <td style="text-align:center; font-weight:bold;">
-                                <span t-field="move.quantity" t-options='{"widget": "float", "precision": 2}'/>
-                            </td>
-
-                            <!-- DIFERENCIA -->
-                            <td style="text-align:center;">
-                                <t t-set="diff" t-value="move.quantity - move.product_uom_qty"/>
-                                <span t-esc="'%.2f' % diff" t-att-style="'color: %s;' % ('red' if diff &lt; 0 else 'green' if diff &gt; 0 else 'black')"/>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </xpath>
-
-            <!-- ========================= -->
-            <!-- 4. TABLA PARA TRANSFERENCIAS COMPLETADAS -->
-            <!-- ========================= -->
-            <xpath expr="//table[@name='stock_move_line_table']" position="replace">
-                <table class="table table-sm table-bordered" 
-                       t-if="o.move_line_ids and o.state == 'done'" 
-                       name="stock_move_line_table">
-                    <thead style="background-color: #343a40; color: white;">
-                        <tr>
-                            <th style="width: 12%;">Código</th>
-                            <th style="width: 40%;">Descripción</th>
-                            <th style="width: 12%; text-align:center;">Unidad</th>
-                            <th style="width: 12%; text-align:center;">Ordenado</th>
-                            <th style="width: 12%; text-align:center;">Entregado</th>
-                            <th style="width: 12%; text-align:center;">Diferencia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <t t-set="aggregated_lines" t-value="o.move_line_ids._get_aggregated_product_quantities()"/>
-
-                        <tr t-foreach="aggregated_lines" t-as="line_key">
-                            <t t-set="line_data" t-value="aggregated_lines[line_key]"/>
-                            <t t-set="product" t-value="line_key[0] if hasattr(line_key[0], 'default_code') else False"/>
-                            
-                            <!-- CÓDIGO -->
-                            <td>
-                                <t t-if="product">
-                                    <span t-esc="product.default_code"/>
-                                </t>
-                                <t t-else="">
-                                    <span>-</span>
-                                </t>
-                            </td>
-
-                            <!-- DESCRIPCIÓN -->
-                            <td>
-                                <strong><span t-esc="line_data['name']"/></strong>
-                                <p t-if="line_data.get('description')" class="mb-0 text-muted small">
-                                    <em><span t-esc="line_data['description']"/></em>
-                                </p>
-                            </td>
-
-                            <!-- UNIDAD -->
-                            <td style="text-align:center;">
-                                <span t-esc="line_data['product_uom'].name"/>
-                            </td>
-
-                            <!-- ORDENADO -->
-                            <td style="text-align:center;">
-                                <span t-esc="'%.2f' % line_data['qty_ordered']"/>
-                            </td>
-
-                            <!-- ENTREGADO -->
-                            <td style="text-align:center; font-weight:bold;">
-                                <span t-esc="'%.2f' % line_data['quantity']"/>
-                            </td>
-
-                            <!-- DIFERENCIA -->
-                            <td style="text-align:center;">
-                                <t t-set="diff" t-value="line_data['quantity'] - line_data['qty_ordered']"/>
-                                <span t-esc="'%.2f' % diff" t-att-style="'color: %s;' % ('red' if diff &lt; 0 else 'green' if diff &gt; 0 else 'black')"/>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </xpath>
-
-            <!-- ========================= -->
-            <!-- 5. OCULTAR TABLA DE BACKORDERS -->
-            <!-- ========================= -->
-            <xpath expr="//table[@name='stock_backorder_table']" position="replace"/>
-
-            <!-- ========================= -->
-            <!-- 6. REEMPLAZAR SECCIÓN DE FIRMA ORIGINAL -->
-            <!-- ========================= -->
-            <xpath expr="//div[@name='signature']" position="replace"/>
-
-            <!-- ========================= -->
-            <!-- 7. OCULTAR ÚLTIMO div.oe_structure ANTES DE AGREGAR FIRMAS -->
-            <!-- ========================= -->
-            <xpath expr="//div[@class='page']/div[@class='oe_structure'][last()]" position="replace"/>
-
-            <!-- ========================= -->
-            <!-- 8. AGREGAR FIRMAS AL FINAL DEL DOCUMENTO -->
-            <!-- ========================= -->
-            <xpath expr="//div[@class='page']" position="inside">
-                <div class="signatures-section" style="margin-top: 50px; page-break-inside: avoid;">
-                    <hr style="border-top: 2px solid #000; margin-bottom: 30px;"/>
+            <xpath expr="//table[@name='stock_move_table']//tbody//tr" position="replace">
+                <tr t-foreach="lines" t-as="move">
                     
-                    <div class="row">
-                        <!-- FIRMA RESPONSABLE DE ENTREGA -->
-                        <div class="col-6 text-center">
-                            <div style="margin-bottom: 80px;"></div>
-                            <div style="border-top: 2px solid #000; width: 80%; margin: 0 auto;"></div>
-                            <p class="mt-2 mb-1" style="font-weight: bold;">
-                                <span t-if="o.picking_type_id.code == 'outgoing'">RESPONSABLE DE ENTREGA</span>
-                                <span t-elif="o.picking_type_id.code == 'incoming'">RESPONSABLE DE RECEPCIÓN</span>
-                                <span t-else="">RESPONSABLE</span>
-                            </p>
-                            <p class="mb-0 small">Nombre: _________________________________</p>
-                            <p class="mb-0 small">Cargo: __________________________________</p>
-                            <p class="mb-0 small">CI: ______________________________________</p>
-                        </div>
+                    <!-- Código del producto -->
+                    <td name="td_code" class="text-start">
+                        <span t-field="move.product_id.default_code"/>
+                    </td>
 
-                        <!-- FIRMA CLIENTE/PROVEEDOR -->
-                        <div class="col-6 text-center">
-                            <div style="margin-bottom: 80px;"></div>
-                            <div style="border-top: 2px solid #000; width: 80%; margin: 0 auto;"></div>
-                            <p class="mt-2 mb-1" style="font-weight: bold;">
-                                <span t-if="o.picking_type_id.code == 'outgoing'">CLIENTE QUE RECIBE</span>
-                                <span t-elif="o.picking_type_id.code == 'incoming'">PROVEEDOR QUE ENTREGA</span>
-                                <span t-else="">RESPONSABLE QUE RECIBE</span>
-                            </p>
-                            <p class="mb-0 small">Nombre: _________________________________</p>
-                            <p class="mb-0 small">Cargo: __________________________________</p>
-                            <p class="mb-0 small">CI/NIT: __________________________________</p>
-                        </div>
-                    </div>
+                    <!-- Descripción del producto -->
+                    <td name="td_description" class="text-start">
+                        <span t-field="move.product_id.display_name"/>
+                        <p t-if="move.description_picking and move.description_picking != move.product_id.name and move.description_picking != move.product_id.display_name" class="text-muted" style="font-size: 9pt; margin: 0;">
+                            <span t-field="move.description_picking"/>
+                        </p>
+                    </td>
 
-                    <!-- OBSERVACIONES -->
-                    <div class="row mt-4" t-if="o.note">
-                        <div class="col-12">
-                            <p class="mb-2"><strong>Observaciones:</strong></p>
-                            <div style="border: 1px solid #dee2e6; padding: 10px; background-color: #f8f9fa; min-height: 60px;">
-                                <span t-field="o.note"/>
+                    <!-- Unidad de medida -->
+                    <td name="td_unit" class="text-center">
+                        <span t-field="move.product_uom"/>
+                    </td>
+
+                    <!-- Cantidad ordenada -->
+                    <td name="td_ordered" class="text-center">
+                        <span t-field="move.product_uom_qty"/>
+                    </td>
+
+                    <!-- Cantidad entregada -->
+                    <td name="td_delivered" class="text-center">
+                        <span t-field="move.quantity"/>
+                    </td>
+
+                </tr>
+            </xpath>
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 3: TABLA PARA ESTADO 'done' (Entregado)          -->
+            <!-- - Modificar encabezado para mantener consistencia        -->
+            <!-- ========================================================= -->
+
+            <xpath expr="//table[@name='stock_move_line_table']//thead" position="replace">
+                <thead>
+                    <tr>
+                        <th name="th_code" class="text-start" style="width: 12%;">
+                            <strong>Código</strong>
+                        </th>
+                        <th name="th_product" class="text-start" style="width: 45%;">
+                            <strong>Descripción</strong>
+                        </th>
+                        <th name="th_unit" class="text-center" style="width: 10%;">
+                            <strong>Unidad</strong>
+                        </th>
+                        <th name="th_ordered" class="text-center" style="width: 12%;">
+                            <strong>Ordenado</strong>
+                        </th>
+                        <th name="th_delivered" class="text-center" style="width: 12%;">
+                            <strong>Entregado</strong>
+                        </th>
+                    </tr>
+                </thead>
+            </xpath>
+
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 4: AGREGAR BLOQUES DE FIRMA                      -->
+            <!-- - Se agregan dos firmas al final del documento           -->
+            <!-- ========================================================= -->
+
+            <!-- Insertar firmas antes del último oe_structure -->
+            <xpath expr="//div[@class='page']//div[t-if='not o.signature']" position="before">
+
+                <!-- Sección de firmas -->
+                <div class="row mt-5" style="page-break-inside: avoid;">
+                    
+                    <!-- Firma: Responsable de Entrega -->
+                    <div class="col-6">
+                        <div style="margin-top: 60px; text-align: center;">
+                            <div style="border-top: 2px solid black; padding-top: 10px; max-width: 300px; margin: 0 auto;">
+                                <p style="margin: 0; font-weight: bold;">
+                                    RESPONSABLE DE ENTREGA
+                                </p>
+                                <p style="margin-top: 5px; font-size: 9pt; color: #666;">
+                                    Nombre y firma
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Firma: Cliente que Recibe -->
+                    <div class="col-6">
+                        <div style="margin-top: 60px; text-align: center;">
+                            <div style="border-top: 2px solid black; padding-top: 10px; max-width: 300px; margin: 0 auto;">
+                                <p style="margin: 0; font-weight: bold;">
+                                    CLIENTE QUE RECIBE
+                                </p>
+                                <p style="margin-top: 5px; font-size: 9pt; color: #666;">
+                                    Nombre y firma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Nota informativa adicional -->
+                <div class="row mt-3 mb-3">
+                    <div class="col-12 text-center">
+                        <p style="font-style: italic; color: #666; font-size: 9pt; margin: 0;">
+                            *Las firmas confirman la entrega y recepción conforme de los productos listados*
+                        </p>
+                    </div>
+                </div>
+
             </xpath>
 
         </template>
+
+        <!-- ========================================================= -->
+        <!-- HERENCIA DEL TEMPLATE DE LÍNEAS AGREGADAS                 -->
+        <!-- - Modificar el template externo por separado             -->
+        <!-- ========================================================= -->
+
+        <template id="jah_stock_report_delivery_aggregated_move_lines" 
+                  inherit_id="stock.stock_report_delivery_aggregated_move_lines">
+
+            <!-- Reemplazar toda la fila para agregar columna de código -->
+            <xpath expr="//tr" position="replace">
+                <tr t-foreach="aggregated_lines" t-as="line">
+                    
+                    <!-- Código del producto (NUEVO) -->
+                    <td name="td_code" class="text-start">
+                        <!-- El método agregado no incluye código por defecto -->
+                        <span t-if="aggregated_lines[line].get('code')" t-esc="aggregated_lines[line]['code']"/>
+                    </td>
+
+                    <!-- Descripción -->
+                    <td name="td_description" class="text-start">
+                        <span t-esc="aggregated_lines[line]['name']"/>
+                        <p t-if="aggregated_lines[line]['description']" class="text-muted" style="font-size: 9pt; margin: 0;">
+                            <span t-esc="aggregated_lines[line]['description']" t-options="{'widget': 'text'}"/>
+                        </p>
+                    </td>
+
+                    <!-- Unidad (NUEVO) -->
+                    <td name="td_unit" class="text-center">
+                        <span t-esc="aggregated_lines[line]['product_uom'].name"/>
+                    </td>
+
+                    <!-- Ordenado (MODIFICADO - sin packaging) -->
+                    <td name="td_ordered" class="text-center">
+                        <span t-esc="aggregated_lines[line]['qty_ordered']"
+                            t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
+                    </td>
+
+                    <!-- Entregado (MODIFICADO - sin packaging) -->
+                    <td name="td_delivered" class="text-center">
+                        <t t-if="aggregated_lines[line]['quantity']">
+                            <span t-esc="aggregated_lines[line]['quantity']"
+                                t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
+                        </t>
+                    </td>
+
+                </tr>
+            </xpath>
+
+        </template>
+
     </data>
 </odoo>

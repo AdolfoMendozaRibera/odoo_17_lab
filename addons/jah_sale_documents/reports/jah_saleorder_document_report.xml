@@ -8,17 +8,46 @@
 
         <template id="report_jah_saleorder_document" inherit_id="sale.report_saleorder_document">
 
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 1: PERSONALIZAR INFORMACIÓN DEL CLIENTE           -->
+            <!-- - Se reemplaza la sección nativa para usar el nuevo       -->
+            <!--   formato corporativo de información del cliente          -->
+            <!-- ========================================================= -->
+
+            
             <xpath expr="//div[@id='informations']" position="replace">
-                <div id="informations" class="row mt-2 mb-4">
-                    <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2">
-                        <strong>Validez hasta:</strong><br/>
-                        <span class="m-0" t-field="doc.validity_date"/>
+                <div id="informations" class="row mt-4 mb-2">
+
+                    <!-- Nombre del cliente -->
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Nombre:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.name"/>
                     </div>
-                    <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
-                        <strong>Vendedor:</strong><br/>
-                        <span class="m-0" t-field="doc.user_id.name"/>
+
+                    <!-- NIT solo si existe -->
+                    <div t-if="doc.partner_id.vat" class="col-auto col-3 mw-100 mb-2">
+                        <strong>NIT:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.vat"/>
                     </div>
+
+                    <!-- Dirección del cliente -->
+                    <div t-if="doc.partner_id.street" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Dirección:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.street"/>
                     </div>
+
+                    <!-- Fecha de la cotización -->
+                    <div class="col-auto col-3 mw-100 mb-2">
+                        <strong>Fecha:</strong><br/>
+                        <span class="m-0" t-field="doc.date_order" t-options='{"widget": "date"}'/>
+                    </div>
+
+                    <!-- Código interno del cliente -->
+                    <div t-if="doc.partner_id.ref" class="col-auto col-3 mw-100 mb-2">
+                        <strong>Código Cliente:</strong><br/>
+                        <span class="m-0" t-field="doc.partner_id.ref"/>
+                    </div>
+                </div>
             </xpath>
 
             <!-- ========================================================= -->
@@ -79,8 +108,7 @@
             <!-- Descuento en la línea (DESACTIVADO TEMPORALMENTE)
             - Mismo motivo que el encabezado
             -->
-            
-            <!-- 
+            <!--
             <xpath expr="//td[@name='td_priceunit']" position="after">
                 <td name="td_discount" class="text-end">
                     <span groups="product.group_discount_per_so_line" t-if="line.discount">
@@ -88,9 +116,7 @@
                     </span>
                 </td>
             </xpath>
-
             -->
-            
 
             <!-- ========================================================= -->
             <!-- SECCIÓN 4: AJUSTE DE COLSPAN PARA LÍNEAS ESPECIALES       -->
@@ -120,23 +146,24 @@
             <xpath expr="//div[contains(@class, 'page')]" position="inside">
 
                 <!-- Sección visible SOLO en órdenes confirmadas -->
-                <div>
-                    <t t-if="doc.state in ['sale', 'done']">
-                        <div class="row" style="page-break-inside: avoid; margin-top: 5cm;">
-                            <div class="col-12 mx-auto" style="max-width: 400px;">
-                    
-                                <div style="border-top: 2px solid black; text-align: center; padding-top: 10px;">
+                <t t-if="doc.state in ['sale', 'done']">
+                    <div class="row mt-5" style="page-break-inside: avoid;">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div style="max-width: 400px; width: 100%;">
+                                <div style="border-top: 2px solid black; margin-top: 60px; text-align: center; padding-top: 10px;">
                                     <p style="margin: 0; font-weight: bold;">
                                         FIRMA DE APROBACIÓN
                                     </p>
+
+                                    <!-- Mensaje aclaratorio -->
                                     <p style="margin-top: 10px; font-size: 9pt; color: #666;">
                                         *Esta firma autoriza la ejecución de la orden de venta*
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </t>
-                </div>
+                    </div>
+                </t>
                 
                 <!-- Sección visible SOLO en cotizaciones -->
                 <t t-if="doc.state in ['draft', 'sent']">
@@ -150,32 +177,6 @@
                 </t>
 
             </xpath>
-
-            <xpath expr="//div[@id='total']" position="replace">
-                <div id="total" class="row" name="total">
-                    <div class="col-4 ms-auto">
-                        <table class="table table-sm table-borderless">
-                            <t t-if="doc.state in ['draft', 'sent']">
-                                <tr class="border-black">
-                                    <td><strong>Subtotal</strong></td>
-                                    <td class="text-end"><span t-field="doc.amount_untaxed"/></td>
-                                </tr>
-                                <tr class="border-black o_total">
-                                    <td><strong>Total</strong></td>
-                                    <td class="text-end"><strong><span t-field="doc.amount_total"/></strong></td>
-                                </tr>
-                            </t>
-
-                            <t t-else="">
-                                <t t-set="tax_totals" t-value="doc.tax_totals"/>
-                                <t t-call="sale.document_tax_totals"/>
-                            </t>
-                        </table>
-                    </div>
-                </div>
-            </xpath>
-
-            
 
         </template>
     </data>

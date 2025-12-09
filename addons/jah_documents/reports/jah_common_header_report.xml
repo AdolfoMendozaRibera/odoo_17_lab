@@ -2,7 +2,8 @@
 <odoo>
     <template id="report_jah_common_header" inherit_id="web.external_layout_standard">
         <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
-            <!-- NUEVO HEADER CORPORATIVO JAH - SIN ESTILOS INLINE -->
+
+
             <div class="header o_company_layout jah-header" 
                  t-attf-class="header o_company_#{company.id or '1'}_layout jah-header"
                  t-att-style="report_header_style">
@@ -21,9 +22,9 @@
                         </div>
                     </div>
                     
+                    
                     <!-- DATOS EMPRESA -->
-                    <div class="jah-header-company">
-
+                    <div class="jah-company-info">
                         <!-- Razón social -->
                         <div class="jah-company-name">
                             <t t-esc="company.name or 'JAH'"/>
@@ -48,13 +49,12 @@
                         <div class="jah-company-phone">
                             Teléfono: <t t-esc="company.phone or 'No registrado'"/>
                         </div>
-
-
+                    </div>
 
                         <!-- ########################3-->
                         <!-- Cliente -->
                         <!-- ########################3-->
-                        
+                    <div class="jah-client-info">
                         <!-- Razon Social  -->
                         <div class="jah-client-name">
                             Cliente: <t t-esc="o.partner_id.name or 'No registrado'"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="report_jah_common_footer" inherit_id="web.external_layout_standard">
-        <!-- Usar el mismo patrón que en el header exitoso -->
         <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="replace">
+            
             <!-- NUEVO FOOTER CORPORATIVO JAH -->
             <div class="footer o_standard_footer jah-footer"
                  t-attf-class="footer o_standard_footer o_company_#{company.id}_layout jah-footer"
@@ -10,8 +10,8 @@
                 
                 <t t-set="company" t-value="o.company_id or company"/>
                 
-                <!-- Condición: no mostrar en comprobantes contables -->
-                <t t-if="doc and doc._name != 'account.move'">
+                <!-- Footer corporativo JAH: se muestra en documentos de ventas y entregas -->
+                <t t-if="o and not (o._name == 'account.payment' or (o._name == 'account.move' and o.move_type == 'entry'))">
                     <div class="text-center jah-footer-container">
                         
                         <!-- Texto personalizado JAH -->
@@ -24,21 +24,21 @@
                             </p>
                         </div>
 
-                        <!-- Mantener numeración de páginas en PDF -->
+                        <!-- Numeración de páginas en PDF -->
                         <div t-if="report_type == 'pdf'" class="jah-footer-meta jah-page-info">
                             Página: <span class="page"/> / <span class="topage"/>
                         </div>
                         
-                        <!-- Mantener nombre del documento si está configurado -->
+                        <!-- Nombre del documento si está configurado -->
                         <div t-if="report_type == 'pdf' and display_name_in_footer" 
                              class="jah-footer-meta jah-doc-name">
-                            <span t-out="o.name">(document name)</span>
+                            <span t-out="o.name"/>
                         </div>
                     </div>
                 </t>
                 
-                <!-- Si es comprobante contable, mantener footer original -->
-                <t t-if="doc and doc._name == 'account.move'">
+                <!-- Footer original solo para comprobantes contables y pagos -->
+                <t t-if="o and (o._name == 'account.payment' or (o._name == 'account.move' and o.move_type == 'entry'))">
                     <div class="text-center account-footer-container">
                         <ul class="list-inline mb-4">
                             <div t-field="company.report_footer"/>
@@ -47,7 +47,7 @@
                             Page: <span class="page"/> / <span class="topage"/>
                         </div>
                         <div t-if="report_type == 'pdf' and display_name_in_footer" class="text-muted">
-                            <span t-out="o.name">(document name)</span>
+                            <span t-out="o.name"/>
                         </div>
                     </div>
                 </t>
