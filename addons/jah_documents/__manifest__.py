@@ -44,6 +44,7 @@
         'web.report_assets_common': [
             'jah_documents/static/src/scss/jah_header_style.scss',
             'jah_documents/static/src/scss/jah_footer_style.scss',
+            'jah_documents/static/src/scss/jah_common_styles.scss',
         ],
     },
     

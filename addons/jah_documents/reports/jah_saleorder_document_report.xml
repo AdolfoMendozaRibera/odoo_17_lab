@@ -18,7 +18,7 @@
                         <strong>Vendedor:</strong><br/>
                         <span class="m-0" t-field="doc.user_id.name"/>
                     </div>
-                    </div>
+                </div>
             </xpath>
 
             <!-- ========================================================= -->
@@ -65,14 +65,26 @@
             <!-- Código del producto -->
             <xpath expr="//td[@name='td_name']" position="before">
                 <td name="td_code" class="text-start">
-                    <span t-field="line.product_id.default_code"/>
+                    <t t-if="line.product_id">
+                        <span t-field="line.product_id.default_code" 
+                              t-att-title="line.product_id.default_code or 'Sin código'"/>
+                    </t>
+                    <t t-else="">
+                        <span title="Producto no especificado">-</span>
+                    </t>
                 </td>
             </xpath>
 
             <!-- Unidad del producto -->
             <xpath expr="//td[@name='td_code']" position="after">
                 <td name="td_unit" class="text-center">
-                    <span t-field="line.product_uom"/>
+                    <t t-if="line.product_uom">
+                        <span t-field="line.product_uom" 
+                              t-att-title="line.product_uom.name or ''"/>
+                    </t>
+                    <t t-else="">
+                        <span title="Unidad no especificada">-</span>
+                    </t>
                 </td>
             </xpath>
 
@@ -122,14 +134,13 @@
                 <!-- Sección visible SOLO en órdenes confirmadas -->
                 <div>
                     <t t-if="doc.state in ['sale', 'done']">
-                        <div class="row" style="page-break-inside: avoid; margin-top: 5cm;">
-                            <div class="col-12 mx-auto" style="max-width: 400px;">
-                    
-                                <div style="border-top: 2px solid black; text-align: center; padding-top: 10px;">
-                                    <p style="margin: 0; font-weight: bold;">
+                        <div class="row jah-signature-section" style="page-break-inside: avoid; margin-top: auto; padding-top: 100px;">
+                            <div class="col-12 mx-auto jah-signature-container" style="max-width: 400px;">
+                                <div class="jah-signature-line" style="border-top: 2px solid black; padding-top: 10px;">
+                                    <p class="jah-signature-title" style="margin: 0; font-weight: bold; text-align: center;">
                                         FIRMA DE APROBACIÓN
                                     </p>
-                                    <p style="margin-top: 10px; font-size: 9pt; color: #666;">
+                                    <p class="jah-signature-note" style="margin-top: 10px; font-size: 9pt; color: #666; text-align: center;">
                                         *Esta firma autoriza la ejecución de la orden de venta*
                                     </p>
                                 </div>

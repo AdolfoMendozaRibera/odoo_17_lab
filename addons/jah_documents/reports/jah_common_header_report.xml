@@ -8,7 +8,7 @@
                  t-attf-class="header o_company_#{company.id or '1'}_layout jah-header"
                  t-att-style="report_header_style">
                 
-                <t t-set="company" t-value="o.company_id or doc.company_id or company"/>
+                <t t-set="company" t-value="o and o.company_id or doc and doc.company_id or company or {}"/>
                 
                 <div class="jah-header-flex">
                     <!-- LOGO -->
@@ -22,86 +22,109 @@
                         </div>
                     </div>
                     
-                    
-                    <!-- DATOS EMPRESA -->
-                    <div class="jah-company-info">
-                        <!-- Razón social -->
-                        <div class="jah-company-name">
-                            <t t-esc="company.name or 'JAH'"/>
-                        </div>
-
-                        <!-- Casa Matriz -->
-                        <div class="jah-company-branch">
-                            <t t-esc="company.partner_id.name or 'Casa Matriz'"/>
-                        </div>
-                        
-                        <!-- Dirección -->
-                        <t t-if="company.street or company.street2">
-                            <div class="jah-company-address">
-                                <t t-esc="company.street or ''"/>
-                                <t t-if="company.street2">, <t t-esc="company.street2"/></t>
-                                <t t-if="company.city">, <t t-esc="company.city"/></t>
-                                <t t-if="company.state_id">, <t t-esc="company.state_id.name"/></t>
+                    <t t-if="company">
+                        <!-- DATOS EMPRESA -->
+                        <div class="jah-company-info">
+                            <!-- Razón social -->
+                            <div class="jah-company-name">
+                                <t t-esc="company.name or 'JAH'"/>
                             </div>
-                        </t>
 
-                        <!-- Teléfono -->
-                        <div class="jah-company-phone">
-                            Teléfono: <t t-esc="company.phone or 'No registrado'"/>
+                            <!-- Casa Matriz -->
+                            <div class="jah-company-branch">
+                                <t t-if="company.partner_id and company.partner_id.name">
+                                    <t t-esc="company.partner_id.name"/>
+                                </t>
+                                <t t-else="">
+                                    Casa Matriz
+                                </t>
+                            </div>
+                        
+                            <!-- Dirección -->
+                            <t t-if="company.street or company.street2">
+                                <div class="jah-company-address">
+                                    <t t-esc="company.street or ''"/>
+                                    <t t-if="company.street2">, <t t-esc="company.street2"/></t>
+                                    <t t-if="company.city">, <t t-esc="company.city"/></t>
+                                    <t t-if="company.state_id">, <t t-esc="company.state_id.name"/></t>
+                                </div>
+                            </t>
+
+                            <!-- Teléfono -->
+                            <div class="jah-company-phone">
+                                Teléfono: <t t-esc="company.phone or 'No registrado'"/>
+                            </div>
                         </div>
-                    </div>
+                    </t>
+                    <t t-else="">
+                        <div class="alert alert-warning">
+                            No se encontró información de la empresa
+                        </div>
+                    </t>
+
 
                         <!-- ########################3-->
                         <!-- Cliente -->
                         <!-- ########################3-->
-                    <div class="jah-client-info">
-                        <!-- Razon Social  -->
-                        <div class="jah-client-name">
-                            Cliente: <t t-esc="o.partner_id.name or 'No registrado'"/>
-                        </div>
+                    <t t-if="o and o.partner_id">
+                        <div class="jah-client-info">
+                            <!-- Razon Social  -->
+                            <div class="jah-client-name">
+                                Cliente: <t t-esc="o.partner_id.name or 'No registrado'"/>
+                            </div>
 
-                        <!-- NIT Cliente -->
-                        <div class="jah-company-nit">
-                            <span t-if="o.partner_id.vat">NIT: <t t-esc="o.partner_id.vat"/></span>
-                            <span t-if="not o.partner_id.vat">NIT: No registrado</span>
-                        </div>
+                            <!-- NIT Cliente -->
+                            <div class="jah-company-nit">
+                                <span t-if="o.partner_id.vat">NIT: <t t-esc="o.partner_id.vat"/></span>
+                                <span t-if="not o.partner_id.vat">NIT: No registrado</span>
+                            </div>
 
-                        <div class="jah-client-address">
-                            <t t-esc="o.partner_id.street or ''"/>
-                            <t t-if="o.partner_id.street2">, <t t-esc="o.partner_id.street2"/></t>
-                            <t t-if="o.partner_id.city">, <t t-esc="o.partner_id.city"/></t>
-                            <t t-if="o.partner_id.state_id">, <t t-esc="o.partner_id.state_id.name"/></t>
-                        </div>
+                            <div class="jah-client-address">
+                                <t t-esc="o.partner_id.street or ''"/>
+                                <t t-if="o.partner_id.street2">, <t t-esc="o.partner_id.street2"/></t>
+                                <t t-if="o.partner_id.city">, <t t-esc="o.partner_id.city"/></t>
+                                <t t-if="o.partner_id.state_id">, <t t-esc="o.partner_id.state_id.name"/></t>
+                            </div>
                         
-                        <!-- Fecha de creacion -->
-                        <div class="jah-company-date">
-                            <t t-if="o._name == 'sale.order' and o.date_order">
-                                Fecha de Orden: <span t-field="o.date_order"/>
-                            </t>
-                            <t t-elif="o._name == 'account.move' and o.invoice_date">
-                                Fecha de Factura: <span t-field="o.invoice_date"/>
-                            </t>
-                            <t t-elif="o._name == 'stock.picking' and o.scheduled_date">
-                                Fecha de Entrega: <span t-field="o.scheduled_date"/>
-                            </t>
-                            <t t-elif="o._name == 'account.payment' and o.date">
-                                Fecha de Pago: <span t-field="o.date"/>
-                            </t>
-                            <t t-else="">
-                                Fecha: No hay fecha o no se encontró
-                            </t>
-                        </div>
+                            <!-- Fecha de creacion -->
+                            <div class="jah-company-date">
+                                <t t-if="o._name == 'sale.order' and o.date_order">
+                                    Fecha de Orden: <span t-field="o.date_order" t-options='{"widget": "date"}'/>
+                                </t>
+                                <t t-elif="o._name == 'account.move' and o.invoice_date">
+                                    Fecha de Factura: <span t-field="o.invoice_date" t-options='{"widget": "date"}'/>
+                                </t>
+                                <t t-elif="o._name == 'stock.picking' and o.scheduled_date">
+                                    Fecha de Entrega: <span t-field="o.scheduled_date" t-options='{"widget": "date"}'/>
+                                </t>
+                                <t t-elif="o._name == 'account.payment' and o.date">
+                                    Fecha de Pago: <span t-field="o.date" t-options='{"widget": "date"}'/>
+                                </t>
+                                <t t-else="">
+                                    Fecha: No hay fecha o no se encontró
+                                </t>
+                            </div>
 
-                        <!-- Código Cliente -->
-                        <div class="jah-company-client-id">
-                            <t t-if="o.partner_id.ref">
-                                Código Cliente: <t t-esc="o.partner_id.ref"/>
-                            </t>
-                            <t t-else="">
-                                Código Cliente: <t t-esc="o.partner_id.id"/>
-                            </t>
+                            <!-- Código Cliente -->
+                            <div class="jah-company-client-id">
+                                <t t-if="o.partner_id.ref">
+                                    Código Cliente: <t t-esc="o.partner_id.ref"/>
+                                </t>
+                                <t t-else="">
+                                    Código Cliente: <t t-esc="o.partner_id.id"/>
+                                </t>
+                            </div>
                         </div>
-                    </div>
+                    </t>
+
+                    <t t-elif="o and not o.partner_id">
+                        <div class="jah-client-info">
+                            <div class="alert alert-warning">
+                                No se encontró información del cliente
+                            </div>
+                        </div>
+                    </t>
+
                 </div>
             </div>
         </xpath>

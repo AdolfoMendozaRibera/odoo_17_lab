@@ -8,47 +8,83 @@
                  t-attf-class="footer o_standard_footer o_company_#{company.id}_layout jah-footer"
                  t-att-style="report_footer_style">
                 
-                <t t-set="company" t-value="o.company_id or company"/>
+                <t t-set="company" t-value="o and o.company_id or company"/>
+                <t t-set="is_accounting_document" 
+                   t-value="o and (o._name == 'account.payment' or (o._name == 'account.move' and o.move_type == 'entry'))"/>
                 
-                <!-- Footer corporativo JAH: se muestra en documentos de ventas y entregas -->
-                <t t-if="o and not (o._name == 'account.payment' or (o._name == 'account.move' and o.move_type == 'entry'))">
+                <!-- Caso 1: Documentos contables (pagos y asientos) -->
+                <t t-if="is_accounting_document">
+                    <div class="text-center account-footer-container">
+                        <ul class="list-inline mb-4">
+                            <t t-if="company and company.report_footer">
+                                <div t-field="company.report_footer"/>
+                            </t>
+                            <t t-else="">
+                                <div>Footer de empresa no configurado</div>
+                            </t>
+                        </ul>
+                        <t t-if="report_type == 'pdf'">
+                            <div class="text-muted">
+                                Página: <span class="page"/> / <span class="topage"/>
+                            </div>
+                        </t>
+                        <div t-if="report_type == 'pdf' and display_name_in_footer and o.name" 
+                             class="text-muted">
+                            <span t-out="o.name"/>
+                        </div>
+                    </div>
+                </t>
+                
+                <!-- Caso 2: Footer corporativo JAH para otros documentos -->
+                <t t-elif="o">
                     <div class="text-center jah-footer-container">
                         
                         <!-- Texto personalizado JAH -->
                         <div class="jah-footer-content">
                             <p class="jah-footer-line jah-footer-main">
-                                <strong>JAH - Soluciones y Logística.</strong> Su socio de confianza para el crecimiento de su negocio.
+                                <strong>JAH - Soluciones y Logística.</strong> 
+                                Su socio de confianza para el crecimiento de su negocio.
                             </p>
                             <p class="jah-footer-line jah-footer-secondary">
                                 Para cualquier consulta, póngase en contacto con nuestra oficina central.
                             </p>
                         </div>
 
+                        <!-- Información de empresa (opcional) -->
+                        <t t-if="company and company.email">
+                            <p class="jah-footer-line jah-footer-contact">
+                                Contacto: <span t-esc="company.email"/>
+                                <t t-if="company.phone"> | Tel: <span t-esc="company.phone"/></t>
+                            </p>
+                        </t>
+
                         <!-- Numeración de páginas en PDF -->
-                        <div t-if="report_type == 'pdf'" class="jah-footer-meta jah-page-info">
-                            Página: <span class="page"/> / <span class="topage"/>
-                        </div>
+                        <t t-if="report_type == 'pdf'">
+                            <div class="jah-footer-meta jah-page-info">
+                                Página: <span class="page"/> / <span class="topage"/>
+                            </div>
+                        </t>
                         
                         <!-- Nombre del documento si está configurado -->
-                        <div t-if="report_type == 'pdf' and display_name_in_footer" 
-                             class="jah-footer-meta jah-doc-name">
-                            <span t-out="o.name"/>
-                        </div>
+                        <t t-if="report_type == 'pdf' and display_name_in_footer and o.name">
+                            <div class="jah-footer-meta jah-doc-name">
+                                <span t-out="o.name"/>
+                            </div>
+                        </t>
                     </div>
                 </t>
                 
-                <!-- Footer original solo para comprobantes contables y pagos -->
-                <t t-if="o and (o._name == 'account.payment' or (o._name == 'account.move' and o.move_type == 'entry'))">
-                    <div class="text-center account-footer-container">
-                        <ul class="list-inline mb-4">
+                <!-- Caso 3: Cuando no hay objeto (por precaución) -->
+                <t t-else="">
+                    <div class="text-center default-footer-container">
+                        <div t-if="company and company.report_footer">
                             <div t-field="company.report_footer"/>
-                        </ul>
-                        <div t-if="report_type == 'pdf'" class="text-muted">
-                            Page: <span class="page"/> / <span class="topage"/>
                         </div>
-                        <div t-if="report_type == 'pdf' and display_name_in_footer" class="text-muted">
-                            <span t-out="o.name"/>
-                        </div>
+                        <t t-if="report_type == 'pdf'">
+                            <div class="text-muted">
+                                Página: <span class="page"/> / <span class="topage"/>
+                            </div>
+                        </t>
                     </div>
                 </t>
                 
