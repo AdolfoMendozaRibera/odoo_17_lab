@@ -6,6 +6,12 @@
         <!--  TEMPLATE PERSONALIZADO PARA COMPROBANTE DE PAGO         -->
         <!--  Hereda del template nativo de Odoo                      -->
         <!-- ========================================================= -->
+        <!-- 
+        OBJETIVO: Personalizar el reporte de comprobante de pago de Odoo
+        HEREDADO DE: account.report_payment_receipt_document (reporte nativo)
+        RELEVANCIA: Cumple con HU-CP-01 y HU-CP-02
+        IMPORTANTE: No modifica la lógica contable, solo la presentación
+        -->
 
         <template id="report_jah_payment_receipt_document" 
                  inherit_id="account.report_payment_receipt_document">
@@ -13,13 +19,22 @@
             <!-- ========================================================= -->
             <!-- SECCIÓN 1: CAMBIAR EL TÍTULO DEL COMPROBANTE             -->
             <!-- ========================================================= -->
-
+            <!-- 
+            REQUERIMIENTO: "Cambiar título automático por 'Recibo de Pago' / 'Recibo de Ingreso'"
+            OBJETIVO: Mostrar títulos más descriptivos según el tipo de pago
+            LÓGICA: 
+            - customer → Recibo de Ingreso (entrada de dinero)
+            - supplier → Recibo de Pago (salida de dinero)
+            - otros → Comprobante de Pago genérico
+            -->
             <xpath expr="//div[@class='page']/h3[1]" position="replace">
                 <h3 class="mt-4 mb-4">
                     <strong id="payment_title">
+                        <!-- Título dinámico según tipo de partner -->
                         <span t-if="o.partner_type == 'customer'">RECIBO DE INGRESO</span>
                         <span t-elif="o.partner_type == 'supplier'">RECIBO DE PAGO</span>
                         <span t-else="">COMPROBANTE DE PAGO</span>
+                        <!-- Mantiene el número/nombre del comprobante -->
                         : <span t-field="o.name"/>
                     </strong>
                 </h3>
@@ -28,17 +43,26 @@
             <!-- ========================================================= -->
             <!-- SECCIÓN 2: MOSTRAR USUARIO QUE REGISTRA EL PAGO          -->
             <!-- ========================================================= -->
-
+            <!-- 
+            REQUERIMIENTO: HU-CP-02 - Visualizar datos del usuario
+            OBJETIVO: Mostrar nombre y cargo del usuario que creó el pago
+            DATOS:
+            - o.create_uid: Usuario que creó el registro
+            - o.create_uid.function: Campo 'Cargo' del usuario en Odoo
+            -->
             <xpath expr="//div[@name='date']" position="after">
                 <div class="row">
+                    <!-- Columna 1: Nombre del usuario -->
                     <div class="col-6">
                         <strong>Registrado por:</strong><br/>
                         <span t-field="o.create_uid.name" t-if="o.create_uid"/>
                         <span t-else="" style="color: #999;">No especificado</span>
                     </div>
 
+                    <!-- Columna 2: Cargo del usuario -->
                     <div class="col-6">
                         <strong>Cargo:</strong><br/>
+                        <!-- o.create_uid.function es el campo 'Cargo' en res.users -->
                         <span t-if="o.create_uid and o.create_uid.function" t-field="o.create_uid.function"/>
                         <span t-else="" style="color: #999;">No especificado</span>
                     </div>
@@ -48,13 +72,20 @@
             <!-- ========================================================= -->
             <!-- SECCIÓN 3: DATOS DE CLIENTE O PROVEEDOR                   -->
             <!-- ========================================================= -->
-
+            <!-- 
+            OBJETIVO: Mejorar la sección de contacto con datos adicionales
+            CAMBIOS:
+            - Título dinámico (Cliente/Proveedor)
+            - Agrega NIT/CI del contacto si existe
+            - Mantiene método de pago nativo si está configurado
+            -->
             <xpath expr="//div[@class='row'][div[@name='payment_method']]" position="replace">
                 <div class="row">
 
-                    <!-- Columna del contacto -->
+                    <!-- Columna del contacto (Cliente/Proveedor) -->
                     <div class="col-6">
                         <strong>
+                            <!-- Título dinámico según tipo -->
                             <span t-if="o.partner_type == 'customer'">Cliente:</span>
                             <span t-elif="o.partner_type == 'supplier'">Proveedor:</span>
                             <span t-else="">Contacto:</span>
@@ -62,13 +93,13 @@
                         <span t-field="o.partner_id.name" t-if="o.partner_id"/>
                         <span t-else="" style="color: #999;">No especificado</span>
 
-                        <!-- NIT/CI si existe -->
+                        <!-- NIT/CI - Información fiscal importante -->
                         <p t-if="o.partner_id and o.partner_id.vat" class="mb-0 mt-1">
                             <strong>NIT/CI:</strong> <span t-field="o.partner_id.vat"/>
                         </p>
                     </div>
 
-                    <!-- Método de pago nativo -->
+                    <!-- Método de pago nativo (mantenido de Odoo) -->
                     <div name="payment_method" 
                          t-if="values.get('display_payment_method') and o.payment_method_id" 
                          class="col-6">
@@ -82,16 +113,37 @@
             <!-- ========================================================= -->
             <!-- SECCIÓN 4: FIRMAS                                         -->
             <!-- ========================================================= -->
-
+            <!-- 
+            REQUERIMIENTO: HU-CP-01 - Firmas en comprobante
+            OBJETIVO: Agregar 3 líneas de firma para respaldo físico
+            FIRMAS:
+            1. Cliente/Proveedor (quien paga/recibe)
+            2. Usuario/Cajero (quien registra)
+            3. Recibido por (para completar manualmente)
+            NOTA: Se agrega al final del documento existente
+            -->
             <xpath expr="//div[@class='oe_structure'][last()]" position="after">
 
+                <!-- Contenedor principal de firmas -->
                 <div class="signatures mt-5 pt-4"
                      style="margin-top: 100px !important; padding-top: 40px; border-top: 10px solid #ffffffff; page-break-inside: avoid;">
+                     <!-- 
+                     ESTILOS IMPORTANTES:
+                     - margin-top: 100px → Separa firmas del contenido anterior
+                     - border-top transparente → Espacio visual sin línea visible
+                     - page-break-inside: avoid → Evita que se corte entre páginas
+                     -->
 
                     <div class="row d-flex justify-content-between">
 
-                        <!-- 1. Firma Cliente o Proveedor -->
+                        <!-- 
+                        FIRMA 1: CLIENTE O PROVEEDOR
+                        ==========================
+                        Título dinámico según partner_type
+                        Muestra datos del contacto para referencia
+                        -->
                         <div class="col-4">
+                            <!-- Línea de firma (borde inferior) -->
                             <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
 
                             <p class="mt-2 mb-1">
@@ -102,7 +154,7 @@
                                 </strong>
                             </p>
 
-                            <!-- Datos informativos -->
+                            <!-- Datos informativos pre-llenados -->
                             <p class="mb-0" style="font-size: 9pt;">
                                 Nombre: 
                                 <span t-if="o.partner_id" t-field="o.partner_id.name"/>
@@ -116,18 +168,26 @@
                             </p>
                         </div>
 
-                        <!-- 2. Firma Usuario -->
+                        <!-- 
+                        FIRMA 2: USUARIO/CAJERO
+                        ==========================
+                        REQUERIMIENTO: HU-CP-02 - Mostrar nombre y cargo del usuario
+                        Muestra datos del usuario que creó el registro
+                        -->
                         <div class="col-4">
+                            <!-- Línea de firma -->
                             <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
 
                             <p class="mt-2 mb-1"><strong>Firma Usuario (Cajero)</strong></p>
 
+                            <!-- Nombre del usuario -->
                             <p class="mb-0" style="font-size: 9pt;">
                                 Nombre: 
                                 <span t-if="o.create_uid" t-field="o.create_uid.name"/>
                                 <span t-else="">_________________</span>
                             </p>
 
+                            <!-- Cargo del usuario -->
                             <p class="mb-0" style="font-size: 9pt;">
                                 Cargo:
                                 <span t-if="o.create_uid and o.create_uid.function" t-field="o.create_uid.function"/>
@@ -135,14 +195,21 @@
                             </p>
                         </div>
 
-                        <!-- 3. Firma de quien recibe (manual) -->
+                        <!-- 
+                        FIRMA 3: RECIBIDO POR (MANUAL)
+                        ==========================
+                        Espacio para completar manualmente cuando se entrega/recibe físicamente
+                        No tiene datos automáticos - se completa a mano
+                        -->
                         <div class="col-4">
+                            <!-- Línea de firma -->
                             <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
 
                             <p class="mt-2 mb-1">
                                 <strong>Recibido por (Nombre y CI)</strong>
                             </p>
 
+                            <!-- Campos para completar manualmente -->
                             <p class="mb-0" style="font-size: 9pt;">Nombre: _______________________</p>
                             <p class="mb-0" style="font-size: 9pt;">CI: _________________</p>
                         </div>
@@ -150,9 +217,13 @@
                     </div>
 
                     <!-- ========================================================= -->
-                    <!-- SECCIÓN 5: OBSERVACIONES                                 -->
+                    <!-- SECCIÓN 5: OBSERVACIONES (COMENTADA - OPCIONAL)          -->
                     <!-- ========================================================= -->
-
+                    <!-- 
+                    SECCIÓN OPCIONAL: Puede activarse si se requiere área de observaciones
+                    ACTUALMENTE: Comentada para simplificar el documento
+                    PROPÓSITO: Área para notas manuales adicionales
+                    -->
                     <!--
                     <div class="row mt-4">
                         <div class="col-12">

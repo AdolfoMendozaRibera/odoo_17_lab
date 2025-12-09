@@ -5,15 +5,33 @@
         <!-- ========================================================= -->
         <!--   TEMPLATE HEREDADO DEL REPORTE ORIGINAL DE COTIZACIÓN   -->
         <!-- ========================================================= -->
+        <!-- 
+        OBJETIVO: Modificar el reporte de cotización/orden de venta existente en Odoo
+        HEREDADO DE: sale.report_saleorder_document (reporte nativo de Odoo)
+        USO: Aplica tanto a cotizaciones como a órdenes de venta confirmadas
+        -->
 
         <template id="report_jah_saleorder_document" inherit_id="sale.report_saleorder_document">
 
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 1: MODIFICAR INFORMACIONES ADICIONALES DEL DOCUMENTO -->
+            <!-- ========================================================= -->
+            <!-- 
+            OBJETIVO: Actualizar la sección de informaciones para mostrar solo campos relevantes
+            REEMPLAZA: El div original que muestra información adicional
+            CAMBIOS: 
+            - Muestra fecha de validez solo en cotizaciones (draft/sent)
+            - Muestra vendedor asignado
+            - Elimina otros campos no solicitados
+            -->
             <xpath expr="//div[@id='informations']" position="replace">
                 <div id="informations" class="row mt-2 mb-4">
+                    <!-- Fecha de validez (solo para cotizaciones no confirmadas) -->
                     <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2">
                         <strong>Validez hasta:</strong><br/>
                         <span class="m-0" t-field="doc.validity_date"/>
                     </div>
+                    <!-- Vendedor asignado (siempre visible) -->
                     <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
                         <strong>Vendedor:</strong><br/>
                         <span class="m-0" t-field="doc.user_id.name"/>
@@ -23,27 +41,48 @@
 
             <!-- ========================================================= -->
             <!-- SECCIÓN 2: MODIFICAR ENCABEZADO DE LA TABLA DE PRODUCTOS  -->
-            <!-- - Se agregan columnas solicitadas                         -->
-            <!-- - Se mantiene estilo nativo                               -->
+            <!-- OBJETIVO: Agregar columnas solicitadas en el brief        -->
+            <!-- REQUERIMIENTOS:                                           -->
+            <!-- - Mostrar: Código, Unidad, Descripción, Cantidad, Precio, Descuento, Subtotal -->
+            <!-- - Asegurar que el descuento se imprima correctamente (HU-COT-02) -->
             <!-- ========================================================= -->
 
-            <!-- Columna: Código del producto (antes de descripción) -->
+            <!-- 
+            COLUMNA 1: CÓDIGO DEL PRODUCTO
+            #####
+            POSICIÓN: Antes de la columna de descripción
+            WIDTH: 10% del ancho de la tabla
+            ALINEACIÓN: Izquierda (text-start)
+            -->
             <xpath expr="//th[@name='th_description']" position="before">
                 <th name="th_code" class="text-start" style="width: 10%;">
                     Código
                 </th>
             </xpath>
 
-            <!-- Columna: Unidad (después de código) -->
+            <!-- 
+            COLUMNA 2: UNIDAD DE MEDIDA
+            =====
+            POSICIÓN: Después de la columna de código
+            WIDTH: 8% del ancho de la tabla
+            ALINEACIÓN: Centrada (text-center)
+            -->
             <xpath expr="//th[@name='th_code']" position="after">
                 <th name="th_unit" class="text-center" style="width: 8%;">
                     Unidad
                 </th>
             </xpath>
 
-            <!-- Columna: Descuento (DESACTIVADO TEMPORALMENTE)
-            - Se comenta para evitar errores en caso de permisos o grupos
-            - IMPORTANTE: Debes activarlo cuando confirmes que funciona en PDF
+            <!-- 
+            COLUMNA 3: DESCUENTO (DESACTIVADA TEMPORALMENTE - IMPORTANTE)
+            =====
+            MOTIVO DE DESACTIVACIÓN: 
+            - Posibles problemas con permisos de grupo en Odoo
+            - Se recomienda probar primero sin esta columna
+            - Para activar: eliminar comentarios y probar en PDF
+            
+            REQUERIMIENTO: HU-COT-02 - Ver correctamente la columna de descuento
+            CONFIGURACIÓN: Solo visible para usuarios con permisos de descuento
             -->
             <!--
             <xpath expr="//th[@name='th_priceunit']" position="after">
@@ -53,19 +92,34 @@
             </xpath>
             -->
 
-            <!-- Cambiar título del subtotal -->
+            <!-- 
+            CAMBIO DE TÍTULO: SUBTOTAL → SUB TOTAL
+            ====
+            OBJETIVO: Mejorar legibilidad según estándares JAH
+            NOTA: Cambio cosmético, no afecta cálculos
+            -->
             <xpath expr="//th[@name='th_subtotal']/span" position="replace">
                 <span>Sub Total</span>
             </xpath>
 
             <!-- ========================================================= -->
             <!-- SECCIÓN 3: AGREGAR CAMPOS A CADA LÍNEA DE PRODUCTO        -->
+            <!-- OBJETIVO: Mostrar datos en las nuevas columnas por línea  -->
+            <!-- CORRESPONDENCIA: Cada columna del encabezado debe tener   -->
+            <!--                  su celda correspondiente en el cuerpo    -->
             <!-- ========================================================= -->
 
-            <!-- Código del producto -->
+            <!-- 
+            CELDA 1: CÓDIGO DEL PRODUCTO (por línea)
+            ====
+            POSICIÓN: Antes de la celda de descripción
+            CONDICIONAL: Solo si la línea tiene producto asociado
+            FALLBACK: Muestra "-" si no hay producto o código
+            -->
             <xpath expr="//td[@name='td_name']" position="before">
                 <td name="td_code" class="text-start">
                     <t t-if="line.product_id">
+                        <!-- Muestra código con tooltip como título -->
                         <span t-field="line.product_id.default_code" 
                               t-att-title="line.product_id.default_code or 'Sin código'"/>
                     </t>
@@ -75,7 +129,13 @@
                 </td>
             </xpath>
 
-            <!-- Unidad del producto -->
+            <!-- 
+            CELDA 2: UNIDAD DE MEDIDA (por línea)
+            ===
+            POSICIÓN: Después de la celda de código
+            CONDICIONAL: Solo si la línea tiene unidad definida
+            FALLBACK: Muestra "-" si no hay unidad
+            -->
             <xpath expr="//td[@name='td_code']" position="after">
                 <td name="td_unit" class="text-center">
                     <t t-if="line.product_uom">
@@ -88,10 +148,13 @@
                 </td>
             </xpath>
 
-            <!-- Descuento en la línea (DESACTIVADO TEMPORALMENTE)
-            - Mismo motivo que el encabezado
+            <!-- 
+            CELDA 3: DESCUENTO (DESACTIVADA - COMENTADA)
+            =======
+            CORRESPONDE A: La columna de descuento en el encabezado
+            CONDICIONAL: Solo visible para usuarios con permisos
+            FORMATO: Muestra porcentaje con símbolo %
             -->
-            
             <!-- 
             <xpath expr="//td[@name='td_priceunit']" position="after">
                 <td name="td_discount" class="text-end">
@@ -100,38 +163,52 @@
                     </span>
                 </td>
             </xpath>
-
             -->
-            
 
             <!-- ========================================================= -->
             <!-- SECCIÓN 4: AJUSTE DE COLSPAN PARA LÍNEAS ESPECIALES       -->
-            <!-- - Asegura que líneas de sección, notas y subtotales       -->
-            <!--   ocupen el ancho correcto luego de agregar columnas      -->
+            <!-- PROBLEMA: Al agregar columnas, las líneas especiales      -->
+            <!--          (sección, notas, subtotales) deben ocupar más    -->
+            <!--          celdas para mantener el diseño                   -->
+            <!-- SOLUCIÓN: Aumentar el colspan de 5 a 8 columnas           -->
+            <!-- (5 originales + 2 nuevas + 1 descuento cuando active)     -->
             <!-- ========================================================= -->
 
+            <!-- Línea de sección (para agrupar productos) -->
             <xpath expr="//td[@name='td_section_line']" position="attributes">
                 <attribute name="colspan">8</attribute>
             </xpath>
 
+            <!-- Línea de nota (comentarios en el producto) -->
             <xpath expr="//td[@name='td_note_line']" position="attributes">
                 <attribute name="colspan">8</attribute>
             </xpath>
 
+            <!-- Subtotales por sección -->
             <xpath expr="//td[@name='td_section_subtotal']" position="attributes">
                 <attribute name="colspan">8</attribute>
             </xpath>
 
             <!-- ========================================================= -->
             <!-- SECCIÓN 5: AGREGAR BLOQUES DE FIRMA                      -->
-            <!-- - Se muestran según estado del documento                  -->
-            <!--   * draft/sent → mensaje informativo                      -->
-            <!--   * sale/done → área de firma del cliente                 -->
+            <!-- REQUERIMIENTO: HU-OV-01 - Firmar una orden de venta       -->
+            <!-- OBJETIVO: Agregar espacio para firma del cliente          -->
+            <!-- LÓGICA: Mostrar diferente según estado del documento      -->
             <!-- ========================================================= -->
 
+            <!-- 
+            POSICIÓN: Dentro del contenedor de página 
+            Se agrega al final del documento para firmas
+            -->
             <xpath expr="//div[contains(@class, 'page')]" position="inside">
 
-                <!-- Sección visible SOLO en órdenes confirmadas -->
+                <!-- 
+                BLOQUE 1: FIRMA PARA ÓRDENES CONFIRMADAS (sale/done)
+                ======================
+                VISIBLE: Solo cuando la orden está confirmada o terminada
+                ESTILO: page-break-inside: avoid → evita que se corte entre páginas
+                CONTENIDO: Línea de firma con texto de autorización
+                -->
                 <div>
                     <t t-if="doc.state in ['sale', 'done']">
                         <div class="row jah-signature-section" style="page-break-inside: avoid; margin-top: auto; padding-top: 100px;">
@@ -149,7 +226,13 @@
                     </t>
                 </div>
                 
-                <!-- Sección visible SOLO en cotizaciones -->
+                <!-- 
+                BLOQUE 2: MENSAJE PARA COTIZACIONES (draft/sent)
+                ====================
+                VISIBLE: Solo cuando es cotización (no confirmada)
+                PROPÓSITO: Informar al cliente que requiere aprobación
+                ESTILO: Texto en cursiva y color gris para diferenciar
+                -->
                 <t t-if="doc.state in ['draft', 'sent']">
                     <div class="row mt-3">
                         <div class="col-12 text-center">
@@ -162,10 +245,23 @@
 
             </xpath>
 
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 6: MODIFICAR SECCIÓN DE TOTALES                  -->
+            <!-- OBJETIVO: Mostrar diferentes totales según estado        -->
+            <!-- LÓGICA:                                                  -->
+            <!-- - Cotizaciones: Subtotal y Total simple                  -->
+            <!-- - Órdenes confirmadas: Totales con impuestos (nativo)    -->
+            <!-- ========================================================= -->
             <xpath expr="//div[@id='total']" position="replace">
                 <div id="total" class="row" name="total">
                     <div class="col-4 ms-auto">
                         <table class="table table-sm table-borderless">
+                            <!-- 
+                            TOTALES PARA COTIZACIONES (draft/sent)
+                            ======================
+                            REQUERIMIENTO: Eliminar campos fiscales no aplicables (HU-COT-03)
+                            MUESTRA: Solo subtotal y total (sin impuestos detallados)
+                            -->
                             <t t-if="doc.state in ['draft', 'sent']">
                                 <tr class="border-black">
                                     <td><strong>Subtotal</strong></td>
@@ -177,6 +273,12 @@
                                 </tr>
                             </t>
 
+                            <!-- 
+                            TOTALES PARA ÓRDENES CONFIRMADAS (sale/done)
+                            ========================
+                            MUESTRA: Totales con impuestos (comportamiento nativo de Odoo)
+                            MANTIENE: Términos de pago y condiciones nativos
+                            -->
                             <t t-else="">
                                 <t t-set="tax_totals" t-value="doc.tax_totals"/>
                                 <t t-call="sale.document_tax_totals"/>
@@ -185,8 +287,6 @@
                     </div>
                 </div>
             </xpath>
-
-            
 
         </template>
     </data>
