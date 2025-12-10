@@ -126,7 +126,7 @@
 
                 <!-- Contenedor principal de firmas -->
                 <div class="signatures mt-5 pt-4"
-                     style="margin-top: 100px !important; padding-top: 40px; border-top: 10px solid #ffffffff; page-break-inside: avoid;">
+                     style="margin-top: 100px !important; margin-bottom: 40px; border-top: 10px solid #ffffffff; page-break-inside: avoid;">
                      <!-- 
                      ESTILOS IMPORTANTES:
                      - margin-top: 100px → Separa firmas del contenido anterior

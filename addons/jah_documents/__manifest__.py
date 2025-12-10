@@ -31,6 +31,7 @@
         'reports/jah_common_footer_report.xml',
         'reports/jah_saleorder_document_report.xml',
         'reports/jah_account_document_report.xml',
+        'reports/jah_stock_document_report.xml',
         #'reports/jah_stock_document_report.xml',
     ],
    

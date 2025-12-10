@@ -16,6 +16,8 @@
         Buscamos el div principal que contiene el encabezado en Odoo y lo reemplazamos
         completamente con nuestra estructura personalizada.
         -->
+
+    
         <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
 
             <!-- 
@@ -25,8 +27,7 @@
             - Se usa t-attf-class para dinámicamente incluir el ID de la compañía
             - t-att-style aplica estilos CSS desde el reporte
             -->
-            <div class="header o_company_layout jah-header" 
-                 t-attf-class="header o_company_#{company.id or '1'}_layout jah-header"
+            <div t-attf-class="header o_company_#{company.id or '1'}_layout jah-header"
                  t-att-style="report_header_style">
                 
                 <!-- 
@@ -39,6 +40,8 @@
                 Esto garantiza que siempre tengamos información de la compañía.
                 -->
                 <t t-set="company" t-value="o and o.company_id or doc and doc.company_id or company or {}"/>
+                <t t-set="client" t-value="o and o.partner_id or doc and doc.partner_id or {}"/>
+
                 
                 <!-- 
                 CONTENEDOR FLEXIBLE PARA ORGANIZACIÓN
@@ -130,25 +133,37 @@
                     Muestra datos del cliente/proveedor según el tipo de documento.
                     Esta sección solo aparece si el documento tiene un partner asociado.
                     -->
-                    <t t-if="o and o.partner_id">
+                    <t t-if="client">
                         <div class="jah-client-info">
                             <!-- RAZÓN SOCIAL DEL CLIENTE -->
                             <div class="jah-client-name">
-                                Cliente: <t t-esc="o.partner_id.name or 'No registrado'"/>
+                                <span t-if="client.name">    
+                                    Cliente: <span t-field="client.name"/>
+                                </span>
+                                <span t-if="not client.name">
+                                    Cliente: No registrado
+                                </span>
                             </div>
+                        
 
                             <!-- NIT DEL CLIENTE - Campo fiscal importante para JAH -->
                             <div class="jah-company-nit">
-                                <span t-if="o.partner_id.vat">NIT: <t t-esc="o.partner_id.vat"/></span>
-                                <span t-if="not o.partner_id.vat">NIT: No registrado</span>
+                                <span t-if="client.vat">
+                                    NIT: <span t-field="client.vat"/>
+                                </span>
+                                
+                                <span t-if="not client.vat">
+                                    NIT: No registrado
+                                </span>
                             </div>
+
 
                             <!-- DIRECCIÓN DEL CLIENTE - Similar estructura a dirección empresa -->
                             <div class="jah-client-address">
-                                <t t-esc="o.partner_id.street or ''"/>
-                                <t t-if="o.partner_id.street2">, <t t-esc="o.partner_id.street2"/></t>
-                                <t t-if="o.partner_id.city">, <t t-esc="o.partner_id.city"/></t>
-                                <t t-if="o.partner_id.state_id">, <t t-esc="o.partner_id.state_id.name"/></t>
+                                <t t-esc="client.street or ''"/>
+                                <t t-if="client.street2">, <t t-esc="client.street2"/></t>
+                                <t t-if="client.city">, <t t-esc="client.city"/></t>
+                                <t t-if="client.state_id">, <t t-esc="client.state_id.name"/></t>
                             </div>
                         
                             <!-- 
@@ -187,14 +202,25 @@
                             - ref: código personalizado del cliente
                             - id: ID de base de datos como fallback
                             -->
+
                             <div class="jah-company-client-id">
-                                <t t-if="o.partner_id.ref">
-                                    Código Cliente: <t t-esc="o.partner_id.ref"/>
+                                <!-- 1. PRUEBA client.ref: t-field se aplica al SPAN -->
+                                <t t-if="client.ref">
+                                    Código Cliente: <span t-field="client.ref"/>
                                 </t>
+                                <!-- 2. SI NO HAY REF, PRUEBA client.id: t-field se aplica al SPAN -->
+                                <t t-elif="client.id">
+                                    Código Cliente: <span t-field="client.id"/>
+                                </t>
+                                <!-- 3. SI NO HAY NINGUNO, muestra el mensaje estático -->
                                 <t t-else="">
-                                    Código Cliente: <t t-esc="o.partner_id.id"/>
+                                    Código Cliente: No registrado
                                 </t>
                             </div>
+
+
+
+
                         </div>
                     </t>
 
@@ -204,7 +230,7 @@
                     Aunque el documento tiene objeto 'o', puede no tener partner asociado.
                     Esto puede ocurrir en documentos en borrador o con errores.
                     -->
-                    <t t-elif="o and not o.partner_id">
+                    <t t-elif="not client">
                         <div class="jah-client-info">
                             <div class="alert alert-warning">
                                 No se encontró información del cliente

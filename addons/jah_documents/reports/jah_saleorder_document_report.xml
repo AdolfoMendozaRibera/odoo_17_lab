@@ -211,7 +211,7 @@
                 -->
                 <div>
                     <t t-if="doc.state in ['sale', 'done']">
-                        <div class="row jah-signature-section" style="page-break-inside: avoid; margin-top: auto; padding-top: 100px;">
+                        <div class="row jah-signature-section" style="page-break-inside: avoid; margin-top: auto; padding-top: 50px;">
                             <div class="col-12 mx-auto jah-signature-container" style="max-width: 400px;">
                                 <div class="jah-signature-line" style="border-top: 2px solid black; padding-top: 10px;">
                                     <p class="jah-signature-title" style="margin: 0; font-weight: bold; text-align: center;">
