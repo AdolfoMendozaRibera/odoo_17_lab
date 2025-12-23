@@ -111,7 +111,8 @@
 
                             <!-- TELÉFONO - Información de contacto -->
                             <div class="jah-company-phone">
-                                Teléfono: <t t-esc="company.phone or 'No registrado'"/>
+                                <t t-esc="'Teléfono: '"/>
+                                <t t-esc="company.phone or 'No registrado'"/>
                             </div>
                         </div>
                     </t>

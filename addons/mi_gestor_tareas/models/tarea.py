@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-
 from odoo import models, fields, api
 from datetime import date
+from odoo.tools.translate import _
+
 
 # Esta clase define el modelo de datos (la tabla en la base de datos)
 class Tarea(models.Model):
@@ -82,7 +82,8 @@ class Tarea(models.Model):
     ], 
         string='Estado',
         default='borrador',  # Valor por defecto
-        required=True
+        required=True,
+          # <-- AÑADIDO: Permite traducción de los valores
     )
     
     # Campo booleano (checkbox)
@@ -102,7 +103,8 @@ class Tarea(models.Model):
         ],
         string='Prioridad',
         help='Nivel de prioridad de la tarea',
-        default='3'
+        default='3',
+          # <-- AÑADIDO: Permite traducción de los valores
     )
     
 
@@ -176,7 +178,9 @@ class Tarea(models.Model):
         for tarea in self:
             if tarea.fecha_limite and tarea.fecha_inicio:
                 if tarea.fecha_limite < tarea.fecha_inicio:
-                    raise models.ValidationError("La fecha límite no puede ser anterior a la fecha de inicio.")
+                    raise models.ValidationError(
+                        _("La fecha límite no puede ser anterior a la fecha de inicio.")
+                    )
                 
     """
     @api.constrains('prioridad')
@@ -190,9 +194,11 @@ class Tarea(models.Model):
     def _check_nombre(self):
         for tarea in self:
             if len(tarea.name.strip()) < 3:
-                raise models.ValidationError("El nombre de la tarea debe tener al menos 3 caracteres.")
+                raise models.ValidationError(
+                    _("El nombre de la tarea debe tener al menos 3 caracteres.")
+                )
             
             if not tarea.name.strip():
-                raise models.ValidationError("El nombre de la tarea no puede estar vacío o contener solo espacios.")
-                
-  
+                raise models.ValidationError(
+                    _("El nombre de la tarea no puede estar vacío o contener solo espacios.")
+                )

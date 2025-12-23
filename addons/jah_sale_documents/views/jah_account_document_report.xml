@@ -50,7 +50,7 @@
             - o.create_uid: Usuario que creó el registro
             - o.create_uid.function: Campo 'Cargo' del usuario en Odoo
             -->
-            <xpath expr="//div[@name='date']" position="before">
+            <xpath expr="//div[@name='date']" position="after">
                 <div class="row">
                     <!-- Columna 1: Nombre del usuario -->
                     <div class="col-6">
@@ -69,9 +69,49 @@
                 </div>
             </xpath>
 
+            <!-- ========================================================= -->
+            <!-- SECCIÓN 3: DATOS DE CLIENTE O PROVEEDOR                   -->
+            <!-- ========================================================= -->
+            <!-- 
+            OBJETIVO: Mejorar la sección de contacto con datos adicionales
+            CAMBIOS:
+            - Título dinámico (Cliente/Proveedor)
+            - Agrega NIT/CI del contacto si existe
+            - Mantiene método de pago nativo si está configurado
+            -->
+            <xpath expr="//div[@class='row'][div[@name='payment_method']]" position="replace">
+                <div class="row">
+
+                    <!-- Columna del contacto (Cliente/Proveedor) -->
+                    <div class="col-6">
+                        <strong>
+                            <!-- Título dinámico según tipo -->
+                            <span t-if="o.partner_type == 'customer'">Cliente:</span>
+                            <span t-elif="o.partner_type == 'supplier'">Proveedor:</span>
+                            <span t-else="">Contacto:</span>
+                        </strong><br/>
+                        <span t-field="o.partner_id.name" t-if="o.partner_id"/>
+                        <span t-else="" style="color: #999;">No especificado</span>
+
+                        <!-- NIT/CI - Información fiscal importante -->
+                        <p t-if="o.partner_id and o.partner_id.vat" class="mb-0 mt-1">
+                            <strong>NIT/CI:</strong> <span t-field="o.partner_id.vat"/>
+                        </p>
+                    </div>
+
+                    <!-- Método de pago nativo (mantenido de Odoo) -->
+                    <div name="payment_method" 
+                         t-if="values.get('display_payment_method') and o.payment_method_id" 
+                         class="col-6">
+                        <strong>Método de Pago:</strong><br/>
+                        <span t-field="o.payment_method_id.name"/>
+                    </div>
+
+                </div>
+            </xpath>
 
             <!-- ========================================================= -->
-            <!-- SECCIÓN 3: FIRMAS                                         -->
+            <!-- SECCIÓN 4: FIRMAS                                         -->
             <!-- ========================================================= -->
             <!-- 
             REQUERIMIENTO: HU-CP-01 - Firmas en comprobante
@@ -82,7 +122,7 @@
             3. Recibido por (para completar manualmente)
             NOTA: Se agrega al final del documento existente
             -->
-            <xpath expr="//div[@class='page']" position="inside">
+            <xpath expr="//div[@class='oe_structure'][last()]" position="after">
 
                 <!-- Contenedor principal de firmas -->
                 <div class="signatures mt-5 pt-4"
@@ -177,7 +217,7 @@
                     </div>
 
                     <!-- ========================================================= -->
-                    <!-- SECCIÓN 4: OBSERVACIONES (COMENTADA - OPCIONAL)          -->
+                    <!-- SECCIÓN 5: OBSERVACIONES (COMENTADA - OPCIONAL)          -->
                     <!-- ========================================================= -->
                     <!-- 
                     SECCIÓN OPCIONAL: Puede activarse si se requiere área de observaciones

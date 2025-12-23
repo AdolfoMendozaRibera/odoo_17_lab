@@ -165,6 +165,17 @@
             </xpath>
             -->
 
+            <!-- 
+            CELDA 4: Cantidad -->
+            <xpath expr="//td[@name='td_quantity']" position="replace">
+                <td name="td_quantity" class="text-end">
+                    <span t-field="line.product_uom_qty"/>
+                    <span t-if="line.product_packaging_id">
+                        (<span t-field="line.product_packaging_qty" t-options="{&quot;widget&quot;: &quot;integer&quot;}"/> <span t-field="line.product_packaging_id"/>)
+                    </span>
+                </td>
+            </xpath>
+
             <!-- ========================================================= -->
             <!-- SECCIÓN 4: AJUSTE DE COLSPAN PARA LÍNEAS ESPECIALES       -->
             <!-- PROBLEMA: Al agregar columnas, las líneas especiales      -->

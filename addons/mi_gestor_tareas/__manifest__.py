@@ -39,6 +39,11 @@
         
     ],
     
+    # Agregar controladores
+    'controllers': [
+        'controllers/api_controller.py',
+    ],
+    
     'assets': {
         'web.report_assets_common': [
             'mi_gestor_tareas/static/src/css/report_tarea.css',

@@ -1,80 +1,69 @@
-<!-- jah_delivery_note_report.xml -->
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- 
     PLANTILLA PERSONALIZADA DE NOTA DE ENTREGA PARA JAH
     ===================================================
-    Esta plantilla hereda y modifica el reporte estándar de nota de entrega
-    para cumplir con los requisitos específicos del cliente JAH:
-    
-    Requisitos:
-    - Encabezado unificado (ya aplicado vía external_layout)
-    - Tabla ajustada: Código, Descripción, Unidad, Ordenado, Entregado
+    Requisitos cumplidos:
+    - Tabla: Código, Descripción, Unidad, Ordenado, Entregado
     - SIN precios (solo cantidades)
     - Firmas: "Responsable de entrega" y "Cliente que recibe"
     -->
     
     <template id="report_delivery_document_jah" inherit_id="stock.report_delivery_document">
-        
-        <!-- 
-        MODIFICACIÓN 1: AJUSTE DE TABLA PARA ESTADO != 'DONE'
-        ======================================================
-        Modificamos los encabezados de tabla para productos no entregados aún
-        Agregamos columna de "Código" y separamos "Unidad"
-        -->
+
+        <!-- ============================================================
+             OCULTAR FECHA DE ENVÍO ORIGINAL
+             ============================================================ -->
+        <xpath expr="//div[@name='div_sched_date']" position="replace"/>
+
+        <!-- ============================================================
+             MODIFICACIÓN 1: TABLA PARA ESTADO != 'DONE' - ENCABEZADOS
+             ============================================================ -->
         <xpath expr="//table[@name='stock_move_table']/thead/tr" position="replace">
             <tr>
-                <!-- Código del producto -->
-                <th name="th_sm_code" style="width: 15%;"><strong>Código</strong></th>
-                <!-- Descripción del producto -->
+                <th name="th_sm_code" style="width: 12%;"><strong>Código</strong></th>
                 <th name="th_sm_product" style="width: 40%;"><strong>Descripción</strong></th>
-                <!-- Unidad de medida -->
-                <th name="th_sm_uom" class="text-center" style="width: 15%;"><strong>Unidad</strong></th>
-                <!-- Cantidad ordenada -->
-                <th name="th_sm_ordered" class="text-center" style="width: 15%;"><strong>Ordenado</strong></th>
-                <!-- Cantidad entregada -->
-                <th name="th_sm_quantity" class="text-center" style="width: 15%;"><strong>Entregado</strong></th>
+                <th name="th_sm_uom" class="text-center" style="width: 12%;"><strong>Unidad</strong></th>
+                <th name="th_sm_ordered" class="text-center" style="width: 18%;"><strong>Ordenado</strong></th>
+                <th name="th_sm_quantity" class="text-center" style="width: 18%;"><strong>Entregado</strong></th>
             </tr>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 2: AJUSTE DE FILAS DE TABLA PARA ESTADO != 'DONE'
-        ===============================================================
-        Modificamos el contenido de las filas para incluir código y separar unidad
-        -->
+        <!-- ============================================================
+             MODIFICACIÓN 2: TABLA PARA ESTADO != 'DONE' - FILAS
+             ============================================================ -->
         <xpath expr="//table[@name='stock_move_table']/tbody/tr" position="replace">
             <tr t-foreach="lines" t-as="move">
-                <!-- CÓDIGO DEL PRODUCTO -->
+                <!-- CÓDIGO -->
                 <td>
-                    <span t-field="move.product_id.default_code">CODE001</span>
+                    <span t-field="move.product_id.default_code"/>
                 </td>
                 
-                <!-- DESCRIPCIÓN DEL PRODUCTO -->
+                <!-- DESCRIPCIÓN -->
                 <td>
-                    <span t-field="move.product_id.name">Producto</span>
+                    <span t-field="move.product_id.name"/>
                     <p t-if="move.description_picking and move.description_picking != move.product_id.name and move.description_picking != move.product_id.display_name">
-                        <span t-field="move.description_picking">Descripción adicional</span>
+                        <span t-field="move.description_picking"/>
                     </p>
                 </td>
                 
-                <!-- UNIDAD DE MEDIDA -->
+                <!-- UNIDAD -->
                 <td class="text-center">
-                    <span t-field="move.product_uom" groups="uom.group_uom">unidades</span>
-                    <span t-if="not move.product_uom" groups="uom.group_uom">-</span>
+                    <span t-field="move.product_uom" groups="uom.group_uom"/>
                 </td>
                 
-                <!-- CANTIDAD ORDENADA -->
+                <!-- ORDENADO -->
                 <td class="text-center">
-                    <span t-field="move.product_uom_qty">3.00</span>
+                    <span t-field="move.product_uom_qty"/>
                     <span t-if="move.product_packaging_id">
                         (<span t-field="move.product_packaging_qty" t-options="{'widget': 'integer'}"/> 
                         <span t-field="move.product_packaging_id"/>)
                     </span>
                 </td>
                 
-                <!-- CANTIDAD ENTREGADA -->
+                <!-- ENTREGADO -->
                 <td class="text-center">
-                    <span t-field="move.quantity">3.00</span>
+                    <span t-field="move.quantity"/>
                     <span t-if="move.product_packaging_id">
                         (<span t-field="move.product_packaging_quantity" t-options="{'widget': 'integer'}"/> 
                         <span t-field="move.product_packaging_id"/>)
@@ -83,230 +72,191 @@
             </tr>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 3: AJUSTE DE TABLA PARA ESTADO 'DONE' (CON LOTES/SERIES)
-        ======================================================================
-        Modificamos encabezados para productos ya entregados con número de serie
-        -->
+        <!-- ============================================================
+             MODIFICACIÓN 3: TABLA PARA ESTADO 'DONE' - ENCABEZADOS
+             ============================================================ -->
         <xpath expr="//table[@name='stock_move_line_table']/thead/tr" position="replace">
             <tr>
-                <!-- Código del producto -->
-                <th name="th_sml_code" style="width: 15%;"><strong>Código</strong></th>
-                <!-- Descripción del producto -->
-                <th name="th_sml_product" style="width: 35%;"><strong>Descripción</strong></th>
-                <!-- Unidad de medida -->
-                <th name="th_sml_uom" class="text-center" style="width: 10%;"><strong>Unidad</strong></th>
-                <!-- Lote/Serie o Cantidad Ordenada -->
-                <th name="th_sml_qty_ordered" class="text-center" style="width: 15%;">
-                    <t t-if="has_serial_number">
-                        <strong>Lote/Serie</strong>
-                    </t>
-                    <t t-else="">
-                        <strong>Ordenado</strong>
-                    </t>
+                <th name="th_sml_code" style="width: 12%;"><strong>Código</strong></th>
+                <th name="th_sml_product" style="width: 33%;"><strong>Descripción</strong></th>
+                <th name="th_sml_uom" class="text-center" style="width: 12%;"><strong>Unidad</strong></th>
+                <th name="th_sml_qty_ordered" class="text-center" style="width: 18%;">
+                    <strong t-if="has_serial_number">Lote/Serie</strong>
+                    <strong t-else="">Ordenado</strong>
                 </th>
-                <!-- Cantidad entregada -->
-                <th name="th_sml_quantity" class="text-center" style="width: 15%;"><strong>Entregado</strong></th>
+                <th name="th_sml_quantity" class="text-center" style="width: 18%;"><strong>Entregado</strong></th>
             </tr>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 4: PERSONALIZAR FILAS CON NÚMERO DE SERIE
-        =======================================================
-        Heredamos el template para agregar columna de código
-        -->
-        <xpath expr="//t[@t-name='stock.stock_report_delivery_has_serial_move_line']" position="replace">
-            <t t-name="stock.stock_report_delivery_has_serial_move_line">
-                <!-- CÓDIGO DEL PRODUCTO -->
-                <td>
-                    <span t-field="move_line.product_id.default_code">CODE001</span>
-                </td>
-                
-                <!-- DESCRIPCIÓN DEL PRODUCTO -->
-                <td>
-                    <span t-field="move_line.product_id.name"/>
-                    <t t-if="not description and description != ''">
-                        <t t-set="description" t-value="move_line.move_id.description_picking"/>
-                    </t>
-                    <p t-if="description != '' and description != move_line.product_id.display_name and description != move_line.product_id.name">
-                        <span t-esc="description"/>
-                    </p>
-                </td>
-                
-                <!-- UNIDAD DE MEDIDA -->
-                <td class="text-center">
-                    <span t-field="move_line.product_uom_id"/>
-                </td>
-                
-                <!-- LOTE/SERIE -->
-                <td class="text-center" t-if="has_serial_number" name="move_line_lot">
-                    <span t-field="move_line.lot_id.name"/>
-                </td>
-                
-                <!-- CANTIDAD ENTREGADA -->
-                <td class="text-center" name="move_line_lot_quantity">
-                    <span t-field="move_line.quantity"/>
-                    <span t-if="move_line.move_id.product_packaging_id" groups="product.group_stock_packaging">
-                        (<span t-field="move_line.product_packaging_qty" t-options="{'widget': 'integer'}"/> 
-                        <span t-field="move_line.move_id.product_packaging_id.display_name"/>)
-                    </span>
-                </td>
-            </t>
+        <!-- ============================================================
+             MODIFICACIÓN 4: REEMPLAZAR TEMPLATE CON SERIAL
+             ============================================================ -->
+        <xpath expr="//t[@t-call='stock.stock_report_delivery_has_serial_move_line']" position="replace">
+            <t t-call="jah_documents.stock_report_delivery_has_serial_move_line_jah"/>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 5: PERSONALIZAR FILAS AGREGADAS (SIN NÚMERO DE SERIE)
-        ===================================================================
-        Heredamos el template para agregar columna de código y unidad
-        -->
-        <xpath expr="//t[@t-name='stock.stock_report_delivery_aggregated_move_lines']" position="replace">
-            <t t-name="stock.stock_report_delivery_aggregated_move_lines">
-                <tr t-foreach="aggregated_lines" t-as="line">
-                    <!-- CÓDIGO DEL PRODUCTO -->
-                    <td>
-                        <span t-esc="line[0]"/>
-                    </td>
-                    
-                    <!-- DESCRIPCIÓN -->
-                    <td>
-                        <span t-esc="aggregated_lines[line]['name']"/>
-                        <p t-if="aggregated_lines[line]['description']">
-                            <span t-esc="aggregated_lines[line]['description']" t-options="{'widget': 'text'}"/>
-                        </p>
-                    </td>
-                    
-                    <!-- UNIDAD DE MEDIDA -->
-                    <td class="text-center">
-                        <span t-esc="aggregated_lines[line]['product_uom'].name"/>
-                    </td>
-                    
-                    <!-- CANTIDAD ORDENADA -->
-                    <td class="text-center" name="move_line_aggregated_qty_ordered">
-                        <span t-esc="aggregated_lines[line]['qty_ordered']" t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
-                        <span t-if="aggregated_lines[line]['packaging'].name">
-                            (<span t-out="aggregated_lines[line]['packaging_qty']" t-options="{'widget': 'integer'}"/> 
-                            <span t-out="aggregated_lines[line]['packaging'].name"/>)
-                        </span>
-                    </td>
-                    
-                    <!-- CANTIDAD ENTREGADA -->
-                    <td class="text-center" name="move_line_aggregated_quantity">
-                        <t t-if="aggregated_lines[line]['quantity']">
-                            <span t-esc="aggregated_lines[line]['quantity']" t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
-                            <span t-if="aggregated_lines[line]['packaging'].name">
-                                (<span t-out="aggregated_lines[line]['packaging_quantity']" t-options="{'widget': 'integer'}"/> 
-                                <span t-out="aggregated_lines[line]['packaging'].name"/>)
-                            </span>
-                        </t>
-                    </td>
-                </tr>
-            </t>
+        <!-- ============================================================
+             MODIFICACIÓN 5: REEMPLAZAR TEMPLATE AGREGADO
+             ============================================================ -->
+        <xpath expr="//t[@t-call='stock.stock_report_delivery_aggregated_move_lines']" position="replace">
+            <t t-call="jah_documents.stock_report_delivery_aggregated_move_lines_jah"/>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 6: AJUSTE DE TABLA DE BACKORDERS
-        ==============================================
-        Agregamos código y unidad a la tabla de cantidades pendientes
-        -->
+        <!-- ============================================================
+             MODIFICACIÓN 6: TABLA DE BACKORDERS - ENCABEZADOS
+             ============================================================ -->
         <xpath expr="//table[@name='stock_backorder_table']/thead/tr" position="replace">
             <tr>
-                <th name="th_sb_code" style="width: 15%;"><strong>Código</strong></th>
+                <th name="th_sb_code" style="width: 12%;"><strong>Código</strong></th>
                 <th name="th_sb_product" style="width: 50%;"><strong>Descripción</strong></th>
                 <th name="th_sb_uom" class="text-center" style="width: 15%;"><strong>Unidad</strong></th>
-                <th name="th_sb_quantity" class="text-center" style="width: 20%;"><strong>Cantidad</strong></th>
+                <th name="th_sb_quantity" class="text-center" style="width: 23%;"><strong>Cantidad</strong></th>
             </tr>
         </xpath>
 
+        <!-- ============================================================
+             MODIFICACIÓN 7: TABLA DE BACKORDERS - FILAS
+             ============================================================ -->
         <xpath expr="//table[@name='stock_backorder_table']/tbody/tr" position="replace">
             <tr t-foreach="backorders.mapped('move_ids').filtered(lambda x: x.product_uom_qty)" t-as="bo_line">
                 <!-- CÓDIGO -->
                 <td>
-                    <span t-field="bo_line.product_id.default_code">CODE</span>
+                    <span t-field="bo_line.product_id.default_code"/>
                 </td>
                 
                 <!-- DESCRIPCIÓN -->
                 <td>
-                    <span t-field="bo_line.product_id">Producto</span>
+                    <span t-field="bo_line.product_id"/>
                     <p t-if="bo_line.description_picking and bo_line.description_picking != bo_line.product_id.name and bo_line.description_picking != bo_line.product_id.display_name">
-                        <span t-field="bo_line.description_picking">Descripción</span>
+                        <span t-field="bo_line.description_picking"/>
                     </p>
                 </td>
                 
                 <!-- UNIDAD -->
                 <td class="text-center">
-                    <span t-field="bo_line.product_uom" groups="uom.group_uom">unidades</span>
+                    <span t-field="bo_line.product_uom" groups="uom.group_uom"/>
                 </td>
                 
                 <!-- CANTIDAD -->
                 <td class="text-center">
-                    <span t-field="bo_line.product_uom_qty">3.00</span>
+                    <span t-field="bo_line.product_uom_qty"/>
                 </td>
             </tr>
         </xpath>
 
-        <!-- 
-        MODIFICACIÓN 7: AGREGAR SECCIÓN DE FIRMAS
-        ==========================================
-        Reemplazamos la sección de firma única por dos firmas:
-        - Responsable de entrega
-        - Cliente que recibe
-        -->
+        <!-- ============================================================
+             MODIFICACIÓN 8: SECCIÓN DE FIRMAS
+             ============================================================ -->
         <xpath expr="//div[@name='signature']" position="replace">
-            <div class="row mt-5" name="jah_signatures">
-                <div class="oe_structure"/>
+            <div class="row mt-5 pt-5" style="page-break-inside: avoid;">
+                <!-- Firma del Responsable de Entrega -->
+                <div class="col-6 text-center">
+                    <div style="border-top: 2px solid #000; padding-top: 10px; margin: 0 20px;">
+                        <p style="margin: 5px 0; font-weight: bold; font-size: 11pt;">Responsable de entrega</p>
+                        <p style="margin: 0; font-size: 9pt; color: #666;">Nombre y firma</p>
+                    </div>
+                </div>
                 
-                <!-- TÍTULO DE SECCIÓN -->
-                <div class="col-12 mb-3">
-                    <h4><strong>Firmas de Entrega</strong></h4>
-                    <hr/>
-                </div>
-
-                <!-- COLUMNA 1: RESPONSABLE DE ENTREGA -->
+                <!-- Firma del Cliente que Recibe -->
                 <div class="col-6 text-center">
-                    <div style="min-height: 100px; border-bottom: 1px solid #000; margin-bottom: 10px;">
-                        <!-- Espacio para firma manual o digital -->
-                        <t t-if="o.signature">
-                            <img t-att-src="image_data_uri(o.signature)" 
-                                 style="max-height: 80px; max-width: 100%;"/>
-                        </t>
+                    <div style="border-top: 2px solid #000; padding-top: 10px; margin: 0 20px;">
+                        <p style="margin: 5px 0; font-weight: bold; font-size: 11pt;">Cliente que recibe</p>
+                        <p style="margin: 0; font-size: 9pt; color: #666;">Nombre y firma</p>
                     </div>
-                    <p style="margin-top: 5px;">
-                        <strong>Responsable de Entrega</strong>
-                    </p>
-                    <p style="font-size: 12px; color: #666;">
-                        Nombre: _______________________<br/>
-                        CI: _______________________<br/>
-                        Fecha: <t t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>
-                    </p>
-                </div>
-
-                <!-- COLUMNA 2: CLIENTE QUE RECIBE -->
-                <div class="col-6 text-center">
-                    <div style="min-height: 100px; border-bottom: 1px solid #000; margin-bottom: 10px;">
-                        <!-- Espacio para firma del cliente -->
-                    </div>
-                    <p style="margin-top: 5px;">
-                        <strong>Cliente que Recibe</strong>
-                    </p>
-                    <p style="font-size: 12px; color: #666;">
-                        <t t-if="o.partner_id.name">
-                            Nombre: <span t-field="o.partner_id.name"/><br/>
-                        </t>
-                        <t t-else="">
-                            Nombre: _______________________<br/>
-                        </t>
-                        CI: _______________________<br/>
-                        Fecha: <t t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>
-                    </p>
-                </div>
-
-                <div class="col-12 mt-3">
-                    <p style="font-size: 11px; color: #999; text-align: center;">
-                        <em>Nota: Al firmar este documento, el cliente confirma haber recibido los productos en buen estado.</em>
-                    </p>
                 </div>
             </div>
         </xpath>
 
     </template>
+
+    <!-- ================================================================
+         TEMPLATE AUXILIAR 1: FILAS CON NÚMERO DE SERIE/LOTE
+         ================================================================ -->
+    <template id="stock_report_delivery_has_serial_move_line_jah" name="JAH Delivery Serial Move Line">
+        <t t-set="description" t-value="move_line.move_id.description_picking or ''"/>
+        
+        <!-- CÓDIGO -->
+        <td>
+            <span t-field="move_line.product_id.default_code"/>
+        </td>
+        
+        <!-- DESCRIPCIÓN -->
+        <td>
+            <span t-field="move_line.product_id"/>
+            <p t-if="description and description != move_line.product_id.display_name and description != move_line.product_id.name">
+                <span t-esc="description"/>
+            </p>
+        </td>
+
+        <!-- UNIDAD -->
+        <td class="text-center">
+            <span t-field="move_line.product_uom_id"/>
+        </td>
+
+        <!-- LOTE/SERIE (cuando has_serial_number=True) O ORDENADO -->
+        <td class="text-center" name="move_line_lot_or_ordered">
+            <t t-if="has_serial_number">
+                <span t-field="move_line.lot_id.name"/>
+            </t>
+            <t t-else="">
+                <!-- Mostrar cantidad ordenada (no disponible directamente en move_line) -->
+                <span t-field="move_line.quantity"/>
+            </t>
+        </td>
+
+        <!-- ENTREGADO -->
+        <td class="text-center" name="move_line_delivered">
+            <span t-field="move_line.quantity"/>
+            <span t-if="move_line.move_id.product_packaging_id" groups="product.group_stock_packaging">
+                (<span t-field="move_line.product_packaging_qty" t-options="{'widget': 'integer'}"/>
+                <span t-field="move_line.move_id.product_packaging_id.display_name"/>)
+            </span>
+        </td>
+    </template>
+
+    <!-- ================================================================
+         TEMPLATE AUXILIAR 2: FILAS AGREGADAS (SIN NÚMERO DE SERIE)
+         ================================================================ -->
+    <template id="stock_report_delivery_aggregated_move_lines_jah" name="JAH Delivery Aggregated Lines">
+        <tr t-foreach="aggregated_lines" t-as="line">
+            <!-- CÓDIGO -->
+            <td>
+                <span t-esc="aggregated_lines[line].get('product') and aggregated_lines[line]['product'].default_code or ''"/>
+            </td>
+            
+            <!-- DESCRIPCIÓN -->
+            <td>
+                <span t-esc="aggregated_lines[line]['name']"/>
+                <p t-if="aggregated_lines[line]['description']">
+                    <span t-esc="aggregated_lines[line]['description']" t-options="{'widget': 'text'}"/>
+                </p>
+            </td>
+            
+            <!-- UNIDAD -->
+            <td class="text-center">
+                <span t-esc="aggregated_lines[line]['product_uom'].name"/>
+            </td>
+            
+            <!-- ORDENADO -->
+            <td class="text-center" name="move_line_aggregated_qty_ordered">
+                <span t-esc="aggregated_lines[line]['qty_ordered']" t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
+                <span t-if="aggregated_lines[line]['packaging'].name">
+                    (<span t-out="aggregated_lines[line]['packaging_qty']" t-options="{'widget': 'integer'}"/>
+                    <span t-out="aggregated_lines[line]['packaging'].name"/>)
+                </span>
+            </td>
+            
+            <!-- ENTREGADO -->
+            <td class="text-center" name="move_line_aggregated_quantity">
+                <t t-if="aggregated_lines[line]['quantity']">
+                    <span t-esc="aggregated_lines[line]['quantity']" t-options="{'widget': 'float', 'decimal_precision': 'Product Unit of Measure'}"/>
+                    <span t-if="aggregated_lines[line]['packaging'].name">
+                        (<span t-out="aggregated_lines[line]['packaging_quantity']" t-options="{'widget': 'integer'}"/>
+                        <span t-out="aggregated_lines[line]['packaging'].name"/>)
+                    </span>
+                </t>
+            </td>
+        </tr>
+    </template>
+
 </odoo>
