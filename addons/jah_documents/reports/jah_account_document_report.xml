@@ -31,9 +31,9 @@
                 <h3 class="mt-4 mb-4">
                     <strong id="payment_title">
                         <!-- Título dinámico según tipo de partner -->
-                        <span t-if="o.partner_type == 'customer'">RECIBO DE INGRESO</span>
-                        <span t-elif="o.partner_type == 'supplier'">RECIBO DE PAGO</span>
-                        <span t-else="">COMPROBANTE DE PAGO</span>
+                        <span t-if="o.partner_type == 'customer'">INCOME RECEIPT</span>
+                        <span t-elif="o.partner_type == 'supplier'">PAYMENT RECEIPT</span>
+                        <span t-else="">PAYMENT VOUCHER</span>
                         <!-- Mantiene el número/nombre del comprobante -->
                         : <span t-field="o.name"/>
                     </strong>
@@ -54,17 +54,17 @@
                 <div class="row">
                     <!-- Columna 1: Nombre del usuario -->
                     <div class="col-6">
-                        <strong>Registrado por:</strong><br/>
+                        <strong>Registered by:</strong><br/>
                         <span t-field="o.create_uid.name" t-if="o.create_uid"/>
-                        <span t-else="" style="color: #999;">No especificado</span>
+                        <span t-else="" style="color: #999;">Not specified</span>
                     </div>
 
                     <!-- Columna 2: Cargo del usuario -->
                     <div class="col-6">
-                        <strong>Cargo:</strong><br/>
+                        <strong>Position:</strong><br/>
                         <!-- o.create_uid.function es el campo 'Cargo' en res.users -->
                         <span t-if="o.create_uid and o.create_uid.function" t-field="o.create_uid.function"/>
-                        <span t-else="" style="color: #999;">No especificado</span>
+                        <span t-else="" style="color: #999;">Not specified</span>
                     </div>
                 </div>
             </xpath>
@@ -108,21 +108,21 @@
 
                             <p class="mt-2 mb-1">
                                 <strong>
-                                    <span t-if="o.partner_type == 'customer'">Firma del Cliente</span>
-                                    <span t-elif="o.partner_type == 'supplier'">Firma del Proveedor</span>
-                                    <span t-else="">Firma del Contacto</span>
+                                    <span t-if="o.partner_type == 'customer'">Customer Signature</span>
+                                    <span t-elif="o.partner_type == 'supplier'">Supplier Signature</span>
+                                    <span t-else="">Contact Signature</span>
                                 </strong>
                             </p>
 
                             <!-- Datos informativos pre-llenados -->
                             <p class="mb-0" style="font-size: 9pt;">
-                                Nombre: 
+                                Name: 
                                 <span t-if="o.partner_id" t-field="o.partner_id.name"/>
                                 <span t-else="">_________________</span>
                             </p>
 
                             <p class="mb-0" style="font-size: 9pt;">
-                                CI/NIT: 
+                                ID/Tax ID: 
                                 <span t-if="o.partner_id and o.partner_id.vat" t-field="o.partner_id.vat"/>
                                 <span t-else="">_________________</span>
                             </p>
@@ -138,18 +138,18 @@
                             <!-- Línea de firma -->
                             <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
 
-                            <p class="mt-2 mb-1"><strong>Firma Usuario (Cajero)</strong></p>
+                            <p class="mt-2 mb-1"><strong>User Signature (Cashier)</strong></p>
 
                             <!-- Nombre del usuario -->
                             <p class="mb-0" style="font-size: 9pt;">
-                                Nombre: 
+                                Name: 
                                 <span t-if="o.create_uid" t-field="o.create_uid.name"/>
                                 <span t-else="">_________________</span>
                             </p>
 
                             <!-- Cargo del usuario -->
                             <p class="mb-0" style="font-size: 9pt;">
-                                Cargo:
+                                Position:
                                 <span t-if="o.create_uid and o.create_uid.function" t-field="o.create_uid.function"/>
                                 <span t-else="">_________________</span>
                             </p>
@@ -166,12 +166,12 @@
                             <div style="margin-top: 50px; border-bottom: 2px solid black; width: 90%;"></div>
 
                             <p class="mt-2 mb-1">
-                                <strong>Recibido por (Nombre y CI)</strong>
+                                <strong>Received by (Name and ID)</strong>
                             </p>
 
                             <!-- Campos para completar manualmente -->
-                            <p class="mb-0" style="font-size: 9pt;">Nombre: _______________________</p>
-                            <p class="mb-0" style="font-size: 9pt;">CI: _________________</p>
+                            <p class="mb-0" style="font-size: 9pt;">Name: _______________________</p>
+                            <p class="mb-0" style="font-size: 9pt;">ID: _________________</p>
                         </div>
 
                     </div>

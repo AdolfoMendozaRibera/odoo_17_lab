@@ -28,12 +28,12 @@
                 <div id="informations" class="row mt-2 mb-4">
                     <!-- Fecha de validez (solo para cotizaciones no confirmadas) -->
                     <div t-if="doc.validity_date and doc.state in ['draft', 'sent']" class="col-auto col-3 mw-100 mb-2">
-                        <strong>Validez hasta:</strong><br/>
+                        <strong>Valid until:</strong><br/>
                         <span class="m-0" t-field="doc.validity_date"/>
                     </div>
                     <!-- Vendedor asignado (siempre visible) -->
                     <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
-                        <strong>Vendedor:</strong><br/>
+                        <strong>Salesperson:</strong><br/>
                         <span class="m-0" t-field="doc.user_id.name"/>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
             -->
             <xpath expr="//th[@name='th_description']" position="before">
                 <th name="th_code" class="text-start" style="width: 10%;">
-                    Código
+                    Code
                 </th>
             </xpath>
 
@@ -69,7 +69,7 @@
             -->
             <xpath expr="//th[@name='th_code']" position="after">
                 <th name="th_unit" class="text-center" style="width: 8%;">
-                    Unidad
+                    Unit
                 </th>
             </xpath>
 
@@ -99,7 +99,7 @@
             NOTA: Cambio cosmético, no afecta cálculos
             -->
             <xpath expr="//th[@name='th_subtotal']/span" position="replace">
-                <span>Sub Total</span>
+                <span>Subtotal</span>
             </xpath>
 
             <!-- ========================================================= -->
@@ -121,10 +121,10 @@
                     <t t-if="line.product_id">
                         <!-- Muestra código con tooltip como título -->
                         <span t-field="line.product_id.default_code" 
-                              t-att-title="line.product_id.default_code or 'Sin código'"/>
+                              t-att-title="line.product_id.default_code or 'No code'"/>
                     </t>
                     <t t-else="">
-                        <span title="Producto no especificado">-</span>
+                        <span title="Product not specified">-</span>
                     </t>
                 </td>
             </xpath>
@@ -143,7 +143,7 @@
                               t-att-title="line.product_uom.name or ''"/>
                     </t>
                     <t t-else="">
-                        <span title="Unidad no especificada">-</span>
+                        <span title="Unit not specified">-</span>
                     </t>
                 </td>
             </xpath>
@@ -226,10 +226,10 @@
                             <div class="col-12 mx-auto jah-signature-container" style="max-width: 400px;">
                                 <div class="jah-signature-line" style="border-top: 2px solid black; padding-top: 10px;">
                                     <p class="jah-signature-title" style="margin: 0; font-weight: bold; text-align: center;">
-                                        FIRMA DE APROBACIÓN
+                                        APPROVAL SIGNATURE
                                     </p>
                                     <p class="jah-signature-note" style="margin-top: 10px; font-size: 9pt; color: #666; text-align: center;">
-                                        *Esta firma autoriza la ejecución de la orden de venta*
+                                        *This signature authorizes the execution of the sales order*
                                     </p>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                     <div class="row mt-3">
                         <div class="col-12 text-center">
                             <p style="font-style: italic; color: #666; font-size: 10pt;">
-                                Esta cotización requiere aprobación para convertirse en orden de venta.
+                                This quotation requires approval to become a sales order.
                             </p>
                         </div>
                     </div>

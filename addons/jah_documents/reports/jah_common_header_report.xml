@@ -91,7 +91,7 @@
                                     <t t-esc="company.partner_id.name"/>
                                 </t>
                                 <t t-else="">
-                                    Casa Matriz
+                                    Headquarters
                                 </t>
                             </div>
                         
@@ -111,8 +111,7 @@
 
                             <!-- TELÉFONO - Información de contacto -->
                             <div class="jah-company-phone">
-                                <t t-esc="'Teléfono: '"/>
-                                <t t-esc="company.phone or 'No registrado'"/>
+                                Phone: <span t-esc="company.phone or 'Not registered'"/>
                             </div>
                         </div>
                     </t>
@@ -123,7 +122,7 @@
                     -->
                     <t t-else="">
                         <div class="alert alert-warning">
-                            No se encontró información de la empresa
+                            No company information found
                         </div>
                     </t>
 
@@ -139,10 +138,10 @@
                             <!-- RAZÓN SOCIAL DEL CLIENTE -->
                             <div class="jah-client-name">
                                 <span t-if="client.name">    
-                                    Cliente: <span t-field="client.name"/>
+                                    Customer: <span t-field="client.name"/>
                                 </span>
                                 <span t-if="not client.name">
-                                    Cliente: No registrado
+                                    Customer: Not registered
                                 </span>
                             </div>
                         
@@ -150,11 +149,11 @@
                             <!-- NIT DEL CLIENTE - Campo fiscal importante para JAH -->
                             <div class="jah-company-nit">
                                 <span t-if="client.vat">
-                                    NIT: <span t-field="client.vat"/>
+                                    Tax ID: <span t-field="client.vat"/>
                                 </span>
                                 
                                 <span t-if="not client.vat">
-                                    NIT: No registrado
+                                    Tax ID: Not registered
                                 </span>
                             </div>
 
@@ -176,23 +175,23 @@
                             <div class="jah-company-date">
                                 <!-- Orden de Venta: usa fecha de orden -->
                                 <t t-if="o._name == 'sale.order' and o.date_order">
-                                    Fecha de Orden: <span t-field="o.date_order" t-options='{"widget": "date"}'/>
+                                    Order Date: <span t-field="o.date_order" t-options='{"widget": "date"}'/>
                                 </t>
                                 <!-- Factura: usa fecha de factura -->
                                 <t t-elif="o._name == 'account.move' and o.invoice_date">
-                                    Fecha de Factura: <span t-field="o.invoice_date" t-options='{"widget": "date"}'/>
+                                    Invoice Date: <span t-field="o.invoice_date" t-options='{"widget": "date"}'/>
                                 </t>
                                 <!-- Nota de Entrega: usa fecha programada -->
                                 <t t-elif="o._name == 'stock.picking' and o.scheduled_date">
-                                    Fecha de Entrega: <span t-field="o.scheduled_date" t-options='{"widget": "date"}'/>
+                                    Delivery Date: <span t-field="o.scheduled_date" t-options='{"widget": "date"}'/>
                                 </t>
                                 <!-- Pago: usa fecha del pago -->
                                 <t t-elif="o._name == 'account.payment' and o.date">
-                                    Fecha de Pago: <span t-field="o.date" t-options='{"widget": "date"}'/>
+                                    Payment Date: <span t-field="o.date" t-options='{"widget": "date"}'/>
                                 </t>
                                 <!-- Fallback para otros documentos -->
                                 <t t-else="">
-                                    Fecha: No hay fecha o no se encontró
+                                    Date: No date or not found
                                 </t>
                             </div>
 
@@ -207,15 +206,15 @@
                             <div class="jah-company-client-id">
                                 <!-- 1. PRUEBA client.ref: t-field se aplica al SPAN -->
                                 <t t-if="client.ref">
-                                    Código Cliente: <span t-field="client.ref"/>
+                                    Customer Code: <span t-field="client.ref"/>
                                 </t>
                                 <!-- 2. SI NO HAY REF, PRUEBA client.id: t-field se aplica al SPAN -->
                                 <t t-elif="client.id">
-                                    Código Cliente: <span t-field="client.id"/>
+                                    Customer Code: <span t-field="client.id"/>
                                 </t>
                                 <!-- 3. SI NO HAY NINGUNO, muestra el mensaje estático -->
                                 <t t-else="">
-                                    Código Cliente: No registrado
+                                    Customer Code: Not registered
                                 </t>
                             </div>
 
@@ -234,7 +233,7 @@
                     <t t-elif="not client">
                         <div class="jah-client-info">
                             <div class="alert alert-warning">
-                                No se encontró información del cliente
+                                No customer information found
                             </div>
                         </div>
                     </t>

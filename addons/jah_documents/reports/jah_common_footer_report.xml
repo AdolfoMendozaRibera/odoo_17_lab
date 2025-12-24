@@ -64,7 +64,7 @@
                                 <div t-field="company.report_footer"/>
                             </t>
                             <t t-else="">
-                                <div>Footer de empresa no configurado</div>
+                                <div>Company footer not configured</div>
                             </t>
                         </ul>
                         
@@ -77,7 +77,7 @@
                                 - topage: total de páginas
                                 Estas variables son automáticas en Odoo para PDF
                                 -->
-                                Página: <span class="page"/> / <span class="topage"/>
+                                Page: <span class="page"/> / <span class="topage"/>
                             </div>
                         </t>
                         
@@ -105,11 +105,11 @@
                         -->
                         <div class="jah-footer-content">
                             <p class="jah-footer-line jah-footer-main">
-                                <strong>JAH - Soluciones y Logística.</strong> 
-                                Su socio de confianza para el crecimiento de su negocio.
+                                <strong>JAH - Solutions and Logistics.</strong> 
+                                Your trusted partner for business growth.
                             </p>
                             <p class="jah-footer-line jah-footer-secondary">
-                                Para cualquier consulta, póngase en contacto con nuestra oficina central.
+                                For any inquiries, please contact our headquarters.
                             </p>
                         </div>
 
@@ -120,7 +120,7 @@
                         -->
                         <t t-if="company and company.email">
                             <p class="jah-footer-line jah-footer-contact">
-                                Contacto: <span t-esc="company.email"/>
+                                Contact: <span t-esc="company.email"/>
                                 <t t-if="company.phone"> | Tel: <span t-esc="company.phone"/></t>
                             </p>
                         </t>
@@ -132,7 +132,7 @@
                         -->
                         <t t-if="report_type == 'pdf'">
                             <div class="jah-footer-meta jah-page-info">
-                                Página: <span class="page"/> / <span class="topage"/>
+                                Page: <span class="page"/> / <span class="topage"/>
                             </div>
                         </t>
                         
@@ -167,7 +167,7 @@
                         <!-- NUMERACIÓN DE PÁGINAS EN PDF -->
                         <t t-if="report_type == 'pdf'">
                             <div class="text-muted">
-                                Página: <span class="page"/> / <span class="topage"/>
+                                Page: <span class="page"/> / <span class="topage"/>
                             </div>
                         </t>
                     </div>

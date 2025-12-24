@@ -19,7 +19,7 @@
 
                         <div style="width:75%; text-align:left; padding-left:10px; line-height: 1.2;">
                             <p style="font-size:14px; font-weight:bold; margin:0;"><t t-esc="company.name"/></p>
-                            <p style="font-size:12px; margin:0; font-weight:bold; color: #555;">Casa Matriz</p> 
+                            <p style="font-size:12px; margin:0; font-weight:bold; color: #555;">Headquarters</p> 
                             <p style="font-size:12px; margin:0;">
                                 <t t-esc="company.street or ''"/> 
                                 <t t-if="company.street2">, <t t-esc="company.street2"/></t><br/>
@@ -27,7 +27,7 @@
                                 <t t-if="company.state_id">, <t t-esc="company.state_id.name"/></t>
                             </p>
                             <p style="font-size:12px; margin:0;">
-                                Teléfono: <t t-esc="company.phone or '-'"/>
+                                Phone: <t t-esc="company.phone or '-'"/>
                             </p>
                         </div>
     
