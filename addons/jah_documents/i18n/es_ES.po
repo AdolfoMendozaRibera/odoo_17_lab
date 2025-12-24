@@ -6,90 +6,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0-20251121\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 12:45+0000\n"
-"PO-Revision-Date: 2025-12-15 12:45+0000\n"
+"POT-Creation-Date: 2025-12-24 15:14+0000\n"
+"PO-Revision-Date: 2025-12-24 15:14+0000\n"
 "Last-Translator: \n"
-"Language-Team: Español\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: \n"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "*Esta firma autoriza la ejecución de la orden de venta*"
-msgstr "*Esta firma autoriza la ejecución de la orden de venta*"
+msgid "*This signature authorizes the execution of the sales order*"
+msgstr "*Esta firma autoriza la ejecución del pedido de venta*"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "<span title=\"Producto no especificado\">-</span>"
+msgid "<span title=\"Product not specified\">-</span>"
 msgstr "<span title=\"Producto no especificado\">-</span>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "<span title=\"Unidad no especificada\">-</span>"
+msgid "<span title=\"Unit not specified\">-</span>"
 msgstr "<span title=\"Unidad no especificada\">-</span>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "<span>Sub Total</span>"
-msgstr "<span>Sub Total</span>"
+msgid "<span>Subtotal</span>"
+msgstr "<span>Subtotal</span>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Cantidad</strong>"
-msgstr "<strong>Cantidad</strong>"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "<strong>Cargo:</strong><br/>"
-msgstr "<strong>Cargo:</strong><br/>"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Código</strong>"
+msgid "<strong>Code</strong>"
 msgstr "<strong>Código</strong>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Descripción</strong>"
-msgstr "<strong>Descripción</strong>"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Entregado</strong>"
+msgid "<strong>Delivered</strong>"
 msgstr "<strong>Entregado</strong>"
 
 #. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "<strong>Firma Usuario (Cajero)</strong>"
-msgstr "<strong>Firma Usuario (Cajero)</strong>"
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descripción</strong>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
 msgid ""
-"<strong>JAH - Soluciones y Logística.</strong> \n"
-"                                Su socio de confianza para el crecimiento de su negocio."
+"<strong>JAH - Solutions and Logistics.</strong> \n"
+"                                Your trusted partner for business growth."
 msgstr ""
 "<strong>JAH - Soluciones y Logística.</strong> \n"
-"                                Su socio de confianza para el crecimiento de su negocio."
+"                                Su socio de confianza para el crecimiento empresarial."
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Ordenado</strong>"
-msgstr "<strong>Ordenado</strong>"
+msgid "<strong>Ordered</strong>"
+msgstr "<strong>Pedido</strong>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "<strong>Recibido por (Nombre y CI)</strong>"
-msgstr "<strong>Recibido por (Nombre y CI)</strong>"
+msgid "<strong>Position:</strong><br/>"
+msgstr "<strong>Cargo:</strong><br/>"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Cantidad</strong>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "<strong>Registrado por:</strong><br/>"
+msgid "<strong>Received by (Name and ID)</strong>"
+msgstr "<strong>Recibido por (Nombre y ID)</strong>"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "<strong>Registered by:</strong><br/>"
 msgstr "<strong>Registrado por:</strong><br/>"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
+msgid "<strong>Salesperson:</strong><br/>"
+msgstr "<strong>Vendedor:</strong><br/>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
@@ -103,129 +101,118 @@ msgstr "<strong>Total</strong>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "<strong>Unidad</strong>"
+msgid "<strong>Unit</strong>"
 msgstr "<strong>Unidad</strong>"
 
 #. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "<strong>User Signature (Cashier)</strong>"
+msgstr "<strong>Firma del Usuario (Cajero)</strong>"
+
+#. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "<strong>Validez hasta:</strong><br/>"
-msgstr "<strong>Validez hasta:</strong><br/>"
+msgid "<strong>Valid until:</strong><br/>"
+msgstr "<strong>Válido hasta:</strong><br/>"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "<strong>Vendedor:</strong><br/>"
-msgstr "<strong>Vendedor:</strong><br/>"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "CI/NIT:"
-msgstr "CI/NIT:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "CI: _________________"
-msgstr "CI: _________________"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "COMPROBANTE DE PAGO"
-msgstr "COMPROBANTE DE PAGO"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Cargo:"
-msgstr "Cargo:"
+msgid "APPROVAL SIGNATURE"
+msgstr "FIRMA DE APROBACIÓN"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "Cliente que recibe"
-msgstr "Cliente que recibe"
+msgid "Batch/Serial"
+msgstr "Lote/Serial"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Cliente:"
+msgid "Casa Matriz"
+msgstr "Casa Matriz"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
+msgid "Code"
+msgstr "Código"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
+msgid "Company footer not configured"
+msgstr "Pie de página de empresa no configurado"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "Contact Signature"
+msgstr "Firma de Contacto"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
+msgid "Contact:"
+msgstr "Contacto:"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Customer Code:"
+msgstr "Código de Cliente:"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Customer Code: Not registered"
+msgstr "Código de Cliente: No registrado"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "Customer Signature"
+msgstr "Firma del Cliente"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Customer:"
 msgstr "Cliente:"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Cliente: No registrado"
+msgid "Customer: Not registered"
 msgstr "Cliente: No registrado"
 
 #. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
-msgid "Contacto:"
-msgstr "Contacto:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "Código"
-msgstr "Código"
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Date: No date or not found"
+msgstr "Fecha: Sin fecha o no encontrada"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Código Cliente:"
-msgstr "Código Cliente:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Código Cliente: No registrado"
-msgstr "Código Cliente: No registrado"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid ""
-"Esta cotización requiere aprobación para convertirse en orden de venta."
-msgstr "Esta cotización requiere aprobación para convertirse en orden de venta."
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "FIRMA DE APROBACIÓN"
-msgstr "FIRMA DE APROBACIÓN"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Fecha de Entrega:"
+msgid "Delivery Date:"
 msgstr "Fecha de Entrega:"
 
 #. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Fecha de Factura:"
-msgstr "Fecha de Factura:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Fecha de Orden:"
-msgstr "Fecha de Orden:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Fecha de Pago:"
-msgstr "Fecha de Pago:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Fecha: No hay fecha o no se encontró"
-msgstr "Fecha: No hay fecha o no se encontró"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Firma del Cliente"
-msgstr "Firma del Cliente"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Firma del Contacto"
-msgstr "Firma del Contacto"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Firma del Proveedor"
-msgstr "Firma del Proveedor"
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
+msgid "Delivery Responsible"
+msgstr "Responsable de Entrega"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
-msgid "Footer de empresa no configurado"
-msgstr "Footer de empresa no configurado"
+msgid "For any inquiries, please contact our headquarters."
+msgstr "Para cualquier consulta, por favor contacte nuestra sede central."
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "ID/Tax ID:"
+msgstr "ID/RUT:"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "ID: _________________"
+msgstr "ID: _________________"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "INCOME RECEIPT"
+msgstr "RECIBO DE INGRESO"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Invoice Date:"
+msgstr "Fecha de Factura:"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
@@ -234,98 +221,107 @@ msgstr "Logo"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "Lote/Serie"
-msgstr "Lote/Serie"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "NIT:"
-msgstr "NIT:"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "NIT: No registrado"
-msgstr "NIT: No registrado"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "No especificado"
-msgstr "No especificado"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "No se encontró información de la empresa"
-msgstr "No se encontró información de la empresa"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "No se encontró información del cliente"
-msgstr "No se encontró información del cliente"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "Nombre y firma"
+msgid "Name and signature"
 msgstr "Nombre y firma"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Nombre:"
+msgid "Name:"
 msgstr "Nombre:"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "Nombre: _______________________"
+msgid "Name: _______________________"
 msgstr "Nombre: _______________________"
 
 #. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "No company information found"
+msgstr "No se encontró información de la empresa"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "No customer information found"
+msgstr "No se encontró información del cliente"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "Not specified"
+msgstr "No especificado"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Order Date:"
+msgstr "Fecha de Pedido:"
+
+#. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "Ordenado"
-msgstr "Ordenado"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
-msgid ""
-"Para cualquier consulta, póngase en contacto con nuestra oficina central."
-msgstr "Para cualquier consulta, póngase en contacto con nuestra oficina central."
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
-msgid "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
-msgstr "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgid "Ordered"
+msgstr "Pedido"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "RECIBO DE INGRESO"
-msgstr "RECIBO DE INGRESO"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
-msgid "RECIBO DE PAGO"
+msgid "PAYMENT RECEIPT"
 msgstr "RECIBO DE PAGO"
 
 #. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "PAYMENT VOUCHER"
+msgstr "COMPROBANTE DE PAGO"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Payment Date:"
+msgstr "Fecha de Pago:"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "Position:"
+msgstr "Cargo:"
+
+#. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_delivery_document_jah
-msgid "Responsable de entrega"
-msgstr "Responsable de entrega"
+msgid "Receiving Customer"
+msgstr "Cliente Receptor"
 
 #. module: jah_documents
 #: model:ir.model,name:jah_documents.model_sale_order
 msgid "Sales Order"
-msgstr "Orden de Venta"
+msgstr "Pedido de Venta"
 
 #. module: jah_documents
 #: model:ir.model,name:jah_documents.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Línea de Orden de Venta"
+msgstr "Línea de Pedido de Venta"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
+msgid "Supplier Signature"
+msgstr "Firma del Proveedor"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Teléfono:"
-msgstr "Teléfono:"
+msgid "Tax ID:"
+msgstr "RUT:"
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
+msgid "Tax ID: Not registered"
+msgstr "RUT: No registrado"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
-msgid "Unidad"
+msgid "This quotation requires approval to become a sales order."
+msgstr "Esta cotización requiere aprobación para convertirse en pedido de venta."
+
+#. module: jah_documents
+#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_saleorder_document
+msgid "Unit"
 msgstr "Unidad"
 
 #. module: jah_documents
@@ -337,16 +333,6 @@ msgstr "[LOGO]"
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_payment_receipt_document
 msgid "_________________"
 msgstr "_________________"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "No registrado"
-msgstr "No registrado"
-
-#. module: jah_documents
-#: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_header
-msgid "Casa Matriz"
-msgstr "Casa Matriz"
 
 #. module: jah_documents
 #: model_terms:ir.ui.view,arch_db:jah_documents.report_jah_common_footer

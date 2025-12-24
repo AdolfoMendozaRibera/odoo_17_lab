@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es_US\n"
+"Language: en_US\n"
 "X-Generator: Poedit 3.4.2\n"
 
 #. module: jah_documents

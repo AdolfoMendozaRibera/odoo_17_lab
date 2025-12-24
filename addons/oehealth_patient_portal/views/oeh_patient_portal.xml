@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+
+         <record id="oeh_medical_patient_grant_access_view" model="ir.ui.view">
+            <field name="name">Patient</field>
+            <field name="model">oeh.medical.patient</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_patient_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='change_archive']" position="before">
+                    <field name="is_portal_access" invisible="1"/>
+                    <button name="change_grant_access"
+                            type="object"
+                            class="oe_stat_button text-success"
+                            style="margin-right: 10px; border: 1px solid lightgray; border-radius: 20px;"
+                            icon="fa-archive text-success"
+                            invisible="is_portal_access"
+                            string="Grant Portal Access">
+                    </button>
+                    <button name="change_grant_access"
+                            type="object"
+                            class="oe_stat_button text-danger"
+                            style="margin-right: 10px; border: 1px solid lightgray; border-radius: 20px;"
+                            icon="fa-archive text-danger"
+                            invisible="not is_portal_access"
+                            string="Revoke Portal Access">
+                    </button>
+                </xpath>
+                <xpath expr="//field[@name='genetic_risks']" position="after">
+                    <field name="patient_token" invisible='1'/>
+                    <field name="patient_url" invisible='1'/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

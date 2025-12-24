@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--        Laboratory Menu Rights-->
+
+    <record id="group_oeh_medical_lab_technician" model="res.groups">
+        <field name="name">Lab Technician</field>
+        <field name="category_id" ref="oehealth.module_oeh_medical_category"/>
+    </record>
+
+    <!--    <record model='ir.ui.menu' id='oehealth.oeh_medical_my_physician_profile'>-->
+    <!--        <field name="groups_id"-->
+    <!--               eval="[(6,0,[ref('group_oeh_medical_lab_technician'),ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>-->
+    <!--    </record>-->
+
+    <record model='ir.ui.menu' id='oeh_medical_lab_technician'>
+        <field name="groups_id"
+               eval="[(6,0,[ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>
+    </record>
+
+    <record model='ir.ui.menu' id='oehealth.oeh_medical_my_physician_profile'>
+        <field name="groups_id" eval="[(4, ref('oehealth_lab.group_oeh_medical_lab_technician'))]"/>
+    </record>
+
+
+    <record model='ir.ui.menu' id='oeh_medical_lab_units_conf_list'>
+        <field name="groups_id"
+               eval="[(6,0,[ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>
+    </record>
+
+    <record model='ir.ui.menu' id='oeh_medical_lab_test_types_conf_list'>
+        <field name="groups_id"
+               eval="[(6,0,[ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>
+    </record>
+
+    <record model='ir.ui.menu' id='oeh_medical_lab_test_conf_list'>
+        <field name="groups_id"
+               eval="[(6,0,[ref('group_oeh_medical_lab_technician'),ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>
+    </record>
+
+    <record model="ir.ui.menu" id='oeh_medical_labtest_department_menu'>
+        <field name="groups_id"
+               eval="[(6,0,[ref('oehealth.group_oeh_medical_manager'),ref('oehealth.group_oeh_medical_physician')])]"/>
+    </record>
+</odoo>

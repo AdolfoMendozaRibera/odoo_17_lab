@@ -20,7 +20,7 @@
                                 <p>
                                     <strong>Estado:</strong>
                                     <span t-att-class="'estado-' + (o.estado or 'pendiente')">
-                                        <t t-esc="o.estado"/>
+                                        <span t-field="o.estado" t-field-options="{'widget': 'selection'}"/>
                                     </span>
                                 </p>
                                 
@@ -32,7 +32,7 @@
                                 <p>
                                     <strong>Prioridad:</strong>
                                     <span t-att-class="'priority-' + (o.prioridad or 'media')">
-                                        <t t-esc="o.prioridad"/>
+                                        <span t-field="o.prioridad" t-field-options="{'widget': 'selection'}"/>
                                     </span>
                                 </p>
                             </div>
