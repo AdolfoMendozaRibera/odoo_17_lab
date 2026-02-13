@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+    
+        <!-- Cambiar el nombre del menú principal usando record -->
+        <record id="oehealth.oeh_medical_menu" model="ir.ui.menu">
+            <field name="name">Gestión Clínica</field>
+            <field name="sequence">2</field>
+            <field name="web_icon">oehealth,static/description/icon.png</field>
+        </record>
+        
+    </data>
+</odoo>

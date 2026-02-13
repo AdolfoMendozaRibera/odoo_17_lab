@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+
+        <!-- Patient  WhatsApp Wizard view -->
+
+        <record model="ir.ui.view" id="view_oeh_medical_whatsapp_wiz">
+            <field name="name">Send WhatsApp</field>
+            <field name="model">oeh.medical.whatsapp.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string='Send WhatsApp'>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="whatsapp_template_id"/>
+                        <field name="mobile" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="message" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Documents">
+                            <group>
+                                <field name="attachment_ids" widget="many2many_binary" string="Send multiple files"
+                                       nolabel="1" colspan="2"/>
+                            </group>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="send_whatsapp_msg" string="Send WhatsApp" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Medical Staff WhatsApp Wizard view -->
+
+        <record model="ir.ui.view" id="view_oeh_medical_staff_whatsapp_wiz">
+            <field name="name">Send WhatsApp</field>
+            <field name="model">oeh.medical.staff.whatsapp.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string='Send WhatsApp'>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="whatsapp_template_id"/>
+                        <field name="mobile" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="message" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Documents">
+                            <group>
+                                <field name="attachment_ids" widget="many2many_binary" string="Send multiple files"
+                                       nolabel="1" colspan="2"/>
+                            </group>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="send_whatsapp_msg" string="Send WhatsApp" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <!--                 Appointment Whatsapp Wizard  -->
+
+        <record model="ir.ui.view" id="view_oeh_appointment_whatsapp_wiz">
+            <field name="name">Send WhatsApp</field>
+            <field name="model">oeh.medical.appointment.whatsapp.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string='Send WhatsApp'>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="doctor" readonly="1"/>
+                        <field name="whatsapp_template_id"/>
+                    </group>
+                    <group>
+                        <field name="message" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Documents">
+                            <group>
+                                <field name="attachment_ids" widget="many2many_binary" string="Send multiple files"
+                                       nolabel="1" colspan="2"/>
+                            </group>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="send_whatsapp_msg" string="Send WhatsApp" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <!--                 Lab Test Whatsapp Wizard  -->
+
+        <record model="ir.ui.view" id="view_oeh_lab_test_whatsapp_wiz">
+            <field name="name">Send WhatsApp</field>
+            <field name="model">oeh.medical.lab.test.whatsapp.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string='Send WhatsApp'>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="whatsapp_template_id"/>
+                    </group>
+                    <group>
+                        <field name="message" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Documents">
+                            <!-- <group>
+                                <group> -->
+                            <field name="attachment_ids" widget="many2many_binary" string="Send multiple files" nolabel="1"/>
+                                <!-- </group>
+                            </group> -->
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="send_whatsapp_msg" string="Send WhatsApp" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+
+        <!--                 Prescription Whatsapp Wizard  -->
+
+        <record model="ir.ui.view" id="view_oeh_prescription_whatsapp_wiz">
+            <field name="name">Send WhatsApp</field>
+            <field name="model">oeh.medical.prescription.whatsapp.wiz</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string='Send WhatsApp'>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="whatsapp_template_id"/>
+                    </group>
+                    <group>
+                        <field name="message" required="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Documents">
+                            <!-- <group>
+                                <group> -->
+                            <field name="attachment_ids" widget="many2many_binary" string="Send multiple files" nolabel="1"/>
+                                <!-- </group>
+                            </group> -->
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="send_whatsapp_msg" string="Send WhatsApp" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

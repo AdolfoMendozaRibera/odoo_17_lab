@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+    
+        <record id="oeh_medical_patient_view_buttons_extend" model="ir.ui.view">
+            <field name="name">Patient - Appointment Buttons</field>
+            <field name="model">oeh.medical.patient</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_patient_view"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//header" position="after">
+                    
+                    <div style="background-color: #f8f9fa; padding: 15px; margin: 0; border-top: 2px solid #0db8d4; width: 100%; box-sizing: border-box;">
+                        
+                        <h3 style="margin: 0 0 15px 0; font-size: 13px; color: #495057; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                            📋 Cronograma de Citas por Tipo
+                        </h3>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; width: 100%; auto-flow: dense;">
+                            
+                            <button name="action_view_medicion_appointments" 
+                                    type="object" 
+                                    string="📏 Medición" 
+                                    icon="fa-ruler"
+                                    class="btn-info"
+                                    style="width: 100%; padding: 8px 4px; border-radius: 4px; font-weight: 600; font-size: 13px; white-space: nowrap;"/>
+                            
+                            <button name="action_view_control_appointments" 
+                                    type="object" 
+                                    string="✅ Control" 
+                                    icon="fa-check"
+                                    class="btn-info"
+                                    style="width: 100%; padding: 8px 4px; border-radius: 4px; font-weight: 600; font-size: 13px; white-space: nowrap;"/>
+                            
+                            <button name="action_view_control_medicion_appointments" 
+                                    type="object" 
+                                    string="📊 Control Medición" 
+                                    icon="fa-bar-chart"
+                                    class="btn-info"
+                                    style="width: 100%; padding: 8px 4px; border-radius: 4px; font-weight: 600; font-size: 13px; white-space: nowrap;"/>
+                            
+                            <button name="action_view_suero_appointments" 
+                                    type="object" 
+                                    string="💉 Suero" 
+                                    icon="fa-syringe"
+                                    class="btn-info"
+                                    style="width: 100%; padding: 8px 4px; border-radius: 4px; font-weight: 600; font-size: 13px; white-space: nowrap;"/>
+                            
+                            <button name="action_view_inyectable_appointments" 
+                                    type="object" 
+                                    string="💊 Inyectable" 
+                                    icon="fa-pills"
+                                    class="btn-info"
+                                    style="width: 100%; padding: 8px 4px; border-radius: 4px; font-weight: 600; font-size: 13px; white-space: nowrap;"/>
+                        </div>
+                    </div>
+
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

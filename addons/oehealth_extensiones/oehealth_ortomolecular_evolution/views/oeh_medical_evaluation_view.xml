@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- 1. Heredar Form View de Evaluación para añadir Prescription -->
+        <record id="view_oeh_medical_evaluation_form_inherit_protocol" model="ir.ui.view">
+            <field name="name">oeh.medical.evaluation.form.inherit.protocol</field>
+            <field name="model">oeh.medical.evaluation</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_evaluation_view"/>
+            <field name="arch" type="xml">
+                <field name="appointment" position="after">
+                    <field name="prescription_id" domain="[('patient', '=', patient)]" options="{'no_create': True}"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- 2. Heredar Search View de Evaluación -->
+        <record id="view_oeh_medical_evaluation_search_inherit_protocol" model="ir.ui.view">
+            <field name="name">oeh.medical.evaluation.search.inherit.protocol</field>
+            <field name="model">oeh.medical.evaluation</field>
+            <field name="inherit_id" ref="oehealth.view_oeh_medical_evaluation_filter"/>
+            <field name="arch" type="xml">
+                <field name="chief_complaint" position="after">
+                    <field name="prescription_id" string="Protocol/Prescription"/>
+                </field>
+                <filter name="group_mood" position="after">
+                    <filter string="Protocol" name="group_prescription" context="{'group_by':'prescription_id'}"/>
+                </filter>
+            </field>
+        </record>
+
+        <!-- 3. Definir Graph View -->
+        <record id="view_oeh_medical_evaluation_graph" model="ir.ui.view">
+            <field name="name">oeh.medical.evaluation.graph</field>
+            <field name="model">oeh.medical.evaluation</field>
+            <field name="arch" type="xml">
+                <graph string="Patient Evolution" type="line" sample="1">
+                    <field name="evaluation_start_date" interval="month"/>
+                    <field name="weight" type="measure"/>
+                    <field name="glycemia" type="measure"/>
+                    <field name="cholesterol_total" type="measure"/>
+                </graph>
+            </field>
+        </record>
+        
+        <!-- 3.1 Pivot View -->
+        <record id="view_oeh_medical_evaluation_pivot" model="ir.ui.view">
+            <field name="name">oeh.medical.evaluation.pivot</field>
+            <field name="model">oeh.medical.evaluation</field>
+            <field name="arch" type="xml">
+                <pivot string="Patient Evolution" sample="1">
+                    <field name="evaluation_start_date" interval="month" type="row"/>
+                    <field name="patient" type="row"/>
+                    <field name="weight" type="measure"/>
+                    <field name="glycemia" type="measure"/>
+                    <field name="cholesterol_total" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <!-- 4. Definir Action Window para Evolution Analysis -->
+        <record id="action_oeh_medical_evaluation_analysis" model="ir.actions.act_window">
+            <field name="name">Evolution Analysis</field>
+            <field name="res_model">oeh.medical.evaluation</field>
+            <field name="view_mode">graph,pivot,tree,form</field>
+            <field name="context">{'search_default_group_prescription': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No evaluations data found.
+                </p>
+                <p>
+                    Track patient evolution by linking evaluations to protocols.
+                </p>
+            </field>
+        </record>
+
+        <!-- Menu Hierarchy -->
+        <menuitem id="oeh_medical_report_menu"
+                  name="Reports"
+                  parent="oehealth.oeh_medical_menu"
+                  sequence="50"/>
+
+        <menuitem id="menu_oeh_medical_evaluation_analysis"
+                  name="Evolution Dashboard"
+                  parent="oeh_medical_report_menu"
+                  action="action_oeh_medical_evaluation_analysis"
+                  sequence="10"/>
+
+         <!-- 5. Smart Button en Prescription -->
+        <record id="view_oeh_medical_prescription_form_inherit_smart_button" model="ir.ui.view">
+            <field name="name">oeh.medical.prescription.form.inherit.smart.button</field>
+            <field name="model">oeh.medical.prescription</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_prescription_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_left']" position="before">
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="object" name="action_view_evaluations"
+                            icon="fa-line-chart">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_text">Evolution</span>
+                            </div>
+                        </button>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

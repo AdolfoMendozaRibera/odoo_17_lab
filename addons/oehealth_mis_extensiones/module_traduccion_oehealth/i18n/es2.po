@@ -1,0 +1,535 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oehealth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-15 15:20+0000\n"
+"PO-Revision-Date: 2026-01-15 15:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LRP5
+msgid ""
+"\n"
+"        Osteoporosis-pseudoglioma syndrome [MIM:259770]\n"
+"        Bone mineral density variability 1 [MIM:601884]\n"
+"        Osteopetrosis, AD type I [MIM:607634]\n"
+"        Hyperostosis, endosteal [MIM:144750]\n"
+"        van Buchem disease, type 2 [MIM:607636]\n"
+"        Osteosclerosis [MIM:144750]\n"
+"        Osteoporosis [MIM:166710]\n"
+"        Exudative vitreoretinopathy 4 [MIM:601813]"
+msgstr ""
+"\n"
+"        Síndrome de osteoporosis-pseudoglioma [MIM:259770]\n"
+"        Variabilidad de densidad mineral ósea 1 [MIM:601884]\n"
+"        Osteopetrosis, tipo AD I [MIM:607634]\n"
+"        Hiperostosis endosteal [MIM:144750]\n"
+"        Enfermedad de van Buchem, tipo 2 [MIM:607636]\n"
+"        Osteosclerosis [MIM:144750]\n"
+"        Osteoporosis [MIM:166710]\n"
+"        Vitreorretinopatía exudativa 4 [MIM:601813]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDB2
+msgid ""
+"\n"
+"        Osteosarcoma [MIM:259500]"
+msgstr ""
+"\n"
+"        Osteosarcoma [MIM:259500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OMS
+msgid ""
+"\n"
+"        Otitis media, susceptibility to"
+msgstr ""
+"\n"
+"        Susceptibilidad a otitis media"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC1
+msgid ""
+"\n"
+"        Otosclerosis 1"
+msgstr ""
+"\n"
+"        Otosclerosis 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC3
+msgid ""
+"\n"
+"        Otosclerosis 3"
+msgstr ""
+"\n"
+"        Otosclerosis 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC4
+msgid ""
+"\n"
+"        Otosclerosis 4"
+msgstr ""
+"\n"
+"        Otosclerosis 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC5
+msgid ""
+"\n"
+"        Otosclerosis 5"
+msgstr ""
+"\n"
+"        Otosclerosis 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC7
+msgid ""
+"\n"
+"        Otosclerosis 7"
+msgstr ""
+"\n"
+"        Otosclerosis 7"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC2
+msgid ""
+"\n"
+"        Otosclerosis-2"
+msgstr ""
+"\n"
+"        Otosclerosis-2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTSC8
+msgid ""
+"\n"
+"        Otsclerosis 8"
+msgstr ""
+"\n"
+"        Otosclerosis 8"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC4A1
+msgid ""
+"\n"
+"        Ovalocytosis\n"
+"        Spherocytosis, type 4 [MIM:612653]\n"
+"        Malaria, resistance to [MIM:611162]\n"
+"        Renal tubular acidosis, distal, AD [MIM:179800]\n"
+"        Renal tubular acidosis, distal, AR [MIM:611590]\n"
+"        Blood group, Diego [MIM:110500]\n"
+"        Blood group, Waldner [MIM:112010]\n"
+"        Blood group, Wright [MIM:112050]\n"
+"        Blood group, Froese [MIM:601551]\n"
+"        Blood group, Swann [MIM:601550]"
+msgstr ""
+"\n"
+"        Ovalocitosis\n"
+"        Esferocitosis, tipo 4 [MIM:612653]\n"
+"        Resistencia a la malaria [MIM:611162]\n"
+"        Acidosis tubular renal, distal, AD [MIM:179800]\n"
+"        Acidosis tubular renal, distal, AR [MIM:611590]\n"
+"        Grupo sanguíneo, Diego [MIM:110500]\n"
+"        Grupo sanguíneo, Waldner [MIM:112010]\n"
+"        Grupo sanguíneo, Wright [MIM:112050]\n"
+"        Grupo sanguíneo, Froese [MIM:601551]\n"
+"        Grupo sanguíneo, Swann [MIM:601550]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ST8
+msgid ""
+"\n"
+"        Ovarian cancer, serous"
+msgstr ""
+"\n"
+"        Cáncer de ovario, seroso"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OPCML
+msgid ""
+"\n"
+"        Ovarian cancer, somatic [MIM:167000]"
+msgstr ""
+"\n"
+"        Cáncer de ovario, somático [MIM:167000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PIK3CA
+msgid ""
+"\n"
+"        Ovarian cancer, somatic [MIM:604370]\n"
+"        Breast cancer, somatic [MIM:114480]\n"
+"        Colorectal cancer, somatic [MIM:114500]\n"
+"        Gastric cancer, somatic [MIM:137215]\n"
+"        Hepatocellular carcinoma, somatic [MIM:114550]\n"
+"        Nonsmall cell lung cancer, somatic [MIM:211980]\n"
+"        Keratosis, seborrheic, somatic [MIM:182000]\n"
+"        Nevus, epidermal [MIM:162900]"
+msgstr ""
+"\n"
+"        Cáncer de ovario, somático [MIM:604370]\n"
+"        Cáncer de mama, somático [MIM:114480]\n"
+"        Cáncer colorrectal, somático [MIM:114500]\n"
+"        Cáncer gástrico, somático [MIM:137215]\n"
+"        Carcinoma hepatocelular, somático [MIM:114550]\n"
+"        Cáncer pulmonar de células no pequeñas, somático [MIM:211980]\n"
+"        Queratosis seborreica, somática [MIM:182000]\n"
+"        Nevus epidérmico [MIM:162900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OVCAS1
+msgid ""
+"\n"
+"        Ovarian cancer, susceptibility to"
+msgstr ""
+"\n"
+"        Susceptibilidad a cáncer de ovario"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RRAS2
+msgid ""
+"\n"
+"        Ovarian carcinoma"
+msgstr ""
+"\n"
+"        Carcinoma de ovario"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FSHR
+msgid ""
+"\n"
+"        Ovarian dysgenesis 1 [MIM:233300]\n"
+"        Ovarian sex cord tumors\n"
+"        Ovarian response to FSH stimulation [MIM:276400]\n"
+"        Ovarian hyperstimulation syndrome [MIM:608115]"
+msgstr ""
+"\n"
+"        Disgenesia ovárica 1 [MIM:233300]\n"
+"        Tumores ováricos del cordón sexual\n"
+"        Respuesta ovárica a estimulación con FSH [MIM:276400]\n"
+"        Síndrome de hiperestimulación ovárica [MIM:608115]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BMP15
+msgid ""
+"\n"
+"        Ovarian dysgenesis 2 [MIM:300510]\n"
+"        Premature ovarian failure 4 [MIM:300510]"
+msgstr ""
+"\n"
+"        Disgenesia ovárica 2 [MIM:300510]\n"
+"        Insuficiencia ovárica prematura 4 [MIM:300510]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RNF135
+msgid ""
+"\n"
+"        Overgrowth syndrome"
+msgstr ""
+"\n"
+"        Síndrome de sobrecrecimiento"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PCK2
+msgid ""
+"\n"
+"        PEPCK deficiency, mitochondrial"
+msgstr ""
+"\n"
+"        Deficiencia mitocondrial de PEPCK"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT6B
+msgid ""
+"\n"
+"        Pachyonychia congenita, Jackson-Lawler type [MIM:167210]"
+msgstr ""
+"\n"
+"        Paquioniquia congénita, tipo Jackson-Lawler [MIM:167210]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT17
+msgid ""
+"\n"
+"        Pachyonychia congenita, Jackson-Lawler type [MIM:167210]\n"
+"        Steatocystoma multiplex [MIM:184500]"
+msgstr ""
+"\n"
+"        Paquioniquia congénita, tipo Jackson-Lawler [MIM:167210]\n"
+"        Esteatocistoma múltiple [MIM:184500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT6A
+msgid ""
+"\n"
+"        Pachyonychia congenita, Jadassohn-Lewandowsky type [MIM:167200]"
+msgstr ""
+"\n"
+"        Paquioniquia congénita, tipo Jadassohn-Lewandowsky [MIM:167200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT16
+msgid ""
+"\n"
+"        Pachyonychia congenita, Jadassohn-Lewandowsky type [MIM:167200]\n"
+"        Palmoplantar keratoderma, nonepidermolytic [MIM:600962]\n"
+"        Palmoplantar verrucous nevus, unilateral [MIM:144200]"
+msgstr ""
+"\n"
+"        Paquioniquia congénita, tipo Jadassohn-Lewandowsky [MIM:167200]\n"
+"        Queratodermia palmoplantar no epidermolítica [MIM:600962]\n"
+"        Nevus verrugoso palmoplantar unilateral [MIM:144200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDB4
+#: model:oeh.medical.genetics,info:oehealth.SQSTM1
+msgid ""
+"\n"
+"        Paget disease of bone [MIM:602080]"
+msgstr ""
+"\n"
+"        Enfermedad de Paget ósea [MIM:602080]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TNFRSF11B
+msgid ""
+"\n"
+"        Paget disease, juvenile [MIM:239000]"
+msgstr ""
+"\n"
+"        Enfermedad de Paget juvenil [MIM:239000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RSPO1
+msgid ""
+"\n"
+"        Palmoplantar hyperkeratosis with squamous cell carcinoma of skin and sex reversal [MIM:610644]\n"
+"        Palmoplantar hyperkeratosis and true hermaphroditism [MIM:610644]"
+msgstr ""
+"\n"
+"        Hiperqueratosis palmoplantar con carcinoma espinocelular de piel y reversión sexual [MIM:610644]\n"
+"        Hiperqueratosis palmoplantar y hermafroditismo verdadero [MIM:610644]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPKB
+msgid ""
+"\n"
+"        Palmoplantar keratoderma, Bothnia type"
+msgstr ""
+"\n"
+"        Queratodermia palmoplantar, tipo Bothnia"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SMAD4
+msgid ""
+"\n"
+"        Pancreatic cancer\n"
+"        Polyposis, juvenile intestinal [MIM:174900]\n"
+"        Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome [MIM:175050]"
+msgstr ""
+"\n"
+"        Cáncer pancreático\n"
+"        Poliposis intestinal juvenil [MIM:174900]\n"
+"        Síndrome de poliposis juvenil/telangiectasia hemorrágica hereditaria [MIM:175050]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARMET
+msgid ""
+"\n"
+"        Pancreatic cancer [MIM:260350]"
+msgstr ""
+"\n"
+"        Cáncer pancreático [MIM:260350]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACVR1B
+msgid ""
+"\n"
+"        Pancreatic cancer, somatic"
+msgstr ""
+"\n"
+"        Cáncer pancreático somático"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PALLD
+msgid ""
+"\n"
+"        Pancreatic cancer, susceptibility to, 1 [MIM:606856]"
+msgstr ""
+"\n"
+"        Susceptibilidad a cáncer pancreático 1 [MIM:606856]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RBBP8
+msgid ""
+"\n"
+"        Pancreatic carcinoma, somatic"
+msgstr ""
+"\n"
+"        Carcinoma pancreático somático"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ST11
+msgid ""
+"\n"
+"        Pancreatic endocrine tumors"
+msgstr ""
+"\n"
+"        Tumores endocrinos pancreáticos"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PNLIP
+msgid ""
+"\n"
+"        Pancreatic lipase deficiency"
+msgstr ""
+"\n"
+"        Deficiencia de lipasa pancreática"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRSS2
+msgid ""
+"\n"
+"        Pancreatitis, chronic, protection against"
+msgstr ""
+"\n"
+"        Protección contra pancreatitis crónica"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CTRC
+msgid ""
+"\n"
+"        Pancreatitis, chronic, susceptibilty to [MIM:167800]"
+msgstr ""
+"\n"
+"        Susceptibilidad a pancreatitis crónica [MIM:167800]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SPINK1
+msgid ""
+"\n"
+"        Pancreatitis, hereditary [MIM:167800]\n"
+"        Fibrocalculous pancreatic diabetes, susceptibility to\n"
+"        Tropical calcific pancreatitis [MIM:608189]"
+msgstr ""
+"\n"
+"        Pancreatitis hereditaria [MIM:167800]\n"
+"        Susceptibilidad a diabetes pancreática fibrocalculosa\n"
+"        Pancreatitis calcificante tropical [MIM:608189]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAND2
+msgid ""
+"\n"
+"        Panic disorder 2"
+msgstr ""
+"\n"
+"        Trastorno de pánico 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAND3
+msgid ""
+"\n"
+"        Panic disorder 3"
+msgstr ""
+"\n"
+"        Trastorno de pánico 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAND1
+msgid ""
+"\n"
+"        Panic disorder syndrome 1"
+msgstr ""
+"\n"
+"        Síndrome de trastorno de pánico 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CTSC
+#: model:oeh.medical.genetics,info:oehealth.JPD
+msgid ""
+"\n"
+"        Papillon-Lefevre syndrome [MIM:245000]\n"
+"        Haim-M
+
+unk syndrome [MIM:245010]\n"
+"        Periodontitis, juvenile [MIM:170650]"
+msgstr ""
+"\n"
+"        Síndrome de Papillon-Lefevre [MIM:245000]\n"
+"        Síndrome de Haim-Munk [MIM:245010]\n"
+"        Periodontitis juvenil [MIM:170650]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SDHB
+msgid ""
+"\n"
+"        Paraganglioma, familial chromaffin, 4 [MIM:115310]\n"
+"        Pheochromocytoma [MIM:171300]\n"
+"        Paraganglioma and gastric stromal sarcoma [MIM:606864]\n"
+"        Cowden-like syndrome [MIM:612359]"
+msgstr ""
+"\n"
+"        Paraganglioma cromafín familiar 4 [MIM:115310]\n"
+"        Feocromocitoma [MIM:171300]\n"
+"        Paraganglioma y sarcoma estromal gástrico [MIM:606864]\n"
+"        Síndrome similar a Cowden [MIM:612359]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SDHD
+msgid ""
+"\n"
+"        Paragangliomas, familial nonchromaffin, 1, with or without deafness [MIM:168000]\n"
+"        Pheochromocytoma [MIM:171300]\n"
+"        Carcinoid tumors, intestinal [MIM:114900]\n"
+"       Merkel cell carcinoma, somatic\n"
+"        Paraganglioma and gastric stromal sarcoma [MIM:606864]\n"
+"        Cowden-like syndrome [MIM:612359]"
+msgstr ""
+"\n"
+"        Paragangliomas no cromafines familiares 1, con o sin sordera [MIM:168000]\n"
+"        Feocromocitoma [MIM:171300]\n"
+"        Tumores carcinoides intestinales [MIM:114900]\n"
+"        Carcinoma de células de Merkel, somático\n"
+"        Paraganglioma y sarcoma estromal gástrico [MIM:606864]\n"
+"        Síndrome similar a Cowden [MIM:612359]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PGL2
+msgid ""
+"\n"
+"        Paragangliomas, familial nonchromaffin, 2"
+msgstr ""
+"\n"
+"        Paragangliomas no cromafines familiares 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SDHC
+msgid ""
+"\n"
+"        Paragangliomas, familial nonchromaffin, 3 [MIM:605373]\n"
+"        Paraganglioma and gastric stromal sarcoma [MIM:606864]"
+msgstr ""
+"\n"
+"        Paragangliomas no cromafines familiares 3 [MIM:605373]\n"
+"        Paraganglioma y sarcoma estromal gástrico [MIM:606864]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ALX4
+msgid ""
+"\n"
+"        Parietal foramina 2 [MIM:609597]"
+msgstr ""
+"\n"
+"        Forámenes parietales 2 [MIM:609597]"

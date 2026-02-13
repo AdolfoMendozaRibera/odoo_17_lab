@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="oeh_medical_patient_view_whatsapp_extend_es" model="ir.ui.view">
+        <field name="model">oeh.medical.patient</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.oeh_medical_patient_view_whatsapp_extend"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_whatsapp_to_patient']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+                <attribute name="title">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_physician_view_whatsapp_extend_es" model="ir.ui.view">
+        <field name="model">oeh.medical.physician</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.oeh_medical_physician_view_whatsapp_extend"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_whatsapp_to_medical_staff']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+                <attribute name="title">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_appointment_whatsapp_es" model="ir.ui.view">
+        <field name="model">oeh.medical.appointment</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.oeh_medical_appointment_view_whatsapp_extend"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_appointment_detail_whatsapp_']" position="attributes">
+                <attribute name="string">Enviar por WhatsApp</attribute>
+                <attribute name="title">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_lab_test_whatsapp_es" model="ir.ui.view">
+        <field name="model">oeh.medical.lab.test</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.oeh_medical_lab_test_view_whatsapp_extend"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_lab_test_detail_whatsapp_']" position="attributes">
+                <attribute name="string">Enviar por WhatsApp</attribute>
+                <attribute name="title">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_prescription_whatsapp_es" model="ir.ui.view">
+        <field name="model">oeh.medical.prescription</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.oeh_medical_prescription_view_whatsapp_extend"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_prescription_detail_whatsapp_']" position="attributes">
+                <attribute name="string">Enviar por WhatsApp</attribute>
+                <attribute name="title">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    
+    <!-- Wizard Translations -->
+    <record id="view_oeh_medical_whatsapp_wiz_es" model="ir.ui.view">
+        <field name="model">oeh.medical.whatsapp.wiz</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.view_oeh_medical_whatsapp_wiz"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+            <xpath expr="//button[@name='send_whatsapp_msg']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_oeh_medical_staff_whatsapp_wiz_es" model="ir.ui.view">
+        <field name="model">oeh.medical.staff.whatsapp.wiz</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.view_oeh_medical_staff_whatsapp_wiz"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+            <xpath expr="//button[@name='send_whatsapp_msg']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_oeh_appointment_whatsapp_wiz_es" model="ir.ui.view">
+        <field name="model">oeh.medical.appointment.whatsapp.wiz</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.view_oeh_appointment_whatsapp_wiz"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+            <xpath expr="//button[@name='send_whatsapp_msg']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_oeh_lab_test_whatsapp_wiz_es" model="ir.ui.view">
+        <field name="model">oeh.medical.lab.test.whatsapp.wiz</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.view_oeh_lab_test_whatsapp_wiz"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+            <xpath expr="//button[@name='send_whatsapp_msg']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_oeh_prescription_whatsapp_wiz_es" model="ir.ui.view">
+        <field name="model">oeh.medical.prescription.whatsapp.wiz</field>
+        <field name="inherit_id" ref="oehealth_whatsapp.view_oeh_prescription_whatsapp_wiz"/>
+        <field name="arch" type="xml">
+             <xpath expr="//form" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+            <xpath expr="//button[@name='send_whatsapp_msg']" position="attributes">
+                <attribute name="string">Enviar WhatsApp</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

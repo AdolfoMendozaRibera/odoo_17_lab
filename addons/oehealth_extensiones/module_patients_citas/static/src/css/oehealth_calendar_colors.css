@@ -1,0 +1,101 @@
+/* Forzar colores específicos para la vista calendario de Citas en Odoo 17 */
+
+/* 
+   Sincronización de colores entre Vista Lista (decorations) y Vista Calendario.
+   Odoo 17 usa .o_calendar_event y las clases .o_calendar_color_N.
+*/
+
+/* Ocultar el grupo de filtros del campo técnico 'color' en la barra lateral */
+.o_calendar_sidebar_item[data-name='color'],
+.o_calendar_filter[data-name='color'] {
+    display: none !important;
+}
+
+/* --- ESTADOS Y COLORES --- */
+
+/* Color 4: Programada -> Info (Azul muy claro / Neutro) */
+/* El usuario pidió decoración-info o color neutro/blanco */
+.o_calendar_renderer .o_calendar_event.o_calendar_color_4 {
+    background-color: #f0faff !important;
+    /* Muy claro, casi blanco pero con tinte azul 'info' */
+    color: #004085 !important;
+    /* Texto azul oscuro para contraste */
+    border-left: 5px solid #0dcaf0 !important;
+    /* Barra lateral 'info' */
+    border-color: #bee5eb !important;
+}
+
+/* Color 10: Realizada -> Success (Verde) */
+.o_calendar_renderer .o_calendar_event.o_calendar_color_10 {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+    border-left: 5px solid #28a745 !important;
+    border-color: #c3e6cb !important;
+}
+
+/* Color 3: Reprogramada -> Warning (Amarillo) */
+.o_calendar_renderer .o_calendar_event.o_calendar_color_3 {
+    background-color: #fff3cd !important;
+    color: #856404 !important;
+    border-left: 5px solid #ffc107 !important;
+    border-color: #ffeeba !important;
+}
+
+/* Color 1: Sin Asistir -> Danger (Rojo) */
+.o_calendar_renderer .o_calendar_event.o_calendar_color_1 {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    border-left: 5px solid #dc3545 !important;
+    border-color: #f5c2c7 !important;
+}
+
+/* Color 7: Invoiced -> Muted (Gris) */
+.o_calendar_renderer .o_calendar_event.o_calendar_color_7 {
+    background-color: #e2e3e5 !important;
+    color: #383d41 !important;
+    border-left: 5px solid #6c757d !important;
+    border-color: #d6d8db !important;
+}
+
+/* --- LEYENDA (SIDEBAR) --- */
+/* Aseguramos que los circulitos de la leyenda coincidan con los colores principales */
+
+.o_calendar_sidebar .o_color_4,
+.o_calendar_filter_item .o_color_4 {
+    background-color: #0dcaf0 !important;
+}
+
+.o_calendar_sidebar .o_color_10,
+.o_calendar_filter_item .o_color_10 {
+    background-color: #28a745 !important;
+}
+
+.o_calendar_sidebar .o_color_3,
+.o_calendar_filter_item .o_color_3 {
+    background-color: #ffc107 !important;
+}
+
+.o_calendar_sidebar .o_color_1,
+.o_calendar_filter_item .o_color_1 {
+    background-color: #dc3545 !important;
+}
+
+.o_calendar_sidebar .o_color_7,
+.o_calendar_filter_item .o_color_7 {
+    background-color: #6c757d !important;
+}
+
+/* Estilo general de los eventos para que se vean más premium */
+.o_calendar_renderer .o_calendar_event {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    font-size: 0.9em;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+    margin-bottom: 1px;
+}
+
+.o_calendar_renderer .o_calendar_event:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    filter: brightness(0.95);
+}

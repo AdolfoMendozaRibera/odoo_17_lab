@@ -1,0 +1,430 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oehealth_imaging
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-15 13:19+0000\n"
+"PO-Revision-Date: 2026-01-15 13:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Analysis:</strong>"
+msgstr "<strong>Análisis:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid ""
+"<strong>Authorized signature</strong><br/><br/><br/>______________________"
+msgstr ""
+"<strong>Firma autorizada</strong><br/><br/><br/>______________________"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Conclusion:</strong>"
+msgstr "<strong>Conclusión:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Date Analysis:</strong>"
+msgstr "<strong>Fecha de Análisis:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Date Requested:</strong>"
+msgstr "<strong>Fecha Solicitada:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Doctor who requested test:</strong>"
+msgstr "<strong>Médico solicitante:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Imaging Test#:</strong>"
+msgstr "<strong>Estudio de Imagen N°:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Patient:</strong>"
+msgstr "<strong>Paciente:</strong>"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "<strong>Test Type:</strong>"
+msgstr "<strong>Tipo de Estudio:</strong>"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__analysis
+msgid "Analysis"
+msgstr "Análisis"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Are you sure you want to complete the test?"
+msgstr "¿Está seguro de que desea completar el estudio?"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Are you sure you want to create the invoice?"
+msgstr "¿Está seguro de que desea crear la factura?"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Are you sure you want to start the test?"
+msgstr "¿Está seguro de que desea iniciar el estudio?"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imaging.test.type,name:oehealth_imaging.imaging_test_ctscan0
+msgid "CT Scan"
+msgstr "Tomografía computarizada"
+
+#. module: oehealth_imaging
+#: model_terms:ir.actions.act_window,help:oehealth_imaging.oeh_medical_imagingtest_department_action_tree
+msgid "Click to add a new Imaging Test department."
+msgstr "Haga clic para agregar un nuevo Servicio de Imagenología."
+
+#. module: oehealth_imaging
+#: model_terms:ir.actions.act_window,help:oehealth_imaging.oeh_medical_imaging_test_type_action_tree
+msgid "Click to add a new imaging test type."
+msgstr "Haga clic para agregar un nuevo tipo de estudio de imagen."
+
+#. module: oehealth_imaging
+#: model_terms:ir.actions.act_window,help:oehealth_imaging.oeh_medical_imaging_test_action_tree
+msgid "Click to add a new imaging test."
+msgstr "Haga clic para agregar un nuevo estudio de imagen."
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__code
+msgid "Code"
+msgstr "Código"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Complete Test"
+msgstr "Completar Estudio"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields.selection,name:oehealth_imaging.selection__oeh_medical_imaging__state__completed
+msgid "Completed"
+msgstr "Completado"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__conclusion
+msgid "Conclusion"
+msgstr "Conclusión"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Create Imaging Test Invoice"
+msgstr "Crear Factura del Estudio de Imagen"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__create_uid
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__create_uid
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__create_date
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__create_date
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__date_analysis
+msgid "Date of the Analysis"
+msgstr "Fecha del Análisis"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__date_requested
+msgid "Date requested"
+msgstr "Fecha solicitada"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imagingtest.department,name:oehealth_imaging.imaging_test_defaultdepartment0
+msgid "Default"
+msgstr "Predeterminado"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__imaging_department
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__imaging_department
+msgid "Department"
+msgstr "Departamento"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__display_name
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__display_name
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "Doctor"
+msgstr "Médico"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__requestor
+#: model:ir.model.fields,help:oehealth_imaging.field_oeh_medical_imaging__requestor
+msgid "Doctor who requested the test"
+msgstr "Médico que solicitó el estudio"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields.selection,name:oehealth_imaging.selection__oeh_medical_imaging__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__id
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__id
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__id
+msgid "ID"
+msgstr ""
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image1
+msgid "Image 1"
+msgstr "Imagen 1"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image2
+msgid "Image 2"
+msgstr "Imagen 2"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image3
+msgid "Image 3"
+msgstr "Imagen 3"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image4
+msgid "Image 4"
+msgstr "Imagen 4"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image5
+msgid "Image 5"
+msgstr "Imagen 5"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__image6
+msgid "Image 6"
+msgstr "Imagen 6"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Images"
+msgstr "Imágenes"
+
+#. module: oehealth_imaging
+#: model:ir.ui.menu,name:oehealth_imaging.oeh_medical_imaging_conf_menu
+#: model:ir.ui.menu,name:oehealth_imaging.oeh_medical_imaging_menu
+msgid "Imaging"
+msgstr "Imagenología"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.report_oeh_medical_patient_imaging_document
+msgid "Imaging Report"
+msgstr "Informe de Imagenología"
+
+#. module: oehealth_imaging
+#: model:ir.actions.act_window,name:oehealth_imaging.oeh_medical_imagingtest_department_action_tree
+#: model:ir.model,name:oehealth_imaging.model_oeh_medical_imagingtest_department
+#: model:ir.ui.menu,name:oehealth_imaging.oeh_medical_imagingtest_department_menu
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_department_tree
+msgid "Imaging Test Departments"
+msgstr "Departamentos de Imagenología"
+
+#. module: oehealth_imaging
+#: model:ir.model,name:oehealth_imaging.model_oeh_medical_imaging
+msgid "Imaging Test Management"
+msgstr "Gestión de Estudios de Imagen"
+
+#. module: oehealth_imaging
+#: model:ir.actions.report,name:oehealth_imaging.action_report_patient_imaging
+msgid "Imaging Test Report"
+msgstr "Informe de Estudio de Imagen"
+
+#. module: oehealth_imaging
+#: model:ir.model,name:oehealth_imaging.model_oeh_medical_imaging_test_type
+msgid "Imaging Test Type Configuration"
+msgstr "Configuración de Tipos de Estudio de Imagen"
+
+#. module: oehealth_imaging
+#: model:ir.actions.act_window,name:oehealth_imaging.oeh_medical_imaging_test_type_action_tree
+#: model:ir.ui.menu,name:oehealth_imaging.oeh_medical_imaging_test_type_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_type_tree
+msgid "Imaging Test Types"
+msgstr "Tipos de Estudios de Imagen"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,help:oehealth_imaging.field_oeh_medical_imaging__test_type
+msgid "Imaging Test type"
+msgstr "Tipo de estudio de imagen"
+
+#. module: oehealth_imaging
+#: model:ir.actions.act_window,name:oehealth_imaging.oeh_medical_imaging_test_action_tree
+#: model:ir.ui.menu,name:oehealth_imaging.oeh_medical_imaging_test_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Imaging Tests"
+msgstr "Estudios de Imagen"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Information"
+msgstr "Información"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__move_id
+msgid "Invoice #"
+msgstr "Factura N°"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields.selection,name:oehealth_imaging.selection__oeh_medical_imaging__state__invoiced
+msgid "Invoiced"
+msgstr "Facturado"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__write_uid
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__write_uid
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__write_date
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__write_date
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imaging.test.type,name:oehealth_imaging.imaging_test_mri0
+msgid "MRI"
+msgstr "Resonancia magnética"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__name
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imagingtest_department__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imaging.test.type,name:oehealth_imaging.imaging_test_petscan0
+msgid "PET Scan"
+msgstr "Tomografía por emisión de positrones"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__patient
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,help:oehealth_imaging.field_oeh_medical_imaging__patient
+msgid "Patient Name"
+msgstr "Nombre del Paciente"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Print Imaging Test"
+msgstr "Imprimir Estudio de Imagen"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_imaging_test_department_filter
+msgid "Search Departments"
+msgstr "Buscar Departamentos"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_type_filter
+msgid "Search Imaging Test Types"
+msgstr "Buscar Tipos de Estudios de Imagen"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "Search Tests"
+msgstr "Buscar Estudios"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "Start Test"
+msgstr "Iniciar Estudio"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__state
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "State"
+msgstr "Estado"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__name
+msgid "Test #"
+msgstr "Estudio N°"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging_test_type__test_charge
+msgid "Test Charge"
+msgstr "Cargo del Estudio"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields.selection,name:oehealth_imaging.selection__oeh_medical_imaging__state__test_in_progress
+msgid "Test In Progress"
+msgstr "Estudio en Progreso"
+
+#. module: oehealth_imaging
+#: model:ir.model.fields,field_description:oehealth_imaging.field_oeh_medical_imaging__test_type
+msgid "Test Type"
+msgstr "Tipo de Estudio"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.view_oeh_medical_imaging_test_filter
+msgid "Test Types"
+msgstr "Tipos de Estudios"
+
+#. module: oehealth_imaging
+#: model:ir.model.constraint,message:oehealth_imaging.constraint_oeh_medical_imaging_test_type_name_uniq
+msgid "The Imaging test type name must be unique"
+msgstr "El nombre del tipo de estudio de imagen debe ser único"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imaging.test.type,name:oehealth_imaging.imaging_test_ultrasound0
+msgid "Ultrasound"
+msgstr "Ecografía"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_form
+msgid "View Invoice"
+msgstr "Ver Factura"
+
+#. module: oehealth_imaging
+#: model:oeh.medical.imaging.test.type,name:oehealth_imaging.imaging_test_xray0
+msgid "X-Ray"
+msgstr "Rayos X"
+
+#. module: oehealth_imaging
+#: model_terms:ir.ui.view,arch_db:oehealth_imaging.oeh_medical_imaging_test_tree
+msgid "X-Ray Tests"
+msgstr "Estudios de Rayos X"
+
+#. module: oehealth_imaging
+#. odoo-python
+#: code:addons/oehealth_imaging/models/oeh_medical_imaging.py:0
+#, python-format
+msgid "You can not delete imaging information which is not in \"Draft\" state !!"
+msgstr "No puede eliminar la información de imágenes que no se encuentre en estado \"Borrador\" !!"

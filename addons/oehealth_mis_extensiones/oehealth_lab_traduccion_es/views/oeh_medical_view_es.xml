@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="oeh_medical_lab_request_form_es" model="ir.ui.view">
+            <field name="model">oeh.medical.lab.request</field>
+            <field name="inherit_id" ref="oehealth_lab.oeh_medical_lab_request_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='add_sample']" position="attributes">
+                    <attribute name="string">Agregar Muestra</attribute>
+                </xpath>
+                <xpath expr="//button[@name='finished_sample']" position="attributes">
+                    <attribute name="string">Muestra Tomada</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

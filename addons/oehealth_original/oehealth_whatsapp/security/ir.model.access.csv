@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_oeh_medical_whatsapp_template,oeh.medical.whatsapp.template all,model_oeh_medical_whatsapp_template,,1,1,1,1
+access_oeh_medical_whatsapp_wiz,oeh.medical.whatsapp.wiz all,model_oeh_medical_whatsapp_wiz,,1,1,1,1
+access_oeh_medical_staff_whatsapp_wiz,oeh.medical.staff.whatsapp.wiz all,model_oeh_medical_staff_whatsapp_wiz,,1,1,1,1
+access_oeh_medical_appointment_whatsapp_wiz,oeh.medical.appointment.whatsapp.wiz all,model_oeh_medical_appointment_whatsapp_wiz,,1,1,1,1
+access_oeh_medical_lab_test_whatsapp_wiz,oeh.medical.lab.test.whatsapp.wiz all,model_oeh_medical_lab_test_whatsapp_wiz,,1,1,1,1
+access_oeh_medical_prescription_whatsapp_wiz,oeh.medical.prescription.whatsapp.wiz all,model_oeh_medical_prescription_whatsapp_wiz,,1,1,1,1

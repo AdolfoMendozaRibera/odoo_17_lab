@@ -1,0 +1,6377 @@
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DTNA
+msgid ""
+"\n"
+"        Left ventricular noncompaction with congenital heart defects [MIM:606617]\n"
+"        Left ventricular noncompaction, familial isolated, 1 [MIM:604169]"
+msgstr ""
+"\n"
+"        No compactación del ventrículo izquierdo con defectos cardíacos congénitos [MIM:606617]\n"
+"        No compactación del ventrículo izquierdo, familiar aislada, 1 [MIM:604169]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LEFTY2
+msgid ""
+"\n"
+"        Left-right axis malformations"
+msgstr ""
+"\n"
+"        Malformaciones del eje izquierda-derecha"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TLR5
+msgid ""
+"\n"
+"        Legionaire disease, susceptibility to [MIM:608556]\n"
+"        Systemic lupus erythematosus, resistance to [MIM:601744]\n"
+"        Systemic lupus erythematosus, susceptibility to, 1 [MIM:601744]"
+msgstr ""
+"\n"
+"        Enfermedad del legionario, susceptibilidad a [MIM:608556]\n"
+"        Lupus eritematoso sistémico, resistencia a [MIM:601744]\n"
+"        Lupus eritematoso sistémico, susceptibilidad a, 1 [MIM:601744]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDUFS3
+#: model:oeh.medical.genetics,info:oehealth.NDUFS7
+#: model:oeh.medical.genetics,info:oehealth.NDUFS8
+msgid ""
+"\n"
+"        Leigh syndrome [MIM:256000]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh [MIM:256000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDUFV1
+msgid ""
+"\n"
+"        Leigh syndrome [MIM:256000]\n"
+"        Alexander disease [MIM:203450]\n"
+"        Mitochondrial complex I deficiency [MIM:252010]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh [MIM:256000]\n"
+"        Enfermedad de Alexander [MIM:203450]\n"
+"        Deficiencia del complejo mitocondrial I [MIM:252010]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDUFS4
+msgid ""
+"\n"
+"        Leigh syndrome [MIM:256000]\n"
+"        Mitochondrial complex I deficiency [MIM:252010]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh [MIM:256000]\n"
+"        Deficiencia del complejo mitocondrial I [MIM:252010]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh [MIM:256000]\n"
+"        Deficiencia del complejo mitocondrial I [MIM:252010]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SDHA
+msgid ""
+"\n"
+"        Leigh syndrome [MIM:256000]\n"
+"        Mitochondrial respiratory chain complex II deficiency [MIM:252011]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh [MIM:256000]\n"
+"        Deficiencia del complejo II de la cadena respiratoria mitocondrial [MIM:252011]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.C8orf38
+#: model:oeh.medical.genetics,info:oehealth.NDUFA2
+msgid ""
+"\n"
+"        Leigh syndrome due to mitochondrial complex I deficiency [MIM:256000]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh debido a deficiencia del complejo mitocondrial I [MIM:256000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LRPPRC
+#: model:oeh.medical.genetics,info:oehealth.PPRXY
+msgid ""
+"\n"
+"        Leigh syndrome, French-Canadian type [MIM:220111]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh, tipo francocanadiense [MIM:220111]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SURF1
+msgid ""
+"\n"
+"        Leigh syndrome, due to COX deficiency [MIM:256000]"
+msgstr ""
+"\n"
+"        Síndrome de Leigh, debido a deficiencia de COX [MIM:256000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.COL4A6
+#: model:oeh.medical.genetics,info:oehealth.IV
+msgid ""
+"\n"
+"        Leiomyomatosis, diffuse, with Alport syndrome [MIM:308940]"
+msgstr ""
+"\n"
+"        Leiomiomatosis, difusa, con síndrome de Alport [MIM:308940]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.INSR
+msgid ""
+"\n"
+"        Leprechaunism [MIM:246200]\n"
+"        Rabson-Mendenhall syndrome [MIM:262190]\n"
+"        Diabetes mellitus, insulin-resistant, with acanthosis nigricans [MIM:610549]\n"
+"        Hyperinsulinemic hypoglycemia, familial, 5 [MIM:609968]"
+msgstr ""
+"\n"
+"        Leprechaunismo [MIM:246200]\n"
+"        Síndrome de Rabson-Mendenhall [MIM:262190]\n"
+"        Diabetes mellitus, insulinorresistente, con acantosis nigricans [MIM:610549]\n"
+"        Hipoglucemia hiperinsulinémica, familiar, 5 [MIM:609968]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TLR1
+msgid ""
+"\n"
+"        Leprosy, protection against [MIM:246300]"
+msgstr ""
+"\n"
+"        Lepra, protección contra [MIM:246300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TLR2
+msgid ""
+"\n"
+"        Leprosy, susceptibility to [MIM:246300]\n"
+"        Colorectal cancer, susceptibility to [MIM:114500]"
+msgstr ""
+"\n"
+"        Lepra, susceptibilidad a [MIM:246300]\n"
+"        Cáncer colorrectal, susceptibilidad a [MIM:114500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPRT1
+msgid ""
+"\n"
+"        Lesch-Nyhan syndrome [MIM:300322]\n"
+"        HPRT-related gout [MIM:300323]"
+msgstr ""
+"\n"
+"        Síndrome de Lesch-Nyhan [MIM:300322]\n"
+"        Gota relacionada con HPRT [MIM:300323]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ERBB3
+msgid ""
+"\n"
+"        Lethal congenital contractural syndrome 2 [MIM:607598]"
+msgstr ""
+"\n"
+"        Síndrome de contractura congénita letal 2 [MIM:607598]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PIP5K1C
+msgid ""
+"\n"
+"        Lethal congenital contractural syndrome 3 [MIM:611369]"
+msgstr ""
+"\n"
+"        Síndrome de contractura congénita letal 3 [MIM:611369]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GLE1
+msgid ""
+"\n"
+"        Lethal congenital contracture syndrome 1 [MIM:253310]\n"
+"        Arthrogryposis, lethal, with anterior horn cell disease [MIM:611890]"
+msgstr ""
+"\n"
+"        Síndrome de contractura congénita letal 1 [MIM:253310]\n"
+"        Artrogriposis, letal, con enfermedad de las células del asta anterior [MIM:611890]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ABL1
+msgid ""
+"\n"
+"        Leukemia, Philadelphia chromosome-positive, resistant to imatinib"
+msgstr ""
+"\n"
+"        Leucemia, cromosoma Filadelfia positivo, resistente a imatinib"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMO1
+msgid ""
+"\n"
+"        Leukemia, T-cell acute lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia, linfoblástica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LYL1
+msgid ""
+"\n"
+"        Leukemia, T-cell acute lymphoblastoid"
+msgstr ""
+"\n"
+"        Leucemia, linfoblastoide aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TLX1
+msgid ""
+"\n"
+"        Leukemia, T-cell acute lymphocytic"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMO2
+msgid ""
+"\n"
+"        Leukemia, acute T-cell"
+msgstr ""
+"\n"
+"        Leucemia, aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SETBP1
+msgid ""
+"\n"
+"        Leukemia, acute T-cell lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia, linfoblástica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IKZF1
+#: model:oeh.medical.genetics,info:oehealth.LALL
+#: model:oeh.medical.genetics,info:oehealth.TCF3
+msgid ""
+"\n"
+"        Leukemia, acute lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia, linfoblástica aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HOXD4
+msgid ""
+"\n"
+"        Leukemia, acute lymphoblastic, susceptibility to"
+msgstr ""
+"\n"
+"        Leucemia, linfoblástica aguda, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARNT
+msgid ""
+"\n"
+"        Leukemia, acute myeloblastic"
+msgstr ""
+"\n"
+"        Leucemia, mieloblástica aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AMLCR2
+#: model:oeh.medical.genetics,info:oehealth.GMPS
+msgid ""
+"\n"
+"        Leukemia, acute myelogenous [MIM:601626]"
+msgstr ""
+"\n"
+"        Leucemia, mielógena aguda [MIM:601626]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARHGEF12
+#: model:oeh.medical.genetics,info:oehealth.CEBPA
+#: model:oeh.medical.genetics,info:oehealth.CHIC2
+#: model:oeh.medical.genetics,info:oehealth.MLF1
+#: model:oeh.medical.genetics,info:oehealth.SH3GL1
+#: model:oeh.medical.genetics,info:oehealth.WHSC1L1
+msgid ""
+"\n"
+"        Leukemia, acute myeloid [MIM:601626]"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda [MIM:601626]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NUP214
+msgid ""
+"\n"
+"        Leukemia, acute myeloid [MIM:601626]\n"
+"        Leukemia, T-cell acute lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda [MIM:601626]\n"
+"        Leucemia, linfoblástica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RUNX1
+msgid ""
+"\n"
+"        Leukemia, acute myeloid [MIM:601626]\n"
+"        Platelet disorder, familial, with associated myeloid malignancy [MIM:601399]\n"
+"        Rheumatoid arthritis, susceptibility to [MIM:180300]"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda [MIM:601626]\n"
+"        Trastorno plaquetario, familiar, con malignidad mieloide asociada [MIM:601399]\n"
+"        Artritis reumatoide, susceptibilidad a [MIM:180300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FLT3
+msgid ""
+"\n"
+"        Leukemia, acute myeloid, reduced survival in\n"
+"        Leukemia, acute myeloid [MIM:601626]\n"
+"        Leukemia, acute lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda, supervivencia reducida en\n"
+"        Leucemia, mieloide aguda [MIM:601626]\n"
+"        Leucemia, linfoblástica aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ETV6
+msgid ""
+"\n"
+"        Leukemia, acute myeloid, somatic [MIM:601626]"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda, somática [MIM:601626]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NAPB
+#: model:oeh.medical.genetics,info:oehealth.SEPT9
+msgid ""
+"\n"
+"        Leukemia, acute myeloid, therapy-related\n"
+"        Ovarian carcinoma\n"
+"        Amyotrophy, hereditary neuralgic [MIM:162100]"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda, relacionada con la terapia\n"
+"        Carcinoma de ovario\n"
+"        Amiotrofia, neurálgica hereditaria [MIM:162100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ABL2
+msgid ""
+"\n"
+"        Leukemia, acute myeloid, with eosinophilia"
+msgstr ""
+"\n"
+"        Leucemia, mieloide aguda, con eosinofilia"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DEK
+msgid ""
+"\n"
+"        Leukemia, acute nonlymphocytic"
+msgstr ""
+"\n"
+"        Leucemia, no linfocítica aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PBX1
+msgid ""
+"\n"
+"        Leukemia, acute pre-B-cell"
+msgstr ""
+"\n"
+"        Leucemia, pre-células B aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RARA
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic [MIM:612376]"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda [MIM:612376]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPM1
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic, NPM/RARA type\n"
+"        Leukemia, acute myeloid [MIM:601626]"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda, tipo NPM/RARA\n"
+"        Leucemia, mieloide aguda [MIM:601626]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NUMA1
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic, NUMA/RARA type"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda, tipo NUMA/RARA"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZBTB16
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic, PL2F/RARA type\n"
+"        Skeletal defects, genital hypoplasia, and mental retardation [MIM:612447]"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda, tipo PL2F/RARA\n"
+"        Defectos esqueléticos, hipoplasia genital y retraso mental [MIM:612447]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PML
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic, PML/RARA type"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda, tipo PML/RARA"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STAT5B
+msgid ""
+"\n"
+"        Leukemia, acute promyelocytic, STAT5B/RARA type\n"
+"        Growth hormone insensitivity with immunodeficiency [MIM:245590]"
+msgstr ""
+"\n"
+"        Leucemia, promielocítica aguda, tipo STAT5B/RARA\n"
+"        Insensibilidad a la hormona del crecimiento con inmunodeficiencia [MIM:245590]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLLS4
+msgid ""
+"\n"
+"        Leukemia, chronic lymphocytic susceptibility to, 4"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica crónica susceptibilidad a, 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLLS5
+msgid ""
+"\n"
+"        Leukemia, chronic lymphocytic susceptiblity to, 5"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica crónica susceptibilidad a, 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLLS1
+msgid ""
+"\n"
+"        Leukemia, chronic lymphocytic, susceptibility to, 1"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica crónica, susceptibilidad a, 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.D13S25
+msgid ""
+"\n"
+"        Leukemia, chronic lymphocytic, susceptibility to, 2"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica crónica, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLLS3
+msgid ""
+"\n"
+"        Leukemia, chronic lymphocytic, susceptibility to, 3"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica crónica, susceptibilidad a, 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCR
+msgid ""
+"\n"
+"        Leukemia, chronic myeloid [MIM:608232]\n"
+"        Leukemia, acute lymphocytic"
+msgstr ""
+"\n"
+"        Leucemia, mieloide crónica [MIM:608232]\n"
+"        Leucemia, linfocítica aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARHGAP26
+msgid ""
+"\n"
+"        Leukemia, juvenile myelomonocytic [MIM:607785]"
+msgstr ""
+"\n"
+"        Leucemia, mielomonocítica juvenil [MIM:607785]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NUP98
+msgid ""
+"\n"
+"        Leukemia, lymphycytic, acute T-cell"
+msgstr ""
+"\n"
+"        Leucemia, linfocítica, aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MLL
+msgid ""
+"\n"
+"        Leukemia, myeloid/lymphoid or mixed-lineage"
+msgstr ""
+"\n"
+"        Leucemia, mieloide/linfoide o de linaje mixto"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TAM
+msgid ""
+"\n"
+"        Leukemia, transient, of Down syndrome"
+msgstr ""
+"\n"
+"        Leucemia, transitoria, del síndrome de Down"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TAL1
+msgid ""
+"\n"
+"        Leukemia-1, T-cell acute lymphocytic"
+msgstr ""
+"\n"
+"        Leucemia-1, linfocítica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TAL2
+msgid ""
+"\n"
+"        Leukemia-2, T-cell acute lymphoblastic"
+msgstr ""
+"\n"
+"        Leucemia-2, linfoblástica aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCL2
+msgid ""
+"\n"
+"        Leukemia/lymphoma, B-cell, 2"
+msgstr ""
+"\n"
+"        Leucemia/linfoma, de células B, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCL3
+msgid ""
+"\n"
+"        Leukemia/lymphoma, B-cell, 3"
+msgstr ""
+"\n"
+"        Leucemia/linfoma, de células B, 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TCL1A
+#: model:oeh.medical.genetics,info:oehealth.TCL1B
+#: model:oeh.medical.genetics,info:oehealth.TCL4
+msgid ""
+"\n"
+"        Leukemia/lymphoma, T-cell"
+msgstr ""
+"\n"
+"        Leucemia/linfoma, de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ITGB2
+msgid ""
+"\n"
+"        Leukocyte adhesion deficiency [MIM:116920]"
+msgstr ""
+"\n"
+"        Deficiencia de adhesión leucocitaria [MIM:116920]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMNB1
+msgid ""
+"\n"
+"        Leukodystrophy, adult-onset, autosomal dominant [MIM:169500]"
+msgstr ""
+"\n"
+"        Leucodistrofia, de inicio en la edad adulta, autosómica dominante [MIM:169500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FA2H
+msgid ""
+"\n"
+"        Leukodystrophy, dysmyelinating, and spastic paraparesis with or without dystonia [MIM:612443]"
+msgstr ""
+"\n"
+"        Leucodistrofia, desmielinizante, y paraparesia espástica con o sin distonía [MIM:612443]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FAM126A
+msgid ""
+"\n"
+"        Leukodystrophy, hypolyelinating, 5 [MIM:610532]"
+msgstr ""
+"\n"
+"        Leucodistrofia, hipomielinizante, 5 [MIM:610532]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GJC2
+msgid ""
+"\n"
+"        Leukodystrophy, hypomyelinating, 2 [MIM:608804]"
+msgstr ""
+"\n"
+"        Leucodistrofia, hipomielinizante, 2 [MIM:608804]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DARS2
+msgid ""
+"\n"
+"        Leukoencephalopathy with brain stem and spinal cord involvement and lactate elevation [MIM:611105]"
+msgstr ""
+"\n"
+"        Leucoencefalopatía con afectación del tronco encefálico y la médula espinal y elevación de lactato [MIM:611105]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SCP2
+msgid ""
+"\n"
+"        Leukoencephalopathy with dystonia and motor neuropathy"
+msgstr ""
+"\n"
+"        Leucoencefalopatía con distonía y neuropatía motora"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EIF2B1
+#: model:oeh.medical.genetics,info:oehealth.EIF2B3
+msgid ""
+"\n"
+"        Leukoencephalopathy with vanishing white matter [MIM:603896]"
+msgstr ""
+"\n"
+"        Leucoencefalopatía con sustancia blanca evanescente [MIM:603896]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EIF2B2
+#: model:oeh.medical.genetics,info:oehealth.EIF2B5
+msgid ""
+"\n"
+"        Leukoencephalopathy with vanishing white matter [MIM:603896]\n"
+"        Ovarioleukodystrophy [MIM:603896]"
+msgstr ""
+"\n"
+"        Leucoencefalopatía con sustancia blanca evanescente [MIM:603896]\n"
+"        Ovarioleucodistrofia [MIM:603896]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EIF2B4
+msgid ""
+"\n"
+"        Leukoencephaly with vanishing white matter [MIM:603896]\n"
+"        Ovarioleukodystrophy [MIM:603896]"
+msgstr ""
+"\n"
+"        Leucoencefalia con sustancia blanca evanescente [MIM:603896]\n"
+"        Ovarioleucodistrofia [MIM:603896]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LTC4S
+msgid ""
+"\n"
+"        Leukotriene C4 synthase deficiency"
+msgstr ""
+"\n"
+"        Deficiencia de leucotrieno C4 sintasa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LFS3
+msgid ""
+"\n"
+"        Li-Fraumeni syndrome 3"
+msgstr ""
+"\n"
+"        Síndrome de Li-Fraumeni 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHEK2
+msgid ""
+"\n"
+"        Li-Fraumeni syndrome [MIM:609265]\n"
+"        Osteosarcoma, somatic [MIM:259500]\n"
+"        Breast cancer, susceptibility to [MIM:114480]\n"
+"        Prostate cancer, familial [MIM:176807]\n"
+"        Breast and colorectal cancer, susceptibility to"
+msgstr ""
+"\n"
+"        Síndrome de Li-Fraumeni [MIM:609265]\n"
+"        Osteosarcoma, somático [MIM:259500]\n"
+"        Cáncer de mama, susceptibilidad a [MIM:114480]\n"
+"        Cáncer de próstata, familiar [MIM:176807]\n"
+"        Cáncer de mama y colorrectal, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SCNN1B
+#: model:oeh.medical.genetics,info:oehealth.SCNN1G
+msgid ""
+"\n"
+"        Liddle syndrome [MIM:177200]\n"
+"        Pseudohypoaldosteronism, type I [MIM:264350]"
+msgstr ""
+"\n"
+"        Síndrome de Liddle [MIM:177200]\n"
+"        Pseudohipoaldosteronismo, tipo I [MIM:264350]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGMD1G
+msgid ""
+"\n"
+"        Limb-girdle muscular dystrophy, type 1G"
+msgstr ""
+"\n"
+"        Distrofia muscular de cinturas, tipo 1G"
+"\n"
+"        Distrofia muscular de cinturas, tipo 1G"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMF1
+msgid ""
+"\n"
+"        Lipase deficiency, combined [MIM:246650]"
+msgstr ""
+"\n"
+"        Deficiencia de lipasa, combinada [MIM:246650]"
+"\n"
+"        Deficiencia de lipasa, combinada [MIM:246650]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AGPAT2
+msgid ""
+"\n"
+"        Lipodystrophy, congenital generalized, type 1 [MIM:608594]"
+msgstr ""
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 1 [MIM:608594]"
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 1 [MIM:608594]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BSCL2
+msgid ""
+"\n"
+"        Lipodystrophy, congenital generalized, type 2 [MIM:269700]\n"
+"        Silver spastic paraplegia syndrome [MIM:270685]\n"
+"        Neuropathy, distal hereditary motor, type V [MIM:600794]"
+msgstr ""
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 2 [MIM:269700]\n"
+"        Síndrome de paraplejía espástica de Silver [MIM:270685]\n"
+"        Neuropatía, motora hereditaria distal, tipo V [MIM:600794]"
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 2 [MIM:269700]\n"
+"        Síndrome de paraplejía espástica de Silver [MIM:270685]\n"
+"        Neuropatía, motora hereditaria distal, tipo V [MIM:600794]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CAV1
+msgid ""
+"\n"
+"        Lipodystrophy, congenital generalized, type 3 [MIM:612526]"
+msgstr ""
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 3 [MIM:612526]"
+"\n"
+"        Lipodistrofia, congénita generalizada, tipo 3 [MIM:612526]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMNB2
+msgid ""
+"\n"
+"        Lipodystrophy, partial, acquired [MIM:608709]"
+msgstr ""
+"\n"
+"        Lipodistrofia, parcial, adquirida [MIM:608709]"
+"\n"
+"        Lipodistrofia, parcial, adquirida [MIM:608709]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STAR
+msgid ""
+"\n"
+"        Lipoid adrenal hyperplasia [MIM:201710]"
+msgstr ""
+"\n"
+"        Hiperplasia suprarrenal lipoidea [MIM:201710]"
+"\n"
+"        Hiperplasia suprarrenal lipoidea [MIM:201710]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ECM1
+msgid ""
+"\n"
+"        Lipoid proteinosis [MIM:247100]"
+msgstr ""
+"\n"
+"        Proteinosis lipoidea [MIM:247100]"
+"\n"
+"        Proteinosis lipoidea [MIM:247100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMGA1
+msgid ""
+"\n"
+"        Lipoma"
+msgstr ""
+"\n"
+"        Lipoma"
+"\n"
+"        Lipoma"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LPP
+msgid ""
+"\n"
+"        Lipoma\n"
+"        Leukemia, acute myeloid [MIM:601626]"
+msgstr ""
+"\n"
+"        Lipoma\n"
+"        Leucemia, mieloide aguda [MIM:601626]"
+"\n"
+"        Lipoma\n"
+"        Leucemia, mieloide aguda [MIM:601626]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMGA2
+msgid ""
+"\n"
+"        Lipoma\n"
+"        Salivary adenoma\n"
+"        Uterine leiomyoma\n"
+"        Lipomatosis, multiple [MIM:151900]"
+msgstr ""
+"\n"
+"        Lipoma\n"
+"        Adenoma salival\n"
+"        Leiomioma uterino\n"
+"        Lipomatosis, múltiple [MIM:151900]"
+"\n"
+"        Lipoma\n"
+"        Adenoma salival\n"
+"        Leiomioma uterino\n"
+"        Lipomatosis, múltiple [MIM:151900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LPL
+msgid ""
+"\n"
+"        Lipoprotein lipase deficiency [MIM:238600]\n"
+"        Combined hyperlipidemia, familial [MIM:144250]\n"
+"        High density lipoprotein cholesterol level QTL 11"
+msgstr ""
+"\n"
+"        Deficiencia de lipoproteína lipasa [MIM:238600]\n"
+"        Hiperlipidemia combinada, familiar [MIM:144250]\n"
+"        Nivel de colesterol de lipoproteínas de alta densidad QTL 11"
+"\n"
+"        Deficiencia de lipoproteína lipasa [MIM:238600]\n"
+"        Hiperlipidemia combinada, familiar [MIM:144250]\n"
+"        Nivel de colesterol de lipoproteínas de alta densidad QTL 11"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LPSA
+msgid ""
+"\n"
+"        Liposarcoma"
+msgstr ""
+"\n"
+"        Liposarcoma"
+"\n"
+"        Liposarcoma"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TUBA1A
+msgid ""
+"\n"
+"        Lissencephaly 3 [MIM:611603]"
+msgstr ""
+"\n"
+"        Lisencefalia 3 [MIM:611603]"
+"\n"
+"        Lisencefalia 3 [MIM:611603]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RELN
+msgid ""
+"\n"
+"        Lissencephaly syndrome, Norman-Roberts type [MIM:257320]"
+msgstr ""
+"\n"
+"        Síndrome de lisencefalia, tipo Norman-Roberts [MIM:257320]"
+"\n"
+"        Síndrome de lisencefalia, tipo Norman-Roberts [MIM:257320]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DCX
+msgid ""
+"\n"
+"        Lissencephaly, X-linked [MIM:300067]\n"
+"        Subcortical laminal heteropia, X-linked [MIM:300067]"
+msgstr ""
+"\n"
+"        Lisencefalia, ligada al cromosoma X [MIM:300067]\n"
+"        Heteropia laminar subcortical, ligada al cromosoma X [MIM:300067]"
+"\n"
+"        Lisencefalia, ligada al cromosoma X [MIM:300067]\n"
+"        Heteropia laminar subcortical, ligada al cromosoma X [MIM:300067]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAFAH1B1
+msgid ""
+"\n"
+"        Lissencephaly-1 [MIM:607432]\n"
+"        Subcortical laminar heterotopia"
+msgstr ""
+"\n"
+"        Lisencefalia-1 [MIM:607432]\n"
+"        Heterotopia laminar subcortical"
+"\n"
+"        Lisencefalia-1 [MIM:607432]\n"
+"        Heterotopia laminar subcortical"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TGFBR1
+msgid ""
+"\n"
+"        Loeys-Dietz syndrome, type 1A [MIM:609129]\n"
+"        Loeys-Dietz syndrome, type 2A [MIM:608967]"
+msgstr ""
+"\n"
+"        Síndrome de Loeys-Dietz, tipo 1A [MIM:609129]\n"
+"        Síndrome de Loeys-Dietz, tipo 2A [MIM:608967]"
+"\n"
+"        Síndrome de Loeys-Dietz, tipo 1A [MIM:609129]\n"
+"        Síndrome de Loeys-Dietz, tipo 2A [MIM:608967]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATFB3
+#: model:oeh.medical.genetics,info:oehealth.KCNQ1
+msgid ""
+"\n"
+"        Long QT syndrome-1 [MIM:192500]\n"
+"        Jervell and Lange-Nielsen syndrome [MIM:220400]\n"
+"        Atrial fibrillation, familial, 3 [MIM:607554]\n"
+"        Torsades de pointes, drug-associated\n"
+"        Short QT syndrome-2 [MIM:609621]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-1 [MIM:192500]\n"
+"        Síndrome de Jervell y Lange-Nielsen [MIM:220400]\n"
+"        Fibrilación auricular, familiar, 3 [MIM:607554]\n"
+"        Torsades de pointes, asociada a fármacos\n"
+"        Síndrome de QT corto-2 [MIM:609621]"
+"\n"
+"        Síndrome de QT largo-1 [MIM:192500]\n"
+"        Síndrome de Jervell y Lange-Nielsen [MIM:220400]\n"
+"        Fibrilación auricular, familiar, 3 [MIM:607554]\n"
+"        Torsades de pointes, asociada a fármacos\n"
+"        Síndrome de QT corto-2 [MIM:609621]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SCN4B
+msgid ""
+"\n"
+"        Long QT syndrome-10 [MIM:611819]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-10 [MIM:611819]"
+"\n"
+"        Síndrome de QT largo-10 [MIM:611819]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AKAP9
+msgid ""
+"\n"
+"        Long QT syndrome-11 [MIM:611820]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-11 [MIM:611820]"
+"\n"
+"        Síndrome de QT largo-11 [MIM:611820]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KCNH2
+msgid ""
+"\n"
+"        Long QT syndrome-2\n"
+"        Long QT syndrome, acquired, susceptibility to\n"
+"        Short QT syndrome-1 [MIM:609620]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-2\n"
+"        Síndrome de QT largo, adquirido, susceptibilidad a\n"
+"        Síndrome de QT corto-1 [MIM:609620]"
+"\n"
+"        Síndrome de QT largo-2\n"
+"        Síndrome de QT largo, adquirido, susceptibilidad a\n"
+"        Síndrome de QT corto-1 [MIM:609620]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SCN5A
+msgid ""
+"\n"
+"        Long QT syndrome-3 [MIM:603830]\n"
+"        Brugada syndrome 1 [MIM:601144]\n"
+"        Heart block, progressive, type IA [MIM:113900]\n"
+"        Heart block, nonprogressive [MIM:113900]\n"
+"        Ventricular fibrillation, idiopathic [MIM:603829]\n"
+"        Sick sinus syndrome 1 [MIM:608567]\n"
+"        Cardiomyopathy, dilated, 1E [MIM:601154]\n"
+"        Sudden infant death syndrome, susceptibility to [MIM:272120]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-3 [MIM:603830]\n"
+"        Síndrome de Brugada 1 [MIM:601144]\n"
+"        Bloqueo cardíaco, progresivo, tipo IA [MIM:113900]\n"
+"        Bloqueo cardíaco, no progresivo [MIM:113900]\n"
+"        Fibrilación ventricular, idiopática [MIM:603829]\n"
+"        Síndrome del seno enfermo 1 [MIM:608567]\n"
+"        Miocardiopatía, dilatada, 1E [MIM:601154]\n"
+"        Síndrome de muerte súbita del lactante, susceptibilidad a [MIM:272120]"
+"\n"
+"        Síndrome de QT largo-3 [MIM:603830]\n"
+"        Síndrome de Brugada 1 [MIM:601144]\n"
+"        Bloqueo cardíaco, progresivo, tipo IA [MIM:113900]\n"
+"        Bloqueo cardíaco, no progresivo [MIM:113900]\n"
+"        Fibrilación ventricular, idiopática [MIM:603829]\n"
+"        Síndrome del seno enfermo 1 [MIM:608567]\n"
+"        Miocardiopatía, dilatada, 1E [MIM:601154]\n"
+"        Síndrome de muerte súbita del lactante, susceptibilidad a [MIM:272120]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ANK2
+msgid ""
+"\n"
+"        Long QT syndrome-4 [MIM:600919]\n"
+"        Cardiac arrhythmia, ankyrin-B-related [MIM:600919]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-4 [MIM:600919]\n"
+"        Arritmia cardíaca, relacionada con anquirina B [MIM:600919]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KCNE2
+msgid ""
+"\n"
+"        Long QT syndrome-6\n"
+"        Atrial fibrillation, familial, 4 [MIM:611493]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-6\n"
+"        Fibrilación auricular, familiar, 4 [MIM:611493]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KCNJ2
+msgid ""
+"\n"
+"        Long QT syndrome-7 [MIM:170390]\n"
+"        Short QT syndrome-3 [MIM:609622]"
+msgstr ""
+"\n"
+"        Síndrome de QT largo-7 [MIM:170390]\n"
+"        Síndrome de QT corto-3 [MIM:609622]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGV1
+msgid ""
+"\n"
+"        Longevity [MIM:152430]"
+msgstr ""
+"\n"
+"        Longevidad [MIM:152430]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.YTHDF2
+msgid ""
+"\n"
+"        Longevity, susceptibility to [MIM:152430]"
+msgstr ""
+"\n"
+"        Longevidad, susceptibilidad a [MIM:152430]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OCRL
+msgid ""
+"\n"
+"        Lowe syndrome [MIM:309000]\n"
+"        Dent disease 2 [MIM:300555]"
+msgstr ""
+"\n"
+"        Síndrome de Lowe [MIM:309000]\n"
+"        Enfermedad de Dent 2 [MIM:300555]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CILP
+msgid ""
+"\n"
+"        Lumbar disc disease, susceptibility to [MIM:603932]"
+msgstr ""
+"\n"
+"        Enfermedad del disco lumbar, susceptibilidad a [MIM:603932]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMP9
+#: model:oeh.medical.genetics,info:oehealth.THBS2
+msgid ""
+"\n"
+"        Lumbar disc herniation, susceptibility to [MIM:603932]"
+msgstr ""
+"\n"
+"        Hernia discal lumbar, susceptibilidad a [MIM:603932]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPP2R1B
+#: model:oeh.medical.genetics,info:oehealth.RASSF1
+msgid ""
+"\n"
+"        Lung cancer [MIM:211980]"
+msgstr ""
+"\n"
+"        Cáncer de pulmón [MIM:211980]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRAS1P
+msgid ""
+"\n"
+"        Lung cancer [MIM:211980]\n"
+"        Bladder cancer [MIM:109800]\n"
+"        Breast cancer, somatic [MIM:114480]\n"
+"        Pancreatic carcinoma, somatic [MIM:260350]\n"
+"        Stomach cancer [MIM:137215]\n"
+"        Leukemia, acute myelogenous\n"
+"        Noonan syndrome 3 [MIM:609942]\n"
+"        Costello syndrome [MIM:218040]"
+msgstr ""
+"\n"
+"        Cáncer de pulmón [MIM:211980]\n"
+"        Cáncer de vejiga [MIM:109800]\n"
+"        Cáncer de mama, somático [MIM:114480]\n"
+"        Carcinoma pancreático, somático [MIM:260350]\n"
+"        Cáncer de estómago [MIM:137215]\n"
+"        Leucemia, mielógena aguda\n"
+"        Síndrome de Noonan 3 [MIM:609942]\n"
+"        Síndrome de Costello [MIM:218040]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DLEC1
+msgid ""
+"\n"
+"        Lung cancer [MIM:211980]\n"
+"        Esophageal cancer [MIM:133239]"
+msgstr ""
+"\n"
+"        Cáncer de pulmón [MIM:211980]\n"
+"        Cáncer esofágico [MIM:133239]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LNCR1
+msgid ""
+"\n"
+"        Lung cancer susceptibility"
+msgstr ""
+"\n"
+"        Susceptibilidad al cáncer de pulmón"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNA5
+msgid ""
+"\n"
+"        Lung cancer susceptibility 2 [MIM:612052]"
+msgstr ""
+"\n"
+"        Susceptibilidad al cáncer de pulmón 2 [MIM:612052]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNA3
+msgid ""
+"\n"
+"        Lung cancer susceptibility 2 [MIM:612052]\n"
+"        Peripheral arterial occlusive disease [MIM:612052]"
+msgstr ""
+"\n"
+"        Susceptibilidad al cáncer de pulmón 2 [MIM:612052]\n"
+"        Enfermedad arterial oclusiva periférica [MIM:612052]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LNCR3
+msgid ""
+"\n"
+"        Lung cancer susceptibility 3"
+msgstr ""
+"\n"
+"        Susceptibilidad al cáncer de pulmón 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LNCR4
+msgid ""
+"\n"
+"        Lung cancer susceptibility 4"
+msgstr ""
+"\n"
+"        Susceptibilidad al cáncer de pulmón 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAP3K8
+msgid ""
+"\n"
+"        Lung cancer, somatic [MIM:211980]"
+msgstr ""
+"\n"
+"        Cáncer de pulmón, somático [MIM:211980]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FCGR3A
+msgid ""
+"\n"
+"        Lupus erythematosus, systemic, susceptibility [MIM:152700]\n"
+"        Neutropenia, alloimmune neonatal\n"
+"        Viral infections, recurrent"
+msgstr ""
+"\n"
+"        Lupus eritematoso, sistémico, susceptibilidad a [MIM:152700]\n"
+"        Neutropenia, aloinmune neonatal\n"
+"        Infecciones virales, recurrentes"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FCGR2A
+msgid ""
+"\n"
+"        Lupus nephritis, susceptibility to"
+msgstr ""
+"\n"
+"        Nefritis lúpica, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FLT4
+msgid ""
+"\n"
+"        Lymphedema, hereditary I [MIM:153100]\n"
+"        Hemangioma, capillary infantile, somatic [MIM:602089]"
+msgstr ""
+"\n"
+"        Linfedema, hereditario I [MIM:153100]\n"
+"        Hemangioma, capilar infantil, somático [MIM:602089]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMPH1B
+msgid ""
+"\n"
+"        Lymphedema, hereditary, IB"
+msgstr ""
+"\n"
+"        Linfedema, hereditario, IB"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FOXC2
+msgid ""
+"\n"
+"        Lymphedema-distichiasis syndrome [MIM:153400]\n"
+"        Lymphedema-distichiasis syndrome with renal disease and diabetes mellitus [MIM:153400]"
+msgstr ""
+"\n"
+"        Síndrome de linfedema-distiquiasis [MIM:153400]\n"
+"        Síndrome de linfedema-distiquiasis con enfermedad renal y diabetes mellitus [MIM:153400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAP1GDS1
+msgid ""
+"\n"
+"        Lymphocytic leukemia, acute T-cell"
+msgstr ""
+"\n"
+"        Leucemia linfocítica, aguda de células T"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCL6
+msgid ""
+"\n"
+"        Lymphoma, B-cell"
+msgstr ""
+"\n"
+"        Linfoma, de células B"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCL10
+msgid ""
+"\n"
+"        Lymphoma, MALT\n"
+"        Lymphoma, follicular\n"
+"        Mesothelioma\n"
+"        Germ cell tumor\n"
+"        Sezary syndrome\n"
+"        Colon cancer"
+msgstr ""
+"\n"
+"        Linfoma, MALT\n"
+"        Linfoma, folicular\n"
+"        Mesotelioma\n"
+"        Tumor de células germinales\n"
+"        Síndrome de Sézary\n"
+"        Cáncer de colon"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IL21R
+msgid ""
+"\n"
+"        Lymphoma, diffuse large B-cell\n"
+"        IgE, elevated level of [MIM:147050]"
+msgstr ""
+"\n"
+"        Linfoma, difuso de células B grandes\n"
+"        IgE, nivel elevado de [MIM:147050]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCL8
+msgid ""
+"\n"
+"        Lymphoma, diffuse large cell"
+msgstr ""
+"\n"
+"        Linfoma, difuso de células grandes"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAD54L
+msgid ""
+"\n"
+"        Lymphoma, non-Hodgkin\n"
+"        Breast cancer, invasive intraductal\n"
+"        Colon adenocarcinoma"
+msgstr ""
+"\n"
+"        Linfoma, no Hodgkin\n"
+"        Cáncer de mama, invasivo intraductal\n"
+"        Adenocarcinoma de colon"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAD54B
+msgid ""
+"\n"
+"        Lymphoma, non-Hodgkin\n"
+"        Colon adenocarcinoma"
+msgstr ""
+"\n"
+"        Linfoma, no Hodgkin\n"
+"        Adenocarcinoma de colon"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAD1L1
+msgid ""
+"\n"
+"        Lymphoma, somatic\n"
+"        Prostate cancer, somatic [MIM:176807]"
+msgstr ""
+"\n"
+"        Linfoma, somático\n"
+"        Cáncer de próstata, somático [MIM:176807]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAX5
+msgid ""
+"\n"
+"        Lymphoplasmacytoid lymphoma"
+msgstr ""
+"\n"
+"        Linfoma linfoplasmocitoide"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SH2D1A
+msgid ""
+"\n"
+"        Lymphoproliferative syndrome, X-linked [MIM:308240]"
+msgstr ""
+"\n"
+"        Síndrome linfoproliferativo, ligado al cromosoma X [MIM:308240]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.XIAP
+msgid ""
+"\n"
+"        Lymphoproliferative syndrome, X-linked, 2 [MIM:300635]"
+msgstr ""
+"\n"
+"        Síndrome linfoproliferativo, ligado al cromosoma X, 2 [MIM:300635]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC7A7
+msgid ""
+"\n"
+"        Lysinuric protein intolerance [MIM:222700]"
+msgstr ""
+"\n"
+"        Intolerancia a la proteína lisinúrica [MIM:222700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACP2
+msgid ""
+"\n"
+"        Lysosomal acid phosphatase deficiency [MIM:200950]"
+msgstr ""
+"\n"
+"        Deficiencia de fosfatasa ácida lisosómica [MIM:200950]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLOD3
+msgid ""
+"\n"
+"        Lysyl hydroxylase 3 deficiency [MIM:612394]"
+msgstr ""
+"\n"
+"        Deficiencia de lisil hidroxilasa 3 [MIM:612394]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MALT1
+msgid ""
+"\n"
+"        MALT lymphoma"
+msgstr ""
+"\n"
+"        Linfoma MALT"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MASP2
+msgid ""
+"\n"
+"        MASP2 deficiency"
+msgstr ""
+"\n"
+"        Deficiencia de MASP2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MEHMO
+msgid ""
+"\n"
+"        MEHMO syndrome"
+msgstr ""
+"\n"
+"        Síndrome de MEHMO"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RFXANK
+msgid ""
+"\n"
+"        MHC class II deficiency, complementation group B [MIM:209920]"
+msgstr ""
+"\n"
+"        Deficiencia de clase II del MHC, grupo de complementación B [MIM:209920]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HNF4A
+msgid ""
+"\n"
+"        MODY, type I [MIM:125850]\n"
+"        Diabetes mellitus, noninsulin-dependent [MIM:125853]"
+msgstr ""
+"\n"
+"        MODY, tipo I [MIM:125850]\n"
+"        Diabetes mellitus, no insulinodependiente [MIM:125853]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GCK
+msgid ""
+"\n"
+"        MODY, type II [MIM:125851]\n"
+"        Diabetes mellitus, noninsulin-dependent, late onset [MIM:125853]\n"
+"        Diabetes mellitus, gestational [MIM:125851]\n"
+"        Hyperinsulinemic hypoglycemia, familial, 3 [MIM:602485]\n"
+"        Diabetes mellitus, permanent neonatal [MIM:606176]"
+msgstr ""
+"\n"
+"        MODY, tipo II [MIM:125851]\n"
+"        Diabetes mellitus, no insulinodependiente, inicio tardío [MIM:125853]\n"
+"        Diabetes mellitus, gestacional [MIM:125851]\n"
+"        Hipoglucemia hiperinsulinémica, familiar, 3 [MIM:602485]\n"
+"        Diabetes mellitus, neonatal permanente [MIM:606176]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HNF1A
+msgid ""
+"\n"
+"        MODY, type III [MIM:600496]\n"
+"        Diabetes mellitus, noninsulin-dependent, 2 [MIM:125853]\n"
+"        Diabetes mellitus, insulin-dependent [MIM:222100]\n"
+"        Hepatic adenoma [MIM:142330]\n"
+"        Renal cell carcinoma [MIM:144700]"
+msgstr ""
+"\n"
+"        MODY, tipo III [MIM:600496]\n"
+"        Diabetes mellitus, no insulinodependiente, 2 [MIM:125853]\n"
+"        Diabetes mellitus, insulinodependiente [MIM:222100]\n"
+"        Adenoma hepático [MIM:142330]\n"
+"        Carcinoma de células renales [MIM:144700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATXN3
+msgid ""
+"\n"
+"        Machado-Joseph disease [MIM:109150]"
+msgstr ""
+"\n"
+"        Enfermedad de Machado-Joseph [MIM:109150]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMEDF
+msgid ""
+"\n"
+"        Macrocephaly with multiple epiphyseal dysplasia and distinctive facies"
+msgstr ""
+"\n"
+"        Macrocefalia con displasia epifisaria múltiple y facies distintiva"
+"\n"
+"        Macrocefalia con displasia epifisaria múltiple y facies distintiva"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IRF1
+msgid ""
+"\n"
+"        Macrocytic anemia, refractory, of 5q- syndrome [MIM:153550]\n"
+"        Myelodysplastic syndrome, preleukemic\n"
+"        Myelogenous leukemia, acute\n"
+"        Gastric cancer [MIM:137215]\n"
+"        Nonsmall cell lung cancer"
+msgstr ""
+"\n"
+"        Anemia macrocítica, refractaria, del síndrome 5q- [MIM:153550]\n"
+"        Síndrome mielodisplásico, preleucémico\n"
+"        Leucemia mielógena, aguda\n"
+"        Cáncer gástrico [MIM:137215]\n"
+"        Cáncer de pulmón de células no pequeñas"
+"\n"
+"        Anemia macrocítica, refractaria, del síndrome 5q- [MIM:153550]\n"
+"        Síndrome mielodisplásico, preleucémico\n"
+"        Leucemia mielógena, aguda\n"
+"        Cáncer gástrico [MIM:137215]\n"
+"        Cáncer de pulmón de células no pequeñas"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.WM1
+msgid ""
+"\n"
+"        Macroglobulinemia, Waldenstrom, susceptibility to, 1"
+msgstr ""
+"\n"
+"        Macroglobulinemia de Waldenstrom, susceptibilidad a, 1"
+"\n"
+"        Macroglobulinemia de Waldenstrom, susceptibilidad a, 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.WM2
+msgid ""
+"\n"
+"        Macroglobulinemia, Waldenstrom, susceptibility to, 2"
+msgstr ""
+"\n"
+"        Macroglobulinemia de Waldenstrom, susceptibilidad a, 2"
+"\n"
+"        Macroglobulinemia de Waldenstrom, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CD36
+msgid ""
+"\n"
+"        Macrothrombocytopenia\n"
+"        Platelet glycoprotein IV deficiency [MIM:608404]\n"
+"        Malaria, cerebral, susceptibility to [MIM:611162]\n"
+"        Malaria, cerebral, reduced risk of [MIM:611162]\n"
+"        Coronary heart disease, susceptibility to, 7 [MIM:610938]"
+msgstr ""
+"\n"
+"        Macrotrombocitopenia\n"
+"        Deficiencia de glucoproteína IV plaquetaria [MIM:608404]\n"
+"        Malaria, cerebral, susceptibilidad a [MIM:611162]\n"
+"        Malaria, cerebral, riesgo reducido de [MIM:611162]\n"
+"        Enfermedad coronaria, susceptibilidad a, 7 [MIM:610938]"
+"\n"
+"        Macrotrombocitopenia\n"
+"        Deficiencia de glucoproteína IV plaquetaria [MIM:608404]\n"
+"        Malaria, cerebral, susceptibilidad a [MIM:611162]\n"
+"        Malaria, cerebral, riesgo reducido de [MIM:611162]\n"
+"        Enfermedad coronaria, susceptibilidad a, 7 [MIM:610938]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHST6
+msgid ""
+"\n"
+"        Macular corneal dystrophy [MIM:217800]"
+msgstr ""
+"\n"
+"        Distrofia corneal macular [MIM:217800]"
+"\n"
+"        Distrofia corneal macular [MIM:217800]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMCN1
+msgid ""
+"\n"
+"        Macular degeneration, age-related, 1 [MIM:603075]"
+msgstr ""
+"\n"
+"        Degeneración macular, relacionada con la edad, 1 [MIM:603075]"
+"\n"
+"        Degeneración macular, relacionada con la edad, 1 [MIM:603075]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HTRA1
+msgid ""
+"\n"
+"        Macular degeneration, age-related, 7 [MIM:610149]\n"
+"        Macular degeneration, age-related, neovascular type [MIM:610149]"
+msgstr ""
+"\n"
+"        Degeneración macular, relacionada con la edad, 7 [MIM:610149]\n"
+"        Degeneración macular, relacionada con la edad, tipo neovascular [MIM:610149]"
+"\n"
+"        Degeneración macular, relacionada con la edad, 7 [MIM:610149]\n"
+"        Degeneración macular, relacionada con la edad, tipo neovascular [MIM:610149]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CFB
+msgid ""
+"\n"
+"        Macular degeneration, age-related, reduced risk of [MIM:603075]"
+msgstr ""
+"\n"
+"        Degeneración macular, relacionada con la edad, riesgo reducido de [MIM:603075]"
+"\n"
+"        Degeneración macular, relacionada con la edad, riesgo reducido de [MIM:603075]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCDR1
+msgid ""
+"\n"
+"        Macular dystrophy, North Carolina type"
+msgstr ""
+"\n"
+"        Distrofia macular, tipo Carolina del Norte"
+"\n"
+"        Distrofia macular, tipo Carolina del Norte"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.VMD1
+msgid ""
+"\n"
+"        Macular dystrophy, atypical vitelliform"
+msgstr ""
+"\n"
+"        Distrofia macular, viteliforme atípica"
+"\n"
+"        Distrofia macular, viteliforme atípica"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDDC
+msgid ""
+"\n"
+"        Macular dystrophy, dominant cystoid"
+msgstr ""
+"\n"
+"        Distrofia macular, cistoide dominante"
+"\n"
+"        Distrofia macular, cistoide dominante"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCDR3
+msgid ""
+"\n"
+"        Macular dystrophy, retinal, 3"
+msgstr ""
+"\n"
+"        Distrofia macular, retiniana, 3"
+"\n"
+"        Distrofia macular, retiniana, 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LPIN2
+msgid ""
+"\n"
+"        Majeed syndrome [MIM:609628]"
+msgstr ""
+"\n"
+"        Síndrome de Majeed [MIM:609628]"
+"\n"
+"        Síndrome de Majeed [MIM:609628]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD1
+msgid ""
+"\n"
+"        Major affective disorder 1"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 1"
+"\n"
+"        Trastorno afectivo mayor 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD2
+msgid ""
+"\n"
+"        Major affective disorder 2"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 2"
+"\n"
+"        Trastorno afectivo mayor 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD3
+msgid ""
+"\n"
+"        Major affective disorder 3, early onset"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 3, de inicio temprano"
+"\n"
+"        Trastorno afectivo mayor 3, de inicio temprano"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD4
+msgid ""
+"\n"
+"        Major affective disorder 4"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 4"
+"\n"
+"        Trastorno afectivo mayor 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD5
+msgid ""
+"\n"
+"        Major affective disorder 5"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 5"
+"\n"
+"        Trastorno afectivo mayor 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD6
+msgid ""
+"\n"
+"        Major affective disorder 6"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor 6"
+"\n"
+"        Trastorno afectivo mayor 6"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.XBP1
+msgid ""
+"\n"
+"        Major affective disorder-7, susceptibility to [MIM:612371]"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor-7, susceptibilidad a [MIM:612371]"
+"\n"
+"        Trastorno afectivo mayor-7, susceptibilidad a [MIM:612371]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD8
+msgid ""
+"\n"
+"        Major affective disorder-8, susceptibility to"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor-8, susceptibilidad a"
+"\n"
+"        Trastorno afectivo mayor-8, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAFD9
+msgid ""
+"\n"
+"        Major affective disorder-9, susceptibility to"
+msgstr ""
+"\n"
+"        Trastorno afectivo mayor-9, susceptibilidad a"
+"\n"
+"        Trastorno afectivo mayor-9, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDD1
+msgid ""
+"\n"
+"        Major depressive disorder 1 [MIM:608516]"
+msgstr ""
+"\n"
+"        Trastorno depresivo mayor 1 [MIM:608516]"
+"\n"
+"        Trastorno depresivo mayor 1 [MIM:608516]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDD2
+msgid ""
+"\n"
+"        Major depressive disorder 2 [MIM:608516]"
+msgstr ""
+"\n"
+"        Trastorno depresivo mayor 2 [MIM:608516]"
+"\n"
+"        Trastorno depresivo mayor 2 [MIM:608516]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FKBP5
+msgid ""
+"\n"
+"        Major depressive disorder and accelerated response to antidepressant drug treatment [MIM:608516]"
+msgstr ""
+"\n"
+"        Trastorno depresivo mayor y respuesta acelerada al tratamiento con fármacos antidepresivos [MIM:608516]"
+"\n"
+"        Trastorno depresivo mayor y respuesta acelerada al tratamiento con fármacos antidepresivos [MIM:608516]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ICAM1
+msgid ""
+"\n"
+"        Malaria, cerebral, susceptibility to [MIM:611162]"
+msgstr ""
+"\n"
+"        Malaria, cerebral, susceptibilidad a [MIM:611162]"
+"\n"
+"        Malaria, cerebral, susceptibilidad a [MIM:611162]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TNF
+msgid ""
+"\n"
+"        Malaria, cerebral, susceptibility to [MIM:611162]\n"
+"        Septic shock, susceptibility to\n"
+"        Asthma, susceptibility to [MIM:600807]\n"
+"        Dementia, vascular, susceptibility to\n"
+"        Migraine without aura, susceptibility to [MIM:157300]"
+msgstr ""
+"\n"
+"        Malaria, cerebral, susceptibilidad a [MIM:611162]\n"
+"        Choque séptico, susceptibilidad a\n"
+"        Asma, susceptibilidad a [MIM:600807]\n"
+"        Demencia, vascular, susceptibilidad a\n"
+"        Migraña sin aura, susceptibilidad a [MIM:157300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PFBI
+msgid ""
+"\n"
+"        Malaria, intensity of infection"
+msgstr ""
+"\n"
+"        Malaria, intensidad de la infección"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NCR3
+msgid ""
+"\n"
+"        Malaria, mild, susceptibility to [MIM:609148]"
+msgstr ""
+"\n"
+"        Malaria, leve, susceptibilidad a [MIM:609148]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GYPC
+msgid ""
+"\n"
+"        Malaria, resistance to [MIM:611162]\n"
+"        Blood group, Gerbich"
+msgstr ""
+"\n"
+"        Malaria, resistencia a [MIM:611162]\n"
+"        Grupo sanguíneo, Gerbich"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGCT
+msgid ""
+"\n"
+"        Male germ cell tumor"
+msgstr ""
+"\n"
+"        Tumor de células germinales masculino"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UBE2B
+msgid ""
+"\n"
+"        Male infertility"
+msgstr ""
+"\n"
+"        Infertilidad masculina"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACR
+msgid ""
+"\n"
+"        Male infertility due to acrosin deficiency"
+msgstr ""
+"\n"
+"        Infertilidad masculina debida a deficiencia de acrosina"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MFHAS1
+msgid ""
+"\n"
+"        Malignant fibrous histiocytoma"
+msgstr ""
+"\n"
+"        Histiocitoma fibroso maligno"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RYR1
+msgid ""
+"\n"
+"        Malignant hyperthermia susceptibility 1 [MIM:145600]\n"
+"        Central core disease [MIM:117000]\n"
+"        Minicore myopathy with external ophthalmoplegia [MIM:255320]\n"
+"        Neuromuscular disease, congenital, with uniform type 1 fiber [MIM:117000]"
+msgstr ""
+"\n"
+"        Hipertermia maligna, susceptibilidad 1 [MIM:145600]\n"
+"        Enfermedad central core [MIM:117000]\n"
+"        Miopatía minicore con oftalmoplejía externa [MIM:255320]\n"
+"        Enfermedad neuromuscular, congénita, con fibra tipo 1 uniforme [MIM:117000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHS2
+msgid ""
+"\n"
+"        Malignant hyperthermia susceptibility 2"
+msgstr ""
+"\n"
+"        Hipertermia maligna, susceptibilidad 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHS3
+msgid ""
+"\n"
+"        Malignant hyperthermia susceptibility 3"
+msgstr ""
+"\n"
+"        Hipertermia maligna, susceptibilidad 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHS4
+msgid ""
+"\n"
+"        Malignant hyperthermia susceptibility 4"
+msgstr ""
+"\n"
+"        Hipertermia maligna, susceptibilidad 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHS6
+msgid ""
+"\n"
+"        Malignant hyperthermia susceptibility 6"
+msgstr ""
+"\n"
+"        Hipertermia maligna, susceptibilidad 6"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CMM
+msgid ""
+"\n"
+"        Malignant melanoma, cutaneous"
+msgstr ""
+"\n"
+"        Melanoma maligno, cutáneo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMS
+msgid ""
+"\n"
+"        Malignant mesothelioma, susceptibility to"
+msgstr ""
+"\n"
+"        Mesotelioma maligno, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MLYCD
+msgid ""
+"\n"
+"        Malonyl-CoA decarboxylase deficiency [MIM:248360]"
+msgstr ""
+"\n"
+"        Deficiencia de malonil-CoA descarboxilasa [MIM:248360]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZMPSTE24
+msgid ""
+"\n"
+"        Mandibuloacral dysplasia with type B lipodystrophy [MIM:608612]\n"
+"        Restrictive dermopathy, lethal [MIM:275210]"
+msgstr ""
+"\n"
+"        Displasia mandibuloacral con lipodistrofia tipo B [MIM:608612]\n"
+"        Dermopatía restrictiva, letal [MIM:275210]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MBL2
+msgid ""
+"\n"
+"        Mannose-binding protein deficiency\n"
+"        Diabetes mellitus, gestational, susceptibility to\n"
+"        Meningococcal disease, susceptibility to\n"
+"        Chronic infections, due to MBL deficiency\n"
+"        Preterm delivery, susceptibility to (3) 14"
+msgstr ""
+"\n"
+"        Deficiencia de proteína de unión a manosa\n"
+"        Diabetes mellitus, gestacional, susceptibilidad a\n"
+"        Enfermedad meningocócica, susceptibilidad a\n"
+"        Infecciones crónicas, debidas a deficiencia de MBL\n"
+"        Parto prematuro, susceptibilidad a (3) 14"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAN2B1
+msgid ""
+"\n"
+"        Mannosidosis, alpha-, types I and II [MIM:248500]"
+msgstr ""
+"\n"
+"        Manosidosis, alfa-, tipos I y II [MIM:248500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MANBA
+msgid ""
+"\n"
+"        Mannosidosis, beta [MIM:248510]"
+msgstr ""
+"\n"
+"        Manosidosis, beta [MIM:248510]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DBT
+msgid ""
+"\n"
+"        Maple syrup urine disease, type II [MIM:248600]"
+msgstr ""
+"\n"
+"        Enfermedad de la orina con olor a jarabe de arce, tipo II [MIM:248600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DLD
+msgid ""
+"\n"
+"        Maple syrup urine disease, type III [MIM:248600]\n"
+"        Leigh syndrome [MIM:256000]"
+msgstr ""
+"\n"
+"        Enfermedad de la orina con olor a jarabe de arce, tipo III [MIM:248600]\n"
+"        Síndrome de Leigh [MIM:256000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCKDHA
+msgid ""
+"\n"
+"        Maple syrup urine disease, type Ia [MIM:248600]"
+msgstr ""
+"\n"
+"        Enfermedad de la orina con olor a jarabe de arce, tipo Ia [MIM:248600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCKDHB
+msgid ""
+"\n"
+"        Maple syrup urine disease, type Ib [MIM:248600]"
+msgstr ""
+"\n"
+"        Enfermedad de la orina con olor a jarabe de arce, tipo Ib [MIM:248600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FBN1
+msgid ""
+"\n"
+"        Marfan syndrome [MIM:154700]\n"
+"        Shprintzen-Goldberg syndrome [MIM:182212]\n"
+"        Ectopia lentis, familial [MIM:129600]\n"
+"        MASS syndrome [MIM:604308]\n"
+"        Weill-Marchesani syndrome, dominant [MIM:608328]\n"
+"        Aortic aneurysm, ascending, and dissection"
+msgstr ""
+"\n"
+"        Síndrome de Marfan [MIM:154700]\n"
+"        Síndrome de Shprintzen-Goldberg [MIM:182212]\n"
+"        Ectopia lentis, familiar [MIM:129600]\n"
+"        Síndrome MASS [MIM:604308]\n"
+"        Síndrome de Weill-Marchesani, dominante [MIM:608328]\n"
+"        Aneurisma aórtico, ascendente, y disección"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SIL1
+msgid ""
+"\n"
+"        Marinesco-Sjogren syndrome [MIM:248800]"
+msgstr ""
+"\n"
+"        Síndrome de Marinesco-Sjogren [MIM:248800]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARSB
+msgid ""
+"\n"
+"        Maroteaux-Lamy syndrome, several forms [MIM:253200]"
+msgstr ""
+"\n"
+"        Síndrome de Maroteaux-Lamy, varias formas [MIM:253200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPDMRS
+msgid ""
+"\n"
+"        Martin-Probst deafness-mental retardation syndrome"
+msgstr ""
+"\n"
+"        Síndrome de sordera-retraso mental de Martin-Probst"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAB3GAP2
+msgid ""
+"\n"
+"        Martsolf syndrome [MIM:212720]"
+msgstr ""
+"\n"
+"        Síndrome de Martsolf [MIM:212720]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SPG21
+msgid ""
+"\n"
+"        Mast syndrome [MIM:248900]"
+msgstr ""
+"\n"
+"        Síndrome de Mast [MIM:248900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAX4
+msgid ""
+"\n"
+"        Maturity-onset diabetes of the young, type IX [MIM:612225]\n"
+"        Diabetes mellitus, type 2 [MIM:125853]\n"
+"        Diabetes mellitus, ketosis-prone [MIM:612227]"
+msgstr ""
+"\n"
+"        Diabetes de inicio en la madurez de los jóvenes, tipo IX [MIM:612225]\n"
+"        Diabetes mellitus, tipo 2 [MIM:125853]\n"
+"        Diabetes mellitus, propensa a cetosis [MIM:612227]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KLF11
+msgid ""
+"\n"
+"        Maturity-onset diabetes of the young, type VII [MIM:610508]"
+msgstr ""
+"\n"
+"        Diabetes de inicio en la madurez de los jóvenes, tipo VII [MIM:610508]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CEL
+msgid ""
+"\n"
+"        Maturity-onset diabetes of the young, type VIII [MIM:609812]"
+msgstr ""
+"\n"
+"        Diabetes de inicio en la madurez de los jóvenes, tipo VIII [MIM:609812]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYH9
+msgid ""
+"\n"
+"        May-Hegglin anomaly [MIM:155100]\n"
+"        Fechtner syndrome [MIM:153640]\n"
+"        Sebastian syndrome [MIM:605249]\n"
+"        Deafness, autosomal dominant 17 [MIM:603622]\n"
+"        Epstein syndrome [MIM:153650]\n"
+"        Macrothrombocytopenia and progressive sensorineural deafness [MIM:600208]"
+msgstr ""
+"\n"
+"        Anomalía de May-Hegglin [MIM:155100]\n"
+"        Síndrome de Fechtner [MIM:153640]\n"
+"        Síndrome de Sebastian [MIM:605249]\n"
+"        Sordera, autosómica dominante 17 [MIM:603622]\n"
+"        Síndrome de Epstein [MIM:153650]\n"
+"        Macrotrombocitopenia y sordera neurosensorial progresiva [MIM:600208]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PYGM
+msgid ""
+"\n"
+"        McArdle disease [MIM:232600]"
+msgstr ""
+"\n"
+"        Enfermedad de McArdle [MIM:232600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MKKS
+msgid ""
+"\n"
+"        McKusick-Kaufman syndrome [MIM:236700]\n"
+"        Bardet-Biedl syndrome 6 [MIM:209900]"
+msgstr ""
+"\n"
+"        Síndrome de McKusick-Kaufman [MIM:236700]\n"
+"        Síndrome de Bardet-Biedl 6 [MIM:209900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.XK
+msgid ""
+"\n"
+"        McLeod syndrome\n"
+"        McLeod syndrome with neuroacanthosis"
+msgstr ""
+"\n"
+"        Síndrome de McLeod\n"
+"        Síndrome de McLeod con neuroacantosis"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPVQTL1
+msgid ""
+"\n"
+"        Mean platelet volume QTL1"
+msgstr ""
+"\n"
+"        Volumen plaquetario medio QTL1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPVQTL2
+msgid ""
+"\n"
+"        Mean platelet volume QTL2"
+msgstr ""
+"\n"
+"        Volumen plaquetario medio QTL2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPVQTL3
+msgid ""
+"\n"
+"        Mean platelet volume QTL3"
+msgstr ""
+"\n"
+"        Volumen plaquetario medio QTL3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MKS1
+msgid ""
+"\n"
+"        Meckel syndrome, type 1 [MIM:249000]\n"
+"        Bardet-Biedl syndrome 13 [MIM:209900]"
+msgstr ""
+"\n"
+"        Síndrome de Meckel, tipo 1 [MIM:249000]\n"
+"        Síndrome de Bardet-Biedl 13 [MIM:209900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MKS2
+msgid ""
+"\n"
+"        Meckel syndrome, type 2"
+msgstr ""
+"\n"
+"        Síndrome de Meckel, tipo 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TMEM67
+msgid ""
+"\n"
+"        Meckel syndrome, type 3 [MIM:607361]\n"
+"        Joubert syndrome 6 [MIM:610688]\n"
+"        Bardet-Biedl syndrome 14, modifier of [MIM:209900]"
+msgstr ""
+"\n"
+"        Síndrome de Meckel, tipo 3 [MIM:607361]\n"
+"        Síndrome de Joubert 6 [MIM:610688]\n"
+"        Síndrome de Bardet-Biedl 14, modificador de [MIM:209900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CFM1
+msgid ""
+"\n"
+"        Meconium ileus in cystic fibrosis, susceptibility to"
+msgstr ""
+"\n"
+"        Íleo meconial en fibrosis quística, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCKD1
+msgid ""
+"\n"
+"        Medullary cystic kidney disease 1"
+msgstr ""
+"\n"
+"        Enfermedad renal quística medular 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTCH2
+msgid ""
+"\n"
+"        Medulloblastoma [MIM:155255]\n"
+"        Basal cell carcinoma, somatic [MIM:605462]"
+msgstr ""
+"\n"
+"        Meduloblastoma [MIM:155255]\n"
+"        Carcinoma de células basales, somático [MIM:605462]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SUFU
+msgid ""
+"\n"
+"        Medulloblastoma, desmoplastic [MIM:155255]"
+msgstr ""
+"\n"
+"        Meduloblastoma, desmoplásico [MIM:155255]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT12
+#: model:oeh.medical.genetics,info:oehealth.KRT3
+msgid ""
+"\n"
+"        Meesmann corneal dystrophy [MIM:122100]"
+msgstr ""
+"\n"
+"        Distrofia corneal de Meesmann [MIM:122100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MKL1
+#: model:oeh.medical.genetics,info:oehealth.RBM15
+#: model:oeh.medical.genetics,info:oehealth.SPEN
+msgid ""
+"\n"
+"        Megakaryoblastic leukemia, acute"
+msgstr ""
+"\n"
+"        Leucemia megacarioblástica, aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MLC1
+msgid ""
+"\n"
+"        Megalencephalic leukoencephalopathy with subcortical cysts [MIM:604004]"
+msgstr ""
+"\n"
+"        Leucoencefalopatía megalencefálica con quistes subcorticales [MIM:604004]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CUBN
+msgid ""
+"\n"
+"        Megaloblastic anemia-1, Finnish type [MIM:261100]"
+msgstr ""
+"\n"
+"        Anemia megaloblástica-1, tipo finlandés [MIM:261100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AMN
+msgid ""
+"\n"
+"        Megaloblastic anemia-1, Norwegian type [MIM:261100]"
+msgstr ""
+"\n"
+"        Anemia megaloblástica-1, tipo noruego [MIM:261100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGC1
+msgid ""
+"\n"
+"        Megalocornea, X-linked"
+msgstr ""
+"\n"
+"        Megalocórnea, ligada al cromosoma X"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CDK4
+msgid ""
+"\n"
+"        Melanoma [MIM:609048]"
+msgstr ""
+"\n"
+"        Melanoma [MIM:609048]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CDKN2A
+msgid ""
+"\n"
+"        Melanoma, cutaneous malignant, 2 [MIM:155601]\n"
+"        Li Fraumeni syndrome [MIM:151623]\n"
+"        Melanoma and neural system tumor syndrome [MIM:155755]\n"
+"        Pancreatic cancer/melanoma syndrome [MIM:606719]\n"
+"        Orolaryngeal cancer, multiple "
+msgstr ""
+"\n"
+"        Melanoma, cutáneo maligno, 2 [MIM:155601]\n"
+"        Síndrome de Li-Fraumeni [MIM:151623]\n"
+"        Síndrome de melanoma y tumor del sistema neural [MIM:155755]\n"
+"        Síndrome de cáncer de páncreas/melanoma [MIM:606719]\n"
+"        Cáncer orofaríngeo, múltiple "
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CMM4
+msgid ""
+"\n"
+"        Melanoma, cutaneous malignant, 4 [MIM:155600]"
+msgstr ""
+"\n"
+"        Melanoma, cutáneo maligno, 4 [MIM:155600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.XRCC3
+msgid ""
+"\n"
+"        Melanoma, cutaneous malignant, susceptibility to\n"
+"        Breast cancer, susceptibility to"
+msgstr ""
+"\n"
+"        Melanoma, cutáneo maligno, susceptibilidad a\n"
+"        Cáncer de mama, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CMM7
+msgid ""
+"\n"
+"        Melanoma, cutaneous malignant, susceptibility to, 7"
+msgstr ""
+"\n"
+"        Melanoma, cutáneo maligno, susceptibilidad a, 7"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BRAF
+msgid ""
+"\n"
+"        Melanoma, melignant, somatic\n"
+"        Colorectal cancer, somatic\n"
+"        Adenocarcinoma of lung, somatic [MIM:211980]\n"
+"        Nonsmall cell lung cancer, somatic\n"
+"        Cardiofaciocutaneous syndrome [MIM:115150]"
+msgstr ""
+"\n"
+"        Melanoma, maligno, somático\n"
+"        Cáncer colorrectal, somático\n"
+"        Adenocarcinoma de pulmón, somático [MIM:211980]\n"
+"        Cáncer de pulmón de células no pequeñas, somático\n"
+"        Síndrome cardiofaciocutáneo [MIM:115150]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UVM1
+msgid ""
+"\n"
+"        Melanoma, uveal, susceptibility to, 1"
+msgstr ""
+"\n"
+"        Melanoma, uveal, susceptibilidad a, 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UBM2
+msgid ""
+"\n"
+"        Melanoma, uveal, susceptibility to, 2"
+msgstr ""
+"\n"
+"        Melanoma, uveal, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLURP1
+msgid ""
+"\n"
+"        Meleda disease [MIM:248300]"
+msgstr ""
+"\n"
+"        Enfermedad de Meleda [MIM:248300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MROS
+msgid ""
+"\n"
+"        Melkersson-Rosenthal syndrome"
+msgstr ""
+"\n"
+"        Síndrome de Melkersson-Rosenthal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BDNF
+msgid ""
+"\n"
+"        Memory impairment, susceptibility to\n"
+"        Central hypoventilation syndrome, congenital [MIM:209880]\n"
+"        Obsessive-compulsive disorder, protection against [MIM:164230]\n"
+"        Bulimia nervosa, age of onset of weight loss in [MIM:607499]\n"
+"        Anorexia nervosa, susceptibility to [MIM:606788]\n"
+"        WAGRO syndrome [MIM:612469]"
+msgstr ""
+"\n"
+"        Deterioro de la memoria, susceptibilidad a\n"
+"        Síndrome de hipoventilación central, congénito [MIM:209880]\n"
+"        Trastorno obsesivo-compulsivo, protección contra [MIM:164230]\n"
+"        Bulimia nerviosa, edad de inicio de la pérdida de peso en [MIM:607499]\n"
+"        Anorexia nerviosa, susceptibilidad a [MIM:606788]\n"
+"        Síndrome WAGRO [MIM:612469]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.WWC1
+msgid ""
+"\n"
+"        Memory, enhanced, association with"
+msgstr ""
+"\n"
+"        Memoria, mejorada, asociación con"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MENAQ1
+msgid ""
+"\n"
+"        Menarche, age at, QTL"
+msgstr ""
+"\n"
+"        Menarquia, edad de, QTL"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGCR
+#: model:oeh.medical.genetics,info:oehealth.MN1
+msgid ""
+"\n"
+"        Meningioma [MIM:607174]"
+msgstr ""
+"\n"
+"        Meningioma [MIM:607174]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDGFB
+msgid ""
+"\n"
+"        Meningioma, SIS-related\n"
+"        Dermatofibrosarcoma protuberans\n"
+"        Giant-cell fibroblastoma"
+msgstr ""
+"\n"
+"        Meningioma, relacionado con SIS\n"
+"        Dermatofibrosarcoma protuberans\n"
+"        Fibroblastoma de células gigantes"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MNRI
+msgid ""
+"\n"
+"        Meningioma, radiation-induced"
+msgstr ""
+"\n"
+"        Meningioma, inducido por radiación"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATP7A
+msgid ""
+"\n"
+"        Menkes disease [MIM:309400]\n"
+"        Occipital horn syndrome [MIM:304150]\n"
+"        Cutis laxa, neonatal"
+msgstr ""
+"\n"
+"        Enfermedad de Menkes [MIM:309400]\n"
+"        Síndrome del cuerno occipital [MIM:304150]\n"
+"        Cutis laxa, neonatal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MENOQ1
+msgid ""
+"\n"
+"        Menopause, natural, age at, QTL"
+msgstr ""
+"\n"
+"        Menopausia, natural, edad de, QTL"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHW1
+msgid ""
+"\n"
+"        Mental health wellness-1"
+msgstr ""
+"\n"
+"        Bienestar de salud mental-1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHW2
+msgid ""
+"\n"
+"        Mental health wellness-2"
+msgstr ""
+"\n"
+"        Bienestar de salud mental-2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT5
+msgid ""
+"\n"
+"        Mental retardaion, autosomal recessive, 5"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CASK
+msgid ""
+"\n"
+"        Mental retardation and microcephaly with pontine and cerebellar hypoplasia [MIM:300749]\n"
+"        FG syndrome 4 [MIM:300422]"
+msgstr ""
+"\n"
+"        Retraso mental y microcefalia con hipoplasia pontina y cerebelosa [MIM:300749]\n"
+"        Síndrome FG 4 [MIM:300422]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CTNND2
+msgid ""
+"\n"
+"        Mental retardation in cri-du-chat syndrome [MIM:123450]"
+msgstr ""
+"\n"
+"        Retraso mental en el síndrome del maullido de gato (cri-du-chat) [MIM:123450]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXSAB
+msgid ""
+"\n"
+"        Mental retardation syndrome, X-linked, Abidi type"
+msgstr ""
+"\n"
+"        Síndrome de retraso mental, ligado al cromosoma X, tipo Abidi"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXSA
+msgid ""
+"\n"
+"        Mental retardation syndrome, X-linked, Armfield type"
+msgstr ""
+"\n"
+"        Síndrome de retraso mental, ligado al cromosoma X, tipo Armfield"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CUL4B
+msgid ""
+"\n"
+"        Mental retardation syndrome, X-linked, Cabezas type [MIM:300354]\n"
+"        Mental retardation-hypotonic facies syndrome, X-linked, 2 [MIM:300639]"
+msgstr ""
+"\n"
+"        Síndrome de retraso mental, ligado al cromosoma X, tipo Cabezas [MIM:300354]\n"
+"        Síndrome de retraso mental-facies hipotónica, ligado al cromosoma X, 2 [MIM:300639]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXSL
+msgid ""
+"\n"
+"        Mental retardation syndrome, X-linked, Lubs type"
+msgstr ""
+"\n"
+"        Síndrome de retraso mental, ligado al cromosoma X, tipo Lubs"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHF8
+msgid ""
+"\n"
+"        Mental retardation syndrome, X-linked, Siderius type [MIM:300263]"
+msgstr ""
+"\n"
+"        Síndrome de retraso mental, ligado al cromosoma X, tipo Siderius [MIM:300263]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DIP2B
+#: model:oeh.medical.genetics,info:oehealth.FRA12A
+msgid ""
+"\n"
+"        Mental retardation, FRA12A type [MIM:136630]"
+msgstr ""
+"\n"
+"        Retraso mental, tipo FRA12A [MIM:136630]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX14
+msgid ""
+"\n"
+"        Mental retardation, X-linked 14"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 14"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX20
+msgid ""
+"\n"
+"        Mental retardation, X-linked 20"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 20"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX23
+#: model:oeh.medical.genetics,info:oehealth.MRX27
+#: model:oeh.medical.genetics,info:oehealth.MRX35
+#: model:oeh.medical.genetics,info:oehealth.MRX80
+msgid ""
+"\n"
+"        Mental retardation, X-linked 23, nonspecific"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 23, no específico"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAK3
+msgid ""
+"\n"
+"        Mental retardation, X-linked 30 [MIM:300558]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 30 [MIM:300558]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZNF81
+msgid ""
+"\n"
+"        Mental retardation, X-linked 45 [MIM:300498]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 45 [MIM:300498]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX52
+msgid ""
+"\n"
+"        Mental retardation, X-linked 52"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 52"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AP1S2
+msgid ""
+"\n"
+"        Mental retardation, X-linked 59 [MIM:300630]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 59 [MIM:300630]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX77
+msgid ""
+"\n"
+"        Mental retardation, X-linked 77"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 77"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX78
+msgid ""
+"\n"
+"        Mental retardation, X-linked 78"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 78"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX81
+msgid ""
+"\n"
+"        Mental retardation, X-linked 81"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 81"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX82
+msgid ""
+"\n"
+"        Mental retardation, X-linked 82"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 82"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX84
+msgid ""
+"\n"
+"        Mental retardation, X-linked 84"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 84"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BRWD3
+msgid ""
+"\n"
+"        Mental retardation, X-linked 93 [MIM:300659]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 93 [MIM:300659]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GRIA3
+msgid ""
+"\n"
+"        Mental retardation, X-linked 94 [MIM:300699]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 94 [MIM:300699]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAGT1
+msgid ""
+"\n"
+"        Mental retardation, X-linked 95 [MIM:300716]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 95 [MIM:300716]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GDI1
+msgid ""
+"\n"
+"        Mental retardation, X-linked nonspecific [MIM:309541]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, no específico [MIM:309541]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX42
+msgid ""
+"\n"
+"        Mental retardation, X-linked nonspecific, 42"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, no específico, 42"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACSL4
+msgid ""
+"\n"
+"        Mental retardation, X-linked nonspecific, 63 [MIM:300387]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, no específico, 63 [MIM:300387]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARHGEF6
+msgid ""
+"\n"
+"        Mental retardation, X-linked nonspecific, type 46 [MIM:300436]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, no específico, tipo 46 [MIM:300436]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX50
+msgid ""
+"\n"
+"        Mental retardation, X-linked nonspecific, type 50"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, no específico, tipo 50"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UBE2A
+msgid ""
+"\n"
+"        Mental retardation, X-linked syndromic"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC9A6
+msgid ""
+"\n"
+"        Mental retardation, X-linked syndromic, Christianson type [MIM:300243]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico, tipo Christianson [MIM:300243]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HUWE1
+msgid ""
+"\n"
+"        Mental retardation, X-linked syndromic, Turner type [MIM:300706]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico, tipo Turner [MIM:300706]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX1
+msgid ""
+"\n"
+"        Mental retardation, X-linked, 1"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX2
+msgid ""
+"\n"
+"        Mental retardation, X-linked, 2"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IL1RAPL1
+msgid ""
+"\n"
+"        Mental retardation, X-linked, 21/34 [MIM:300143]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, 21/34 [MIM:300143]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FRAXE
+msgid ""
+"\n"
+"        Mental retardation, X-linked, FRAXE type"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, tipo FRAXE"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXS11
+msgid ""
+"\n"
+"        Mental retardation, X-linked, Shashi type"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, tipo Shashi"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SMS
+msgid ""
+"\n"
+"        Mental retardation, X-linked, Snyder-Robinson type [MIM:309583]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, tipo Snyder-Robinson [MIM:309583]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZDHHC9
+msgid ""
+"\n"
+"        Mental retardation, X-linked, ZDHHC9-related"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, relacionado con ZDHHC9"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXS12
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic 12"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico 12"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UPF3B
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic 14 [MIM:300676]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico 14 [MIM:300676]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXS7
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic 7"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico 7"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRSXL
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic-2, with dysmorphism and cerebral atrophy"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico-2, con dismorfismo y atrofia cerebral"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCS
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic-4, with congenital contractures and low fingertip arches"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico-4, con contracturas congénitas y arcos bajos en las yemas de los dedos"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRXS5
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic-5, with Dandy-Walker malformation, basal ganglia disease, and seizures"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico-5, con malformación de Dandy-Walker, enfermedad de los ganglios basales y convulsiones"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.WTSX
+msgid ""
+"\n"
+"        Mental retardation, X-linked, syndromic-6, with gynecomastia and obesity"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, sindrómico-6, con ginecomastia y obesidad"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OPHN1
+msgid ""
+"\n"
+"        Mental retardation, X-linked, with cerebellar hypoplasia and distinctive facial appearance [MIM:300486]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, con hipoplasia cerebelosa y apariencia facial distintiva [MIM:300486]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATP6AP2
+msgid ""
+"\n"
+"        Mental retardation, X-linked, with epilepsy [MIM:300423]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, con epilepsia [MIM:300423]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BFLS
+#: model:oeh.medical.genetics,info:oehealth.SOX3
+msgid ""
+"\n"
+"        Mental retardation, X-linked, with isolated growth hormone deficiency [MIM:300123]\n"
+"        Panhypopituitarism, X-linked [MIM:312000]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, con deficiencia aislada de hormona del crecimiento [MIM:300123]\n"
+"        Panhipopituitarismo, ligado al cromosoma X [MIM:312000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRSS
+msgid ""
+"\n"
+"        Mental retardation, X-linked, with short stature"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X, con baja estatura"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX49
+msgid ""
+"\n"
+"        Mental retardation, X-linked-49"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-49"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX53
+msgid ""
+"\n"
+"        Mental retardation, X-linked-53"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-53"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRX72
+msgid ""
+"\n"
+"        Mental retardation, X-linked-72"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-72"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AGTR2
+msgid ""
+"\n"
+"        Mental retardation, X-linked-88"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-88"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZNF41
+msgid ""
+"\n"
+"        Mental retardation, X-linked-89"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-89"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FTSJ1
+msgid ""
+"\n"
+"        Mental retardation, X-linked-9 [MIM:309549]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-9 [MIM:309549]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DLG3
+msgid ""
+"\n"
+"        Mental retardation, X-linked-90"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-90"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZDHHC15
+msgid ""
+"\n"
+"        Mental retardation, X-linked-91 [MIM:300577]"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-91 [MIM:300577]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZNF674
+msgid ""
+"\n"
+"        Mental retardation, X-linked-92"
+msgstr ""
+"\n"
+"        Retraso mental, ligado al cromosoma X-92"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MBD5
+msgid ""
+"\n"
+"        Mental retardation, autosomal dominant 1 [MIM:156200]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico dominante 1 [MIM:156200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DOCK8
+msgid ""
+"\n"
+"        Mental retardation, autosomal dominant 2"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico dominante 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CDH15
+msgid ""
+"\n"
+"        Mental retardation, autosomal dominant 3 [MIM:612580]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico dominante 3 [MIM:612580]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KIRREL3
+msgid ""
+"\n"
+"        Mental retardation, autosomal dominant 4 [MIM:612581]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico dominante 4 [MIM:612581]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRSS12
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive 1 [MIM:249500]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo 1 [MIM:249500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CRBN
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive 2A [MIM:607417]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo 2A [MIM:607417]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CC2D1A
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive 3 [MIM:608443]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo 3 [MIM:608443]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TUSC3
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive 7 [MIM:611093]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo 7 [MIM:611093]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT10
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 10"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 10"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT11
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 11"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 11"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT12
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 12"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 12"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT4
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 4"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GRIK2
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 6 [MIM:611092]"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 6 [MIM:611092]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT8
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 8"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 8"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRT9
+msgid ""
+"\n"
+"        Mental retardation, autosomal recessive, 9"
+msgstr ""
+"\n"
+"        Retraso mental, autosómico recesivo, 9"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRST
+msgid ""
+"\n"
+"        Mental retardation, severe, with spasticity and tapetoretinal degeneration"
+msgstr ""
+"\n"
+"        Retraso mental, grave, con espasticidad y degeneración tapetorretiniana"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MRSD
+msgid ""
+"\n"
+"        Mental retardation-skeletal dysplasia"
+msgstr ""
+"\n"
+"        Retraso mental-displasia esquelética"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CYP2C19
+msgid ""
+"\n"
+"        Mephenytoin poor metabolizer [MIM:609535]\n"
+"        Opremazole poor metagolizer [MIM:609535]\n"
+"        Proguanil poor metabolizer [MIM:609535]\n"
+"        Clopidogrel, impaired responsiveness to [MIM:609535]"
+msgstr ""
+"\n"
+"        Metabolizador lento de mefenitoína [MIM:609535]\n"
+"        Metabolizador lento de omeprazol [MIM:609535]\n"
+"        Metabolizador lento de proguanil [MIM:609535]\n"
+"        Clopidogrel, respuesta alterada a [MIM:609535]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMDK
+msgid ""
+"\n"
+"        Mesomelic dysplasia, Kantaputra type"
+msgstr ""
+"\n"
+"        Displasia mesomélica, tipo Kantaputra"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARSA
+msgid ""
+"\n"
+"        Metachromatic leukodystrophy [MIM:250100]"
+msgstr ""
+"\n"
+"        Leucodistrofia metacromática [MIM:250100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSAP
+msgid ""
+"\n"
+"        Metachromatic leukodystrophy due to SAP-b deficiency [MIM:249900]\n"
+"        Gaucher disease, atypical [MIM:610539]\n"
+"        Combined SAP deficiency [MIM:611721]\n"
+"        Krabbe disease, atypical [MIM:611722]"
+msgstr ""
+"\n"
+"        Leucodistrofia metacromática debida a deficiencia de SAP-b [MIM:249900]\n"
+"        Enfermedad de Gaucher, atípica [MIM:610539]\n"
+"        Deficiencia combinada de SAP [MIM:611721]\n"
+"        Enfermedad de Krabbe, atípica [MIM:611722]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.COL10A1
+msgid ""
+"\n"
+"        Metaphyseal chondrodysplasia, Schmid type\n"
+"        Spondylometaphyseal dysplasia, Japanese type"
+msgstr ""
+"\n"
+"        Condrodisplasia metafisaria, tipo Schmid\n"
+"        Displasia espondilometafisaria, tipo japonés"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SIPA1
+msgid ""
+"\n"
+"        Metastasis efficiency, modification of"
+msgstr ""
+"\n"
+"        Eficiencia de metástasis, modificación de"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CYB5A
+msgid ""
+"\n"
+"        Methemoglobinemia due to cytochrome b5 deficiency"
+msgstr ""
+"\n"
+"        Metahemoglobinemia debida a deficiencia de citocromo b5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CYB5R3
+msgid ""
+"\n"
+"        Methemoglobinemia, type I\n"
+"        Methemoglobinemia, type II"
+msgstr ""
+"\n"
+"        Metahemoglobinemia, tipo I\n"
+"        Metahemoglobinemia, tipo II"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MTR
+msgid ""
+"\n"
+"        Methylcobalamin deficiency, cblG type [MIM:250940]\n"
+"        Neural tube defects, folate-sensitive, susceptibility to [MIM:601634]\n"
+"        Down syndrome, susceptibility to [MIM:190685]\n"
+"        Cleft lip/palate, susceptibility to [MIM:119530]"
+msgstr ""
+"\n"
+"        Deficiencia de metilcobalamina, tipo cblG [MIM:250940]\n"
+"        Defectos del tubo neural, sensibles al folato, susceptibilidad a [MIM:601634]\n"
+"        Síndrome de Down, susceptibilidad a [MIM:190685]\n"
+"        Labio leporino/paladar hendido, susceptibilidad a [MIM:119530]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ALDH6A1
+msgid ""
+"\n"
+"        Methylmalonate semialdehyde dehydrogenase deficiency"
+msgstr ""
+"\n"
+"        Deficiencia de metilmalonato semialdehído deshidrogenasa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMACHC
+msgid ""
+"\n"
+"        Methylmalonic aciduria and homocystinuria, cblC type [MIM:277400]"
+msgstr ""
+"\n"
+"        Aciduria metilmalónica y homocistinuria, tipo cblC [MIM:277400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMBRD1
+msgid ""
+"\n"
+"        Methylmalonic aciduria and homocystinuria, cblF type [MIM:277380]"
+msgstr ""
+"\n"
+"        Aciduria metilmalónica y homocistinuria, tipo cblF [MIM:277380]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MUT
+msgid ""
+"\n"
+"        Methylmalonic aciduria, mut(0) type [MIM:251000]"
+msgstr ""
+"\n"
+"        Aciduria metilmalónica, tipo mut(0) [MIM:251000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMAA
+msgid ""
+"\n"
+"        Methylmalonic aciduria, vitamin B12-responsive [MIM:251100]"
+msgstr ""
+"\n"
+"        Aciduria metilmalónica, sensible a la vitamina B12 [MIM:251100]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMAB
+msgid ""
+"\n"
+"        Methylmalonic aciduria, vitamin B12-responsive, due to defect in synthesis of adenosylcobalamin, cblB complementation type [MIM:251110]"
+msgstr ""
+"\n"
+"        Aciduria metilmalónica, sensible a la vitamina B12, debida a defecto en la síntesis de adenosilcobalamina, tipo de complementación cblB [MIM:251110]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCEE
+msgid ""
+"\n"
+"        Methylmalonyl-CoA epimerase deficiency [MIM:251120]"
+msgstr ""
+"\n"
+"        Deficiencia de metilmalonil-CoA epimerasa [MIM:251120]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MVK
+msgid ""
+"\n"
+"        Mevalonic aciduria [MIM:610377]\n"
+"        Hyper-IgD syndrome [MIM:260920]"
+msgstr ""
+"\n"
+"        Aciduria mevalónica [MIM:610377]\n"
+"        Síndrome de hiper-IgD [MIM:260920]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC25A3
+msgid ""
+"\n"
+"        Micochondrial phosphate carrier deficiency [MIM:610773]"
+msgstr ""
+"\n"
+"        Deficiencia del portador de fosfato mitocondrial [MIM:610773]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.JAWAD
+msgid ""
+"\n"
+"        Microcephaly with digital anomalies"
+msgstr ""
+"\n"
+"        Microcefalia con anomalías digitales"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCPHA
+#: model:oeh.medical.genetics,info:oehealth.SLC25A19
+msgid ""
+"\n"
+"        Microcephaly, Amish type [MIM:607196]"
+msgstr ""
+"\n"
+"        Microcefalia, tipo Amish [MIM:607196]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCPH1
+msgid ""
+"\n"
+"        Microcephaly, autosomal recessive 1 [MIM:251200]\n"
+"        Premature chromosome condensation with microcephaly and mental retardation [MIM:606858]"
+msgstr ""
+"\n"
+"        Microcefalia, autosómica recesiva 1 [MIM:251200]\n"
+"        Condensación prematura de cromosomas con microcefalia y retraso mental [MIM:606858]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCPH2
+msgid ""
+"\n"
+"        Microcephaly, primary autosomal recessive, 2 [MIM:251200]"
+msgstr ""
+"\n"
+"        Microcefalia, primaria autosómica recesiva, 2 [MIM:251200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CDK5RAP2
+#: model:oeh.medical.genetics,info:oehealth.MCPH3
+msgid ""
+"\n"
+"        Microcephaly, primary autosomal recessive, 3 [MIM:604804]"
+msgstr ""
+"\n"
+"        Microcefalia, primaria autosómica recesiva, 3 [MIM:604804]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCPH4
+msgid ""
+"\n"
+"        Microcephaly, primary autosomal recessive, 4 [MIM:251200]"
+msgstr ""
+"\n"
+"        Microcefalia, primaria autosómica recesiva, 4 [MIM:251200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ASPM
+msgid ""
+"\n"
+"        Microcephaly, primary autosomal recessive, 5, with or without simplified gyral pattern [MIM:608716]"
+msgstr ""
+"\n"
+"        Microcefalia, primaria autosómica recesiva, 5, con o sin patrón de circunvoluciones simplificado [MIM:608716]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STIL
+msgid ""
+"\n"
+"        Microcephaly, primary autosomal recessive, 7 [MIM:612703]"
+msgstr ""
+"\n"
+"        Microcefalia, primaria autosómica recesiva, 7 [MIM:612703]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCOR
+msgid ""
+"\n"
+"        Microcoria, congenital"
+msgstr ""
+"\n"
+"        Microcoria, congénita"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MHAC
+msgid ""
+"\n"
+"        Microhydranencephaly"
+msgstr ""
+"\n"
+"        Microhidranencefalia"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAX18
+msgid ""
+"\n"
+"        Microphthalmia, isolated 3 [MIM:611038]"
+msgstr ""
+"\n"
+"        Microftalmia, aislada 3 [MIM:611038]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SIX6
+msgid ""
+"\n"
+"        Microphthalmia, isolated, with cataract 2 [MIM:212550]"
+msgstr ""
+"\n"
+"        Microftalmia, aislada, con catarata 2 [MIM:212550]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MFRP
+msgid ""
+"\n"
+"        Microphthalmia, posterior, with retinitis pigmentosa, foveoschisis, and optic disc drusen [MIM:611040]"
+msgstr ""
+"\n"
+"        Microftalmia, posterior, con retinosis pigmentaria, foveosquisis y drusas del disco óptico [MIM:611040]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MAA
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 1"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCOR
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 2 [MIM:300166]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 2 [MIM:300166]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SOX2
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 3 [MIM:206900]\n"
+"        Optic nerve hypoplasia and abnormalities of the central nervous system [MIM:206900]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 3 [MIM:206900]\n"
+"        Hipoplasia del nervio óptico y anomalías del sistema nervioso central [MIM:206900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ANOP1
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 4"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OTX2
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 5 [MIM:610125]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 5 [MIM:610125]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BMP4
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 6 [MIM:607932]\n"
+"        Orofacial cleft 11 [MIM:600625]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 6 [MIM:607932]\n"
+"        Hendidura orofacial 11 [MIM:600625]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HCCS
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 7 [MIM:309801]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 7 [MIM:309801]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SNX3
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 8 [MIM:601349]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 8 [MIM:601349]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STRA6
+msgid ""
+"\n"
+"        Microphthalmia, syndromic 9 [MIM:601186]"
+msgstr ""
+"\n"
+"        Microftalmia, sindrómica 9 [MIM:601186]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MNDEC
+msgid ""
+"\n"
+"        Microtia with nasolacrimal duct imperforation and eye coloboma"
+msgstr ""
+"\n"
+"        Microtia con imperforación del conducto nasolagrimal y coloboma ocular"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HOXA2
+msgid ""
+"\n"
+"        Microtia, hearing impairment, and cleft palate [MIM:612290]"
+msgstr ""
+"\n"
+"        Microtia, discapacidad auditiva y paladar hendido [MIM:612290]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EPO
+msgid ""
+"\n"
+"        Microvascular complications of diabetes 2 [MIM:612623]"
+msgstr ""
+"\n"
+"        Complicaciones microvasculares de la diabetes 2 [MIM:612623]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYO5B
+msgid ""
+"\n"
+"        Microvillus inclusion disease [MIM:251850]"
+msgstr ""
+"\n"
+"        Enfermedad de inclusión de microvellosidades [MIM:251850]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR7
+msgid ""
+"\n"
+"        Migraine with aura, susceptibility to, 7"
+msgstr ""
+"\n"
+"        Migraña con aura, susceptibilidad a, 7"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MA
+msgid ""
+"\n"
+"        Migraine with or without aura, susceptibility to"
+msgstr ""
+"\n"
+"        Migraña con o sin aura, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR3
+msgid ""
+"\n"
+"        Migraine with or without aura, susceptibility to, 3"
+msgstr ""
+"\n"
+"        Migraña con o sin aura, susceptibilidad a, 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR5
+msgid ""
+"\n"
+"        Migraine with or without aura, susceptibility to, 5"
+msgstr ""
+"\n"
+"        Migraña con o sin aura, susceptibilidad a, 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR4
+msgid ""
+"\n"
+"        Migraine without aura, susceptibility to, 4"
+msgstr ""
+"\n"
+"        Migraña sin aura, susceptibilidad a, 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATP1A2
+msgid ""
+"\n"
+"        Migraine, familial hemiplegic, 2 [MIM:602481]\n"
+"        Alternating hemiplegia of childhood [MIM:104290]\n"
+"        Migraine, familial basilar [MIM:602481]"
+msgstr ""
+"\n"
+"        Migraña, hemipléjica familiar, 2 [MIM:602481]\n"
+"        Hemiplejía alternante de la infancia [MIM:104290]\n"
+"        Migraña, basilar familiar [MIM:602481]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR2
+msgid ""
+"\n"
+"        Migraine, familial typical, susceptibility to, 1"
+msgstr ""
+"\n"
+"        Migraña, típica familiar, susceptibilidad a, 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EDNRA
+msgid ""
+"\n"
+"        Migraine, resistance to [MIM:157300]"
+msgstr ""
+"\n"
+"        Migraña, resistencia a [MIM:157300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR8
+msgid ""
+"\n"
+"        Migraine, susceptibility to, 8"
+msgstr ""
+"\n"
+"        Migraña, susceptibilidad a, 8"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGR12
+msgid ""
+"\n"
+"        Migraine, with or without aura, susceptibility to, 12"
+msgstr ""
+"\n"
+"        Migraña, con o sin aura, susceptibilidad a, 12"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.YWHAE
+msgid ""
+"\n"
+"        Miller-Dieker lissencephaly [MIM:247200]"
+msgstr ""
+"\n"
+"        Lisencefalia de Miller-Dieker [MIM:247200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MIPOL1
+msgid ""
+"\n"
+"        Mirror-image polydactyly [MIM:135750]"
+msgstr ""
+"\n"
+"        Polidactilia en espejo [MIM:135750]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PMS2
+msgid ""
+"\n"
+"        Mismatch repair cancer syndrome [MIM:276300]\n"
+"        Colorectal cancer, hereditary nonpolyposis, type 4"
+msgstr ""
+"\n"
+"        Síndrome de cáncer por reparación de desajustes [MIM:276300]\n"
+"        Cáncer colorrectal, hereditario no polipósico, tipo 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SUCLA2
+msgid ""
+"\n"
+"        Mitochondrial DNA depletion syndrome, enceophalomyopathic form, with methylmalonic aciduria [MIM:612073]"
+msgstr ""
+"\n"
+"        Síndrome de depleción de ADN mitocondrial, forma encefalomiopática, con aciduria metilmalónica [MIM:612073]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RRM2B
+msgid ""
+"\n"
+"        Mitochondrial DNA depletion syndrome, encephalomyopathic form, with renal tubulopathy [MIM:612075]"
+msgstr ""
+"\n"
+"        Síndrome de depleción de ADN mitocondrial, forma encefalomiopática, con tubulopatía renal [MIM:612075]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPV17
+msgid ""
+"\n"
+"        Mitochondrial DNA depletion syndrome, hepatocerebral form [MIM:251880]"
+msgstr ""
+"\n"
+"        Síndrome de depleción de ADN mitocondrial, forma hepatocerebral [MIM:251880]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TK2
+msgid ""
+"\n"
+"        Mitochondrial DNA depletion syndrome, myopathic form [MIM:609560]"
+msgstr ""
+"\n"
+"        Síndrome de depleción de ADN mitocondrial, forma miopática [MIM:609560]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DGUOK
+msgid ""
+"\n"
+"        Mitochondrial DNA-depletion syndrome, hepatocerebral form [MIM:251880]"
+msgstr ""
+"\n"
+"        Síndrome de depleción de ADN mitocondrial, forma hepatocerebral [MIM:251880]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.C20orf7
+msgid ""
+"\n"
+"        Mitochondrial complex 1 deficiency [MIM:252010]"
+msgstr ""
+"\n"
+"        Deficiencia del complejo mitocondrial 1 [MIM:252010]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDUFA1
+#: model:oeh.medical.genetics,info:oehealth.NDUFA11
+#: model:oeh.medical.genetics,info:oehealth.NDUFA12
+#: model:oeh.medical.genetics,info:oehealth.NDUFS1
+#: model:oeh.medical.genetics,info:oehealth.NDUFS2
+msgid ""
+"\n"
+"        Mitochondrial complex I deficiency [MIM:252010]"
+msgstr ""
+"\n"
+"        Deficiencia del complejo mitocondrial I [MIM:252010]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UQCRB
+#: model:oeh.medical.genetics,info:oehealth.UQCRQ
+msgid ""
+"\n"
+"        Mitochondrial complex III deficiency [MIM:124000]"
+msgstr ""
+"\n"
+"        Deficiencia del complejo mitocondrial III [MIM:124000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BCS1L
+msgid ""
+"\n"
+"        Mitochondrial complex III deficiency [MIM:124000]\n"
+"        GRACILE syndrome [MIM:603358]\n"
+"        Leigh syndrome [MIM:256000]\n"
+"        Bjornstad syndrome [MIM:262000]"
+msgstr ""
+"\n"
+"        Deficiencia del complejo mitocondrial III [MIM:124000]\n"
+"        Síndrome GRACILE [MIM:603358]\n"
+"        Síndrome de Leigh [MIM:256000]\n"
+"        Síndrome de Bjornstad [MIM:262000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FASTKD2
+msgid ""
+"\n"
+"        Mitochondrial complex IV deficiency [MIM:220110]"
+msgstr ""
+"\n"
+"        Deficiencia del complejo mitocondrial IV [MIM:220110]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMVP1
+msgid ""
+"\n"
+"        Mitral valve prolapse, myxomatous 1"
+msgstr ""
+"\n"
+"        Prolapso de la válvula mitral, mixomatoso 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMVP2
+msgid ""
+"\n"
+"        Mitral valve prolapse, myxomatous 2"
+msgstr ""
+"\n"
+"        Prolapso de la válvula mitral, mixomatoso 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMVP3
+msgid ""
+"\n"
+"        Mitral valve prolapse, myxomatous 3"
+msgstr ""
+"\n"
+"        Prolapso de la válvula mitral, mixomatoso 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MBS1
+msgid ""
+"\n"
+"        Moebius syndrome"
+msgstr ""
+"\n"
+"        Síndrome de Moebius"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MBS3
+msgid ""
+"\n"
+"        Moebius syndrome-3"
+msgstr ""
+"\n"
+"        Síndrome de Moebius-3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MOCS1
+msgid ""
+"\n"
+"        Molybdenum cofactor deficiency, type A [MIM:252150]"
+msgstr ""
+"\n"
+"        Deficiencia de cofactor de molibdeno, tipo A [MIM:252150]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MOCS2
+msgid ""
+"\n"
+"        Molybdenum cofactor deficiency, type B [MIM:252150]"
+msgstr ""
+"\n"
+"        Deficiencia de cofactor de molibdeno, tipo B [MIM:252150]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT81
+#: model:oeh.medical.genetics,info:oehealth.KRT83
+#: model:oeh.medical.genetics,info:oehealth.KRT86
+msgid ""
+"\n"
+"        Monilethrix [MIM:158000]"
+msgstr ""
+"\n"
+"        Monilethrix [MIM:158000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMN7A
+msgid ""
+"\n"
+"        Motor neuronopathy, distal hereditary, with vocal cord paralysis"
+msgstr ""
+"\n"
+"        Neuronopatía motora, hereditaria distal, con parálisis de cuerdas vocales"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZEB2
+msgid ""
+"\n"
+"        Mowat-Wilson syndrome [MIM:235730]"
+msgstr ""
+"\n"
+"        Síndrome de Mowat-Wilson [MIM:235730]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYMY1
+msgid ""
+"\n"
+"        Moyamoya disease"
+msgstr ""
+"\n"
+"        Enfermedad de Moyamoya"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYMY2
+msgid ""
+"\n"
+"        Moyamoya disease 2"
+msgstr ""
+"\n"
+"        Enfermedad de Moyamoya 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYMY3
+msgid ""
+"\n"
+"        Moyamoya disease 3"
+msgstr ""
+"\n"
+"        Enfermedad de Moyamoya 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CRTC1
+#: model:oeh.medical.genetics,info:oehealth.MAML2
+msgid ""
+"\n"
+"        Mucoepidermoid salivary gland carcinoma"
+msgstr ""
+"\n"
+"        Carcinoma mucoepidermoide de glándula salival"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNPTAB
+msgid ""
+"\n"
+"        Mucolipidosis III alpha/beta [MIM:252600]\n"
+"        Mucolipidosis II alpha/beta [MIM:252500]"
+msgstr ""
+"\n"
+"        Mucolipidosis III alfa/beta [MIM:252600]\n"
+"        Mucolipidosis II alfa/beta [MIM:252500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCOLN1
+msgid ""
+"\n"
+"        Mucolipidosis IV [MIM:252650]"
+msgstr ""
+"\n"
+"        Mucolipidosis IV [MIM:252650]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IDS
+msgid ""
+"\n"
+"        Mucopolysaccharidosis II"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis II"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GALNS
+msgid ""
+"\n"
+"        Mucopolysaccharidosis IVA [MIM:253000]"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis IVA [MIM:253000]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IDUA
+msgid ""
+"\n"
+"        Mucopolysaccharidosis Ih [MIM:607014]\n"
+"        Mucopolysaccharidosis Is [MIM:607016]\n"
+"        Mucopolysaccharidosis Ih/s [MIM:607015]"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis Ih [MIM:607014]\n"
+"        Mucopolisacaridosis Is [MIM:607016]\n"
+"        Mucopolisacaridosis Ih/s [MIM:607015]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GUSB
+msgid ""
+"\n"
+"        Mucopolysaccharidosis VII [MIM:253220]"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis VII [MIM:253220]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNS
+msgid ""
+"\n"
+"        Mucopolysaccharidosis type IIID [MIM:252940]"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis tipo IIID [MIM:252940]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HYAL1
+msgid ""
+"\n"
+"        Mucopolysaccharidosis type IX [MIM:601492]"
+msgstr ""
+"\n"
+"        Mucopolisacaridosis tipo IX [MIM:601492]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TRIM37
+msgid ""
+"\n"
+"        Mulibrey nanism [MIM:253250]"
+msgstr ""
+"\n"
+"        Nanismo Mulibrey [MIM:253250]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MEN1
+msgid ""
+"\n"
+"        Multiple endocrine neoplasia I\n"
+"        Hyperparathyroidism, AD [MIM:145000]\n"
+"        Prolactinoma, hyperparathyroidism, carcinoid syndrome\n"
+"        Carcinoid tumor of lung\n"
+"        Parathyroid adenoma, somatic\n"
+"        Lipoma, somatic\n"
+"        Angiofibroma, somatic\n"
+"        Adrenal adenoma, somatic"
+msgstr ""
+"\n"
+"        Neoplasia endocrina múltiple I\n"
+"        Hiperparatiroidismo, AD [MIM:145000]\n"
+"        Prolactinoma, hiperparatiroidismo, síndrome carcinoide\n"
+"        Tumor carcinoide de pulmón\n"
+"        Adenoma paratiroideo, somático\n"
+"        Lipoma, somático\n"
+"        Angiofibroma, somático\n"
+"        Adenoma suprarrenal, somático"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RET10
+msgid ""
+"\n"
+"        Multiple endocrine neoplasia IIA [MIM:171400]\n"
+"        Medullary thyroid carcinoma [MIM:155240]\n"
+"        Multiple endocrine neoplasia IIB [MIM:162300]\n"
+"        Hirschsprung disease [MIM:142623]\n"
+"        Central hypoventilation syndrome, congenital [MIM:209880]\n"
+"        Pheochromocytoma [MIM:171300]\n"
+"        Renal agenesis [MIM:191830]"
+msgstr ""
+"\n"
+"        Neoplasia endocrina múltiple IIA [MIM:171400]\n"
+"        Carcinoma medular de tiroides [MIM:155240]\n"
+"        Neoplasia endocrina múltiple IIB [MIM:162300]\n"
+"        Enfermedad de Hirschsprung [MIM:142623]\n"
+"        Síndrome de hipoventilación central, congénito [MIM:209880]\n"
+"        Feocromocitoma [MIM:171300]\n"
+"        Agenesia renal [MIM:191830]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CDKN1B
+msgid ""
+"\n"
+"        Multiple endocrine neoplasia, type IV [MIM:610755]"
+msgstr ""
+"\n"
+"        Neoplasia endocrina múltiple, tipo IV [MIM:610755]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MMDFS
+msgid ""
+"\n"
+"        Multiple mitochondrial dysfunctions syndrome"
+msgstr ""
+"\n"
+"        Síndrome de disfunciones mitocondriales múltiples"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IRF4
+msgid ""
+"\n"
+"        Multiple myeloma"
+msgstr ""
+"\n"
+"        Mieloma múltiple"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CD24
+msgid ""
+"\n"
+"        Multiple sclerosis, susceptibility to [MIM:126200]"
+msgstr ""
+"\n"
+"        Esclerosis múltiple, susceptibilidad a [MIM:126200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTPRC
+msgid ""
+"\n"
+"        Multiple sclerosis, susceptibility to [MIM:126200]\n"
+"        Hepatitic C virus, susceptibility to [MIM:609532]\n"
+"        Severe combined immunodeficiency, T cell-negative, B-cell/natural killer-cell positive [MIM:608971]"
+msgstr ""
+"\n"
+"        Esclerosis múltiple, susceptibilidad a [MIM:126200]\n"
+"        Virus de la hepatitis C, susceptibilidad a [MIM:609532]\n"
+"        Inmunodeficiencia combinada grave, células T negativas, células B/células asesinas naturales positivas [MIM:608971]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MS2
+msgid ""
+"\n"
+"        Multiple sclerosis, susceptibility to, 2"
+msgstr ""
+"\n"
+"        Esclerosis múltiple, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MS3
+msgid ""
+"\n"
+"        Multiple sclerosis, susceptibility to, 3"
+msgstr ""
+"\n"
+"        Esclerosis múltiple, susceptibilidad a, 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MS4
+msgid ""
+"\n"
+"        Multiple sclerosis, susceptiblity to, 4"
+msgstr ""
+"\n"
+"        Esclerosis múltiple, susceptibilidad a, 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SUMF1
+msgid ""
+"\n"
+"        Multiple sulfatase deficiency [MIM:272200]"
+msgstr ""
+"\n"
+"        Deficiencia múltiple de sulfatasa [MIM:272200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MGS
+msgid ""
+"\n"
+"        Mungen syndrome"
+msgstr ""
+"\n"
+"        Síndrome de Mungen"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHKA1
+msgid ""
+"\n"
+"        Muscle glycogenosis [MIM:300559]"
+msgstr ""
+"\n"
+"        Glucogenosis muscular [MIM:300559]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MSTN
+msgid ""
+"\n"
+"        Muscle hypertrophy"
+msgstr ""
+"\n"
+"        Hipertrofia muscular"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MUSTQTL1
+msgid ""
+"\n"
+"        Muscle strength quantitative trait locus 1"
+msgstr ""
+"\n"
+"        Locus de rasgo cuantitativo de fuerza muscular 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MEB
+#: model:oeh.medical.genetics,info:oehealth.POMGNT1
+msgid ""
+"\n"
+"        Muscle-eye-brain disease [MIM:253280]"
+msgstr ""
+"\n"
+"        Enfermedad músculo-ojo-cerebro [MIM:253280]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLEC1
+msgid ""
+"\n"
+"        Muscular dystrophy with epidermolysis bullosa simplex [MIM:226670]\n"
+"        Epidermolysis bullosa simplex, Ogna type [MIM:131950]\n"
+"        Epidermolysis bullosa simplex with pyloric atresia [MIM:612138]"
+msgstr ""
+"\n"
+"        Distrofia muscular con epidermólisis ampollosa simple [MIM:226670]\n"
+"        Epidermólisis ampollosa simple, tipo Ogna [MIM:131950]\n"
+"        Epidermólisis ampollosa simple con atresia pilórica [MIM:612138]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDRV
+msgid ""
+"\n"
+"        Muscular dystrophy with rimmed vacuoles"
+msgstr ""
+"\n"
+"        Distrofia muscular con vacuolas bordeadas"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FKTN
+msgid ""
+"\n"
+"        Muscular dystrophy, Fukuyama congenital [MIM:253800]\n"
+"        Walker-Warburg syndrome [MIM:236670]\n"
+"        Cardiomyopathy, dilated, 1X [MIM:611615]\n"
+"        Muscular dystrophy, limb-girdle, type 2M [MIM:611588]"
+msgstr ""
+"\n"
+"        Distrofia muscular, congénita de Fukuyama [MIM:253800]\n"
+"        Síndrome de Walker-Warburg [MIM:236670]\n"
+"        Miocardiopatía, dilatada, 1X [MIM:611615]\n"
+"        Distrofia muscular, de cinturas, tipo 2M [MIM:611588]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LAMA2
+msgid ""
+"\n"
+"        Muscular dystrophy, congenital merosin-deficient [MIM:607855]\n"
+"        Muscular dystrophy, congenital, due to partial LAMA2 deficiency [MIM:607855]"
+msgstr ""
+"\n"
+"        Distrofia muscular, congénita deficiente en merosina [MIM:607855]\n"
+"        Distrofia muscular, congénita, debida a deficiencia parcial de LAMA2 [MIM:607855]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDC1B
+msgid ""
+"\n"
+"        Muscular dystrophy, congenital, 1B"
+msgstr ""
+"\n"
+"        Distrofia muscular, congénita, 1B"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FKRP
+msgid ""
+"\n"
+"        Muscular dystrophy, congenital, 1C [MIM:606612]\n"
+"        Muscular dystrophy, limb-girdle, type 2I [MIM:607155]\n"
+"        Muscle-eye-brain disease [MIM:253280]\n"
+"        Walker-Warburg syndrome [MIM:236670]"
+msgstr ""
+"\n"
+"        Distrofia muscular, congénita, 1C [MIM:606612]\n"
+"        Distrofia muscular, de cinturas, tipo 2I [MIM:607155]\n"
+"        Enfermedad músculo-ojo-cerebro [MIM:253280]\n"
+"        Síndrome de Walker-Warburg [MIM:236670]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LARGE
+msgid ""
+"\n"
+"        Muscular dystrophy, congenital, type 1D [MIM:608840]\n"
+"        Walker-Warburg syndrome [MIM:236670]"
+msgstr ""
+"\n"
+"        Distrofia muscular, congénita, tipo 1D [MIM:608840]\n"
+"        Síndrome de Walker-Warburg [MIM:236670]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYOT
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 1A [MIM:159000]\n"
+"        Myotilinopathy [MIM:609200]\n"
+"        Myopathy, spheroid body [MIM:182920]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 1A [MIM:159000]\n"
+"        Miotilinopatía [MIM:609200]\n"
+"        Miopatía, cuerpo esferoide [MIM:182920]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGMD1D
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 1D"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 1D"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGMD1F
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 1F"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 1F"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CAPN3
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2A [MIM:253600]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2A [MIM:253600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DYSF
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2B [MIM:253601]\n"
+"        Miyoshi myopathy [MIM:254130]\n"
+"        Myopathy, distal, with anterior tibial onset [MIM:606768]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2B [MIM:253601]\n"
+"        Miopatía de Miyoshi [MIM:254130]\n"
+"        Miopatía, distal, con inicio tibial anterior [MIM:606768]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SGCG
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2C [MIM:253700]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2C [MIM:253700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SGCA
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2D [MIM:608099]\n"
+"        Adhalinopathy, primary"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2D [MIM:608099]\n"
+"        Adalinopatía, primaria"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SGCB
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2E [MIM:604286]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2E [MIM:604286]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SGCD
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2F [MIM:601287]\n"
+"        Cardiomyopathy, dilated, 1L [MIM:606685]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2F [MIM:601287]\n"
+"        Miocardiopatía, dilatada, 1L [MIM:606685]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TCAP
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2G [MIM:601954]\n"
+"        Cardiomyopathy, dilated, 1N [MIM:607487]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2G [MIM:601954]\n"
+"        Miocardiopatía, dilatada, 1N [MIM:607487]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TRIM32
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2H [MIM:254110]\n"
+"        Bardet-Biedl syndrome 11 [MIM:209900]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2H [MIM:254110]\n"
+"        Síndrome de Bardet-Biedl 11 [MIM:209900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGMD2L
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type 2L"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo 2L"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CAV3
+msgid ""
+"\n"
+"        Muscular dystrophy, limb-girdle, type IC [MIM:607801]\n"
+"        Rippling muscle disease [MIM:606072]\n"
+"        Creatine phosphokinase, elevated serum [MIM:123320]\n"
+"        Myopathy, distal, with decreased caveolin 3\n"
+"        Cardiomyopathy, familial hypertrophic [MIM:192600]\n"
+"        Long QT syndrome-9 [MIM:611818]"
+msgstr ""
+"\n"
+"        Distrofia muscular, de cinturas, tipo IC [MIM:607801]\n"
+"        Enfermedad del músculo ondulante [MIM:606072]\n"
+"        Creatina fosfoquinasa, suero elevado [MIM:123320]\n"
+"        Miopatía, distal, con caveolina 3 disminuida\n"
+"        Miocardiopatía, hipertrófica familiar [MIM:192600]\n"
+"        Síndrome de QT largo-9 [MIM:611818]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SEPN1
+msgid ""
+"\n"
+"        Muscular dystrophy, rigid spine, 1 [MIM:602771]"
+msgstr ""
+"\n"
+"        Distrofia muscular, columna rígida, 1 [MIM:602771]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MUSQTL1
+msgid ""
+"\n"
+"        Musical aptitude QTL 1"
+msgstr ""
+"\n"
+"        Aptitud musical QTL 1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYAS1
+msgid ""
+"\n"
+"        Myasthenia gravis with thymus hyperplasia"
+msgstr ""
+"\n"
+"        Miastenia gravis con hiperplasia del timo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNG
+msgid ""
+"\n"
+"        Myasthenia gravis, neonatal transient\n"
+"        Escobar syndrome [MIM:265000]\n"
+"        Multiple pterygium syndrome, lethal type [MIM:253290]"
+msgstr ""
+"\n"
+"        Miastenia gravis, neonatal transitoria\n"
+"        Síndrome de Escobar [MIM:265000]\n"
+"        Síndrome de pterigium múltiple, tipo letal [MIM:253290]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DOK7
+msgid ""
+"\n"
+"        Myasthenia, limb-girdle, familial [MIM:254300]"
+msgstr ""
+"\n"
+"        Miastenia, de cinturas, familiar [MIM:254300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MUSK
+msgid ""
+"\n"
+"        Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency [MIM:608931]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito, asociado con deficiencia del receptor de acetilcolina [MIM:608931]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAPSN
+msgid ""
+"\n"
+"        Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency [MIM:608931]\n"
+"        Myasthenic syndrome, congenital, associated with facial dysmorphism and acetylcholine receptor deficiency [MIM:608931]\n"
+"        Fetal akinesia deformation sequence [MIM:208150]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito, asociado con deficiencia del receptor de acetilcolina [MIM:608931]\n"
+"        Síndrome miasténico, congénito, asociado con dismorfismo facial y deficiencia del receptor de acetilcolina [MIM:608931]\n"
+"        Secuencia de deformación de acinesia fetal [MIM:208150]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHAT
+msgid ""
+"\n"
+"        Myasthenic syndrome, congenital, associated with episodic apnea [MIM:254210]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito, asociado con apnea episódica [MIM:254210]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNB1
+msgid ""
+"\n"
+"        Myasthenic syndrome, slow-channel congenital [MIM:601462]\n"
+"        Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency [MIM:608931]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito de canal lento [MIM:601462]\n"
+"        Síndrome miasténico, congénito, asociado con deficiencia del receptor de acetilcolina [MIM:608931]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNA1
+#: model:oeh.medical.genetics,info:oehealth.CHRND
+msgid ""
+"\n"
+"        Myasthenic syndrome, slow-channel congenital [MIM:601462]\n"
+"        Myasthenic syndrome, fast-channel congenital [MIM:608930]\n"
+"        Multiple pterygium syndrome, lethal type [MIM:253290]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito de canal lento [MIM:601462]\n"
+"        Síndrome miasténico, congénito de canal rápido [MIM:608930]\n"
+"        Síndrome de pterigium múltiple, tipo letal [MIM:253290]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CHRNE
+msgid ""
+"\n"
+"        Myasthenic syndrome, slow-channel congenital [MIM:601462]\n"
+"        Myasthenic syndrome, fast-channel congenital [MIM:608930]\n"
+"        Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency [MIM:608931]"
+msgstr ""
+"\n"
+"        Síndrome miasténico, congénito de canal lento [MIM:601462]\n"
+"        Síndrome miasténico, congénito de canal rápido [MIM:608930]\n"
+"        Síndrome miasténico, congénito, asociado con deficiencia del receptor de acetilcolina [MIM:608931]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IL12RB1
+msgid ""
+"\n"
+"        Mycobacterial and salmonella infections, susceptibility to [MIM:209950]"
+msgstr ""
+"\n"
+"        Infecciones por micobacterias y salmonela, susceptibilidad a [MIM:209950]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IFNGR2
+msgid ""
+"\n"
+"        Mycobacterial infection, atypical, familial disseminated [MIM:209950]"
+msgstr ""
+"\n"
+"        Infección micobacteriana, atípica, familiar diseminada [MIM:209950]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IFNGR1
+msgid ""
+"\n"
+"        Mycobacterial infection, atypical, familial disseminated [MIM:209950]\n"
+"        BCG infection, generalized familial [MIM:209950]\n"
+"        H. pylori infection, susceptibility to [MIM:600263]\n"
+"        Tuberculosis, susceptibility to [MIM:607948]\n"
+"        Mycobacterium tuberculosis infection, protection against [MIM:600263]"
+msgstr ""
+"\n"
+"        Infección micobacteriana, atípica, familiar diseminada [MIM:209950]\n"
+"        Infección por BCG, familiar generalizada [MIM:209950]\n"
+"        Infección por H. pylori, susceptibilidad a [MIM:600263]\n"
+"        Tuberculosis, susceptibilidad a [MIM:607948]\n"
+"        Infección por Mycobacterium tuberculosis, protección contra [MIM:600263]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STAT1
+msgid ""
+"\n"
+"        Mycobacterial infection, atypical, familial disseminated [MIM:209950]\n"
+"        STAT1 deficiency, complete"
+msgstr ""
+"\n"
+"        Infección micobacteriana, atípica, familiar diseminada [MIM:209950]\n"
+"        Deficiencia de STAT1, completa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MTBS2
+msgid ""
+"\n"
+"        Mycobacterium tuberculosis, susceptibility to, 2"
+msgstr ""
+"\n"
+"        Mycobacterium tuberculosis, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MDS1
+msgid ""
+"\n"
+"        Myelodysplasia syndrome-1"
+msgstr ""
+"\n"
+"        Síndrome mielodisplásico-1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACSL6
+msgid ""
+"\n"
+"        Myelodysplastic syndrome\n"
+"        Myelogenous leukemia, acute"
+msgstr ""
+"\n"
+"        Síndrome mielodisplásico\n"
+"        Leucemia mielógena, aguda"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CBFB
+msgid ""
+"\n"
+"        Myeloid leukemia, acute, M4Eo subtype"
+msgstr ""
+"\n"
+"        Leucemia mieloide, aguda, subtipo M4Eo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CSF1R
+msgid ""
+"\n"
+"        Myeloid malignancy, predisposition to"
+msgstr ""
+"\n"
+"        Malignidad mieloide, predisposición a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPO
+msgid ""
+"\n"
+"        Myeloperoxidase deficiency [MIM:254600]\n"
+"        Alzheimer disease, susceptibility to [MIM:104300]\n"
+"        Lung cancer, protection against, in smokers (3) 11"
+msgstr ""
+"\n"
+"        Deficiencia de mieloperoxidasa [MIM:254600]\n"
+"        Enfermedad de Alzheimer, susceptibilidad a [MIM:104300]\n"
+"        Cáncer de pulmón, protección contra, en fumadores (3) 11"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FGFR1OP
+msgid ""
+"\n"
+"        Myeloproliferative disorder"
+msgstr ""
+"\n"
+"        Trastorno mieloproliferativo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDGFRB
+msgid ""
+"\n"
+"        Myeloproliferative disorder with eosinophilia [MIM:131440]\n"
+"        Myelomonocytic leukemia, chronic"
+msgstr ""
+"\n"
+"        Trastorno mieloproliferativo con eosinofilia [MIM:131440]\n"
+"        Leucemia mielomonocítica, crónica"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AMPD1
+msgid ""
+"\n"
+"        Myoadenylate deaminase deficiency"
+msgstr ""
+"\n"
+"        Deficiencia de mioadenilato desaminasa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSMA6
+msgid ""
+"\n"
+"        Myocardial infarcation, susceptibility to"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GCLM
+#: model:oeh.medical.genetics,info:oehealth.LGALS2
+#: model:oeh.medical.genetics,info:oehealth.MIAT
+#: model:oeh.medical.genetics,info:oehealth.OLR1
+msgid ""
+"\n"
+"        Myocardial infarction, susceptibility to"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACE
+msgid ""
+"\n"
+"        Myocardial infarction, susceptibility to\n"
+"        Alzheimer disease, susceptibility to [MIM:104300]\n"
+"        Microvascular complications of diabetes 3 [MIM:612624]\n"
+"        Angiotensin I-converting enzyme, benign serum increase\n"
+"        SARS, progression of\n"
+"        Renal tubular dysgenesis [MIM:267430]"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a\n"
+"        Enfermedad de Alzheimer, susceptibilidad a [MIM:104300]\n"
+"        Complicaciones microvasculares de la diabetes 3 [MIM:612624]\n"
+"        Aumento benigno de la enzima convertidora de angiotensina I en suero\n"
+"        SARS, progresión de\n"
+"        Disgenesia tubular renal [MIM:267430]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LTA
+msgid ""
+"\n"
+"        Myocardial infarction, susceptibility to\n"
+"        Psoriatic arthritis, susceptibility to [MIM:607507]\n"
+"        Leprosy, susceptibility to, 4 [MIM:610988]"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a\n"
+"        Artritis psoriásica, susceptibilidad a [MIM:607507]\n"
+"        Lepra, susceptibilidad a, 4 [MIM:610988]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LRP8
+#: model:oeh.medical.genetics,info:oehealth.TNFSF4
+msgid ""
+"\n"
+"        Myocardial infarction, susceptibility to [MIM:608446]"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a [MIM:608446]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MCI2
+msgid ""
+"\n"
+"        Myocardial infarction, susceptiblity to, 2"
+msgstr ""
+"\n"
+"        Infarto de miocardio, susceptibilidad a, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EFHC1
+#: model:oeh.medical.genetics,info:oehealth.EJM1
+msgid ""
+"\n"
+"        Myoclonic epilepsy, juvenile, 1 [MIM:254770]\n"
+"        Epilepsy, juvenile absence [MIM:607631]"
+msgstr ""
+"\n"
+"        Epilepsia mioclónica, juvenil, 1 [MIM:254770]\n"
+"        Epilepsia, ausencia juvenil [MIM:607631]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EJM4
+msgid ""
+"\n"
+"        Myoclonic epilepsy, juvenile, 4"
+msgstr ""
+"\n"
+"        Epilepsia mioclónica, juvenil, 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LPIN1
+#: model:oeh.medical.genetics,info:oehealth.LSL
+msgid ""
+"\n"
+"        Myoglobinuria, acute recurrent, autosomal recessive [MIM:268200]"
+msgstr ""
+"\n"
+"        Mioglobinuria, aguda recurrente, autosómica recesiva [MIM:268200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CPT2
+msgid ""
+"\n"
+"        Myopathy due to CPT II deficiency [MIM:255110]\n"
+"        CPT deficiency, hepatic, type II [MIM:600649]\n"
+"        CPT II deficiency, lethal neonatal [MIM:608836]"
+msgstr ""
+"\n"
+"        Miopatía debida a deficiencia de CPT II [MIM:255110]\n"
+"        Deficiencia de CPT, hepática, tipo II [MIM:600649]\n"
+"        Deficiencia de CPT II, letal neonatal [MIM:608836]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PGAM2
+msgid ""
+"\n"
+"        Myopathy due to phosphoglycerate mutase deficiency"
+msgstr ""
+"\n"
+"        Miopatía debida a deficiencia de fosfoglicerato mutasa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ISCU
+msgid ""
+"\n"
+"        Myopathy with exercise intolerance, Swedish type [MIM:255125]"
+msgstr ""
+"\n"
+"        Miopatía con intolerancia al ejercicio, tipo sueco [MIM:255125]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MEAX
+msgid ""
+"\n"
+"        Myopathy, X-linked, with excessive autophagy"
+msgstr ""
+"\n"
+"        Miopatía, ligada al cromosoma X, con autofagia excesiva"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CRYAB
+msgid ""
+"\n"
+"        Myopathy, cardioskeletal, desmin-related, with cataract [MIM:608810]\n"
+"        Cataract, posterior polar 2"
+msgstr ""
+"\n"
+"        Miopatía, cardioesquelética, relacionada con desmina, con catarata [MIM:608810]\n"
+"        Catarata, polar posterior 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYF6
+msgid ""
+"\n"
+"        Myopathy, centronuclear [MIM:160150]\n"
+"        Becker muscular dystrophy modifier [MIM:310200]"
+msgstr ""
+"\n"
+"        Miopatía, centronuclear [MIM:160150]\n"
+"        Modificador de distrofia muscular de Becker [MIM:310200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BIN1
+msgid ""
+"\n"
+"        Myopathy, centronuclear, autosomal recessive [MIM:255200]"
+msgstr ""
+"\n"
+"        Miopatía, centronuclear, autosómica recesiva [MIM:255200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ITGA7
+msgid ""
+"\n"
+"        Myopathy, congenital"
+msgstr ""
+"\n"
+"        Miopatía, congénita"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CNTN1
+msgid ""
+"\n"
+"        Myopathy, congenital, Compton-North [MIM:612540]"
+msgstr ""
+"\n"
+"        Miopatía, congénita, Compton-North [MIM:612540]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CFTD2
+msgid ""
+"\n"
+"        Myopathy, congenital, with fiber-type disproportion 2"
+msgstr ""
+"\n"
+"        Miopatía, congénita, con desproporción de tipos de fibra 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DES
+msgid ""
+"\n"
+"        Myopathy, desmin-related, cardioskeletal [MIM:601419]\n"
+"        Cardiomyopathy, dilated, 1I [MIM:604765]\n"
+"        Scapuloperoneal syndrome, neurogenic, Kaeser type [MIM:181400]"
+msgstr ""
+"\n"
+"        Miopatía, relacionada con desmina, cardioesquelética [MIM:601419]\n"
+"        Miocardiopatía, dilatada, 1I [MIM:604765]\n"
+"        Síndrome escapuloperoneal, neurogénico, tipo Kaeser [MIM:181400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPD2
+msgid ""
+"\n"
+"        Myopathy, distal"
+msgstr ""
+"\n"
+"        Miopatía, distal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MPD3
+msgid ""
+"\n"
+"        Myopathy, distal 3"
+msgstr ""
+"\n"
+"        Miopatía, distal 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LGMBF
+msgid ""
+"\n"
+"        Myopathy, limb-girdle, with bone fragility"
+msgstr ""
+"\n"
+"        Miopatía, de cinturas, con fragilidad ósea"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LDB3
+msgid ""
+"\n"
+"        Myopathy, myofibrillar, ZASP-related [MIM:609452]\n"
+"        Cardiomyopathy, dilated\n"
+"        Cardiomyopathy, dilated, with left ventricular noncompaction"
+msgstr ""
+"\n"
+"        Miopatía, miofibrilar, relacionada con ZASP [MIM:609452]\n"
+"        Miocardiopatía, dilatada\n"
+"        Miocardiopatía, dilatada, con falta de compactación del ventrículo izquierdo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FLNC
+msgid ""
+"\n"
+"        Myopathy, myofibrillar, filamin C-related [MIM:609524]"
+msgstr ""
+"\n"
+"        Miopatía, miofibrilar, relacionada con filamina C [MIM:609524]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACTA1
+msgid ""
+"\n"
+"        Myopathy, nemaline, 3 [MIM:161800]\n"
+"        Myopathy, actin, congenital, with excess of thin myofilaments [MIM:161800]\n"
+"        Myopathy, actin, congenital, with cores\n"
+"        Myopathy, congenital, with fiber-type disporportion 1 [MIM:255310]"
+msgstr ""
+"\n"
+"        Miopatía, nemalínica, 3 [MIM:161800]\n"
+"        Miopatía, actina, congénita, con exceso de miofilamentos delgados [MIM:161800]\n"
+"        Miopatía, actina, congénita, con núcleos\n"
+"        Miopatía, congénita, con desproporción de tipos de fibra 1 [MIM:255310]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP10
+msgid ""
+"\n"
+"        Myopia 10"
+msgstr ""
+"\n"
+"        Miopía 10"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP11
+msgid ""
+"\n"
+"        Myopia 11"
+msgstr ""
+"\n"
+"        Miopía 11"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP12
+msgid ""
+"\n"
+"        Myopia 12"
+msgstr ""
+"\n"
+"        Miopía 12"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP15
+msgid ""
+"\n"
+"        Myopia 15"
+msgstr ""
+"\n"
+"        Miopía 15"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP16
+msgid ""
+"\n"
+"        Myopia 16"
+msgstr ""
+"\n"
+"        Miopía 16"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP4
+msgid ""
+"\n"
+"        Myopia 4"
+msgstr ""
+"\n"
+"        Miopía 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP5
+msgid ""
+"\n"
+"        Myopia 5"
+msgstr ""
+"\n"
+"        Miopía 5"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP7
+msgid ""
+"\n"
+"        Myopia 7"
+msgstr ""
+"\n"
+"        Miopía 7"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP8
+msgid ""
+"\n"
+"        Myopia 8"
+msgstr ""
+"\n"
+"        Miopía 8"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP9
+msgid ""
+"\n"
+"        Myopia 9"
+msgstr ""
+"\n"
+"        Miopía 9"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP1
+msgid ""
+"\n"
+"        Myopia-1\n"
+"        Bornholm eye disease"
+msgstr ""
+"\n"
+"        Miopía-1\n"
+"        Enfermedad ocular de Bornholm"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP2
+msgid ""
+"\n"
+"        Myopia-2"
+msgstr ""
+"\n"
+"        Miopía-2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP3
+msgid ""
+"\n"
+"        Myopia-3"
+msgstr ""
+"\n"
+"        Miopía-3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYP6
+msgid ""
+"\n"
+"        Myopia-6"
+msgstr ""
+"\n"
+"        Miopía-6"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLCN1
+msgid ""
+"\n"
+"        Myotonia congenita, recessive [MIM:255700]\n"
+"        Myotonia congenita, dominant [MIM:160800]\n"
+"        Myotonia levior, recessive"
+msgstr ""
+"\n"
+"        Miotonía congénita, recesiva [MIM:255700]\n"
+"        Miotonía congénita, dominante [MIM:160800]\n"
+"        Miotonía levior, recesiva"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DMPK
+msgid ""
+"\n"
+"        Myotonic dystrophy [MIM:160900]"
+msgstr ""
+"\n"
+"        Distrofia miotónica [MIM:160900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MTM1
+msgid ""
+"\n"
+"        Myotubular myopathy, X-linked [MIM:310400]"
+msgstr ""
+"\n"
+"        Miopatía miotubular, ligada al cromosoma X [MIM:310400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DDIT3
+msgid ""
+"\n"
+"        Myxoid liposarcoma"
+msgstr ""
+"\n"
+"        Liposarcoma mixoide"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NAGS
+msgid ""
+"\n"
+"        N-acetylglutamate synthase deficiency [MIM:237310]"
+msgstr ""
+"\n"
+"        Deficiencia de N-acetilglutamato sintasa [MIM:237310]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDIC
+msgid ""
+"\n"
+"        Nail dysplasia, isolated congenital"
+msgstr ""
+"\n"
+"        Displasia ungueal, congénita aislada"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LMX1B
+msgid ""
+"\n"
+"        Nail-patella syndrome [MIM:161200]\n"
+"        Nail-patella syndrome with open-angle glaucoma [MIM:137750]"
+msgstr ""
+"\n"
+"        Síndrome uña-rótula [MIM:161200]\n"
+"        Síndrome uña-rótula con glaucoma de ángulo abierto [MIM:137750]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NHS
+msgid ""
+"\n"
+"        Nance-Horan syndrome [MIM:302350]"
+msgstr ""
+"\n"
+"        Síndrome de Nance-Horan [MIM:302350]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NNO3
+msgid ""
+"\n"
+"        Nanophthalmos 3"
+msgstr ""
+"\n"
+"        Nanoftalmos 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NNO1
+msgid ""
+"\n"
+"        Nanophthalmos-1"
+msgstr ""
+"\n"
+"        Nanoftalmos-1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HCRT
+msgid ""
+"\n"
+"        Narcolepsy 1 [MIM:161400]"
+msgstr ""
+"\n"
+"        Narcolepsia 1 [MIM:161400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NRCLP3
+msgid ""
+"\n"
+"        Narcolepsy 3"
+msgstr ""
+"\n"
+"        Narcolepsia 3"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NRCLP4
+msgid ""
+"\n"
+"        Narcolepsy 4"
+msgstr ""
+"\n"
+"        Narcolepsia 4"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPC1
+msgid ""
+"\n"
+"        Nasopharyngeal carcinoma 1 [MIM:161550]"
+msgstr ""
+"\n"
+"        Carcinoma nasofaríngeo 1 [MIM:161550]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TREM2
+#: model:oeh.medical.genetics,info:oehealth.TYROBP
+msgid ""
+"\n"
+"        Nasu-Hakola disease [MIM:221770]"
+msgstr ""
+"\n"
+"        Enfermedad de Nasu-Hakola [MIM:221770]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NKCD
+msgid ""
+"\n"
+"        Natural killer cell deficiency, familial isolated"
+msgstr ""
+"\n"
+"        Deficiencia de células asesinas naturales, familiar aislada"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.JUP
+msgid ""
+"\n"
+"        Naxos disease [MIM:601214]\n"
+"        Arrhythmogenic right ventricular dysplasia, familial, 12 [MIM:611528]"
+msgstr ""
+"\n"
+"        Enfermedad de Naxos [MIM:601214]\n"
+"        Displasia arritmogénica del ventrículo derecho, familiar, 12 [MIM:611528]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TPM3
+msgid ""
+"\n"
+"        Nemaline myopathy 1, autosomal dominant [MIM:161800]"
+msgstr ""
+"\n"
+"        Miopatía nemalínica 1, autosómica dominante [MIM:161800]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NEB
+msgid ""
+"\n"
+"        Nemaline myopathy 2, autosomal recessive [MIM:256030]"
+msgstr ""
+"\n"
+"        Miopatía nemalínica 2, autosómica recesiva [MIM:256030]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CFL2
+msgid ""
+"\n"
+"        Nemaline myopathy 7 [MIM:610687]"
+msgstr ""
+"\n"
+"        Miopatía nemalínica 7 [MIM:610687]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TNNT1
+msgid ""
+"\n"
+"        Nemaline myopathy, Amish type [MIM:605355]"
+msgstr ""
+"\n"
+"        Miopatía nemalínica, tipo Amish [MIM:605355]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ITGA2
+msgid ""
+"\n"
+"        Neonatal alloimmune thrombocytopenia\n"
+"        Glycoprotein Ia deficiency"
+msgstr ""
+"\n"
+"        Trombocitopenia aloinmune neonatal\n"
+"        Deficiencia de glicoproteína Ia"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZNF365
+msgid ""
+"\n"
+"        Nephrolithiasis, uric acid, susceptibility to [MIM:605990]"
+msgstr ""
+"\n"
+"        Nefrolitiasis, ácido úrico, susceptibilidad a [MIM:605990]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC34A1
+msgid ""
+"\n"
+"        Nephrolithiasis/osteoporosis, hypophosphatemic, 1 [MIM:612286]"
+msgstr ""
+"\n"
+"        Nefrolitiasis/osteoporosis, hipofosfatémica, 1 [MIM:612286]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC9A3R1
+msgid ""
+"\n"
+"        Nephrolithiasis/osteoporosis, hypophosphatemic, 2 [MIM:612287]"
+msgstr ""
+"\n"
+"        Nefrolitiasis/osteoporosis, hipofosfatémica, 2 [MIM:612287]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.INVS
+msgid ""
+"\n"
+"        Nephronophthisis 2, infantile [MIM:602088]"
+msgstr ""
+"\n"
+"        Nefronoptisis 2, infantil [MIM:602088]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPHP4
+msgid ""
+"\n"
+"        Nephronophthisis 4 [MIM:606966]\n"
+"        Senior-Loken syndrome 4 [MIM:606996]"
+msgstr ""
+"\n"
+"        Nefronoptisis 4 [MIM:606966]\n"
+"        Síndrome de Senior-Loken 4 [MIM:606996]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GLIS2
+msgid ""
+"\n"
+"        Nephronophthisis 7 [MIM:611498]"
+msgstr ""
+"\n"
+"        Nefronoptisis 7 [MIM:611498]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NEK8
+msgid ""
+"\n"
+"        Nephronophthisis 9"
+msgstr ""
+"\n"
+"        Nefronoptisis 9"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPHP3
+msgid ""
+"\n"
+"        Nephronophthisis, adolescent [MIM:604387]\n"
+"        Renal-hepatic-pancreatic dysplasia with Dandy-Walker cyst [MIM:208540]"
+msgstr ""
+"\n"
+"        Nefronoptisis, adolescente [MIM:604387]\n"
+"        Displasia renal-hepática-pancreática con quiste de Dandy-Walker [MIM:208540]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPHP1
+msgid ""
+"\n"
+"        Nephronophthisis, juvenile [MIM:256100]\n"
+"        Senior-Loken syndrome-1 [MIM:266900]\n"
+"        Joubert syndrome 4 [MIM:609583]"
+msgstr ""
+"\n"
+"        Nefronoptisis, juvenil [MIM:256100]\n"
+"        Síndrome de Senior-Loken-1 [MIM:266900]\n"
+"        Síndrome de Joubert 4 [MIM:609583]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CD151
+msgid ""
+"\n"
+"        Nephropathy with pretibial epidermolysis bullosa and deafness [MIM:609057]\n"
+"        Blood group, Raph [MIM:179620]"
+msgstr ""
+"\n"
+"        Nefropatía con epidermólisis ampollosa pretibial y sordera [MIM:609057]\n"
+"        Grupo sanguíneo, Raph [MIM:179620]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NEDE
+msgid ""
+"\n"
+"        Nephropathy, progressive, with deafness"
+msgstr ""
+"\n"
+"        Nefropatía, progresiva, con sordera"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RFH1
+msgid ""
+"\n"
+"        Nephropathy-hypertension"
+msgstr ""
+"\n"
+"        Nefropatía-hipertensión"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LAMB2
+msgid ""
+"\n"
+"        Nephrosis, congenital, with or without ocular abnormalities [MIM:609049]\n"
+"        Pierson syndrome [MIM:609049]"
+msgstr ""
+"\n"
+"        Nefrosis, congénita, con o sin anomalías oculares [MIM:609049]\n"
+"        Síndrome de Pierson [MIM:609049]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPHS1
+msgid ""
+"\n"
+"        Nephrosis-1, congenital, Finnish type [MIM:256300]"
+msgstr ""
+"\n"
+"        Nefrosis-1, congénita, tipo finlandés [MIM:256300]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPHS2
+msgid ""
+"\n"
+"        Nephrotic syndrome, steroid-resistant, autosomal recessive [MIM:600995]"
+msgstr ""
+"\n"
+"        Síndrome nefrótico, resistente a esteroides, autosómico recesivo [MIM:600995]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLCE1
+msgid ""
+"\n"
+"        Nephrotic syndrome, type 3 [MIM:610725]"
+msgstr ""
+"\n"
+"        Síndrome nefrótico, tipo 3 [MIM:610725]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SPINK5
+msgid ""
+"\n"
+"        Netherton syndrome [MIM:256500]\n"
+"        Atopy [MIM:147050]"
+msgstr ""
+"\n"
+"        Síndrome de Netherton [MIM:256500]\n"
+"        Atopia [MIM:147050]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.T
+msgid ""
+"\n"
+"        Neural tube defects, susceptibility to [MIM:182940]"
+msgstr ""
+"\n"
+"        Defectos del tubo neural, susceptibilidad a [MIM:182940]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TP73
+msgid ""
+"\n"
+"        Neuroblastoma"
+msgstr ""
+"\n"
+"        Neuroblastoma"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NME1
+msgid ""
+"\n"
+"        Neuroblastoma [MIM:256700]"
+msgstr ""
+"\n"
+"        Neuroblastoma [MIM:256700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ALK
+msgid ""
+"\n"
+"        Neuroblastoma, susceptibility to [MIM:256700]"
+msgstr ""
+"\n"
+"        Neuroblastoma, susceptibilidad a [MIM:256700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PANK2
+msgid ""
+"\n"
+"        Neurodegeneration, pantothenate kinase-associated [MIM:234200]\n"
+"        HARP syndrome [MIM:607236]"
+msgstr ""
+"\n"
+"        Neurodegeneración, asociada a pantotenato quinasa [MIM:234200]\n"
+"        Síndrome HARP [MIM:607236]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NF1
+msgid ""
+"\n"
+"        Neurofibromatosis, type 1\n"
+"        Watson syndrome [MIM:193520]\n"
+"        Leukemia, juvenile myelomonocytic [MIM:607785]\n"
+"        Melanoma, desmoplastic neurotropic\n"
+"        Neurofibromatosis, familial spinal [MIM:162210]\n"
+"        Neurofibromatosis-Noonan syndrome [MIM:601321]\n"
+"        Pseudarthrosis, tibial, in NF1"
+msgstr ""
+"\n"
+"        Neurofibromatosis, tipo 1\n"
+"        Síndrome de Watson [MIM:193520]\n"
+"        Leucemia, mielomonocítica juvenil [MIM:607785]\n"
+"        Melanoma, neurotrópico desmoplásico\n"
+"        Neurofibromatosis, espinal familiar [MIM:162210]\n"
+"        Síndrome de Neurofibromatosis-Noonan [MIM:601321]\n"
+"        Pseudoartrosis, tibial, en NF1"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SPRED1
+msgid ""
+"\n"
+"        Neurofibromatosis, type 1-like syndrome [MIM:611431]"
+msgstr ""
+"\n"
+"        Neurofibromatosis, tipo 1-símil [MIM:611431]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NF2
+msgid ""
+"\n"
+"        Neurofibromatosis, type 2 [MIM:101000]\n"
+"        Meningioma, NF2-related, somatic [MIM:607174]\n"
+"        Schwannomatosis [MIM:162091]"
+msgstr ""
+"\n"
+"        Neurofibromatosis, tipo 2 [MIM:101000]\n"
+"        Meningioma, relacionado con NF2, somático [MIM:607174]\n"
+"        Schwannomatosis [MIM:162091]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MXI1
+msgid ""
+"\n"
+"        Neurofibrosarcoma\n"
+"        Prostate cancer, susceptibility to [MIM:176807]"
+msgstr ""
+"\n"
+"        Neurofibrosarcoma\n"
+"        Cáncer de próstata, susceptibilidad a [MIM:176807]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CLCN6
+msgid ""
+"\n"
+"        Neuronal Ceroid-Lipofuscinoses"
+msgstr ""
+"\n"
+"        Ceroidolipofuscinosis neuronal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IGHMBP2
+msgid ""
+"\n"
+"        Neuronopathy, distal hereditary motor, type VI [MIM:604320]"
+msgstr ""
+"\n"
+"        Neuronopatía, motora hereditaria distal, tipo VI [MIM:604320]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EGR2
+msgid ""
+"\n"
+"        Neuropathy, congenital hypomyelinating, 1 [MIM:605253]\n"
+"        Charcot-Marie-Tooth disease, type 1D [MIM:607678]\n"
+"        Dejerine-Sottas neuropathy [MIM:145900]"
+msgstr ""
+"\n"
+"        Neuropatía, hipomielinizante congénita, 1 [MIM:605253]\n"
+"        Enfermedad de Charcot-Marie-Tooth, tipo 1D [MIM:607678]\n"
+"        Neuropatía de Dejerine-Sottas [MIM:145900]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMNJ
+msgid ""
+"\n"
+"        Neuropathy, distal hereditary motor, Jerash type"
+msgstr ""
+"\n"
+"        Neuropatía, motora hereditaria distal, tipo Jerash"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HSPB8
+msgid ""
+"\n"
+"        Neuropathy, distal hereditary motor, type IIA [MIM:158590]\n"
+"        Charcot-Marie-Tooth disease, axonal, type 2L [MIM:608673]"
+msgstr ""
+"\n"
+"        Neuropatía, motora hereditaria distal, tipo IIA [MIM:158590]\n"
+"        Enfermedad de Charcot-Marie-Tooth, axonal, tipo 2L [MIM:608673]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HSPB1
+msgid ""
+"\n"
+"        Neuropathy, distal hereditary motor, type IIB [MIM:608634]\n"
+"        Charcot-Marie-Tooth disease, axonal, type 2F [MIM:606595]"
+msgstr ""
+"\n"
+"        Neuropatía, motora hereditaria distal, tipo IIB [MIM:608634]\n"
+"        Enfermedad de Charcot-Marie-Tooth, axonal, tipo 2F [MIM:606595]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DCTN1
+msgid ""
+"\n"
+"        Neuropathy, distal hereditary motor, type VIIB [MIM:607641]\n"
+"        Amyotrophic lateral sclerosis, susceptibility to [MIM:105400]\n"
+"        Perry syndrome [MIM:168605]"
+msgstr ""
+"\n"
+"        Neuropatía, motora hereditaria distal, tipo VIIB [MIM:607641]\n"
+"        Esclerosis lateral amiotrófica, susceptibilidad a [MIM:105400]\n"
+"        Síndrome de Perry [MIM:168605]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMSNO
+msgid ""
+"\n"
+"        Neuropathy, hereditary motor and sensory, Okinawa type"
+msgstr ""
+"\n"
+"        Neuropatía, motora y sensorial hereditaria, tipo Okinawa"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SPTLC1
+msgid ""
+"\n"
+"        Neuropathy, hereditary sensory and autonomic, type 1 [MIM:162400]"
+msgstr ""
+"\n"
+"        Neuropatía, sensorial y autonómica hereditaria, tipo 1 [MIM:162400]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CCT5
+msgid ""
+"\n"
+"        Neuropathy, hereditary sensory, with spastic paraplegia [MIM:256840]"
+msgstr ""
+"\n"
+"        Neuropatía, sensorial hereditaria, con paraplejía espástica [MIM:256840]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NMSR
+msgid ""
+"\n"
+"        Neuropathy, motor and sensory, Russe type"
+msgstr ""
+"\n"
+"        Neuropatía, motora y sensorial, tipo Russe"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ELAVL4
+msgid ""
+"\n"
+"        Neuropathy, paraneoplastic sensory"
+msgstr ""
+"\n"
+"        Neuropatía, sensorial paraneoplásica"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MME
+msgid ""
+"\n"
+"        Neutral endopeptidase deficiency\n"
+"        Membranous glomerulonephritis, antenatal"
+msgstr ""
+"\n"
+"        Deficiencia de endopeptidasa neutra\n"
+"        Glomerulonefritis membranosa, prenatal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PNPLA2
+msgid ""
+"\n"
+"        Neutral lipid storage disease with myopathy [MIM:610717]"
+msgstr ""
+"\n"
+"        Enfermedad de almacenamiento de lípidos neutros con miopatía [MIM:610717]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LAG5
+msgid ""
+"\n"
+"        Neutropenia, neonatal alloimmune"
+msgstr ""
+"\n"
+"        Neutropenia, aloinmune neonatal"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GFI1
+msgid ""
+"\n"
+"        Neutropenia, severe congenital [MIM:202700]\n"
+"        Neutropenia, nonimmune chronic idiopathic, of adults [MIM:607847]"
+msgstr ""
+"\n"
+"        Neutropenia, severa congénita [MIM:202700]\n"
+"        Neutropenia, idiopática crónica no inmune, de adultos [MIM:607847]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HAX1
+msgid ""
+"\n"
+"        Neutropenia, severe congenital, autosomal recessive 3 [MIM:610738]"
+msgstr ""
+"\n"
+"        Neutropenia, severa congénita, autosómica recesiva 3 [MIM:610738]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.G6PC3
+msgid ""
+"\n"
+"        Neutropenia, severe congenital, autosomal recessive 4 [MIM:612541]"
+msgstr ""
+"\n"
+"        Neutropenia, severa congénita, autosómica recesiva 4 [MIM:612541]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAC2
+msgid ""
+"\n"
+"        Neutrophil immunodeficiency syndrome [MIM:608203]"
+msgstr ""
+"\n"
+"        Síndrome de inmunodeficiencia de neutrófilos [MIM:608203]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GABBR2
+msgid ""
+"\n"
+"        Nicotine dependence, susceptibility to [MIM:188890]\n"
+"        Nicotine dependence, protection against [MIM:188890]"
+msgstr ""
+"\n"
+"        Dependencia de nicotina, susceptibilidad a [MIM:188890]\n"
+"        Dependencia de nicotina, protección contra [MIM:188890]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SMPD1
+msgid ""
+"\n"
+"        Niemann-Pick disease, type A [MIM:257200]\n"
+"        Niemann-Pick disease, type B [MIM:607616]"
+msgstr ""
+"\n"
+"        Enfermedad de Niemann-Pick, tipo A [MIM:257200]\n"
+"        Enfermedad de Niemann-Pick, tipo B [MIM:607616]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NPC2
+msgid ""
+"\n"
+"        Niemann-pick disease, type C2 [MIM:607625]"
+msgstr ""
+"\n"
+"        Enfermedad de Niemann-Pick, tipo C2 [MIM:607625]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNAT1
+msgid ""
+"\n"
+"        Night blindness, congenital stationary"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AIED
+#: model:oeh.medical.genetics,info:oehealth.CACNA1F
+#: model:oeh.medical.genetics,info:oehealth.OA2
+msgid ""
+"\n"
+"        Night blindness, congenital stationary, X-linked, type 2A [MIM:300071]\n"
+"        Cone-rod dystrophy, X-linked, 3 [MIM:300476]\n"
+"        Aland Island eye disease [MIM:300600]"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria, ligada al cromosoma X, tipo 2A [MIM:300071]\n"
+"        Distrofia cono-bastón, ligada al cromosoma X, 3 [MIM:300476]\n"
+"        Enfermedad ocular de la isla de Aland [MIM:300600]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NYX
+msgid ""
+"\n"
+"        Night blindness, congenital stationary, type 1 [MIM:310500]"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria, tipo 1 [MIM:310500]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GRM6
+msgid ""
+"\n"
+"        Night blindness, congenital stationary, type 1B [MIM:257270]"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria, tipo 1B [MIM:257270]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CABP4
+msgid ""
+"\n"
+"        Night blindness, congenital stationary, type 2B [MIM:610427]"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria, tipo 2B [MIM:610427]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDE6B
+msgid ""
+"\n"
+"        Night blindness, congenital stationary, type 3 [MIM:163500]\n"
+"        Retinitis pigmentosa 40"
+msgstr ""
+"\n"
+"        Ceguera nocturna, congénita estacionaria, tipo 3 [MIM:163500]\n"
+"        Retinosis pigmentaria 40"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LVNC2
+msgid ""
+"\n"
+"        Noncompaction of left ventricular myocardium, familial isolated, 2"
+msgstr ""
+"\n"
+"        No compactación del miocardio ventricular izquierdo, familiar aislada, 2"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TSG11
+msgid ""
+"\n"
+"        Nonsmall cell lung cancer"
+msgstr ""
+"\n"
+"        Cáncer de pulmón de células no pequeñas"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EGFR
+msgid ""
+"\n"
+"        Nonsmall cell lung cancer, response to tyrosine kinase inhibitor in [MIM:211980]\n"
+"        Adenocarcinoma of lung, response to tyrosine kinase inhibitor in [MIM:211980]\n"
+"        Nonsmall cell lung cancer, susceptibility to [MIM:211980]"
+msgstr ""
+"\n"
+"        Cáncer de pulmón de células no pequeñas, respuesta al inhibidor de la tirosina quinasa en [MIM:211980]\n"
+"        Adenocarcinoma de pulmón, respuesta al inhibidor de la tirosina quinasa en [MIM:211980]\n"
+"        Cáncer de pulmón de células no pequeñas, susceptibilidad a [MIM:211980]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTPN11
+msgid ""
+"\n"
+"        Noonan syndrome 1 [MIM:163950]\n"
+"        Leopard syndrome [MIM:151100]\n"
+"        Leukemia, juvenile myelomonocytic [MIM:607785]\n"
+"        Noonan-like/multiple giant cell lesion syndrome [MIM:163955]"
+msgstr ""
+"\n"
+"        Síndrome de Noonan 1 [MIM:163950]\n"
+"        Síndrome de Leopard [MIM:151100]\n"
+"        Leucemia, mielomonocítica juvenil [MIM:607785]\n"
+"        Síndrome de Noonan-símil/lesión de células gigantes múltiples [MIM:163955]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RAF1
+msgid ""
+"\n"
+"        Noonan syndrome 5 [MIM:611553]\n"
+"        LEOPARD syndrome 2 [MIM:611554]"
+msgstr ""
+"\n"
+"        Síndrome de Noonan 5 [MIM:611553]\n"
+"        Síndrome de LEOPARD 2 [MIM:611554]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDP
+msgid ""
+"\n"
+"        Norrie disease [MIM:310600]\n"
+"        Exudative vitreoretinopathy, X-linked [MIM:305390]"
+msgstr ""
+"\n"
+"        Enfermedad de Norrie [MIM:310600]\n"
+"        Vitreorretinopatía exudativa, ligada al cromosoma X [MIM:305390]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LCAT
+msgid ""
+"\n"
+"        Norum disease [MIM:245900]\n"
+"        Fish-eye disease [MIM:136120]"
+msgstr ""
+"\n"
+"        Enfermedad de Norum [MIM:245900]\n"
+"        Enfermedad del ojo de pez [MIM:136120]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FUT2
+msgid ""
+"\n"
+"        Norwalk virus infection, resistance to\n"
+"        Bombay phenotype\n"
+"        Vitamin B12 plasma level QTL1 [MIM:612542]"
+msgstr ""
+"\n"
+"        Infección por virus Norwalk, resistencia a\n"
+"        Fenotipo Bombay\n"
+"        Nivel plasmático de vitamina B12 QTL1 [MIM:612542]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NP
+msgid ""
+"\n"
+"        Nucleoside phosphorylase deficiency, immunodeficiency due to"
+msgstr ""
+"\n"
+"        Deficiencia de nucleósido fosforilasa, inmunodeficiencia debido a"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FRMD7
+msgid ""
+"\n"
+"        Nystagmus 1, congenital, X-linked [MIM:310700]"
+msgstr ""
+"\n"
+"        Nistagmo 1, congénito, ligado al cromosoma X [MIM:310700]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NYS3
+msgid ""
+"\n"
+"        Nystagmus 3, congenital"
+msgstr ""
+"\n"
+"        Nistagmo 3, congénito"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NYS4
+msgid ""
+"\n"
+"        Nystagmus 4, congenital"
+msgstr ""
+"\n"
+"        Nistagmo 4, congénito"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NYS5
+msgid ""
+"\n"
+"        Nystagmus 5, infantile periodic alternating"
+msgstr ""
+"\n"
+"        Nistagmo 5, infantil periódico alternante"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NYS2
+msgid ""
+"\n"
+"        Nystagmus-2, autosomal dominant"
+msgstr ""
+"\n"
+"        Nistagmo-2, autosómico dominante"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PCSK1
+msgid ""
+"\n"
+"        Obesity with impaired prohormone processing [MIM:600955]\n"
+"        Obesity, susceptiblity to, BMIQ12 [MIM:612362]"
+msgstr ""
+"\n"
+"        Obesidad con procesamiento deficiente de prohormonas [MIM:600955]\n"
+"        Obesidad, susceptibilidad a, BMIQ12 [MIM:612362]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.POMC
+msgid ""
+"\n"
+"        Obesity, adrenal insufficiency, and red hair due to POMC deficiency [MIM:609734]\n"
+"        Obesity, early-onset, susceptibility to [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, insuficiencia suprarrenal y cabello rojo debido a deficiencia de POMC [MIM:609734]\n"
+"        Obesidad, de inicio temprano, susceptibilidad a [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FTO
+msgid ""
+"\n"
+"        Obesity, associated with [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, asociada con [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SDC3
+msgid ""
+"\n"
+"        Obesity, association with [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, asociación con [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MC4R
+msgid ""
+"\n"
+"        Obesity, autosomal dominant [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, autosómica dominante [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AKR1C2
+#: model:oeh.medical.genetics,info:oehealth.NTRK2
+msgid ""
+"\n"
+"        Obesity, hyperphagia, and developmental delay"
+msgstr ""
+"\n"
+"        Obesidad, hiperfagia y retraso en el desarrollo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AGRP
+msgid ""
+"\n"
+"        Obesity, late-onset [MIM:601665]\n"
+"        Leanness, inherited"
+msgstr ""
+"\n"
+"        Obesidad, de inicio tardío [MIM:601665]\n"
+"        Delgadez, hereditaria"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NR0B2
+msgid ""
+"\n"
+"        Obesity, mild, early-onset [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, leve, de inicio temprano [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LEPR
+msgid ""
+"\n"
+"        Obesity, morbid, with hypogonadism"
+msgstr ""
+"\n"
+"        Obesidad, mórbida, con hipogonadismo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SIM1
+msgid ""
+"\n"
+"        Obesity, severe [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, severa [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPARG
+msgid ""
+"\n"
+"        Obesity, severe [MIM:601665]\n"
+"        Obesity, resistance to\n"
+"        Glioblastoma, susceptibility to [MIM:137800]\n"
+"        Insulin resistance, severe, digenic [MIM:604367]\n"
+"        Lipodystrophy, familial partial, type 3 [MIM:604367]\n"
+"        Carotid intimal medial thickness 1 [MIM:609338]\n"
+"        Diabetes, type 2 [MIM:125853]"
+msgstr ""
+"\n"
+"        Obesidad, severa [MIM:601665]\n"
+"        Obesidad, resistencia a\n"
+"        Glioblastoma, susceptibilidad a [MIM:137800]\n"
+"        Resistencia a la insulina, severa, digénica [MIM:604367]\n"
+"        Lipodistrofia, familiar parcial, tipo 3 [MIM:604367]\n"
+"        Grosor de la íntima-media carotídea 1 [MIM:609338]\n"
+"        Diabetes, tipo 2 [MIM:125853]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UCP3
+msgid ""
+"\n"
+"        Obesity, severe, and type II diabetes [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, severa, y diabetes tipo II [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LEP
+msgid ""
+"\n"
+"        Obesity, severe, due to leptin deficiency\n"
+"        Obesity, morbid, with hypogonadism"
+msgstr ""
+"\n"
+"        Obesidad, severa, debida a deficiencia de leptina\n"
+"        Obesidad, mórbida, con hipogonadismo"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MC3R
+msgid ""
+"\n"
+"        Obesity, severe, susceptibility to, BMIQ9 [MIM:602025]"
+msgstr ""
+"\n"
+"        Obesidad, severa, susceptibilidad a, BMIQ9 [MIM:602025]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ADRB3
+#: model:oeh.medical.genetics,info:oehealth.GHRL
+#: model:oeh.medical.genetics,info:oehealth.UCP1
+msgid ""
+"\n"
+"        Obesity, susceptibility to [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, susceptibilidad a [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC6A14
+msgid ""
+"\n"
+"        Obesity, susceptibility to, BMIQ11 [MIM:300306]"
+msgstr ""
+"\n"
+"        Obesidad, susceptibilidad a, BMIQ11 [MIM:300306]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BMIQ4
+#: model:oeh.medical.genetics,info:oehealth.UCP2
+msgid ""
+"\n"
+"        Obesity, susceptibility to, BMIQ4 [MIM:607447]"
+msgstr ""
+"\n"
+"        Obesidad, susceptibilidad a, BMIQ4 [MIM:607447]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPARGC1B
+msgid ""
+"\n"
+"        Obesity, variation in [MIM:601665]"
+msgstr ""
+"\n"
+"        Obesidad, variación en [MIM:601665]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OA1
+#: model:oeh.medical.genetics,info:oehealth.OASD
+msgid ""
+"\n"
+"        Ocular albinism with sensorineural deafness"
+msgstr ""
+"\n"
+"        Albinismo ocular con sordera neurosensorial"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GPR143
+msgid ""
+"\n"
+"        Ocular albinism, Nettleship-Falls type"
+msgstr ""
+"\n"
+"        Albinismo ocular, tipo Nettleship-Falls"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GDF6
+msgid ""
+"\n"
+"        Ocular coloboma [MIM:120200]"
+msgstr ""
+"\n"
+"        Coloboma ocular [MIM:120200]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMX1
+msgid ""
+"\n"
+"        Oculoauricular syndrome [MIM:612109]"
+msgstr ""
+"\n"
+"        Síndrome oculoauricular [MIM:612109]"
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC45A2
+msgid ""
+"\n"
+"        Oculocutaneous albinism, type IV [MIM:606574]\n"
+"        Skin/hair/eye pigmentation 5, black/nonblack hair [MIM:227240]\n"
+"        Skin/hair/eye pigmentation 5, dark/fair skin [MIM:227240]\n"
+"        Skin/hair/eye pigmentation 5, dark/light eyes [MIM:227240]"
+msgstr ""
+"\n"
+"        Albinismo oculocutáneo, tipo IV [MIM:606574]\n"
+"        Pigmentación de piel/cabello/ojos 5, cabello negro/no negro [MIM:227240]\n"
+"        Pigmentación de piel/cabello/ojos 5, piel oscura/clara [MIM:227240]\n"
+"        Pigmentación de piel/cabello/ojos 5, ojos oscuros/claros [MIM:227240]"

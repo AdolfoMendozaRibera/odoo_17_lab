@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="oeh_medical_patient_view_whatsapp_extend" model="ir.ui.view">
+        <field name="name">Patient Form WhatsApp Extension</field>
+        <field name="model">oeh.medical.patient</field>
+        <field name="inherit_id" ref="oehealth.oeh_medical_patient_view"/>
+        <field name="arch" type="xml">
+             <xpath expr="//button[@name='print_patient_label']" position="after">
+                <button
+                        name="send_whatsapp_to_patient"
+                        string="Send WhatsApp"
+                        type="object"
+                        class="oe_stat_button"
+                        title="Send WhatsApp"
+                        icon="fa-whatsapp"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_physician_view_whatsapp_extend" model="ir.ui.view">
+        <field name="name">Medical Staff Form WhatsApp Extension</field>
+        <field name="model">oeh.medical.physician</field>
+        <field name="inherit_id" ref="oehealth.oeh_medical_staff_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='print_medical_staff_badge']" position="after">
+                <button
+                        name="send_whatsapp_to_medical_staff"
+                        string="Send WhatsApp"
+                        type="object"
+                        class="oe_stat_button"
+                        title="Send WhatsApp"
+                        icon="fa-whatsapp"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_appointment_view_whatsapp_extend" model="ir.ui.view">
+        <field name="name">Appointment Form WhatsApp Extension</field>
+        <field name="model">oeh.medical.appointment</field>
+        <field name="inherit_id" ref="oehealth.oeh_medical_appointment_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    name="send_appointment_detail_whatsapp_"
+                    string="Send On WhatsApp"
+                    type="object"
+                    class="oe_stat_button"
+                    title="Send WhatsApp"
+                    icon="fa-whatsapp"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_lab_test_view_whatsapp_extend" model="ir.ui.view">
+        <field name="name">Lab Test Form WhatsApp Extension</field>
+        <field name="model">oeh.medical.lab.test</field>
+        <field name="inherit_id" ref="oehealth_lab.oeh_medical_lab_test_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    name="send_lab_test_detail_whatsapp_"
+                    string="Send On WhatsApp"
+                    type="object"
+                    class="oe_stat_button"
+                    title="Send WhatsApp"
+                    icon="fa-whatsapp"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="oeh_medical_prescription_view_whatsapp_extend" model="ir.ui.view">
+        <field name="name">Prescription Form WhatsApp Extension</field>
+        <field name="model">oeh.medical.prescription</field>
+        <field name="inherit_id" ref="oehealth.oeh_medical_prescription_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_left')]" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button
+                            name="send_prescription_detail_whatsapp_"
+                            string="Send On WhatsApp"
+                            type="object"
+                            class="oe_stat_button"
+                            title="Send WhatsApp"
+                            icon="fa-whatsapp"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

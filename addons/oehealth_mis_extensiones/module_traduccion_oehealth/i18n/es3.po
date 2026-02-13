@@ -1,0 +1,1612 @@
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GIGYF2
+msgid ""
+"\n"
+"        Parkinson disease 11 [MIM:607688]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PARK12
+msgid ""
+"\n"
+"        Parkinson disease 12 [MIM:168600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HTRA2
+msgid ""
+"\n"
+"        Parkinson disease 13 [MIM:610297]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FBXO7
+msgid ""
+"\n"
+"        Parkinson disease 15, autosomal recessive [MIM:260300]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PINK1
+msgid ""
+"\n"
+"        Parkinson disease 6, early onset [MIM:605909]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PARK7
+msgid ""
+"\n"
+"        Parkinson disease 7, autosomal recessive early-onset [MIM:606324]\n"
+"        Amyotrophic lateral sclerosis-Parkinsonism/dementia complex 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATP13A2
+msgid ""
+"\n"
+"        Parkinson disease 9 [MIM:606693]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NR4A2
+#: model:oeh.medical.genetics,info:oehealth.PARK10
+#: model:oeh.medical.genetics,info:oehealth.SNCAIP
+msgid ""
+"\n"
+"        Parkinson disease [MIM:168600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PARK3
+#: model:oeh.medical.genetics,info:oehealth.UCHL1
+msgid ""
+"\n"
+"        Parkinson disease, familial [MIM:168600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PARK4
+#: model:oeh.medical.genetics,info:oehealth.SNCA
+msgid ""
+"\n"
+"        Parkinson disease, familial [MIM:168601]\n"
+"        Parkinson disease 4, autosomal dominant Lewy body [MIM:605543]\n"
+"        Dementia, Lewy body [MIM:127750]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PARK2
+msgid ""
+"\n"
+"        Parkinson disease, juvenile, type 2 [MIM:600116]\n"
+"        Adenocarcinoma of lung, somatic [MIM:211980]\n"
+"        Adenocarcinoma, ovarian, somatic [MIM:604370]\n"
+"        Leprosy, susceptibility to [MIM:607572]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ADH1C
+#: model:oeh.medical.genetics,info:oehealth.FGF20
+#: model:oeh.medical.genetics,info:oehealth.NDUFV2
+msgid ""
+"\n"
+"        Parkinson disease, susceptibility to [MIM:168600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LRRK2
+msgid ""
+"\n"
+"        Parkinson disease-8 [MIM:607060]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKC
+msgid ""
+"\n"
+"        Paroxysmal kinesigenic choreoathetosis"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PIGA
+msgid ""
+"\n"
+"        Paroxysmal nocturnal hemoglobinuria"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PNKD2
+msgid ""
+"\n"
+"        Paroxysmal nonkinesigenic dyskinesia 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PNKD
+msgid ""
+"\n"
+"        Paroxysmal nonkinesigenic dyskinesia [MIM:118800]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTLAH
+msgid ""
+"\n"
+"        Patella aplasia or hypoplasia"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TGM6
+msgid ""
+"\n"
+"        Peeling skin syndrome, acral type [MIM:609796]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LBR
+msgid ""
+"\n"
+"        Pelger-Huet anomaly [MIM:169400]\n"
+"        Greenberg dysplasia [MIM:215140]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLP1
+msgid ""
+"\n"
+"        Pelizaeus-Merzbacher disease [MIM:312080]\n"
+"        Spastic paraplegia-2 [MIM:312920]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LAMC1
+msgid ""
+"\n"
+"        Pelvic organ prolapse, susceptibility to [MIM:176780]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PUJO
+msgid ""
+"\n"
+"        Pelviureteric junction obstruction"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC26A4
+msgid ""
+"\n"
+"        Pendred syndrome [MIM:274600]\n"
+"        Enlarged vestibular aqueduct [MIM:600791]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TNFRSF1A
+msgid ""
+"\n"
+"        Periodic fever, familial [MIM:142680]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAOD1
+msgid ""
+"\n"
+"        Peripheral arterial occlusive disease 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ARFGEF2
+msgid ""
+"\n"
+"        Periventricular heterotopia with microcephaly [MIM:608097]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACOX1
+msgid ""
+"\n"
+"        Peroxisomal acyl-CoA oxidase deficiency [MIM:264470]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEX6
+msgid ""
+"\n"
+"        Peroxisomal biogenesis disorder, complementation group 4\n"
+"        Peroxisomal biogenesis disorder, complementation group 6"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEX12
+msgid ""
+"\n"
+"        Peroxisome biogenesis factor 12"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AMH
+msgid ""
+"\n"
+"        Persistent Mullerian duct syndrome, type I [MIM:261550]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AMHR2
+msgid ""
+"\n"
+"        Persistent Mullerian duct syndrome, type II [MIM:261550]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NKX2-6
+msgid ""
+"\n"
+"        Persistent truncus arteriosus [MIM:217095]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.B3GALTL
+msgid ""
+"\n"
+"        Peters-plus syndrome [MIM:261540]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STK11
+msgid ""
+"\n"
+"        Peutz-Jeghers syndrome [MIM:175200]\n"
+"        Melanoma, malignant sporadic\n"
+"        Pancreatic cancer, sporadic\n"
+"        Testicular tumor, sporadic [MIM:273300]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FGFR1
+#: model:oeh.medical.genetics,info:oehealth.FOP
+msgid ""
+"\n"
+"        Pfeiffer syndrome [MIM:101600]\n"
+"        Jackson-Weiss syndrome [MIM:123150]\n"
+"        Kallmann syndrome 2 [MIM:147950]\n"
+"        Hypogonadotropic hypogonadism [MIM:146110]\n"
+"        Osteoglophonic dysplasia [MIM:166250]\n"
+"        Trigonocephaly [MIM:190440]\n"
+"        Antley-Bixler syndrome [MIM:207410]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAH
+msgid ""
+"\n"
+"        Phenylketonuria [MIM:261600]\n"
+"        Hyperphenylalaninemia, non-PKU mild [MIM:261600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TAS2R38
+msgid ""
+"\n"
+"        Phenylthiocarbamide tasting [MIM:171200]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHOBS
+msgid ""
+"\n"
+"        Phobia, specific"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHGDH
+msgid ""
+"\n"
+"        Phosphoglycerate dehydrogenase deficiency [MIM:601815]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PGK1
+#: model:oeh.medical.genetics,info:oehealth.PGK1P1
+#: model:oeh.medical.genetics,info:oehealth.PGK1P2
+msgid ""
+"\n"
+"        Phosphoglycerate kinase 1 deficiency [MIM:300653]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLA2G4A
+msgid ""
+"\n"
+"        Phospholipase A2, group IV A, deficiency of"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHKB
+msgid ""
+"\n"
+"        Phosphorylase kinase deficiency of liver and muscle, autosomal recessive [MIM:261750]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSAT1
+msgid ""
+"\n"
+"        Phosphoserine aminotransferase deficiency [MIM:610992]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPR2
+msgid ""
+"\n"
+"        Photoparoxysmal response 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPR3
+msgid ""
+"\n"
+"        Photoparoxysmal response 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KITHZ
+msgid ""
+"\n"
+"        Piebaldism\n"
+"        Mast cell leukemia\n"
+"        Mastocytosis with associated hematologic disorder\n"
+"        Germ cell tumors [MIM:273300]\n"
+"        Gastrointestinal stromal tumor, somatic [MIM:606764]\n"
+"        Leukemia, acute myeloid [MIM:601626]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRBNS
+msgid ""
+"\n"
+"        Pierre Robin syndrome"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDR
+msgid ""
+"\n"
+"        Pigment disorder, reticulate"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GPDS1
+msgid ""
+"\n"
+"        Pigment dispersion syndrome"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDE11A
+msgid ""
+"\n"
+"        Pigmented nodular adrenocortical disease, primary, 2 [MIM:610475]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDE8B
+msgid ""
+"\n"
+"        Pigmented nodular adrenocortical disease, primary, 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TCF4
+msgid ""
+"\n"
+"        Pitt-Hopkins syndrome [MIM:610954]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNAI2
+msgid ""
+"\n"
+"        Pituitary ACTH-secreting adenoma\n"
+"        Ventricular tachycardia, idiopathic [MIM:192605]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AIP
+msgid ""
+"\n"
+"        Pituitary adenoma, growth hormone-secreting [MIM:102200]\n"
+"        Pituitary adenoma, prolactin-secreting [MIM:600634]\n"
+"        Pituitary adenoma, ACTH-secreting [MIM:219090]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.THRA
+msgid ""
+"\n"
+"        Pituitary adenoma, nonfunctioning"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GLI2
+msgid ""
+"\n"
+"        Pituitary anomalies with holoprosencephaly-like features\n"
+"        Holoprosencephaly-9 [MIM:610829]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.POU1F1
+#: model:oeh.medical.genetics,info:oehealth.PROP1
+msgid ""
+"\n"
+"        Pituitary hormone deficiency, combined"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LHX3
+msgid ""
+"\n"
+"        Pituitary hormone deficiency, combined, with rigid cervical spine [MIM:262600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRKCA
+msgid ""
+"\n"
+"        Pituitary tumor, invasive"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CSH1
+msgid ""
+"\n"
+"        Placental lactogen deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SERPINF2
+msgid ""
+"\n"
+"        Plasmin inhibitor deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLG
+msgid ""
+"\n"
+"        Plasminogen Tochigi disease\n"
+"        Thrombophilia, dysplasminogenemic\n"
+"        Plasminogen deficiency, types I and II\n"
+"        Conjunctivitis, ligneous [MIM:217090]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLCB2
+msgid ""
+"\n"
+"        Platelet PLC beta-2 deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SELP
+msgid ""
+"\n"
+"        Platelet alpha/delta storage pool deficiency\n"
+"        Atopy, susceptibility to [MIM:147050]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLA2G7
+msgid ""
+"\n"
+"        Platelet-activating factor acetylhydrolase deficiency\n"
+"        Asthma, susceptibility to [MIM:600807]\n"
+"        Atopy, susceptibility to [MIM:147050]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TIRAP
+msgid ""
+"\n"
+"        Pneumococcal disease, invasive, protection against [MIM:610799]\n"
+"        Bacteremia, protection against\n"
+"        Malaria, protection against [MIM:611162]\n"
+"        Tuberculosis, protection against [MIM:607948]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PVR19
+msgid ""
+"\n"
+"        Polio, susceptibility to"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKHD1
+msgid ""
+"\n"
+"        Polycystic kidney and hepatic disease [MIM:263200]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKD1
+msgid ""
+"\n"
+"        Polycystic kidney disease, adult type I [MIM:173900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKD2
+msgid ""
+"\n"
+"        Polycystic kidney disease, adult, type II"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKDTS
+msgid ""
+"\n"
+"        Polycystic kidney disease, infantile severe, with tuberous sclerosis"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PCLD
+#: model:oeh.medical.genetics,info:oehealth.PRKCSH
+#: model:oeh.medical.genetics,info:oehealth.SEC63
+msgid ""
+"\n"
+"        Polycystic liver disease [MIM:174050]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FST
+msgid ""
+"\n"
+"        Polycystic ovary syndrome [MIM:184700]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.JAK2
+msgid ""
+"\n"
+"        Polycythemia vera [MIM:263300]\n"
+"        Thrombocythemia, essential [MIM:187950]\n"
+"        Myelofibrosis, idiopathic [MIM:254450]\n"
+"        Budd-Chiari syndrome [MIM:600880]\n"
+"        Leukemia, acute myelogenous [MIM:601626]\n"
+"        Myeloproliferative disorder with erythrocytosis"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAPA3
+msgid ""
+"\n"
+"        Polydactyly, postaxial, type A3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAPA4
+msgid ""
+"\n"
+"        Polydactyly, postaxial, type A4"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STRADA
+msgid ""
+"\n"
+"        Polyhydramnios, megalencephaly, and symptomatic epilepsy [MIM:611087]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GPR56
+msgid ""
+"\n"
+"        Polymicrogyria, bilateral frontoparietal [MIM:606854]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BOP
+msgid ""
+"\n"
+"        Polymicrogyria, bilateral occipital"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHARC
+msgid ""
+"\n"
+"        Polyneuropathy, hearing loss, ataxia, retinitis pigmentosa, and cataract"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CRAC1
+msgid ""
+"\n"
+"        Polyposis syndrome, mixed hereditary 1\n"
+"        Colorectal cancer, susceptibility to, 4"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BMPR1A
+msgid ""
+"\n"
+"        Polyposis, juvenile intestinal [MIM:174900]\n"
+"        Polyposis syndrome, hereditary mixed, 2 [MIM:610069]\n"
+"        Juvenile polyposis syndrome, infantile form [MIM:174900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TSEN54
+msgid ""
+"\n"
+"        Pontocerebellar hypoplasia type 2A [MIM:277470]\n"
+"        Pontocerebellar hypoplasia type 4 [MIM:225753]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SEN2
+#: model:oeh.medical.genetics,info:oehealth.TSEN2
+msgid ""
+"\n"
+"        Pontocerebellar hypoplasia type 2B [MIM:612389]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TSEN34
+msgid ""
+"\n"
+"        Pontocerebellar hypoplasia type 2C [MIM:612390]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RARS2
+msgid ""
+"\n"
+"        Pontocerebellar hypoplasia, type 6 [MIM:611523]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.COL4A1
+msgid ""
+"\n"
+"        Porencephaly [MIM:175780]\n"
+"        Brain small vessel disease with hemorrhage [MIM:607595]\n"
+"        Angiopathy, hereditary, with nephropathy, aneurysms, and muscle cramps [MIM:611773]\n"
+"        Brain small vessel disease with Axenfeld-Rieger anomaly [MIM:607595]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SART3
+msgid ""
+"\n"
+"        Porokeratosis, disseminated superficial actinic, 1 [MIM:175900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DSAP2
+msgid ""
+"\n"
+"        Porokeratosis, disseminated superficial actinic, 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DSAP3
+msgid ""
+"\n"
+"        Porokeratosis, disseminated superficial actinic, 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DSAP4
+msgid ""
+"\n"
+"        Porokeratosis, disseminated superficial actinic, 4"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPPD1
+msgid ""
+"\n"
+"        Porokeratosis, palmar, plantar, and disseminated 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UROD
+msgid ""
+"\n"
+"        Porphyria cutanea tarda\n"
+"        Porphyria, hepatoerythropoietic"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPOX
+msgid ""
+"\n"
+"        Porphyria variegata [MIM:176200]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PORC
+msgid ""
+"\n"
+"        Porphyria, Chester type"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ALAD
+msgid ""
+"\n"
+"        Porphyria, acute hepatic [MIM:612740]\n"
+"        Lead poisoning, susceptibility to [MIM:612740]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HMBS
+msgid ""
+"\n"
+"        Porphyria, acute intermittent [MIM:176000]\n"
+"        Porphyria, acute intermittent, nonerythroid variant [MIM:176000]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UROS
+msgid ""
+"\n"
+"        Porphyria, congenital erythropoietic [MIM:263700]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAPA2
+msgid ""
+"\n"
+"        Postaxial polydactyly, type A2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.AXPC1
+msgid ""
+"\n"
+"        Posterior column ataxia with retinitis pigmentosa"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTLS
+msgid ""
+"\n"
+"        Potocki-Lupski syndrome"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSSSS
+msgid ""
+"\n"
+"        Potocki-Shaffer syndrome"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NDN
+#: model:oeh.medical.genetics,info:oehealth.SNRPN
+msgid ""
+"\n"
+"        Prader-Willi syndrome [MIM:176270]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PAFC
+msgid ""
+"\n"
+"        Preauricular fistulae, congenital"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.LHCGR
+msgid ""
+"\n"
+"        Precocious puberty, male [MIM:176410]\n"
+"        Leydig cell hypoplasia with pseudohermaphroditism [MIM:238320]\n"
+"        Leydig cell hypoplasia with hypergonadotropic hypogonadism [MIM:238320]\n"
+"        Luteinizing hormone resistance, female [MIM:238320]\n"
+"        Leydig cell adenoma, somatic, with precocious puberty [MIM:176410]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEE1
+msgid ""
+"\n"
+"        Preeclampsia/eclampsia 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEE2
+msgid ""
+"\n"
+"        Preeclampsia/eclampsia 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEE3
+msgid ""
+"\n"
+"        Preeclampsia/eclampsia 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.STOX1
+msgid ""
+"\n"
+"        Preeclampsia/eclampsia 4"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NOBOX
+msgid ""
+"\n"
+"        Premature ovarian failure 5 [MIM:611548]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FIGLA
+msgid ""
+"\n"
+"        Premature ovarian failure 6 [MIM:612310]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DIAPH2
+msgid ""
+"\n"
+"        Premature ovarian failure [MIM:300511]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLSA1
+msgid ""
+"\n"
+"        Primary lateral sclerosis, adult, 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KCNJ8
+msgid ""
+"\n"
+"        Prinzmetal angina"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PGR
+msgid ""
+"\n"
+"        Progesterone resistance [MIM:264080]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC25A4
+msgid ""
+"\n"
+"        Progressive external ophthalmoplegia with mitochondrial DNA deletions [MIM:157640]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.C10orf2
+msgid ""
+"\n"
+"        Progressive external ophthalmoplegia with mitochondrial DNA deletions [MIM:609286]\n"
+"        Sensory ataxia neuropathy, dysarthria, and ophthalmoparesis [MIM:607459]\n"
+"        Mitochondrial DNA depletion syndrome, hepatocerebral form [MIM:251880]\n"
+"        Spinocerebellar ataxia, infantile-onset [MIM:271245]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.POLG2
+msgid ""
+"\n"
+"        Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4 [MIM:610131]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.POLG
+msgid ""
+"\n"
+"        Progressive external ophthalmoplegia, autosomal recessive [MIM:258450]\n"
+"        Progressive external ophthalmoplegia, autosomal dominant, with or without hypogonadiam [MIM:157640]\n"
+"        Alpers syndrome [MIM:203700]\n"
+"        Spinocerebellar ataxia with epilepsy [MIM:607459]\n"
+"        Sensory ataxic neuropathy, dysarthria, and ophthalmoparesis [MIM:607459]\n"
+"        MNGIE without leukoencephalopathy [MIM:603041]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PEPD
+msgid ""
+"\n"
+"        Prolidase deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PCCA
+#: model:oeh.medical.genetics,info:oehealth.PCCB
+msgid ""
+"\n"
+"        Propionicacidemia [MIM:606054]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC1
+#: model:oeh.medical.genetics,info:oehealth.RNASEL
+msgid ""
+"\n"
+"        Prostate cancer 1, 176807 [MIM:601518]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPCQTL19
+msgid ""
+"\n"
+"        Prostate cancer aggressiveness QTL [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MSR1
+msgid ""
+"\n"
+"        Prostate cancer, hereditary [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC10
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 10"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EHBP1
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 12 [MIM:611868]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MSMB
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 13 [MIM:611928]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC14
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 14"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC15
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 15"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC5
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 5 [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC7
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 7"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC9
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, 9"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPCX2
+msgid ""
+"\n"
+"        Prostate cancer, hereditary, X-linked 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.EPHB2
+msgid ""
+"\n"
+"        Prostate cancer, progression and metastasis of [MIM:603688]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HIP1
+msgid ""
+"\n"
+"        Prostate cancer, progression of [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KLF6
+msgid ""
+"\n"
+"        Prostate cancer, somatic [MIM:176807]\n"
+"        Gastric cancer, somatic [MIM:137215]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CD82
+#: model:oeh.medical.genetics,info:oehealth.ELAC2
+#: model:oeh.medical.genetics,info:oehealth.HPC6
+#: model:oeh.medical.genetics,info:oehealth.PCAP
+#: model:oeh.medical.genetics,info:oehealth.ZFHX3
+msgid ""
+"\n"
+"        Prostate cancer, susceptibility to [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC3
+msgid ""
+"\n"
+"        Prostate cancer, susceptibility to, 3 [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HPC4
+msgid ""
+"\n"
+"        Prostate cancer, susceptibility to, 4 [MIM:176807]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SERPINA5
+msgid ""
+"\n"
+"        Protein C inhibitor deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.TYK2
+msgid ""
+"\n"
+"        Protein-tyrosine kinase 2 deficiency [MIM:611521]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FECH
+msgid ""
+"\n"
+"        Protoporphyria, erythropoietic, autosomal dominant [MIM:177000]\n"
+"        Protoporphyria, erythropoietic, autosomal recessive [MIM:177000]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ACAA1
+msgid ""
+"\n"
+"        Pseudo-Zellweger syndrome [MIM:261515]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.COMP
+msgid ""
+"\n"
+"        Pseudoachondroplasia [MIM:177170]\n"
+"        Epiphyseal dysplasia, multiple 1 [MIM:132400]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.KRT75
+msgid ""
+"\n"
+"        Pseudofolliculitis barbae, susceptibility to [MIM:612318]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HSD17B3
+msgid ""
+"\n"
+"        Pseudohermaphroditism, male, with gynecomastia [MIM:264300]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSHK2
+msgid ""
+"\n"
+"        Pseudohyperkalemia, familial, 2, due to red cell leak"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NR3C2
+msgid ""
+"\n"
+"        Pseudohypoaldosteronism type I, autosomal dominant [MIM:177735]\n"
+"        Hypertension, early-onset, autosomal dominant, with exacerbation in pregnancy [MIM:605115]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.WNK4
+msgid ""
+"\n"
+"        Pseudohypoaldosteronism type II [MIM:145260]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SCNN1A
+msgid ""
+"\n"
+"        Pseudohypoaldosteronism, type I [MIM:264350]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHA2A
+msgid ""
+"\n"
+"        Pseudohypoaldosteronism, type II"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HSN2
+#: model:oeh.medical.genetics,info:oehealth.WNK1
+msgid ""
+"\n"
+"        Pseudohypoaldosteronism, type IIC [MIM:145260]\n"
+"        Neuropathy, hereditary sensory and autonomic, type II [MIM:201300]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNAS
+msgid ""
+"\n"
+"        Pseudohypoparathyroidism Ia [MIM:103580]\n"
+"        McCune-Albright syndrome [MIM:174800]\n"
+"        Pituitary ACTH secreting adenoma, somatic [MIM:219090]\n"
+"        Osseous heteroplasia, progressive [MIM:166350]\n"
+"        Pseudohypoparathyroidism Ib [MIM:603233]\n"
+"        Prolonged bleeding time, brachydactyly and mental retardation\n"
+"        Acromegaly [MIM:102200]\n"
+"        Pseudopseudohypoparathyroidism [MIM:612463]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.GNASAS
+#: model:oeh.medical.genetics,info:oehealth.STX16
+msgid ""
+"\n"
+"        Pseudohypoparathyroidism, type IB [MIM:603233]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SRD5A2
+msgid ""
+"\n"
+"        Pseudovaginal perineoscrotal hypospadias [MIM:264600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ABCC6
+msgid ""
+"\n"
+"        Pseudoxanthoma elasticum [MIM:264800]\n"
+"        Pseudoxanthoma elasticum, forme fruste [MIM:177850]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.XYLT1
+#: model:oeh.medical.genetics,info:oehealth.XYLT2
+msgid ""
+"\n"
+"        Pseudoxanthoma elasticum, modifier of severity of [MIM:264800]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSORS9
+msgid ""
+"\n"
+"        Psoraisis, susceptibility to [MIM:177900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSORS11
+msgid ""
+"\n"
+"        Psoriasis susceptibility 11"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSORS8
+msgid ""
+"\n"
+"        Psoriasis susceptibility 8"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSORS10
+msgid ""
+"\n"
+"        Psoriasis susceptibility to [MIM:177900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HLA-C
+#: model:oeh.medical.genetics,info:oehealth.PSORS1
+msgid ""
+"\n"
+"        Psoriasis, early onset, susceptibility to [MIM:177900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSORS2
+#: model:oeh.medical.genetics,info:oehealth.PSORS3
+#: model:oeh.medical.genetics,info:oehealth.PSORS4
+#: model:oeh.medical.genetics,info:oehealth.PSORS5
+#: model:oeh.medical.genetics,info:oehealth.PSORS6
+#: model:oeh.medical.genetics,info:oehealth.PSORS7
+msgid ""
+"\n"
+"        Psoriasis, susceptibility to [MIM:177900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ZFHX4
+msgid ""
+"\n"
+"        Ptosis, congenital [MIM:178300]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTOS2
+msgid ""
+"\n"
+"        Ptosis, hereditary congenital 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PTOS1
+msgid ""
+"\n"
+"        Ptosis, hereditary congenital, 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC34A2
+msgid ""
+"\n"
+"        Pulmonary alveolar microlithiasis [MIM:265100]\n"
+"        Testicular microlithiasis [MIM:610441]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CSF2RA
+msgid ""
+"\n"
+"        Pulmonary alveolar proteinosis [MIM:300770]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.COPD
+msgid ""
+"\n"
+"        Pulmonary disease, chronic obstructive, severe early-onset"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SFTPA2
+msgid ""
+"\n"
+"        Pulmonary fibrosis, idiopathic [MIM:178500]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SFTPA1
+msgid ""
+"\n"
+"        Pulmonary fibrosis, idiopathic, susceptibility to [MIM:178500]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PLF
+msgid ""
+"\n"
+"        Pulmonary function"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.BMPR2
+msgid ""
+"\n"
+"        Pulmonary hypertension, familial primary [MIM:178600]\n"
+"        Pulmonary venoocclusive disease [MIM:265450]\n"
+"        Pulmonary hypertension, primary, fenfluramine-associated [MIM:178600]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CTSK
+msgid ""
+"\n"
+"        Pycnodysostosis [MIM:265800]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NOS1
+msgid ""
+"\n"
+"        Pyloric stenosis, infantile hypertrophic, 1, susceptibility to [MIM:179010]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IHPS2
+msgid ""
+"\n"
+"        Pyloric stenosis, infantile hypertrophic, 2"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IHPS3
+msgid ""
+"\n"
+"        Pyloric stenosis, infantile hypertrophic, 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IHPS4
+msgid ""
+"\n"
+"        Pyloric stenosis, infantile hypertrophic, 4"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.IHPS5
+msgid ""
+"\n"
+"        Pyloric stenosis, infantile hypertrophic, 5"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MYD88
+msgid ""
+"\n"
+"        Pyogenic bacterial infections, recurrent, due to MYD88 deficiency [MIM:612260]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PSTPIP1
+msgid ""
+"\n"
+"        Pyogenic sterile arthritis, pyoderma gangrenosum, and acne [MIM:604416]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PNPO
+msgid ""
+"\n"
+"        Pyridoxamine 5'-phosphate oxidase deficiency [MIM:610090]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PC
+msgid ""
+"\n"
+"        Pyruvate carboxylase deficiency [MIM:266150]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDHB
+msgid ""
+"\n"
+"        Pyruvate dehydrogenase E1-beta deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DLAT
+msgid ""
+"\n"
+"        Pyruvate dehydrogenase E2 deficiency [MIM:245348]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PDHA1
+msgid ""
+"\n"
+"        Pyruvate dehydrogenase deficiency [MIM:312170]\n"
+"        Leigh syndrome, X-linked [MIM:308930]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PPM2C
+msgid ""
+"\n"
+"        Pyruvate dehydrogenase phosphatase deficiency [MIM:608782]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PKLR
+msgid ""
+"\n"
+"        Pyruvate kinase deficiency [MIM:266200]\n"
+"        Adenosine triphosphate, elevated, of erythrocytes [MIM:102900]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.NOS1AP
+msgid ""
+"\n"
+"        QT interval, modifier of [MIM:610141]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RNF168
+msgid ""
+"\n"
+"        RIDDLE syndrome [MIM:611943]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RRDX
+msgid ""
+"\n"
+"        Radial ray deficiency"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RSCIS
+msgid ""
+"\n"
+"        Radiation sensitivity/chromosome instability syndrome, autosomal dominant"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HOXA11
+msgid ""
+"\n"
+"        Radioulnar synostosis with amegakaryocytic thrombocytopenia [MIM:605432]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RWS6
+msgid ""
+"\n"
+"        Ragweed sensitivity"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.FAM20C
+msgid ""
+"\n"
+"        Raine syndrome [MIM:259775]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.CX3CR1
+msgid ""
+"\n"
+"        Rapid progression to AIDS from HIV1 infection [MIM:609423]\n"
+"        Coronary artery disease, resistance to [MIM:607339]\n"
+"        Macular degeneration, age-related, susceptibility to [MIM:603075]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RNF212
+msgid ""
+"\n"
+"        Recombination rate QTL 1 [MIM:612042]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ANGPTL4
+msgid ""
+"\n"
+"        Reduced triglycerides, susceptibility to"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PHYH
+msgid ""
+"\n"
+"        Refsum disease [MIM:266500]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RDPA
+msgid ""
+"\n"
+"        Refsum disease, adult, with increased pipecolicacidemia"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.UPK3A
+msgid ""
+"\n"
+"        Renal adysplasia [MIM:191830]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.DIRC2
+#: model:oeh.medical.genetics,info:oehealth.RCA1
+#: model:oeh.medical.genetics,info:oehealth.RNF139
+msgid ""
+"\n"
+"        Renal cell carcinoma [MIM:144700]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.OGG1
+msgid ""
+"\n"
+"        Renal cell carcinoma, clear cell, somatic [MIM:144700]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PRCC
+#: model:oeh.medical.genetics,info:oehealth.TFE3
+msgid ""
+"\n"
+"        Renal cell carcinoma, papillary, 1 [MIM:605074]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RCCP3
+msgid ""
+"\n"
+"        Renal cell carcinoma, papillary, 3"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.MET
+msgid ""
+"\n"
+"        Renal cell carcinoma, papillary, familial and sporadic [MIM:605074]\n"
+"        Hepatocellular carcinoma, childhood type [MIM:114550]\n"
+"        Autism, suseptibility to, 9 [MIM:611015]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.HNF1B
+msgid ""
+"\n"
+"        Renal cysts and diabetes syndrome [MIM:137920]\n"
+"        Diabetes mellitus, noninsulin-dependent [MIM:125853]\n"
+"        Renal cell carcinoma [MIM:144700]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC5A2
+msgid ""
+"\n"
+"        Renal glucosuria [MIM:233100]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.RHDNS1
+msgid ""
+"\n"
+"        Renal hypodysplasia, nonsyndromic, 1"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.ATP6V0A4
+msgid ""
+"\n"
+"        Renal tubular acidosis, distal, autosomal recessive [MIM:602722]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.SLC4A4
+msgid ""
+"\n"
+"        Renal tubular acidosis, proximal, with ocular abnormalities [MIM:604278]"
+msgstr ""
+
+#. module: oehealth
+#: model:oeh.medical.genetics,info:oehealth.PQBP1
+msgid ""
+"\n"
+"        Renpenning syndrome [MIM:309500]\n"
+"        Golabi-Ito-Hall syndrome"
+msgstr ""

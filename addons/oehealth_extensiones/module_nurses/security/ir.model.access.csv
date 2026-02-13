@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_oeh_medical_station_manager,oeh.medical.station.manager,model_oeh_medical_station,oehealth.group_oeh_medical_manager,1,1,1,1
+access_oeh_medical_station_nurse,oeh.medical.station.nurse,model_oeh_medical_station,oehealth.group_oeh_medical_nurse,1,0,0,0
+access_oeh_medical_consumable_nurse,oeh.medical.appointment.consumable.nurse,model_oeh_medical_appointment_consumable,oehealth.group_oeh_medical_nurse,1,1,1,1
+access_oeh_medical_consumable_manager,oeh.medical.appointment.consumable.manager,model_oeh_medical_appointment_consumable,oehealth.group_oeh_medical_manager,1,1,1,1

@@ -11,7 +11,7 @@ services:
     restart: unless-stopped
 
   odoo: # Nombre genérico en cada proyecto
-    image: odoo:17
+    image: ribentek/ribentek_odoo_comm_17:v1.0
     container_name: odoo17_app
     depends_on:
       - postgres
@@ -27,7 +27,10 @@ services:
       - odoo-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
       - ./config/odoo17.conf:/etc/odoo/odoo.conf # Montar el archivo de configuración
+      - //var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
+
+    command: odoo -c /etc/odoo/odoo.conf --limit-time-real=600 --limit-time-cpu=600
 
 volumes:
   postgres-data:

@@ -1,1 +1,0 @@
-En odoo 17, cree un nuevo formato de reporte y luego fui a cada reporte y aplique el nuevo formato de papel

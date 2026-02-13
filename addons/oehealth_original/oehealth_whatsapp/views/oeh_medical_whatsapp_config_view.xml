@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<odoo>
+        <data>
+
+            <!-- WhatsApp Templates Management -->
+
+            <record model="ir.ui.view" id="oeh_medical_whatsapp_templates_tree">
+                <field name="name">WhatsApp Templates Tree</field>
+                <field name="model">oeh.medical.whatsapp.template</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                    <tree string='WhatsApp Templates'>
+                        <field name="name"/>
+<!--
+                        <field name="applied_to" widget="many2many_tags"/>
+-->
+                    </tree>
+                </field>
+            </record>
+
+            <record model="ir.ui.view" id="oeh_medical_whatsapp_templates_form">
+                <field name="name">WhatsApp Templates Form</field>
+                <field name="model">oeh.medical.whatsapp.template</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="WhatsApp Templates">
+                        <sheet>
+                            <group>
+                                <group>
+                                    <field name="name"/>
+                                </group>
+                                <!--<group>
+                                    <field name="applied_to" widget="many2many_tags" required="1"/>
+                                </group>-->
+                            </group>
+                            <notebook>
+                                <page string="Message Format">
+                                    <!-- <group> -->
+                                    <field name="message" required="1" nolabel="1"/>
+                                    <!-- </group> -->
+                                    <!--<group string="Shortcodes">
+                                         <group >
+                                            <ul>
+                                               <li>{name}: Name</li>
+                                                <li>{patient}: Patient Name</li>
+                                               <li>{dob}: Patient Birth Date</li>
+                                               <li>{company}: Company</li>
+                                            </ul>
+                                         </group>
+                                    </group>-->
+                                </page>
+                            </notebook>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+             <record id="oeh_medical_whatsapp_templates_search" model="ir.ui.view">
+                <field name="name">WhatsApp Templates Search</field>
+                <field name="model">oeh.medical.whatsapp.template</field>
+                <field name="priority" eval="8" />
+			    <field name="arch" type="xml">
+                    <search string="WhatsApp Templates">
+                        <field name="name"/>
+				    </search>
+                </field>
+            </record>
+
+            <record id="action_oeh_medical_whatsapp_templates" model="ir.actions.act_window">
+                    <field name="name">Templates</field>
+                    <field name="res_model">oeh.medical.whatsapp.template</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="domain">[]</field>
+                    <field name="context">{}</field>
+                    <field name="view_id" eval="False"/>
+                    <field name="help" type="html">
+                      <p class="o_view_nocontent_smiling_face">
+                        Click to add a new WhatsApp Template.
+                      </p>
+                    </field>
+            </record>
+
+            <menuitem name="WhatsApp" id="oeh_medical_whatsapp_config" parent="oehealth.oeh_medical_conf_menu" sequence="50"/>
+            <menuitem action="action_oeh_medical_whatsapp_templates" id="menu_oeh_medical_whatsapp_templates" parent="oeh_medical_whatsapp_config" sequence="1"/>
+
+        </data>
+</odoo>

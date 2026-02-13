@@ -1,0 +1,2249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oehealth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-16 19:48+0000\n"
+"PO-Revision-Date: 2026-01-16 19:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oehealth_lab
+#. odoo-python
+#: code:addons/oehealth_lab/controllers/lab_portal.py:0
+#, python-format
+msgid "%s is not the reference of a report"
+msgstr "%s no es la referencia de un informe"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_hpf0
+msgid "/hpf"
+msgstr "/campo"
+
+#. module: oehealth_lab
+#. odoo-python
+#: code:addons/oehealth_lab/controllers/lab_portal.py:0
+#, python-format
+msgid "/patient/portal/lab_request/%s/edit"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination6
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination7
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination9
+msgid "0 - 1"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount13
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis16
+msgid "0 - 2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest3
+msgid "0.3 - 1.2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_endocrinology2
+msgid "0.3 - 6.2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_renalfunctiontest1
+msgid "0.8 - 1.3"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis15
+msgid "1 - 2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount12
+msgid "1 - 6"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_semenanalysis2
+msgid "1.0 - 6.5"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest2
+msgid "1.5 - 3.5"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount14
+msgid "1.5 - 4.0"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest10
+msgid "1.5:1 - 2.5:1"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_ul1
+msgid "10^3/uL"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_ul0
+msgid "10^6/uL"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount0
+msgid "11.0 - 16.0"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount6
+msgid "11.5 - 14.5"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_renalfunctiontest0
+msgid "13 - 43"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount16
+msgid "150 - 450"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount11
+msgid "2 - 10"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount15
+msgid "2.0 - 7.5"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount10
+msgid "20 - 45"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_semenanalysis5
+msgid "20 - 60"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount4
+msgid "27 - 31"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount1
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest1
+msgid "3.5 - 5.5"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_renalfunctiontest2
+msgid "3.5 - 7.2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount5
+msgid "32.0 - 36.0"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount7
+msgid "35 - 56"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount2
+msgid "37.0 - 50.0"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount8
+msgid "4.5 - 11"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount9
+msgid "40 - 70"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest0
+msgid "6.4 - 8.3"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_semenanalysis11
+msgid "60-150"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount3
+msgid "82 - 95"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest4
+msgid "< 0.2"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest6
+msgid "< 270"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest7
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest8
+msgid "< 40"
+msgstr ""
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest9
+msgid "< 55"
+msgstr ""
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<i class=\"fa fa-address-book padding_patient\"/>Lab Requests"
+msgstr ""
+"<i class=\"fa fa-address-book padding_patient\"/>Solicitudes de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<i class=\"fa fa-address-book padding_patient\"/>Lab Tests"
+msgstr "<i class=\"fa fa-address-book padding_patient\"/>Pruebas de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "<i class=\"fa fa-home\" role=\"img\" aria-label=\"My Account\" title=\"My Account\"/>"
+msgstr "<i class=\"fa fa-home\" role=\"img\" aria-label=\"Mi Cuenta\" title=\"Mi Cuenta\"/>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                        <span>List out of all your Lab Tests.</span>"
+msgstr ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                        <span>Lista de todas sus Pruebas de Laboratorio.</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                        <span>List out of all your lab requests.</span>"
+msgstr ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                        <span>Lista de todas sus solicitudes de laboratorio.</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Sample Taken\" title=\"Sample Taken\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Sample Taken</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Muestra Tomada\" title=\"Muestra Tomada\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Muestra Tomada</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Test In Progress\" title=\"Test In Progress\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Test In Progress</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Prueba en Progreso\" title=\"Prueba en Progreso\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Prueba en Progreso</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Sample Taken\" title=\"Sample Taken\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Sample Taken</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Muestra Tomada\" title=\"Muestra Tomada\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Muestra Tomada</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Test In Progress\" title=\"Test In Progress\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Test In Progress</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Prueba en Progreso\" title=\"Prueba en Progreso\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Prueba en Progreso</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Draft\" title=\"Draft\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Draft</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Borrador\" title=\"Borrador\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Borrador</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Draft\" title=\"Draft\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Draft</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Borrador\" title=\"Borrador\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Borrador</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Completed\" title=\"Completed\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Completed</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Completado\" title=\"Completado\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Completado</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Pushed For Testing\" title=\"Pushed For Testing\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Pushed For Testing</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Enviado para Prueba\" title=\"Enviado para Prueba\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Enviado para Prueba</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Completed\" title=\"Completed\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Completed</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Completado\" title=\"Completado\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Completado</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Pushed For Testing\" title=\"Pushed For Testing\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Pushed For Testing</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Enviado para Prueba\" title=\"Enviado para Prueba\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Enviado para Prueba</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid ""
+"<span class=\"badge badge-pill\" style=\"background-color:lightgray;\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Invoiced\" title=\"Invoiced\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Invoiced</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill\" style=\"background-color:lightgray;\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Facturado\" title=\"Facturado\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Facturado</span>\n"
+"                                            </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid ""
+"<span class=\"badge badge-pill\" style=\"background-color:lightgray;\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Invoiced\" title=\"Invoiced\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Invoiced</span>\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill\" style=\"background-color:lightgray;\">\n"
+"                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Facturado\" title=\"Facturado\" role=\"img\"/>\n"
+"                                            <span class=\"d-none d-md-inline\">Facturado</span>\n"
+"                                        </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Age: </span>"
+msgstr "<span class=\"font-weight-bold\">Edad: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Analysis Date: </span>"
+msgstr "<span class=\"font-weight-bold\">Fecha de Análisis: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Date Requested: </span>"
+msgstr "<span class=\"font-weight-bold\">Fecha Solicitada: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Doctor who requested test: </span>"
+msgstr "<span class=\"font-weight-bold\">Médico solicitante: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Pathologist: </span>"
+msgstr "<span class=\"font-weight-bold\">Patólogo: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<span class=\"font-weight-bold\">Patient: </span>"
+msgstr "<span class=\"font-weight-bold\">Paciente: </span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<span class=\"label_color font-weight-bold\">Date:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Fecha:</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<span class=\"label_color font-weight-bold\">Lab Request Number:</span>"
+msgstr ""
+"<span class=\"label_color font-weight-bold\">Número de Solicitud de "
+"Laboratorio:</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<span class=\"label_color font-weight-bold\">Lab Tests:</span>"
+msgstr ""
+"<span class=\"label_color font-weight-bold\">Pruebas de Laboratorio:</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<span class=\"label_color font-weight-bold\">Ordered Lab Tests:</span>"
+msgstr ""
+"<span class=\"label_color font-weight-bold\">Pruebas de Laboratorio "
+"Ordenadas:</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "<span class=\"label_color font-weight-bold\">Tests Charge:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Cargo de las Pruebas:</span>"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "<strong class=\"font-weight-bold\">Lab Test#: </strong>"
+msgstr "<strong class=\"font-weight-bold\">Prueba de Lab. N°: </strong>"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_semenanalysis7
+msgid "> 50"
+msgstr "> 50"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest10
+msgid "AG Ratio"
+msgstr "Relación AG"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination8
+msgid "Absent"
+msgstr "Ausente"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Action"
+msgstr "Acción"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_needaction
+msgid "Action Needed"
+msgstr "Acción Requerida"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid "Add"
+msgstr "Agregar"
+
+#. module: oehealth_lab
+#. odoo-python
+#: code:addons/oehealth_lab/models/oeh_medical_lab.py:0
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#, python-format
+msgid "Add Sample"
+msgstr "Agregar Muestra"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Add a line"
+msgstr "Agregar una línea"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Add a note"
+msgstr "Agregar una nota"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Add a section"
+msgstr "Agregar una sección"
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_technician_action_tree
+msgid "Add all the Lab Technician and manage their weekly schedules"
+msgstr "Agregue todos los Técnicos de Laboratorio y gestione sus horarios semanales"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest1
+msgid "Albumin"
+msgstr "Albúmina"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest6
+msgid "Alkaline Phosphatase"
+msgstr "Fosfatasa Alcalina"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_appointment
+msgid "Appointment"
+msgstr "Cita"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__appointment
+msgid "Appointment #"
+msgstr "Cita N°"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Are you sure you want to complete the test?"
+msgstr "¿Está seguro de que desea completar la prueba?"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Are you sure you want to start the test?"
+msgstr "¿Está seguro de que desea iniciar la prueba?"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet29
+msgid "Asitic Fluid"
+msgstr "Líquido Ascítico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet10
+msgid "Asitic Fluid Panel"
+msgstr "Panel de Líquido Ascítico"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de Adjuntos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount13
+msgid "BAS%"
+msgstr "BAS%"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis20
+msgid "Bacteria"
+msgstr "Bacterias"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis12
+msgid "Bilirubin"
+msgstr "Bilirrubina"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination4
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis13
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet20
+msgid "Blood"
+msgstr "Sangre"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet2
+msgid "Blood (EDTA)"
+msgstr "Sangre (EDTA)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_haematology0
+msgid "Blood Group & RH"
+msgstr "Grupo Sanguíneo y RH"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet5
+msgid "Body Fluid"
+msgstr "Fluidos Corporales"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet32
+msgid "Bronchoscopy Lavage (BAL)"
+msgstr "Lavado Bronquial (BAL)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet4
+msgid "Bronchoscopy Lavarge (BAL)"
+msgstr "Lavado Bronquial (BAL)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination1
+msgid "Brown"
+msgstr "Marrón"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet26
+msgid "CSF"
+msgstr "LCR"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet12
+msgid "CSF Panel"
+msgstr "Panel de LCR"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.add_sample_ids
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis19
+msgid "Casts"
+msgstr "Cilindros"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis3
+msgid "Chemical Examination"
+msgstr "Examen Químico"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__chief_complaint
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Chief Complaint"
+msgstr "Motivo de Consulta"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis2
+msgid "Clarity/ Appearance"
+msgstr "Claridad / Aspecto"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis2
+msgid "Clear"
+msgstr "Transparente"
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_technician_action_tree
+msgid "Click to add a new Lab Technician."
+msgstr "Haga clic para agregar un nuevo Técnico de Laboratorio."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_labtest_department_action_tree
+msgid "Click to add a new Lab Test department."
+msgstr "Haga clic para agregar un nuevo departamento de laboratorio."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_requests_action_tree
+msgid "Click to add a new lab Requests."
+msgstr "Haga clic para agregar nuevas solicitudes de laboratorio."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_test_types_action_tree
+msgid "Click to add a new lab test types."
+msgstr "Haga clic para agregar nuevos tipos de pruebas."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_units_action_tree
+msgid "Click to add a new lab test units."
+msgstr "Haga clic para agregar nuevas unidades de prueba."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_test_action_tree
+msgid "Click to add a new lab tests."
+msgstr "Haga clic para agregar nuevas pruebas de laboratorio."
+
+#. module: oehealth_lab
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_samples_action_tree
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_lab_wizard_action_tree
+#: model_terms:ir.actions.act_window,help:oehealth_lab.oeh_medical_sample_type_action_tree
+msgid "Click to add a new sample type"
+msgstr "Haga clic para agregar un nuevo tipo de muestra"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__code
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__code
+msgid "Code"
+msgstr "Código"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis1
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination1
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis1
+msgid "Color"
+msgstr "Color"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__comments
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__comments
+msgid "Comments"
+msgstr "Comentarios"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_completebloodcount0
+msgid "Complete Blood Count"
+msgstr "Hemograma Completo"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Complete Test"
+msgstr "Completar Prueba"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_test__state__completed
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Completed"
+msgstr "Completado"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination2
+msgid "Consistency"
+msgstr "Consistencia"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+msgid "Create Invoice"
+msgstr "Crear Factura"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__create_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__create_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_renalfunctiontest1
+msgid "Creatinine"
+msgstr "Creatinina"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis18
+msgid "Crystals"
+msgstr "Cristales"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__currency_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Date &amp; Time"
+msgstr "Fecha &amp; Hora"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid "Date Requested"
+msgstr "Fecha Solicitada"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__date_analysis
+msgid "Date of the Analysis"
+msgstr "Fecha del Análisis"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__date_requested
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__date_requested
+msgid "Date requested"
+msgstr "Fecha solicitada"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.department,name:oehealth_lab.lab_test_defaultdepartment0
+msgid "Default"
+msgstr "Por defecto"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__lab_department
+msgid "Department"
+msgstr "Departamento"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__info
+msgid "Description"
+msgstr "Descripción"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__diagnosis
+msgid "Diagnosis"
+msgstr "Diagnóstico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest4
+msgid "Direct Bilirubin"
+msgstr "Bilirrubina Directa"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__display_name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__display_type
+msgid "Display Type"
+msgstr "Tipo de Visualización"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid "Doctor Who Requested The Test"
+msgstr "Médico que Solicitó la Prueba"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Doctor Who Requested The Test:"
+msgstr "Médico que Solicitó la Prueba:"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__requestor
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__requestor
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_request__requestor
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__requestor
+msgid "Doctor who requested the test"
+msgstr "Médico que solicitó la prueba"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_request__state__draft
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_test__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "Draft / Test In Progress"
+msgstr "Borrador / Prueba en Progreso"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Draft/Test In Progress"
+msgstr "Borrador/Prueba en Progreso"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount12
+msgid "EOS%"
+msgstr "EOS%"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount17
+msgid "ESR"
+msgstr "VSG"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_endocrinology0
+msgid "Endocrinology"
+msgstr "Endocrinología"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis15
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis17
+msgid "Epithelial Cells"
+msgstr "Células Epiteliales"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_types_form
+msgid "Extra Info"
+msgstr "Información Adicional"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_endocrinology0
+msgid "FSH"
+msgstr "FSH"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+msgid "Finished Taking Sample"
+msgstr "Finalizada la Toma de Muestra"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_endocrinology1
+msgid ""
+"Follicular Phase : 0.8 - 10.5\n"
+"Midcycle : 18.4 - 61.2\n"
+"Luteal phase : 0.8 - 10.5\n"
+"Post menopausal : 8.2 - 40.8"
+msgstr ""
+"Fase Folicular : 0.8 - 10.5\n"
+"Ciclo Medio : 18.4 - 61.2\n"
+"Fase Lútea : 0.8 - 10.5\n"
+"Postmenopausia : 8.2 - 40.8"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_endocrinology0
+msgid ""
+"Follicular Phase : 3.0 - 12.0\n"
+"Midcycle : 8.0 - 22.0\n"
+"Luteal phase : 2.0 - 12.0\n"
+"Post menopausal : 35.0 - 151.0"
+msgstr ""
+"Fase Folicular : 3.0 - 12.0\n"
+"Ciclo Medio : 8.0 - 22.0\n"
+"Fase Lútea : 2.0 - 12.0\n"
+"Postmenopausia : 35.0 - 151.0"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet11
+msgid "GAL"
+msgstr "GAL"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount15
+msgid "GRA#"
+msgstr "GRA#"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest9
+msgid "Gamma GT"
+msgstr "Gamma GT"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet3
+msgid "Gastric Lavage"
+msgstr "Lavado Gástrico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet31
+msgid "Gastric Lavage (GAL)"
+msgstr "Lavado Gástrico (GAL)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest2
+msgid "Globulin"
+msgstr "Globulina"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis7
+msgid "Glucose"
+msgstr "Glucosa"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_filter
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount2
+msgid "HCT"
+msgstr "HCT"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_haematology0
+msgid "Haematology"
+msgstr "Hematología"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__has_message
+msgid "Has Message"
+msgstr "Tiene Mensaje"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__institution
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__institution
+msgid "Health Center"
+msgstr "Centro de Salud"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Health Center:"
+msgstr "Centro de Salud:"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount0
+msgid "Hemoglobin"
+msgstr "Hemoglobina"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_iul0
+msgid "IU/l"
+msgstr "UI/l"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los nuevos mensajes requieren su atención."
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__message_has_error
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest5
+msgid "Indirect Bilirubin"
+msgstr "Bilirrubina Indirecta"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__move_id
+msgid "Invoice #"
+msgstr "Factura N°"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_request__state__invoiced
+msgid "Invoiced"
+msgstr "Facturado"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__invoice_count
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis9
+msgid "Ketone Bodies"
+msgstr "Cuerpos Cetónicos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet30
+msgid "Knee Joint Fluid"
+msgstr "Líquido Articular de Rodilla"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet13
+msgid "Knee Joint Fluid Panel"
+msgstr "Panel de Líquido Articular de Rodilla"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_endocrinology1
+msgid "LH"
+msgstr "LH"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount14
+msgid "LYM#"
+msgstr "LYM#"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount10
+msgid "LYM%"
+msgstr "LYM%"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_samples_wizard
+msgid "Lab  Samples"
+msgstr "Muestras de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_account_bank_statement_line__labtest_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_account_move__labtest_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_account_payment__labtest_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__name
+msgid "Lab Request #"
+msgstr "Solicitud de Lab. N°"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_request__name
+msgid "Lab Request ID"
+msgstr "ID de Solicitud de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Lab Request Number"
+msgstr "Nº de Solicitud de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Lab Request Number:"
+msgstr "Nº de Solicitud de Laboratorio:"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__lab_request
+msgid "Lab Requested"
+msgstr "Laboratorio Solicitado"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_requests_action_tree
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_lab_request
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_lab_request_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_tree
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid "Lab Requests"
+msgstr "Solicitudes de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Lab Requests Detail"
+msgstr "Detalle de Solicitudes de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_wizard_action_tree
+msgid "Lab Sample"
+msgstr "Muestra de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_sample_type_action_tree
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_sample_type_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_sample_type_tree
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_sample_type_filter
+msgid "Lab Sample Type"
+msgstr "Tipo de Muestra de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_sample_types
+msgid "Lab Sample Types "
+msgstr "Tipos de Muestra de Laboratorio "
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_samples_action_tree
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_lab_samples
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.add_sample_ids
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_samples_tree
+msgid "Lab Samples"
+msgstr "Muestras de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_technician_action_tree
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__lab_technician_id
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_physician__staff_type__lab_technician
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_lab_technician
+#: model:res.groups,name:oehealth_lab.group_oeh_medical_lab_technician
+msgid "Lab Technician"
+msgstr "Técnico de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_appointment_lab_view
+msgid "Lab Test"
+msgstr "Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__name
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Lab Test #"
+msgstr "Prueba de Lab. N°"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__lab_criteria
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_types_form
+msgid "Lab Test Cases"
+msgstr "Casos de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_labtest_criteria
+msgid "Lab Test Criteria"
+msgstr "Criterios de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_labtest_department_action_tree
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_labtest_department
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_labtest_department_menu
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_department_tree
+msgid "Lab Test Departments"
+msgstr "Departamentos de Pruebas de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_patient__lab_test_ids
+msgid "Lab Test IDs"
+msgstr "IDs de Pruebas de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_appointment__labtest_line
+msgid "Lab Test Lines"
+msgstr "Líneas de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__name
+msgid "Lab Test Name"
+msgstr "Nombre de la Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.report,name:oehealth_lab.action_report_patient_labtest
+msgid "Lab Test Report"
+msgstr "Informe de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__lab_test_criteria
+msgid "Lab Test Result"
+msgstr "Resultado de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_lab_resultcriteria
+msgid "Lab Test Result Criteria"
+msgstr "Criterios de Resultado de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__lab_test_type_ids
+msgid "Lab Test Type"
+msgstr "Tipo de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_test_types_action_tree
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_labtest_types
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__medical_type_id
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_lab_test_types_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_types_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_types_tree
+msgid "Lab Test Types"
+msgstr "Tipos de Pruebas de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_lab_units
+msgid "Lab Test Units"
+msgstr "Unidades de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__lab_test_ids
+msgid "Lab Test types"
+msgstr "Tipos de Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_test_action_tree
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_lab_test
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__medical_lab_test_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_patient__labs_count
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_physician__lab_test
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__samples_ids
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_lab_test_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.add_sample_ids
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_samples_tree
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_tree
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_view
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_patient_lab_button_count_view
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_patient_lab_view
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Lab Tests"
+msgstr "Pruebas de Laboratorio"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Lab Tests:"
+msgstr "Pruebas de Laboratorio:"
+
+#. module: oehealth_lab
+#: model:ir.actions.act_window,name:oehealth_lab.oeh_medical_lab_units_action_tree
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_lab_units_conf_list
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_units_tree
+msgid "Lab Units"
+msgstr "Unidades de Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__name
+msgid "Lab result ID"
+msgstr "ID de resultado de laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_conf_laboratory
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_laboratory
+#: model:ir.ui.menu,name:oehealth_lab.oeh_medical_operations_laboratory
+msgid "Laboratory"
+msgstr "Laboratorio"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__write_uid
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__write_date
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis11
+msgid "Leucocytes"
+msgstr "Leucocitos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis5
+msgid "Liquefaction Time"
+msgstr "Tiempo de Licuefacción"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_liverfunctiontest0
+msgid "Liver Function Test"
+msgstr "Prueba de Función Hepática"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount4
+msgid "MCH"
+msgstr "HCM"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount5
+msgid "MCHC"
+msgstr "CHCM"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount3
+msgid "MCV"
+msgstr "VCM"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount11
+msgid "MON%"
+msgstr "MON%"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_request__institution
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__institution
+msgid "Medical Center"
+msgstr "Centro Médico"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_physician
+msgid "Medical Staff"
+msgstr "Personal Médico"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en la entrega del mensaje"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis6
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination5
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis14
+msgid "Microscopic Examination"
+msgstr "Examen Microscópico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_millionscc0
+msgid "Millions/cc"
+msgstr "Millones/cc"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet6
+msgid "Montoux"
+msgstr "Mantoux"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet25
+msgid "Montoux Test"
+msgstr "Prueba de Mantoux"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis12
+msgid "Morphology"
+msgstr "Morfología"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis7
+msgid "Motility"
+msgstr "Motilidad"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination3
+msgid "Mucus"
+msgstr "Moco"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount9
+msgid "NEU%"
+msgstr "NEU%"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "NORMAL RANGE"
+msgstr "RANGO NORMAL"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_units__name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_department__name
+msgid "Name"
+msgstr "Nombre de la Unidad"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination3
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination4
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis10
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis11
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis12
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis13
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis6
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis7
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis8
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis9
+msgid "Negative"
+msgstr "Negativo"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis6
+msgid "Nitrites"
+msgstr "Nitritos"
+
+#. module: oehealth_lab
+#. odoo-python
+#: code:addons/oehealth_lab/models/oeh_medical_lab.py:0
+#: code:addons/oehealth_lab/models/oeh_medical_lab.py:0
+#, python-format
+msgid "No accounting journal with type \"Sale\" defined !"
+msgstr "¡No se ha definido un diario contable de tipo \"Venta\"!"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis10
+msgid "Non Motile"
+msgstr "Inmóvil"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis9
+msgid "Non Progressive"
+msgstr "No Progresivo"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__normal_range
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__normal_range
+msgid "Normal Range"
+msgstr "Rango Normal"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_resultcriteria__display_type__line_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Acciones"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Ordered Lab Tests"
+msgstr "Pruebas de Laboratorio Ordenadas"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet36
+msgid "Other Body Fluids"
+msgstr "Otros Fluidos Corporales"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet41
+msgid "Other Samples"
+msgstr "Otras Muestras"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis21
+msgid "Others"
+msgstr "Otros"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination8
+msgid "Ova/Cyst"
+msgstr "Huevos/Quistes"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis5
+msgid "PH"
+msgstr "PH"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount16
+msgid "PLT"
+msgstr "PLT"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_endocrinology3
+msgid "PROLACTIN"
+msgstr "PROLACTINA"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__pathologist
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__pathologist
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_filter
+msgid "Pathologist"
+msgstr "Patólogo"
+
+#. module: oehealth_lab
+#: model:ir.model,name:oehealth_lab.model_oeh_medical_patient
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__patient
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__patient
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_filter
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_request__patient
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__patient
+msgid "Patient Name"
+msgstr "Nombre del Paciente"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet1
+msgid "Pericardial Fluid"
+msgstr "Líquido Pericárdico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_peripheralsmearexamination0
+msgid "Peripheral Smear Examination"
+msgstr "Frotis de Sangre Periférica"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet33
+msgid "Peritoneal Fluid"
+msgstr "Líquido Peritoneal"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet19
+msgid "Peritoneal Fluid Panel"
+msgstr "Panel de Líquido Peritoneal"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis0
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination0
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis0
+msgid "Physical Examination"
+msgstr "Examen Físico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_peripheralsmearexamination2
+msgid "Platelets"
+msgstr "Plaquetas"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet34
+msgid "Pleural Fluid"
+msgstr "Líquido Pleural"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet15
+msgid "Pleural Fluid Panel"
+msgstr "Panel de Líquido Pleural"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet14
+msgid "Plural Fluid"
+msgstr "Líquido Pleural"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Print Lab Test"
+msgstr "Imprimir Prueba de Laboratorio"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis8
+msgid "Progressive"
+msgstr "Progresivo"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis8
+msgid "Protein"
+msgstr "Proteína"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet38
+msgid "Pus"
+msgstr "Pus"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet16
+msgid "Pus (Panel)"
+msgstr "Pus (Panel)"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis13
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination6
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis15
+msgid "Pus Cells"
+msgstr "Piocitos"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+msgid "Push For Testing"
+msgstr "Enviar para Prueba"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_request__state__pushed_for_testing
+msgid "Pushed For Testing"
+msgstr "Enviado para Prueba"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet18
+msgid "Pyrotinial Fluid"
+msgstr "Líquido Peritoneal"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount1
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis16
+msgid "RBC"
+msgstr "Eritrocitos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_peripheralsmearexamination0
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis14
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination7
+msgid "RBCs"
+msgstr "Eritrocitos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount6
+msgid "RDW-CV"
+msgstr "ADE-CV"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount7
+msgid "RDW-SD"
+msgstr "ADE-DE"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "RESULT"
+msgstr "RESULTADO"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__rating_ids
+msgid "Ratings"
+msgstr "Calificaciones"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis3
+msgid "Reaction"
+msgstr "Reacción"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_renalfunctiontest0
+msgid "Renal Function Test"
+msgstr "Prueba de Función Renal"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_peripheralsmearexamination3
+msgid "Report"
+msgstr "Informe"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__results
+msgid "Results"
+msgstr "Resultados"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "SEQUENCE"
+msgstr "SECUENCIA"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest8
+msgid "SGOT"
+msgstr "SGOT"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest7
+msgid "SGPT"
+msgstr "SGPT"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error en la entrega de SMS"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__sample_id
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__sample_id
+msgid "Sample"
+msgstr "Muestra"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet17
+msgid "Sample Pus"
+msgstr "Muestra de Pus"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_request__state__sample_taken
+msgid "Sample Taken"
+msgstr "Muestra Tomada"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__sample_type
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_samples_wizard__sample_type
+msgid "Sample Type"
+msgstr "Tipo de Muestra"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_sample_types__name
+msgid "Sample Types"
+msgstr "Tipos de Muestra"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__lab_sample_ids
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_samples__samples_ids
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+msgid "Samples"
+msgstr "Muestras"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet9
+msgid "Scrap"
+msgstr "Raspado"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet28
+msgid "Scrapping for Fungus"
+msgstr "Raspado para Hongos"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_lab_test_department_filter
+msgid "Search Departments"
+msgstr "Buscar Departamentos"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_types_filter
+msgid "Search Test Types"
+msgstr "Buscar Tipos de Prueba"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_filter
+msgid "Search Tests"
+msgstr "Buscar Pruebas"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_units_filter
+msgid "Search Units"
+msgstr "Buscar Unidades"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_resultcriteria__display_type__line_section
+msgid "Section"
+msgstr "Sección"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet23
+msgid "Semen"
+msgstr "Semen"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_semenanalysis0
+msgid "Semen Analysis"
+msgstr "Espermiograma"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__seq
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__sequence
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet22
+msgid "Serum"
+msgstr "Suero"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_endocrinology4
+msgid ""
+"Sexually mature women : < 0.6\n"
+"                Postmenopause : < 0.8"
+msgstr ""
+"Mujeres sexualmente maduras : < 0.6\n"
+"                Postmenopausia : < 0.8"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_labtest_types__code
+msgid "Short code for the test"
+msgstr "Código corto para la prueba"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet40
+msgid "Slit Skin"
+msgstr "Raspado Cutáneo"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet7
+msgid "SlitSkin"
+msgstr "Raspado Cutáneo"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis4
+msgid "Specific Gravity"
+msgstr "Densidad"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis16
+msgid "Spermatogonic Cells"
+msgstr "Células Espermatogónicas"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet37
+msgid "Sputum"
+msgstr "Esputo"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_physician__staff_type
+msgid "Staff"
+msgstr "Personal"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "Start Test"
+msgstr "Iniciar Prueba"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__state
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__state
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_oeh_medical_lab_test_filter
+msgid "State"
+msgstr "Estado"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "Status"
+msgstr "Estado"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet24
+msgid "Stool"
+msgstr "Heces"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_stoolexamination0
+msgid "Stool Examination"
+msgstr "Examen Coprológico"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.add_sample_ids
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet39
+msgid "Synovial Fluid"
+msgstr "Líquido Sinovial"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_endocrinology4
+msgid "TESTOSTERONE"
+msgstr "TESTOSTERONA"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "TESTS"
+msgstr "PRUEBAS"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_endocrinology2
+msgid "TSH"
+msgstr "TSH"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_resultcriteria__display_type
+msgid "Technical field for UX purpose."
+msgstr "Campo técnico para propósitos de UX."
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_types__test_charge
+msgid "Test Charge"
+msgstr "Cargo de la Prueba"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Test Charge:"
+msgstr "Cargo de la Prueba:"
+
+#. module: oehealth_lab
+#: model:ir.model.fields.selection,name:oehealth_lab.selection__oeh_medical_lab_test__state__test_in_progress
+msgid "Test In Progress"
+msgstr "Prueba en Progreso"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_types_form
+msgid "Test Name"
+msgstr "Nombre de la Prueba"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "Test Results"
+msgstr "Resultados de la Prueba"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_labtest_types__name
+msgid "Test type, eg X-Ray, Hemogram, Biopsy..."
+msgstr "Tipo de prueba, ej: Rayos X, Hemograma, Biopsia..."
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__name
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__name
+msgid "Tests"
+msgstr "Pruebas"
+
+#. module: oehealth_lab
+#: model:ir.model.constraint,message:oehealth_lab.constraint_oeh_medical_lab_units_name_uniq
+msgid "The Lab unit name must be unique"
+msgstr "El nombre de la unidad de laboratorio debe ser único"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_requests
+msgid "There are currently no Lab Requests available."
+msgstr "Actualmente no hay solicitudes de laboratorio disponibles."
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.view_patient_lab_test
+msgid "There are currently no Lab Tests available."
+msgstr "Actualmente no hay pruebas de laboratorio disponibles."
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet27
+msgid "Tissue"
+msgstr "Tejido"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_request__total
+msgid "Total"
+msgstr "Total"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest3
+msgid "Total Bilirubin"
+msgstr "Bilirrubina Total"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_liverfunctiontest0
+msgid "Total Protein"
+msgstr "Proteína Total"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis11
+msgid "Total Sperm Count"
+msgstr "Conteo Total de Espermatozoides"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_ul2
+msgid "U/L"
+msgstr "U/L"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.report_oeh_medical_patient_labtest_document
+msgid "UNITS"
+msgstr "UNIDADES"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_stoolexamination9
+msgid "Un digested matter"
+msgstr "Materia no digerida"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_resultcriteria__units
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_labtest_criteria__units
+msgid "Units"
+msgstr "Unidades"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_liverfunctiontest5
+msgid "Up to 0.8"
+msgstr "Hasta 0.8"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_completebloodcount17
+msgid "Up to 15"
+msgstr "Hasta 15"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_renalfunctiontest0
+msgid "Urea"
+msgstr "Urea"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_renalfunctiontest2
+msgid "Uric Acid"
+msgstr "Ácido Úrico"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet21
+msgid "Urine"
+msgstr "Orina"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.types,name:oehealth_lab.lab_test_urineanalysis0
+msgid "Urine Analysis"
+msgstr "Uroanálisis"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_urineanalysis10
+msgid "Urobilinogen"
+msgstr "Urobilinógeno"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet8
+msgid "Vaginal"
+msgstr "Vaginal"
+
+#. module: oehealth_lab
+#: model:oeh.medical.sample.types,name:oehealth_lab.oesamplet35
+msgid "Vaginal Fluid"
+msgstr "Fluido Vaginal"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_lab_details_form
+msgid "View All"
+msgstr "Ver Todos"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_request_form
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.oeh_medical_lab_test_form
+msgid "View Invoice"
+msgstr "Ver Factura"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis4
+msgid "Viscosity"
+msgstr "Viscosidad"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_semenanalysis2
+msgid "Volume"
+msgstr "Volumen"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_completebloodcount8
+msgid "WBC"
+msgstr "Leucocitos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,name:oehealth_lab.lab_test_criteria_peripheralsmearexamination1
+msgid "WBCs"
+msgstr "Leucocitos"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,field_description:oehealth_lab.field_oeh_medical_lab_test__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del Sitio Web"
+
+#. module: oehealth_lab
+#: model:ir.model.fields,help:oehealth_lab.field_oeh_medical_lab_test__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicación del sitio web"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_stoolexamination2
+msgid "Well Formed"
+msgstr "Bien Formado"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_endocrinology3
+msgid ""
+"Women, non pregnant : 1.2 - 19.5\n"
+"                Postmenopausal  : 1.5 - 18.5"
+msgstr ""
+"Mujeres no embarazadas : 1.2 - 19.5\n"
+"                Postmenopausia  : 1.5 - 18.5"
+
+#. module: oehealth_lab
+#: model:oeh.medical.labtest.criteria,normal_range:oehealth_lab.lab_test_criteria_urineanalysis1
+msgid "Yellow"
+msgstr "Amarillo"
+
+#. module: oehealth_lab
+#. odoo-python
+#: code:addons/oehealth_lab/models/oeh_medical_lab.py:0
+#, python-format
+msgid "You can not delete a lab test which is not in \"Draft\" state !!"
+msgstr "¡No puede eliminar una prueba de laboratorio que no esté en estado \"Borrador\"!"
+
+#. module: oehealth_lab
+#: model_terms:ir.ui.view,arch_db:oehealth_lab.patient_manage_lab_requests
+msgid "close"
+msgstr "cerrar"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_fl0
+msgid "fl"
+msgstr "fl"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_gmdl0
+msgid "g/dL"
+msgstr "g/dL"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_miul0
+msgid "mIU/l"
+msgstr "mIU/l"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_ml0
+msgid "mL"
+msgstr "mL"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_mgdl0
+msgid "mg/dl"
+msgstr "mg/dl"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_minutes0
+msgid "minutes"
+msgstr "minutos"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_mmhr0
+msgid "mm/hr"
+msgstr "mm/hr"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_ngml0
+msgid "ng/ml"
+msgstr "ng/ml"
+
+#. module: oehealth_lab
+#: model:oeh.medical.lab.units,name:oehealth_lab.lab_units_pg0
+msgid "pg"
+msgstr "pg"

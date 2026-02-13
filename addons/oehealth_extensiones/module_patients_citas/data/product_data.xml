@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        
+        <!-- Crear producto de Consulta Médica con código -->
+        <record id="product_consulta_medica" model="product.template">
+            <field name="name">Consulta Médica</field>
+            <field name="type">service</field>
+            <field name="list_price">0.0</field>
+            <field name="default_code">CONSULT-001</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+
+    </data>
+</odoo>

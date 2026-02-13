@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="oeh_medical_appointment_view_time_extend" model="ir.ui.view">
+            <field name="name">Appointment - Time Extend</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_appointment_view"/>
+            <field name="arch" type="xml">
+
+                <!-- AGREGAR SOLO Hora Final después de appointment_date -->
+                <xpath expr="//field[@name='appointment_date']" position="after">
+                    <!-- Hora de Final con Datetime (NUEVO NOMBRE) -->
+                    <field name="appointment_final_datetime" 
+                           string="⏰ Hora de Final" 
+                           widget="datetime"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

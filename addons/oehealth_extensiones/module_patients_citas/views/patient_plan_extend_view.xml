@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Herencia: Extender vista del paciente-->
+        <record id="oeh_medical_patient_view_plan_extend" model="ir.ui.view">
+            <field name="name">Patient - Plan Extend</field>
+            <field name="model">oeh.medical.patient</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_patient_view"/>
+            <field name="arch" type="xml">
+
+                <!-- Agregar campo de plan después del título -->
+                <xpath expr="//div[@class='oe_title']" position="after">
+                    <group>
+                        <group>
+                            <field name="service_plan" widget="radio" 
+                                   options="{'horizontal': True}"
+                                   colspan="2"/>
+                        </group>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>    
+    </data>
+</odoo>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        
+    
+        <!-- SEARCH/FILTER VIEW - DEFINED FIRST (referenced by actions below) -->
+        <record id="view_oeh_medical_appointment_filter_custom" model="ir.ui.view">
+            <field name="name">oeh.medical.appointment.filter.custom</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.view_oeh_medical_appointment_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="appointment_date" string="Fecha de Cita"/>
+                    <field name="appointment_type" string="Tipo de Cita"/>
+                    <field name="product_id" string="Servicio (Código)"/>
+                </xpath>
+
+                <xpath expr="//filter[@name='group_patient']" position="before">
+
+                    <separator/>
+                    <filter string="Hoy" name="filter_today" 
+                            domain="[('appointment_date', '&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0))), ('appointment_date', '&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59)))]"/>
+                    <filter string="Esta Semana" name="filter_this_week" 
+                            domain="[('appointment_date', '&gt;=', (context_today() + relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d')), ('appointment_date', '&lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Este Mes" name="filter_this_month" 
+                            domain="[('appointment_date', '&gt;=', context_today().strftime('%Y-%m-01'))]"/>
+                    <filter string="Este Año" name="filter_this_year" 
+                            domain="[('appointment_date', '&gt;=', context_today().strftime('%Y-01-01'))]"/>
+                    <separator/>
+                    
+                </xpath>
+            </field>
+        </record>
+
+        <!-- FORM VIEW -->
+        <record id="oeh_medical_appointment_custom_form" model="ir.ui.view">
+            <field name="name">Custom Appointment Form Extended</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_appointment_view"/>
+            <field name="arch" type="xml">
+                
+                <!-- Hacer el campo name readonly y mostrar "Nueva cita" por defecto -->
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="readonly">1</attribute>
+                    <attribute name="force_save">1</attribute>
+                    <attribute name="placeholder">Cita nueva</attribute>
+                </xpath>
+                
+                <!-- Reemplazar Patient Status por Tipo de Cita -->
+                <xpath expr="//field[@name='patient_status']" position="replace">
+                    <field name="appointment_type" widget="selection" 
+                           string="Tipo de Cita"
+                           required="True"/>
+                    <field name="parent_appointment_id" invisible="not parent_appointment_id" 
+                           options="{'no_create': True, 'no_open': False}"
+                           class="text-primary fw-bold"/>
+                </xpath>
+                
+                <xpath expr="//field[@name='state']" position="replace">
+                    <field name="state" widget="statusbar" 
+                        statusbar_visible="Scheduled,Completed,Reprogramada,Sin Asistir,Invoiced"
+                        />
+                </xpath>
+                
+                <!-- Mantener los botones originales de oeHealth -->
+                <xpath expr="//button[@name='set_to_completed']" position="attributes">
+                    <attribute name="string">✓ Marcar como Realizado</attribute>
+                    <attribute name="invisible">state != 'Scheduled' or not id</attribute>
+                    <attribute name="groups">base.group_system,oehealth.group_oeh_medical_physician,module_roles_oehealth.group_oeh_medical_receptionist,oehealth.group_oeh_medical_manager</attribute>
+                </xpath>
+                
+                <xpath expr="//button[@name='set_to_invoiced']" position="attributes">
+                    <attribute name="string">💳 Facturar</attribute>
+                    <attribute name="invisible">state not in ['Completed'] or not id </attribute>
+                    <attribute name="groups">base.group_system,oehealth.group_oeh_medical_physician,module_roles_oehealth.group_oeh_medical_receptionist,oehealth.group_oeh_medical_manager</attribute>
+                    <attribute name="confirm">¿Crear cotización y proceder a facturación?</attribute>
+                </xpath>
+                
+                <!-- Agregar nuevos botones personalizados -->
+                <xpath expr="//button[@name='set_to_invoiced']" position="after">
+                    <button name="action_mark_sin_asistir" type="object" 
+                            string="✗ Sin Asistir" 
+                            class="oe_highlight"
+                            invisible="state != 'Scheduled' or not id"
+                            groups="base.group_system,oehealth.group_oeh_medical_physician,module_roles_oehealth.group_oeh_medical_receptionist,oehealth.group_oeh_medical_manager"/>
+                    
+                    <button name="action_reprogramar" type="object" 
+                            string="↻ Reprogramar" 
+                            invisible="state == 'Invoiced' or not id"
+                            groups="base.group_system,oehealth.group_oeh_medical_physician,module_roles_oehealth.group_oeh_medical_receptionist,oehealth.group_oeh_medical_manager"/>
+                </xpath>
+                
+                <!-- Agregar campo de estado de factura en el formulario -->
+                <xpath expr="//field[@name='move_id']" position="attributes">
+                    <attribute name="readonly">1</attribute>
+                    <attribute name="widget">many2one</attribute>
+                </xpath>
+                <xpath expr="//field[@name='move_id']" position="after">
+                    <field name="invoice_status" readonly="1" 
+                           string="Estado de la Factura"
+                           widget="badge"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- TREE VIEW (LISTA) -->
+        <record id="oeh_medical_appointment_custom_tree" model="ir.ui.view">
+            <field name="name">Custom Appointment Tree Extended</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_appointment_tree"/>
+            <field name="arch" type="xml">
+                
+                <!-- Reemplazar patient_status por appointment_type en la lista -->
+                <xpath expr="//field[@name='patient_status']" position="replace">
+                    <field name="appointment_type" string="Tipo de Cita"/>
+                </xpath>
+
+                <!-- Agregar columna "Estado de la Factura" con campo computado -->
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="invoice_status" string="Estado de la Factura"/>
+                </xpath>
+                
+                <!-- Colores para los estados en la Lista -->
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="decoration-info">state == 'Scheduled'</attribute>
+                    <attribute name="decoration-success">state == 'Completed'</attribute>
+                    <attribute name="decoration-warning">state == 'Reprogramada'</attribute>
+                    <attribute name="decoration-danger">state == 'Sin Asistir'</attribute>
+                    <attribute name="decoration-muted">state == 'Invoiced'</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- CALENDAR VIEW -->
+        <record id="oeh_medical_appointment_custom_calendar" model="ir.ui.view">
+            <field name="name">Custom Appointment Calendar Extended</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.view_oeh_medical_event_calendar"/>
+            <field name="arch" type="xml">
+                <xpath expr="//calendar" position="attributes">
+                    <attribute name="color">color</attribute>
+                </xpath>
+                <xpath expr="//calendar" position="inside">
+                    <field name="state" filters="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- GRAPH VIEW - BAR CHART (Análisis de Asistencia) -->
+        <record id="view_oeh_medical_appointment_graph_custom" model="ir.ui.view">
+            <field name="name">oeh.medical.appointment.graph.custom</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="arch" type="xml">
+                <graph string="Análisis de Citas" type="bar">
+                    <field name="state" type="row"/>
+                    <field name="appointment_date" interval="day"/> 
+                </graph>
+            </field>
+        </record>
+
+        <!-- GRAPH VIEW - PIE CHART (Demanda por Tipo de Cita) -->
+        <record id="view_oeh_medical_appointment_graph_demand" model="ir.ui.view">
+            <field name="name">oeh.medical.appointment.graph.demand</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="arch" type="xml">
+                <graph string="Demanda por Tipo de Cita" type="pie">
+                    <field name="appointment_type" type="row"/>
+                    <field name="id" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+        <!-- ACTIONS (REPORTES) -->
+        
+        <!-- Reporte de Asistencia (Barras) -->
+        <record id="action_appointment_analytics_graph" model="ir.actions.act_window">
+            <field name="name">Reporte de Asistencia</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">graph,tree</field>
+            <field name="view_id" ref="view_oeh_medical_appointment_graph_custom"/>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+            <field name="context">{'search_default_filter_this_month': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No hay datos estadísticos para mostrar.</p>
+            </field>
+        </record>
+
+        <!-- Reporte de Demanda (Pastel) -->
+        <record id="action_appointment_demand_graph" model="ir.actions.act_window">
+            <field name="name">Reporte por Tipo de Cita</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">graph,tree</field>
+            <field name="view_id" ref="view_oeh_medical_appointment_graph_demand"/>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+            <field name="domain">[('state', '!=', 'Sin Asistir')]</field>
+            <field name="context">{'search_default_filter_this_month': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No hay datos de demanda para mostrar.</p>
+            </field>
+        </record>
+
+
+        <!-- MENUS -->
+
+
+
+        <!-- ACCIONES FILTRADAS POR TIPO DE CITA -->
+        <record id="action_appointment_medicion" model="ir.actions.act_window">
+            <field name="name">Citas - Medición</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="domain">[('appointment_type', '=', 'Medición')]</field>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+        </record>
+
+
+        <record id="action_appointment_control" model="ir.actions.act_window">
+            <field name="name">Citas - Control</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="domain">[('appointment_type', '=', 'Control')]</field>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+        </record>
+
+        <record id="action_appointment_control_medicion" model="ir.actions.act_window">
+            <field name="name">Citas - Control Medición</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="domain">[('appointment_type', '=', 'Control Medición')]</field>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+        </record>
+
+        <record id="action_appointment_suero" model="ir.actions.act_window">
+            <field name="name">Citas - Suero</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="domain">[('appointment_type', '=', 'Suero')]</field>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+        </record>
+
+        <record id="action_appointment_inyectable" model="ir.actions.act_window">
+            <field name="name">Cita - Inyectable</field>
+            <field name="res_model">oeh.medical.appointment</field>
+            <field name="view_mode">calendar,tree,form</field>
+            <field name="domain">[('appointment_type', '=', 'Inyectable')]</field>
+            <field name="search_view_id" ref="view_oeh_medical_appointment_filter_custom"/>
+        </record>
+
+        <!-- MENUS -->
+        
+        <!-- Nuevo Menú Padre: Citas general -->
+        <menuitem 
+            id="menu_medical_appointments_group" 
+            name="Citas general" 
+            parent="oehealth.oeh_medical_general_menu" 
+            sequence="1"/>
+
+        <!-- Mover el menú original de Appointments de oeHealth dentro de nuestro nuevo grupo y renombrarlo -->
+        <menuitem id="oehealth.oeh_medical_appointment_list" name="Citas" parent="menu_medical_appointments_group" sequence="10"/>
+        
+        <!-- Menús por tipo de cita -->
+        <menuitem id="menu_appointment_medicion" name="Citas - Medición" parent="menu_medical_appointments_group" action="action_appointment_medicion" sequence="20"/>
+        <menuitem id="menu_appointment_control" name="Citas - Control" parent="menu_medical_appointments_group" action="action_appointment_control" sequence="30"/>
+        <menuitem id="menu_appointment_control_medicion" name="Citas - Control Medición" parent="menu_medical_appointments_group" action="action_appointment_control_medicion" sequence="40"/>
+        <menuitem id="menu_appointment_suero" name="Citas - Suero" parent="menu_medical_appointments_group" action="action_appointment_suero" sequence="50"/>
+        <menuitem id="menu_appointment_inyectable" name="Cita - Inyectable" parent="menu_medical_appointments_group" action="action_appointment_inyectable" sequence="60"/>
+        
+        <!-- Reportes movidos al nuevo grupo -->
+        <menuitem 
+            id="menu_appointment_analytics_report" 
+            name="Reporte de Asistencia" 
+            parent="menu_medical_appointments_group" 
+            action="action_appointment_analytics_graph"
+            sequence="90"
+            groups="base.group_system,oehealth.group_oeh_medical_physician,oehealth.group_oeh_medical_manager,module_roles_oehealth.group_oeh_medical_receptionist"/>
+
+        <menuitem 
+            id="menu_appointment_demand_report" 
+            name="Reporte por Tipo de Cita" 
+            parent="menu_medical_appointments_group" 
+            action="action_appointment_demand_graph"
+            sequence="91"
+            groups="base.group_system,oehealth.group_oeh_medical_physician,oehealth.group_oeh_medical_manager,module_roles_oehealth.group_oeh_medical_receptionist"/>
+
+        <!-- ============================================ -->
+        <!-- PACIENTES CONTROL - MODAL DE SERVICIOS -->
+        <!-- ============================================ -->
+
+        <!-- Window Action para abrir el Wizard -->
+        <record id="action_patient_control_service_wizard" model="ir.actions.act_window">
+            <field name="name">Pacientes Control</field>
+            <field name="res_model">patient.control.service.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu Item - Pacientes Control -->
+        <menuitem 
+            name="Pacientes Control" 
+            id="menu_oeh_medical_patient_control" 
+            parent="oehealth.oeh_medical_menu" 
+            action="action_patient_control_service_wizard"
+            sequence="15"
+            groups="base.group_system,oehealth.group_oeh_medical_physician,oehealth.group_oeh_medical_manager"/>
+    </data>
+</odoo>

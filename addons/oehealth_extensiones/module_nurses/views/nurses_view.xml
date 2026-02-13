@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Heredar Kanban de Médicos para mostrar el contador -->
+        <record id="view_oeh_medical_physician_kanban_inherit_nurses" model="ir.ui.view">
+            <field name="name">oeh.medical.physician.kanban.inherit.nurses</field>
+            <field name="model">oeh.medical.physician</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_staff_kanban_view"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//div[hasclass('oeh_medical_details')]//ul" position="inside">
+                    <li>
+                        <span class="text-muted">Atendidos: </span>
+                        <field name="appointment_count"/>
+                    </li>
+                 </xpath>
+            </field>
+        </record>
+
+        <!-- Heredar Tree de Médicos para mostrar columna -->
+        <record id="view_oeh_medical_physician_tree_inherit_nurses" model="ir.ui.view">
+            <field name="name">oeh.medical.physician.tree.inherit.nurses</field>
+            <field name="model">oeh.medical.physician</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_medical_staff_tree"/>
+            <field name="arch" type="xml">
+                <field name="speciality" position="after">
+                    <field name="appointment_count"/>
+                </field>
+            </field>
+        </record>
+        
+        <!-- Smart Button en formulario -->
+        <record id="view_oeh_medical_physician_form_inherit_nurses_stats" model="ir.ui.view">
+             <field name="name">oeh.medical.physician.form.inherit.nurses.stats</field>
+             <field name="model">oeh.medical.physician</field>
+             <field name="inherit_id" ref="oehealth.oeh_medical_staff_view"/>
+             <field name="arch" type="xml">
+                 <div class="oe_button_box" position="inside">
+                    <button class="oe_stat_button" type="object" name="action_view_appointments_report"
+                        icon="fa-user-md">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_value"><field name="appointment_count"/></span>
+                            <span class="o_stat_text">Pacientes</span>
+                        </div>
+                    </button>
+                 </div>
+             </field>
+        </record>
+
+        <!-- VISTA DE CITA MÉDICA HEREDADA -->
+        <record id="view_oeh_medical_appointment_form_inherit_nurses" model="ir.ui.view">
+            <field name="name">oeh.medical.appointment.form.inherit.nurses</field>
+            <field name="model">oeh.medical.appointment</field>
+            <field name="inherit_id" ref="oehealth.oeh_medical_appointment_view"/> 
+            <field name="arch" type="xml">
+                
+                <!-- Botón "Iniciar Colocación" -->
+                <header position="inside">
+                    <!-- Asumiento que el original usa 'Scheduled' como estado programado -->
+                    <button name="action_start_process" string="Iniciar Colocación" 
+                            type="object" class="oe_highlight" 
+                            invisible="state != 'Scheduled'"/> 
+                </header>
+
+                <!-- Campo Estación -->
+                <field name="doctor" position="after">
+                    <field name="station_id" readonly="state in ['in_process','Completed']"/>
+                </field>
+
+                <!-- Pestaña de Consumo -->
+                <notebook position="inside">
+                    <page string="Consumo de Insumos">
+                        <field name="consumable_line_ids">
+                            <tree editable="bottom">
+                                <field name="product_id"/>
+                                <field name="qty"/>
+                                <field name="notes"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+
+            </field>
+        </record>
+
+
+    <!-- VISTAS PARA ESTACIONES (Para poder crearlas) -->
+        <record id="view_oeh_medical_station_tree" model="ir.ui.view">
+            <field name="name">oeh.medical.station.tree</field>
+            <field name="model">oeh.medical.station</field>
+            <field name="arch" type="xml">
+                <tree string="Estaciones de Enfermería">
+                    <field name="name"/>
+                    <field name="stock_location_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_oeh_medical_station_form" model="ir.ui.view">
+            <field name="name">oeh.medical.station.form</field>
+            <field name="model">oeh.medical.station</field>
+            <field name="arch" type="xml">
+                <form string="Estación de Enfermería">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="stock_location_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_oeh_medical_station" model="ir.actions.act_window">
+            <field name="name">Estaciones de Enfermería</field>
+            <field name="res_model">oeh.medical.station</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menuitem: Colocarlo bajo Configuración de oeHealth -->
+        <menuitem id="menu_oeh_medical_station" 
+                  name="Estaciones de Enfermería" 
+                  parent="oehealth.oeh_medical_conf_menu" 
+                  action="action_oeh_medical_station" 
+                  sequence="50"/>
+
+    </data>
+</odoo>
+

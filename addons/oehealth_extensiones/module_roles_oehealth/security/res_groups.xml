@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Recepción / Admisión -->
+    <record id="group_oeh_medical_receptionist" model="res.groups">
+        <field name="name">Recepción / Admisión</field>
+        <field name="category_id" ref="oehealth.module_oeh_medical_category"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user')), (4, ref('oehealth.group_oeh_medical_manager'))]"/>
+    </record>
+
+    <!-- Farmacia / Almacén -->
+    <record id="group_oeh_medical_pharmacist" model="res.groups">
+        <field name="name">Farmacia / Almacén</field>
+        <field name="category_id" ref="oehealth.module_oeh_medical_category"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- RENOMBRAR rol existente de oeHealth -->
+    <record id="oehealth.group_oeh_medical_physician" model="res.groups">
+        <field name="name">Médico</field>
+    </record>
+
+    <!-- RENOMBRAR o DESACTIVAR el rol de Técnico de Laboratorio -->
+
+
+    <!-- RENOMBRAR Enfermera -->
+    <record id="oehealth.group_oeh_medical_nurse" model="res.groups">
+        <field name="name">Enfermera</field>
+    </record>
+
+
+    <!-- RENOMBRAR Administrador del Centro -->
+    <record id="oehealth.group_oeh_medical_manager" model="res.groups">
+        <field name="name">Administrador del Centro de Salud</field>
+    </record>
+
+</odoo>

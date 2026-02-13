@@ -1,0 +1,2603 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oehealth_patient_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-15 13:23+0000\n"
+"PO-Revision-Date: 2026-01-15 13:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_doctor_detail_form
+msgid "#{patient.name}"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "%s is not the reference of a report"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/health/patient/call-log/%s/edit"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/health/patient/hospital/%s/edit"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/patient/portal/%s/medical-certificate/%s/edit"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/patient/portal/%s/medical-certificate/add"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/patient/portal/appointment/%s/edit"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "/patient/portal/family/%s/edit"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model:mail.template,body_html:oehealth_patient_portal.oeh_email_template_patient_portal
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Dear, <t t-out=\"object.name or ''\">,</t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Paitent ID : <t t-out=\"object.identification_code or 'n/a'\">,</t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Password : <t t-esc=\"request.env.company.patient_account_password\"></t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Please Access your Patient Portal URL By Clicking On Following Button:\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Do not hesitate to contact us if you have any questions.\n"
+"                    <div style=\"margin: 32px 0px 32px 0px; text-align: center;\">\n"
+"                       <a t-att-href=\"object.patient_url or '#'\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                            Access Now\n"
+"                        </a>\n"
+"                    </div>\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Estimado/a, <t t-out=\"object.name or ''\">,</t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    ID de Paciente : <t t-out=\"object.identification_code or 'n/a'\">,</t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Contraseña : <t t-esc=\"request.env.company.patient_account_password\"></t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Por favor, acceda a la URL de su Portal del Paciente haciendo clic en el siguiente botón:\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    No dude en contactarnos si tiene alguna pregunta.\n"
+"                    <div style=\"margin: 32px 0px 32px 0px; text-align: center;\">\n"
+"                       <a t-att-href=\"object.patient_url or '#'\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">\n"
+"                            Acceder Ahora\n"
+"                        </a>\n"
+"                    </div>\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<i class=\"fa fa-calendar padding_patient\"/>Appointments"
+msgstr "<i class=\"fa fa-calendar padding_patient\"/>Citas"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<i class=\"fa fa-certificate padding_patient\"/>Medical Certificates"
+msgstr "<i class=\"fa fa-certificate padding_patient\"/>Certificados Médicos"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "<i class=\"fa fa-home\" role=\"img\" aria-label=\"My Account\" title=\"My Account\"/>"
+msgstr "<i class=\"fa fa-home\" role=\"img\" aria-label=\"Mi Cuenta\" title=\"Mi Cuenta\"/>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<i class=\"fa fa-info-circle padding_patient\"/>Emergency Contact"
+msgstr "<i class=\"fa fa-info-circle padding_patient\"/>Contacto de Emergencia"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<i class=\"fa fa-info-circle padding_patient\"/>Patient Information"
+msgstr "<i class=\"fa fa-info-circle padding_patient\"/>Información del Paciente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/> &amp;nbsp;\n"
+"                                        <span>List out of all your medical certificates.</span>"
+msgstr ""
+"<i class=\"fa fa-info-circle\"/> &amp;nbsp;\n"
+"                                        <span>Lista de todos sus certificados médicos.</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                                        <span>List out of all your current, future and past appointments.</span>"
+msgstr ""
+"<i class=\"fa fa-plus-circle\"/> &amp;nbsp;\n"
+"                                        <span>Lista de todas sus citas actuales, futuras y pasadas.</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+msgid ""
+"<select class=\"form-control\" name=\"health_center_type\" id=\"health_center_type\" required=\"\">\n"
+"                                                         <option value=\"Hospital\">Hospital</option>\n"
+"                                                        <option value=\"Multi-speciality Hospital\">Multi-speciality Hospital</option>\n"
+"                                                        <option value=\"Nursing Home\">Nursing Home</option>\n"
+"                                                        <option value=\"Clinic\">Clinic</option>\n"
+"                                                        <option value=\"Community Health Center\">Community Health Center</option>\n"
+"                                                        <option value=\"Military Medical Facility\">Military Medical Facility</option>\n"
+"                                                        <option value=\"Other\">Other</option>\n"
+"                                                    </select>"
+msgstr ""
+"<select class=\"form-control\" name=\"health_center_type\" id=\"health_center_type\" required=\"\">\n"
+"                                                         <option value=\"Hospital\">Hospital</option>\n"
+"                                                        <option value=\"Multi-speciality Hospital\">Hospital Multiespecialidad</option>\n"
+"                                                        <option value=\"Nursing Home\">Hogar de Ancianos</option>\n"
+"                                                        <option value=\"Clinic\">Clínica</option>\n"
+"                                                        <option value=\"Community Health Center\">Centro de Salud Comunitario</option>\n"
+"                                                        <option value=\"Military Medical Facility\">Instalación Médica Militar</option>\n"
+"                                                        <option value=\"Other\">Otro</option>\n"
+"                                                    </select>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+msgid ""
+"<select class=\"form-control\" name=\"relation\" id=\"relation\">\n"
+"                    <option value=\"Father\">Father</option>\n"
+"                    <option value=\"Mother\">Mother</option>\n"
+"                    <option value=\"Brother\">Brother</option>\n"
+"                    <option value=\"Sister\">Sister</option>\n"
+"                    <option value=\"Wife\">Wife</option>\n"
+"                    <option value=\"Husband\">Husband</option>\n"
+"                    <option value=\"Grand Father\">Grand Father</option>\n"
+"                    <option value=\"Grand Mother\">Grand Mother</option>\n"
+"                    <option value=\"Aunt\">Aunt</option>\n"
+"                    <option value=\"Uncle\">Uncle</option>\n"
+"                    <option value=\"Nephew\">Nephew</option>\n"
+"                    <option value=\"Niece\">Niece</option>\n"
+"                    <option value=\"Cousin\">Cousin</option>\n"
+"                    <option value=\"Relative\">Relative</option>\n"
+"                    <option value=\"Other\">Other</option>\n"
+"                </select>"
+msgstr ""
+"<select class=\"form-control\" name=\"relation\" id=\"relation\">\n"
+"                    <option value=\"Father\">Padre</option>\n"
+"                    <option value=\"Mother\">Madre</option>\n"
+"                    <option value=\"Brother\">Hermano</option>\n"
+"                    <option value=\"Sister\">Hermana</option>\n"
+"                    <option value=\"Wife\">Esposa</option>\n"
+"                    <option value=\"Husband\">Esposo</option>\n"
+"                    <option value=\"Grand Father\">Abuelo</option>\n"
+"                    <option value=\"Grand Mother\">Abuela</option>\n"
+"                    <option value=\"Aunt\">Tía</option>\n"
+"                    <option value=\"Uncle\">Tío</option>\n"
+"                    <option value=\"Nephew\">Sobrino</option>\n"
+"                    <option value=\"Niece\">Sobrina</option>\n"
+"                    <option value=\"Cousin\">Primo/a</option>\n"
+"                    <option value=\"Relative\">Familiar</option>\n"
+"                    <option value=\"Other\">Otro</option>\n"
+"                </select>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Scheduled\" title=\"Scheduled\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Scheduled</span>\n"
+"                                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                            <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Programada\" title=\"Programada\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Programada</span>\n"
+"                                                        </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Scheduled\" title=\"Scheduled\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Scheduled</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-info\">\n"
+"                                                <i class=\"fa fa-fw fa-clock-o\" aria-label=\"Programada\" title=\"Programada\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Programada</span>\n"
+"                                            </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Invoiced\" title=\"Invoiced\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Invoiced</span>\n"
+"                                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Facturada\" title=\"Facturada\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Facturada</span>\n"
+"                                                        </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Invoiced\" title=\"Invoiced\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Invoiced</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-light\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Facturada\" title=\"Facturada\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Facturada</span>\n"
+"                                            </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Completed\" title=\"Completed\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Completed</span>\n"
+"                                                        </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                            <i class=\"fa fa-fw fa-check\" aria-label=\"Completada\" title=\"Completada\" role=\"img\"/>\n"
+"                                                            <span class=\"d-none d-md-inline\">Completada</span>\n"
+"                                                        </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Completed\" title=\"Completed\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Completed</span>\n"
+"                                            </span>"
+msgstr ""
+"<span class=\"badge badge-pill badge-success\">\n"
+"                                                <i class=\"fa fa-fw fa-check\" aria-label=\"Completada\" title=\"Completada\" role=\"img\"/>\n"
+"                                                <span class=\"d-none d-md-inline\">Completada</span>\n"
+"                                            </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"fa fa-print\"/>\n"
+"                                            <span>Patient Card</span>"
+msgstr ""
+"<span class=\"fa fa-print\"/>\n"
+"                                            <span>Carnet de Paciente</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"font-weight-bold\">Address:</span>"
+msgstr "<span class=\"font-weight-bold\">Dirección:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"font-weight-bold\">Name:</span>"
+msgstr "<span class=\"font-weight-bold\">Nombre:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"font-weight-bold\">Phone:</span>"
+msgstr "<span class=\"font-weight-bold\">Teléfono:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"font-weight-bold\">Relation:</span>"
+msgstr "<span class=\"font-weight-bold\">Relación:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid ""
+"<span class=\"input-group-text\" style=\"background-color: #D3D3D3;color: black;\">:\n"
+"                                                </span>"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"label_color font-weight-bold\">Date &amp; Time:\n"
+"                                                        </span>"
+msgstr ""
+"<span class=\"label_color font-weight-bold\">Fecha &amp; Hora:\n"
+"                                                        </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">Doctor:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Médico:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">Health Center:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Centro de Salud:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">Issue Date:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Fecha de Emisión:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">No of Days:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Número de Días:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid ""
+"<span class=\"label_color font-weight-bold\">Patient Status:\n"
+"                                                        </span>"
+msgstr ""
+"<span class=\"label_color font-weight-bold\">Estado del Paciente:\n"
+"                                                        </span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">Priority:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Prioridad:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "<span class=\"label_color font-weight-bold\">Remarks:</span>"
+msgstr "<span class=\"label_color font-weight-bold\">Observaciones:</span>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "<strong>Patient Registration</strong>"
+msgstr "<strong>Registro de Paciente</strong>"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "AB"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid ""
+"Abdominal\n"
+"                                    Distension:"
+msgstr ""
+"Distensión\n"
+"                                    Abdominal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Abdominal Circumference:"
+msgstr "Circunferencia Abdominal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Abdominal Pain:"
+msgstr "Dolor Abdominal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Abstraction:"
+msgstr "Abstracción:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Acropachy:"
+msgstr "Acropaquia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Action"
+msgstr "Acción"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Add"
+msgstr "Agregar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Add Family Member"
+msgstr "Agregar Familiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+msgid "Add Hospital"
+msgstr "Agregar Hospital"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "Add Medical Certificates"
+msgstr "Agregar Certificados Médicos"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "Add Your Emergency Contact Details."
+msgstr "Agregue sus Datos de Contacto de Emergencia."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Address:"
+msgstr "Dirección:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Advice:"
+msgstr "Consejo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Age"
+msgstr "Edad"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age Quit Drinking:"
+msgstr "Edad al Dejar de Beber:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age Quit Drugs :"
+msgstr "Edad al Dejar las Drogas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age Started Drugs :"
+msgstr "Edad al Iniciar Drogas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age Started to Drink :"
+msgstr "Edad al Iniciar a Beber:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age Started to Smoke:"
+msgstr "Edad al Iniciar a Fumar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid ""
+"Age first Sexual\n"
+"                                            Encounter:"
+msgstr ""
+"Edad Primer Encuentro\n"
+"                                            Sexual:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Age of Quitting:"
+msgstr "Edad al Dejar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_doctor_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Age:"
+msgstr "Edad:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Alopecia:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Ambulatory"
+msgstr "Ambulatorio"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Anal Sex:"
+msgstr "Sexo Anal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Anorexia:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "Another user is already registered using this email address."
+msgstr "Otro usuario ya se encuentra registrado con esta dirección de correo electrónico."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Anthropometry"
+msgstr "Antropometría"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Anticonceptive Method:"
+msgstr "Método Anticonceptivo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Appointment #"
+msgstr "Cita #"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Appointment #:"
+msgstr "Cita #:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Appointment Detail"
+msgstr "Detalle de la Cita"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Appointments"
+msgstr "Citas"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_profile_form
+msgid "Are you sure?"
+msgstr "¿Está seguro?"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Arritmias:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Arthralgia:"
+msgstr "Artralgia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Ascites:"
+msgstr "Ascitis:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Aspirin:"
+msgstr "Aspirina:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Astenia:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Aunt"
+msgstr "Tía"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "Authentication Failed."
+msgstr "Autenticación fallida."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Back"
+msgstr "Atrás"
+
+#. module: oehealth_patient_portal
+#: model:ir.model.fields,field_description:oehealth_patient_portal.field_oeh_medical_patient__base_url
+msgid "Base URL"
+msgstr "URL Base"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Beer / day:"
+msgstr "Cerveza / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Bleeding PV:"
+msgstr "Hemorragia PV:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Blood Type:"
+msgstr "Tipo de Sangre:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Body Mass Index (BMI):"
+msgstr "Índice de Masa Corporal (IMC):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Breast Asymmetry:"
+msgstr "Asimetría Mamaria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Breast Lumps:"
+msgstr "Nódulos Mamarios:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Bronchophony:"
+msgstr "Broncofonía:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Brother"
+msgstr "Hermano"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+msgid "CREATE YOUR HEALTH CENTER"
+msgstr "CREA TU CENTRO DE SALUD"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "CREATE YOUR TEST CENTER"
+msgstr "CREA TU CENTRO DE PRUEBAS"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Calculation Ability:"
+msgstr "Habilidad de Cálculo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Car Child Safety:"
+msgstr "Seguridad Infantil en el Auto:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Car Revision:"
+msgstr "Revisión del Auto:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Cervical Pain:"
+msgstr "Dolor Cervical:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_profile_form
+msgid "Change"
+msgstr "Cambiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid ""
+"Chest Pain on\n"
+"                                    excercise only:"
+msgstr ""
+"Dolor Torácico solo con\n"
+"                                    ejercicio:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Chest Pain:"
+msgstr "Dolor Torácico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Chief Complaint"
+msgstr "Motivo Principal de Consulta"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Chief Complaint:"
+msgstr "Motivo Principal de Consulta:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Cigarretes a Day:"
+msgstr "Cigarros al Día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "City"
+msgstr "Ciudad"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "City..."
+msgstr "Ciudad..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Coffee:"
+msgstr "Café:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Cold:"
+msgstr "Resfriado:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Confirm Password"
+msgstr "Confirmar Contraseña"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.health_center_thankyou
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.test_center_thankyou
+msgid "Congratulations!"
+msgstr "¡Felicidades!"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.health_center_thankyou
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.test_center_thankyou
+msgid "Continue To Our Website"
+msgstr "Continuar a Nuestro Sitio Web"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Cough:"
+msgstr "Tos:"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "Could not create a new account."
+msgstr "No se pudo crear una nueva cuenta."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Country"
+msgstr "País"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Country..."
+msgstr "País..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Cousin"
+msgstr "Primo/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Cups / day:"
+msgstr "Tazas / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Currently on a Diet:"
+msgstr "Actualmente en Dieta:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Cyanosis:"
+msgstr "Cianosis:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "DM:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "DRUGS"
+msgstr "MEDICAMENTOS"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Date &amp; Time"
+msgstr "Fecha &amp; Hora"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Date &amp; Time:"
+msgstr "Fecha &amp; Hora:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Date of Birth"
+msgstr "Fecha de Nacimiento"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Date of Birth:"
+msgstr "Fecha de Nacimiento:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Date:"
+msgstr "Fecha:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "DateTime MC is issued:"
+msgstr "Fecha y Hora de Emisión del CM:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Deceased"
+msgstr "Fallecido"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Deceased:"
+msgstr "Fallecido:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Decreased Fremitus:"
+msgstr "Fremitus Disminuido:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Dehydration:"
+msgstr "Deshidratación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Description"
+msgstr "Descripción"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Description of Notice:"
+msgstr "Descripción del Aviso:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Diagnosis"
+msgstr "Diagnóstico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Diastolic Pressure:"
+msgstr "Presión Diastólica:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Diet Info:"
+msgstr "Información de Dieta:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Diet info"
+msgstr "Información de dieta"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Divorced"
+msgstr "Divorciado/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Doctor"
+msgstr "Médico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Doctor:"
+msgstr "Médico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Domestic violence:"
+msgstr "Violencia doméstica:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Drinking"
+msgstr "Consumo de Alcohol"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Drinks Alcohol:"
+msgstr "Consume Alcohol:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Drive and Home Safety"
+msgstr "Seguridad al Conducir y en el Hogar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Drug Habits:"
+msgstr "Hábitos de Drogas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Drug addiction:"
+msgstr "Adicción a drogas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Drugs"
+msgstr "Drogas"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Duration (HH:MM):"
+msgstr "Duración (HH:MM):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Dysmenorrhoea:"
+msgstr "Dismenorrea:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Dysphagia:"
+msgstr "Disfagia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Dysuria:"
+msgstr "Disuria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Ear Discharge:"
+msgstr "Secreción Auditiva:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Eats alone:"
+msgstr "Come solo/a:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Edema:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Edit Family Member"
+msgstr "Editar Familiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+msgid "Edit Hospital"
+msgstr "Editar Hospital"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "Edit Medical Certificates"
+msgstr "Editar Certificados Médicos"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Edit Patient Details"
+msgstr "Editar Detalles del Paciente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Education Level:"
+msgstr "Nivel de Educación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Electrical supply:"
+msgstr "Suministro eléctrico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Email:"
+msgstr "Correo Electrónico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Emergency Contact"
+msgstr "Contacto de Emergencia"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Emergency:"
+msgstr "Emergencia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "End Date:"
+msgstr "Fecha de Fin:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Epistaxis:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Erithema:"
+msgstr "Eritema:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Ethnic Group:"
+msgstr "Grupo Étnico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Evaluation #"
+msgstr "Evaluación #"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Evaluation Date"
+msgstr "Fecha de Evaluación"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Evaluation Date:"
+msgstr "Fecha de Evaluación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Evaluation End Date:"
+msgstr "Fecha de Fin de Evaluación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Evaluation Summary:"
+msgstr "Resumen de Evaluación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Evaluation Type"
+msgstr "Tipo de Evaluación"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Evaluation Type:"
+msgstr "Tipo de Evaluación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "Evaluations"
+msgstr "Evaluaciones"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Ex Alcoholic:"
+msgstr "Ex Alcohólico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Ex Drug Addict:"
+msgstr "Ex Adicto a Drogas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Ex-smoker:"
+msgstr "Ex-fumador:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Exercise:"
+msgstr "Ejercicio:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Extra Info"
+msgstr "Información Adicional"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Extra Information"
+msgstr "Información Adicional"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Family APGAR"
+msgstr "APGAR Familiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Family Doctor:"
+msgstr "Médico de Familia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Family Help:"
+msgstr "Ayuda Familiar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Family Members"
+msgstr "Miembros de la Familia"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Family affection:"
+msgstr "Afecto familiar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Family decision ability:"
+msgstr "Capacidad de decisión familiar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid ""
+"Family discussions on\n"
+"                                            problems:"
+msgstr ""
+"Discusiones familiares sobre\n"
+"                                            problemas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Family time sharing:"
+msgstr "Tiempo compartido en familia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Father"
+msgstr "Padre"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Female"
+msgstr "Femenino"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Gas supply:"
+msgstr "Suministro de gas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_doctor_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Gender:"
+msgstr "Género:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "General"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Get in touch"
+msgstr "Ponte en contacto"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Gingival Bleeding:"
+msgstr "Hemorragia Gingival:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Glucose"
+msgstr "Glucosa"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Glycated Hemoglobin:"
+msgstr "Hemoglobina Glicosilada:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Glycemia:"
+msgstr "Glucemia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Goiter:"
+msgstr "Bocio:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid ""
+"Grand\n"
+"                                                Father"
+msgstr "Abuelo"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid ""
+"Grand\n"
+"                                                Mother"
+msgstr "Abuela"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.oeh_medical_patient_grant_access_view
+msgid "Grant Portal Access"
+msgstr "Conceder Acceso al Portal"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Great companies are built with great people"
+msgstr "Las grandes empresas se construyen con grandes personas"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Gynecomastia:"
+msgstr "Ginecomastia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "HBV Infection:"
+msgstr "Infección por VHB:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "HH"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Has been in prison:"
+msgstr "Ha estado en prisión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Head Circumference:"
+msgstr "Circunferencia Cefálica:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Headache:"
+msgstr "Cefalea:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Health Center"
+msgstr "Centro de Salud"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+msgid "Health Center Type"
+msgstr "Tipo de Centro de Salud"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "Health Center:"
+msgstr "Centro de Salud:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Heart Extra Sounds:"
+msgstr "Ruidos Cardíacos Extras:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Heart Murmurs:"
+msgstr "Soplos Cardíacos:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Heart Rate:"
+msgstr "Frecuencia Cardíaca:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Height (cm):"
+msgstr "Estatura (cm):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hematemesis:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hematomas:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hemoptysis:"
+msgstr "Hemoptisis:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hoarseness:"
+msgstr "Ronquera:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Home Safety:"
+msgstr "Seguridad en el Hogar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+msgid "Hospital:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Hostile Area:"
+msgstr "Área Hostil:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Hours of Sleep:"
+msgstr "Horas de Sueño:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Hours stay outside home:"
+msgstr "Horas fuera de casa:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid ""
+"Housing\n"
+"                                            conditions:"
+msgstr ""
+"Condiciones de\n"
+"                                            vivienda:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Husband"
+msgstr "Esposo"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Hypertension:"
+msgstr "Hipertensión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hypertonia:"
+msgstr "Hipertonía:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Hypotonia:"
+msgstr "Hipotonia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "IHD:"
+msgstr "CI:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "IV Drug User:"
+msgstr "Usuario de Drogas IV:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.health_center_thankyou
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.test_center_thankyou
+msgid "In the meantime,"
+msgstr "Mientras tanto,"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Income (Monthly):"
+msgstr "Ingresos (Mensual):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Increased Fremitus:"
+msgstr "Fremitus Aumentado:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Indication:"
+msgstr "Indicación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Information on Diagnosis:"
+msgstr "Información sobre el Diagnóstico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Infrastructure"
+msgstr "Infraestructura"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Inpatient"
+msgstr "Paciente Interno"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Internet:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Is currently in prison:"
+msgstr "Actualmente está en prisión:"
+
+#. module: oehealth_patient_portal
+#: model:ir.model.fields,field_description:oehealth_patient_portal.field_oeh_medical_patient__is_portal_access
+msgid "Is having Portal Access?"
+msgstr "¿Tiene Acceso al Portal?"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Jaundice:"
+msgstr "Ictericia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Jugdment:"
+msgstr "Juicio:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid ""
+"Knowledge of Current\n"
+"                                    Events:"
+msgstr ""
+"Conocimiento de Eventos\n"
+"                                    Actuales:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "LMP:"
+msgstr "FUM:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Last Cholesterol:"
+msgstr "Último Colesterol:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Last HDL:"
+msgstr "Último HDL:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Last LDL:"
+msgstr "Último LDL:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Last PAP smear:"
+msgstr "Último Papanicolau:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Last TAGs:"
+msgstr "Últimos TAGs:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Laxative:"
+msgstr "Laxante:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Level of Consciousness - Eyes:"
+msgstr "Nivel de Conciencia - Ojos:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Level of Consciousness - Motor:"
+msgstr "Nivel de Conciencia - Motor:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Level of Consciousness - Verbal:"
+msgstr "Nivel de Conciencia - Verbal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Level of Consciousness:"
+msgstr "Nivel de Conciencia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "Life Style"
+msgstr "Estilo de Vida"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Linphadenitis:"
+msgstr "Linfadenitis:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Lipids"
+msgstr "Lípidos"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Liquor / day:"
+msgstr "Licor / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Logo"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.health_center_thankyou
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.test_center_thankyou
+msgid "Look around on our website:"
+msgstr "Explore nuestro sitio web:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Lumbar Pain:"
+msgstr "Dolor Lumbar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid ""
+"Lung Adventitious\n"
+"                                    sounds:"
+msgstr ""
+"Ruidos Adventicios\n"
+"                                    Pulmonares:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "MENSTRUAL HISTORY"
+msgstr "HISTORIAL MENSTRUAL"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "MM"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Male"
+msgstr "Masculino"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Malnutrition:"
+msgstr "Desnutrición:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Manage Medical History"
+msgstr "Gestionar Historial Médico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Marital Status:"
+msgstr "Estado Civil:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Married"
+msgstr "Casado/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Masses:"
+msgstr "Masas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Meals / day:"
+msgstr "Comidas / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Medical Emergency"
+msgstr "Emergencia Médica"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "Medical History"
+msgstr "Historial Médico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Memory:"
+msgstr "Memoria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Menorrhagia:"
+msgstr "Menorragia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Mental Assessment and Impairments"
+msgstr "Evaluación e Impedimentos Mentales"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Mental Status"
+msgstr "Estado Mental"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Minutes / day:"
+msgstr "Minutos / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Miosis:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Mobile:"
+msgstr "Móvil:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Mood:"
+msgstr "Estado de Ánimo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Mother"
+msgstr "Madre"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Motorcycle Rider:"
+msgstr "Conductor de Motocicleta:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Myalgia:"
+msgstr "Mialgia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Mydriasis:"
+msgstr "Midriasis:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Name"
+msgstr "Nombre"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Name:"
+msgstr "Nombre:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nausea:"
+msgstr "Náuseas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Nephew"
+msgstr "Sobrino"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Niece"
+msgstr "Sobrina"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nipple Discharge:"
+msgstr "Secreción por pezón:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nipple Inversion:"
+msgstr "Pezón invertido:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "No"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nocturia:"
+msgstr "Nicturia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Normal"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Nsaids:"
+msgstr "AINEs:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid ""
+"Number of Sexual\n"
+"                                            Partners:"
+msgstr ""
+"Número de Parejas\n"
+"                                            Sexuales:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nutrition"
+msgstr "Nutrición"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Nystagmus:"
+msgstr "Nistagmo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Obeys Traffic Laws:"
+msgstr "Obedece las Leyes de Tránsito:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Object Recognition:"
+msgstr "Reconocimiento de Objetos:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Occupation:"
+msgstr "Ocupación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Odynophagia:"
+msgstr "Odinofagia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Oral Sex:"
+msgstr "Sexo Oral:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Orientation:"
+msgstr "Orientación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid ""
+"Orthostatic\n"
+"                                    hypotension:"
+msgstr ""
+"Hipotensión\n"
+"                                    Ortostática:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Otalgia:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Other"
+msgstr "Otro"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Other Drugs:"
+msgstr "Otros Medicamentos:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Other Family Issues"
+msgstr "Otros Problemas Familiares"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Other Past Illness:"
+msgstr "Otras Enfermedades Previas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Outpatient"
+msgstr "Paciente Externo"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Oxygen Saturation:"
+msgstr "Saturación de Oxígeno:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "PAST MEDICAL ILL NESS"
+msgstr "ENFERMEDADES MÉDICAS PREVIAS"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pain"
+msgstr "Dolor"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pain intensity:"
+msgstr "Intensidad del dolor:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pain:"
+msgstr "Dolor:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Palpebral Ptosis:"
+msgstr "Ptosis Palpebral:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Passive Smoker:"
+msgstr "Fumador Pasivo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "Passwords do not match; please retype them."
+msgstr "Las contraseñas no coinciden; por favor vuelva a escribirlas."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Past"
+msgstr "Anteriores"
+
+#. module: oehealth_patient_portal
+#: model:ir.model,name:oehealth_patient_portal.model_oeh_medical_patient
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: oehealth_patient_portal
+#: model:mail.template,subject:oehealth_patient_portal.oeh_email_template_patient_portal
+msgid "Patient # : {{object.identification_code or 'n/a' }}"
+msgstr "Paciente # : {{object.identification_code or 'n/a' }}"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+msgid "Patient Date of Birth"
+msgstr "Fecha de Nacimiento del Paciente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Patient ID"
+msgstr "ID del Paciente"
+
+#. module: oehealth_patient_portal
+#: model:mail.template,name:oehealth_patient_portal.oeh_email_template_patient_portal
+msgid "Patient Portal: Send by email"
+msgstr "Portal del Paciente: Enviar por correo electrónico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Patient Sexuality Info"
+msgstr "Información sobre Sexualidad del Paciente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Patient Status"
+msgstr "Estado del Paciente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Patient Status:"
+msgstr "Estado del Paciente:"
+
+#. module: oehealth_patient_portal
+#: model:ir.model.fields,field_description:oehealth_patient_portal.field_oeh_medical_patient__patient_token
+msgid "Patient Token"
+msgstr "Token del Paciente"
+
+#. module: oehealth_patient_portal
+#: model:ir.model.fields,field_description:oehealth_patient_portal.field_oeh_medical_patient__patient_url
+msgid "Patient URL"
+msgstr "URL del Paciente"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "Patient verification failed !"
+msgstr "¡ La verificación del paciente falló !"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Patient:"
+msgstr "Paciente:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Peau d orange:"
+msgstr "Piel de naranja:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pelvic Pain:"
+msgstr "Dolor Pélvico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Person Name:"
+msgstr "Nombre de la Persona:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Personal Information"
+msgstr "Información Personal"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Petechiae:"
+msgstr "Petequias:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Physical Exercise"
+msgstr "Ejercicio Físico"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/models/oeh_patient_portal.py:0
+#, python-format
+msgid "Please enter correct email address !"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pollakiuiria:"
+msgstr "Polaquiuria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Polydipsia:"
+msgstr "Polidipsia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Polyphagia:"
+msgstr "Polifagia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Polyuria:"
+msgstr "Poliuria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Praxis:"
+msgstr "Praxia:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Pressure Ulcers:"
+msgstr "Úlceras por Presión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+msgid "Primary:"
+msgstr "Primario:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Priority:"
+msgstr "Prioridad:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Profession:"
+msgstr "Profesión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Prostitute:"
+msgstr "Prostitución:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Reason for requesting an opinion:"
+msgstr "Motivo para solicitar una opinión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "Reason:"
+msgstr "Motivo:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "Relation"
+msgstr "Relación"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Relation:"
+msgstr "Relación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Relative"
+msgstr "Familiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Relative in prison:"
+msgstr "Familiar en prisión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Remarks:"
+msgstr "Observaciones:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Respiratory Rate:"
+msgstr "Frecuencia Respiratoria:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.oeh_medical_patient_grant_access_view
+msgid "Revoke Portal Access"
+msgstr "Revocar Acceso al Portal"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Rinorrhea:"
+msgstr "Rinorrea:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Running Water:"
+msgstr "Agua Corriente:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Salt:"
+msgstr "Sal:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Sanitary Sewers:"
+msgstr "Alcantarillado Sanitario:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "School withdrawal:"
+msgstr "Abandono escolar:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_doctor_detail_form
+msgid "Search"
+msgstr "Buscar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_doctor_detail_form
+msgid "Search by name, patient id or email..."
+msgstr "Buscar por nombre, ID de paciente o correo electrónico..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Seat Belt:"
+msgstr "Cinturón de Seguridad:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_opinion_request
+msgid "Send"
+msgstr "Enviar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Separated"
+msgstr "Separado/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid ""
+"Sex with\n"
+"                                            Prostitutes:"
+msgstr ""
+"Sexo con\n"
+"                                            Prostitutas:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sexual Orientation:"
+msgstr "Orientación Sexual:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sexual Partners:"
+msgstr "Parejas Sexuales:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sexual Practices:"
+msgstr "Prácticas Sexuales:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Sexual abuse:"
+msgstr "Abuso sexual:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sexuality"
+msgstr "Sexualidad"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Sign up"
+msgstr "Registrarse"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_signup_extend
+msgid "Signup as Family Responsible"
+msgstr "Registrarse como Responsable Familiar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Single"
+msgstr "Soltero/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Single parent family:"
+msgstr "Familia monoparental:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Sister"
+msgstr "Hermana"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sleep"
+msgstr "Sueño"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Sleeps at Daytime:"
+msgstr "Duerme durante el día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Smokes:"
+msgstr "Fuma:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Smoking"
+msgstr "Tabaquismo"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "Socioeconomics"
+msgstr "Socioeconomía"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Socioeconomics:"
+msgstr "Socioeconomía:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Soft Drinks (sugar):"
+msgstr "Refrescos (azúcar):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Sore throat:"
+msgstr "Dolor de garganta:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+msgid "Start Date:"
+msgstr "Fecha de Inicio:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "State..."
+msgstr "Estado..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Status"
+msgstr "Estado"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Street"
+msgstr "Calle"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Sudden weight change:"
+msgstr "Cambio repentino de peso:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Surgery:"
+msgstr "Cirugía:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Systolic Pressure:"
+msgstr "Presión Sistólica:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Teenage pregnancy:"
+msgstr "Embarazo adolescente:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Telephone:"
+msgstr "Teléfono:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Television:"
+msgstr "Televisión:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Temperature (celsius):"
+msgstr "Temperatura (celsius):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.opinion_thankyou
+msgid "Thank you"
+msgstr "Gracias"
+
+#. module: oehealth_patient_portal
+#. odoo-python
+#: code:addons/oehealth_patient_portal/controllers/main.py:0
+#, python-format
+msgid "The form was not properly filled in."
+msgstr "El formulario no fue completado correctamente."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_family_members
+msgid "There are currently no Family Members available."
+msgstr "Actualmente no hay miembros de la familia disponibles."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "There are currently no appointments available."
+msgstr "Actualmente no hay citas disponibles."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluations
+msgid "There are currently no evaluations available."
+msgstr "Actualmente no hay evaluaciones disponibles."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Thoracic Pain:"
+msgstr "Dolor Torácico:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Today"
+msgstr "Hoy"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Trash recollection:"
+msgstr "Recolección de basura:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Treatment Plan:"
+msgstr "Plan de Tratamiento:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Tremor:"
+msgstr "Temblor:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Uncle"
+msgstr "Tío"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_appointments
+msgid "Upcoming"
+msgstr "Próximas"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Uses Helmet:"
+msgstr "Usa Casco:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+msgid "Verify"
+msgstr "Verificar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Vesical Tenesmus:"
+msgstr "Tenesmo Vesical:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_detail_form
+msgid "View All"
+msgstr "Ver Todo"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "View Evaluation Details"
+msgstr "Ver Detalles de la Evaluación"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "View Lifestyle Details"
+msgstr "Ver Detalles del Estilo de Vida"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "View Socioeconomic Details"
+msgstr "Ver Detalles Socioeconómicos"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Violent Behaviour:"
+msgstr "Comportamiento Violento:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Vital Signs"
+msgstr "Signos Vitales"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Vocabulary:"
+msgstr "Vocabulario:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Vomiting:"
+msgstr "Vómitos:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Website:"
+msgstr "Sitio Web:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Weight (kg):"
+msgstr "Peso (kg):"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Widowed"
+msgstr "Viudo/a"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+msgid "Wife"
+msgstr "Esposa"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_lifestyle
+msgid "Wine / day:"
+msgstr "Vino / día:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Working children:"
+msgstr "Niños trabajadores:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "Works at home:"
+msgstr "Trabaja en casa:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.view_patient_evaluation_details
+msgid "Xerosis:"
+msgstr ""
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+msgid "Yes"
+msgstr "Sí"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+msgid "Your Age"
+msgstr "Su Edad"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Your Email"
+msgstr "Su Correo Electrónico"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.health_center_thankyou
+msgid "Your Health Center creation demand has been recorded successfully."
+msgstr ""
+"Su solicitud de creación de Centro de Salud ha sido registrada exitosamente."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "Your Name"
+msgstr "Su Nombre"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.auth_signup_fields_extend
+msgid "Your Relation:"
+msgstr "Su Relación:"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.test_center_thankyou
+msgid "Your Test Center creation demand has been recorded successfully."
+msgstr ""
+"Su solicitud de creación de Centro de Pruebas ha sido registrada "
+"exitosamente."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.opinion_thankyou
+msgid "Your advice has been recorded successfully."
+msgstr "Su consejo ha sido registrado exitosamente."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_health_center_organization
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.post_test_center_organization
+msgid "Zip"
+msgstr "Código Postal"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+msgid "Zip..."
+msgstr "Código Postal..."
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_appointment
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_family
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_hospital
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_manage_medical_certificates
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_medical_history
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_my_account
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_socioeconomics
+msgid "close"
+msgstr "cerrar"
+
+#. module: oehealth_patient_portal
+#: model_terms:ir.ui.view,arch_db:oehealth_patient_portal.patient_web_registration
+msgid "e.g. John Doe"
+msgstr "ej. Juan Pérez"

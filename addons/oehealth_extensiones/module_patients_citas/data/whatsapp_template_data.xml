@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="whatsapp_template_appointment_reminder_2days" model="oeh.medical.whatsapp.template">
+            <field name="name">Recordatorio de Cita (2 días)</field>
+            <field name="message">Asunto: ⏳ Recordatorio: Tu cita para {treatment_name} es en 2 días
+
+Hola, {patient_name} 👋
+
+¡Faltan solo 2 días para tu visita! Te enviamos este recordatorio para que tengas todo listo para tu sesión en {clinic_name}.
+
+📅 Detalles de tu cita:
+
+🩺 Tratamiento: {service_name}
+
+🗓️ Fecha: {date}
+
+⏰ Hora: {time}
+
+👨‍⚕️ Especialista: {doctor_name}
+
+📝 Notas importantes para tu tratamiento:
+
+✅ Por favor, llega 10 minutos antes para tu registro.
+
+🥤 Recuerda beber mucha agua antes de venir.
+
+📄 No olvides traer tu Identificación/Estudios previos.
+
+📍 ¿Cómo llegar? https://maps.app.goo.gl/FqyiB8zbe2SMeA8f8 Dirección: {address}
+
+⚠️ ¿Necesitas cambiar tu turno? Si necesitas reprogramar o cancelar, por favor presiona el botón de abajo o llámanos al {phone}. Tu aviso previo nos ayuda a organizar mejor la atención de todos. 🤝
+
+¡Te esperamos con gusto! ✨
+</field>
+        </record>
+    </data>
+</odoo>

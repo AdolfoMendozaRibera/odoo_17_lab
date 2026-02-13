@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+
+        <record model="oeh.medical.whatsapp.template" id="oeh_medical_whatsapp_template_1">
+            <field name="name">Message to Patient</field>
+            <field name="message">Dear, Hope you are doing good.</field>
+            <field name="applied_to" eval="[(4, ref('oehealth.model_oeh_medical_patient'))]"/>
+        </record>
+
+        <record model="oeh.medical.whatsapp.template" id="oeh_medical_whatsapp_template_2">
+            <field name="name">Appointment Invitation</field>
+            <field name="message">Dear, Hope you are doing good.</field>
+            <field name="applied_to" eval="[(4, ref('oehealth.model_oeh_medical_patient'))]"/>
+        </record>
+
+        <record model="oeh.medical.whatsapp.template" id="oeh_medical_whatsapp_template_3">
+            <field name="name">Lab Test</field>
+            <field name="message">Dear, Hope you are doing good.</field>
+            <field name="applied_to" eval="[(4, ref('oehealth.model_oeh_medical_patient'))]"/>
+        </record>
+
+        <record model="oeh.medical.whatsapp.template" id="oeh_medical_whatsapp_template_4">
+            <field name="name">Prescription</field>
+            <field name="message">Dear, Hope you are doing good.</field>
+            <field name="applied_to" eval="[(4, ref('oehealth.model_oeh_medical_patient'))]"/>
+        </record>
+
+
+    </data>
+
+</odoo>

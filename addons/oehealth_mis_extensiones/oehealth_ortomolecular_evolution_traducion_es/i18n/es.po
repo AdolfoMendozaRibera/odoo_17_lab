@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oehealth_ortomolecular_evolution
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250428\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-04 15:14+0000\n"
+"PO-Revision-Date: 2026-02-04 15:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: oehealth_ortomolecular_evolution
+#: model_terms:ir.ui.view,arch_db:oehealth_ortomolecular_evolution.view_oeh_medical_prescription_form_inherit_smart_button
+msgid "<span class=\"o_stat_text\">Evolution</span>"
+msgstr "<span class=\"o_stat_text\">Evolución</span>"
+
+#. module: oehealth_ortomolecular_evolution
+#. odoo-python
+#: code:addons/oehealth_ortomolecular_evolution/models/oeh_medical_evaluation.py:0
+#, python-format
+msgid "Evaluations"
+msgstr "Evaluaciones"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.actions.act_window,name:oehealth_ortomolecular_evolution.action_oeh_medical_evaluation_analysis
+msgid "Evolution Analysis"
+msgstr "Análisis de Evolución"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.ui.menu,name:oehealth_ortomolecular_evolution.menu_oeh_medical_evaluation_analysis
+msgid "Evolution Dashboard"
+msgstr "Panel de Evolución"
+
+#. module: oehealth_ortomolecular_evolution
+#: model_terms:ir.actions.act_window,help:oehealth_ortomolecular_evolution.action_oeh_medical_evaluation_analysis
+msgid "No evaluations data found."
+msgstr "No se encontraron datos de evaluaciones."
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.model,name:oehealth_ortomolecular_evolution.model_oeh_medical_evaluation
+msgid "Patient Evaluation"
+msgstr "Evaluación del Paciente"
+
+#. module: oehealth_ortomolecular_evolution
+#: model_terms:ir.ui.view,arch_db:oehealth_ortomolecular_evolution.view_oeh_medical_evaluation_graph
+#: model_terms:ir.ui.view,arch_db:oehealth_ortomolecular_evolution.view_oeh_medical_evaluation_pivot
+msgid "Patient Evolution"
+msgstr "Evolución del Paciente"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.model,name:oehealth_ortomolecular_evolution.model_oeh_medical_prescription
+msgid "Prescription"
+msgstr "Receta"
+
+#. module: oehealth_ortomolecular_evolution
+#: model_terms:ir.ui.view,arch_db:oehealth_ortomolecular_evolution.view_oeh_medical_evaluation_search_inherit_protocol
+msgid "Protocol"
+msgstr "Protocolo"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.model.fields,help:oehealth_ortomolecular_evolution.field_oeh_medical_evaluation__prescription_id
+msgid "Protocol or Prescription related to this evaluation"
+msgstr "Protocolo o receta relacionada con esta evaluación"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.model.fields,field_description:oehealth_ortomolecular_evolution.field_oeh_medical_evaluation__prescription_id
+#: model_terms:ir.ui.view,arch_db:oehealth_ortomolecular_evolution.view_oeh_medical_evaluation_search_inherit_protocol
+msgid "Protocol/Prescription"
+msgstr "Protocolo/Receta"
+
+#. module: oehealth_ortomolecular_evolution
+#: model:ir.ui.menu,name:oehealth_ortomolecular_evolution.oeh_medical_report_menu
+msgid "Reports"
+msgstr "Informes"
+
+#. module: oehealth_ortomolecular_evolution
+#: model_terms:ir.actions.act_window,help:oehealth_ortomolecular_evolution.action_oeh_medical_evaluation_analysis
+msgid "Track patient evolution by linking evaluations to protocols."
+msgstr "Realice el seguimiento de la evolución del paciente vinculando las evaluaciones con los protocolos."

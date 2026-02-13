@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="appointment_reprogramar_wizard_form" model="ir.ui.view">
+            <field name="name">appointment.reprogramar.wizard.form</field>
+            <field name="model">appointment.reprogramar.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Reprogramar Cita">
+                    <group>
+                        <field name="appointment_id" readonly="1"/>
+                        <field name="new_appointment_date" widget="datetime"/>
+                        <field name="notes"/>
+                    </group>
+                    
+                    <footer>
+                        <button name="action_reprogramar" string="Reprogramar" type="object" class="oe_highlight"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
