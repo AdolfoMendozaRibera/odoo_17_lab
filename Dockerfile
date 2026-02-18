@@ -1,15 +1,19 @@
-FROM odoo:17
+FROM ribentek/ribentek_odoo_comm_17:v1.0
 
 USER root
 
-# Instalar Docker CLI
 RUN apt-get update && \
-    apt-get install -y curl && \
+    apt-get install -y --no-install-recommends \
+    curl \
+    wget \
+    ca-certificates && \
     curl -fsSL https://get.docker.com | sh && \
     rm -rf /var/lib/apt/lists/*
 
-# Crear wrapper docker-compose (método correcto)
 RUN printf '#!/bin/sh\nexec docker compose "$@"\n' > /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
+
+# Agregar usuario odoo al grupo docker
+RUN usermod -aG docker odoo
 
 USER odoo

@@ -1,5 +1,5 @@
 services:
-  postgres: # Nombre genérico en cada proyecto
+  postgres:
     image: postgres:15
     container_name: odoo17_db
     environment:
@@ -7,30 +7,27 @@ services:
       POSTGRES_USER: odoo17
       POSTGRES_PASSWORD: odoo17
     volumes:
-      - postgres-data:/var/lib/postgresql/data # Volume interno de Docker
+      - postgres-data:/var/lib/postgresql/data
     restart: unless-stopped
 
-  odoo: # Nombre genérico en cada proyecto
-    image: ribentek/ribentek_odoo_comm_17:v1.0
+  odoo:
+    build: .
     container_name: odoo17_app
     depends_on:
       - postgres
     ports:
-      - "8069:8069" # Puerto para Odoo 17
+      - "8069:8069"
       - "8072:8072"
-    # environment:
-      # Ahora apunta al nuevo nombre 'postgres'
-      # HOST: postgres
-      # USER: odoo17
-      # PASSWORD: odoo17
     volumes:
       - odoo-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
-      - ./config/odoo17.conf:/etc/odoo/odoo.conf # Montar el archivo de configuración
+      - ./config/odoo17.conf:/etc/odoo/odoo.conf
       - //var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
-
-    command: odoo -c /etc/odoo/odoo.conf --limit-time-real=600 --limit-time-cpu=600
+    user: root    # <-- clave: arrancar como root
+    command: >
+      bash -c "chmod 666 /var/run/docker.sock &&
+               su odoo -s /bin/bash -c 'odoo -c /etc/odoo/odoo.conf --limit-time-real=600 --limit-time-cpu=600'"
 
 volumes:
   postgres-data:
