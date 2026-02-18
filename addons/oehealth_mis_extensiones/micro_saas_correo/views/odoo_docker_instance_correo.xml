@@ -28,7 +28,7 @@
                         string="📧 Enviar Correo de Bienvenida"
                         type="object"
                         class="btn-primary"
-                        invisible="correo_bienvenida_enviado == True or not partner_id or not instance_url"
+                        invisible="correo_bienvenida_enviado == True or not partner_id or not instance_url or state != 'running'"
                         help="Envía un correo de bienvenida al cliente con la URL de su instancia Odoo"/>
 
                 <!-- Botón secundario: Reenviar correo (cuando YA fue enviado) -->
@@ -36,7 +36,7 @@
                         string="🔄 Reenviar Correo"
                         type="object"
                         class="btn-secondary"
-                        invisible="correo_bienvenida_enviado == False"
+                        invisible="correo_bienvenida_enviado == False or state != 'running'"
                         help="Reenvía el correo de bienvenida al cliente"/>
 
             </xpath>
