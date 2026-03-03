@@ -1,0 +1,40 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="paciente_demo_1" model="hospital.paciente">
+            <field name="nombre">Juan Pérez</field>
+            <field name="fecha_nacimiento">1990-05-12</field>
+            <field name="fecha_ingreso">2025-01-01 10:00:00</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="paciente_demo_2" model="hospital.paciente">
+            <field name="nombre">María López</field>
+            <field name="fecha_nacimiento">1985-08-20</field>
+            <field name="fecha_ingreso">2025-01-02 14:30:00</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="paciente_demo_3" model="hospital.paciente">
+            <field name="nombre">Carlos Gómez</field>
+            <field name="fecha_nacimiento">2000-03-15</field>
+            <field name="fecha_ingreso">2025-01-03 09:15:00</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="paciente_demo_4" model="hospital.paciente">
+            <field name="nombre">Ana Torres</field>
+            <field name="fecha_nacimiento">1995-11-25</field>
+            <field name="fecha_ingreso">2025-01-04 16:45:00</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="paciente_demo_5" model="hospital.paciente">
+            <field name="nombre">Luis Fernández</field>
+            <field name="fecha_nacimiento">1978-07-07</field>
+            <field name="fecha_ingreso">2025-01-05 12:00:00</field>
+            <field name="genero">otro</field>
+        </record>
+
+    </data>
+</odoo>
