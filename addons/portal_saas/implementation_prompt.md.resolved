@@ -1,0 +1,65 @@
+# PROMPT MAESTRO PARA DESARROLLO DE PORTAL SAAS EN ODOO 17
+
+Copia y pega el siguiente contenido en una nueva sesión con tu asistente de IA (o úsalo como guía de referencia). Este prompt está diseñado para ser extremadamente preciso y técnico.
+
+---
+
+## 🚀 Contexto del Proyecto
+Estoy desarrollando un **Portal SaaS en Odoo 17 (Versión Community)** corriendo sobre **Docker**. El objetivo es permitir que clientes compren suscripciones dinámicas (N meses x M usuarios) y que el sistema gestione automáticamente la creación de instancias de Odoo vinculadas a dichas suscripciones.
+
+### Herramientas y Módulos Disponibles:
+1.  **`micro_saas`**: Módulo base que gestiona la creación física de contenedores/instancias Odoo.
+2.  **`subscription_package` (OCA)**: Módulo base para el modelo de suscripciones.
+3.  **`micro_saas_mejora`**: Mejoras aplicadas a `micro_saas`.
+4.  **`micro_saas_portal_venta`**: Destinado a la interactividad en el eCommerce (JS/XML).
+5.  **`subscription_package_mejora`**: Destinado a la lógica de negocio post-venta y facturación.
+
+---
+
+## 🎯 Objetivo General
+Implementar un flujo automatizado donde el cliente elige meses y usuarios en la tienda, el pago genera o actualiza una suscripción, y la suscripción controla la vida de una instancia de Odoo en `micro_saas`.
+
+---
+
+## 🛠️ Requerimientos Detallados por Módulo
+
+### 1. Interfaz de Venta (Módulo: `micro_saas_portal_venta`)
+*   **Widget JS en Ficha de Producto**:
+    *   Inyectar un configurador en el producto "Suscripción Saas" (marcado con `is_subscription`).
+    *   Campos: Selección de **Meses** (1-36) y **Cantidad de Usuarios**.
+    *   Cálculo: Mostrar precio dinámico (50 Bs x usuarios x meses).
+    *   **Acción**: Al "Añadir al carrito", guardar estos valores en campos personalizados de `sale.order.line` (`x_months`, `x_users`).
+
+### 2. Lógica de Negocio y Facturación (Módulo: `subscription_package_mejora`)
+*   **Campos en Sale Order**: Extender `sale.order` y `sale.order.line` para arrastrar `x_months` y `x_users`.
+*   **Trigger de Pago**: Al marcar una factura como **Pagada** (`account.move`), el sistema debe:
+    *   Si es compra inicial: Crea una nueva `subscription.package`.
+    *   Si es renovación o addon: Localizar la suscripción activa del cliente y actualizarla.
+*   **Cálculo de Co-terminación (Crucial)**:
+    *   **Caso A (Mes 1)**: Si agrega usuarios en el primer mes de un ciclo de 3, cobra los 3 meses.
+    *   **Caso B (Mes posterior)**: Si agrega usuarios en el mes 2 de un ciclo de 3, solo cobra los 2 meses restantes para que todos los usuarios venzan en la misma "Fecha Maestra".
+    *   *Fórmula*: `Costo = (Usuarios Nuevos) * (Meses restantes del ciclo) * 50 Bs`.
+
+### 3. Integración con Instancias (Módulo: `micro_saas`)
+*   **Vínculo**: La `subscription.package` debe tener un campo `x_instance_id` (Many2one a `saas.instance`).
+*   **Ciclo de Vida**:
+    *   Cuando la suscripción se activa -> Iniciar/Crear instancia.
+    *   Cuando la suscripción vence/pausa -> Detener instancia (pero no borrarla).
+    *   Control de Usuarios: La instancia debe recibir el límite de usuarios (`x_users`) de la suscripción.
+
+### 4. Flujo de Renovación en Portal
+*   En el portal de cliente, permitir renovar la suscripción actual.
+*   Debe permitir elegir nuevos meses y ajustar la cantidad de usuarios (puede ser menos usuarios que antes).
+*   Esto genera una `sale.order` de tipo "Renovación" que, al pagarse, extiende la `date_end` de la suscripción existente.
+
+---
+
+## 📋 Reglas de Oro para la IA
+1.  **Herencia**: No modifiques los módulos base directamente, usa herencia (`_inherit`).
+2.  **Seguridad**: Asegúrate de que los controladores en `portal` tengan los chequeos de `auth='user'` o `auth='public'` según corresponda.
+3.  **Simplicidad**: Evita crear duplicidad de suscripciones. Un cliente = Una suscripción activa. El resto son "ampliaciones" o "renovaciones".
+4.  **Matemáticas**: El precio es **50 Bs por usuario al mes**. Siempre redondea hacia arriba el cobro de meses restantes en addons.
+
+---
+
+**¿Entendido? Por favor, dime por qué módulo te gustaría empezar y te daré el código necesario.**

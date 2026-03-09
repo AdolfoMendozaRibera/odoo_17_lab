@@ -19,7 +19,7 @@ services:
       - "8069:8069"
       - "8072:8072"
     volumes:
-      - odoo-data:/var/lib/odoo
+      - ./odoo_data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
       - ./config/odoo17.conf:/etc/odoo/odoo.conf
       - //var/run/docker.sock:/var/run/docker.sock
@@ -27,6 +27,7 @@ services:
     user: root
     command: >
       bash -c "chmod 666 /var/run/docker.sock &&
+               chown -R odoo:odoo /var/lib/odoo &&
                su odoo -s /bin/bash -c 'odoo -c /etc/odoo/odoo.conf --limit-time-real=600 --limit-time-cpu=600'"
 
   # --- NUEVO SERVICIO NGROK ---

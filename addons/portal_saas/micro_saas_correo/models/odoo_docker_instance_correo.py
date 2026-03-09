@@ -27,6 +27,12 @@ class OdooDockerInstanceCorreo(models.Model):
         help='Fecha y hora en que se envió el correo de bienvenida.',
     )
 
+    enviar_bienvenida_auto = fields.Boolean(
+        string='Auto-enviar bienvenida',
+        default=True,
+        help='Si está marcado, se enviará el correo automáticamente en cuanto la instancia pase a estado "Running".',
+    )
+
     # ─────────────────────────────────────────────
     # ACCIÓN: ENVIAR CORREO DE BIENVENIDA
     # ─────────────────────────────────────────────
@@ -98,3 +104,51 @@ class OdooDockerInstanceCorreo(models.Model):
         self.ensure_one()
         self.correo_bienvenida_enviado = False
         return self.action_enviar_correo_bienvenida()
+
+    # ─────────────────────────────────────────────
+    # LÓGICA AUTOMÁTICA
+    # ─────────────────────────────────────────────
+    def write(self, vals):
+        """
+        Detecta el cambio a estado 'running' para enviar el correo automáticamente.
+        """
+        res = super(OdooDockerInstanceCorreo, self).write(vals)
+        
+        if 'state' in vals and vals['state'] == 'running':
+            for rec in self:
+                if rec.enviar_bienvenida_auto and not rec.correo_bienvenida_enviado:
+                    # Intentar envío automático de forma segura
+                    try:
+                        rec._enviar_correo_bienvenida_silencioso()
+                    except Exception as e:
+                        import logging
+                        _logger = logging.getLogger(__name__)
+                        _logger.error("Error en envío automático de bienvenida para %s: %s", rec.name, str(e))
+        return res
+
+    def _enviar_correo_bienvenida_silencioso(self):
+        """
+        Realiza el envío sin lanzar excepciones de usuario (UserError).
+        Útil para procesos automáticos.
+        """
+        self.ensure_one()
+        if not self.partner_id or not self.partner_id.email or not self.instance_url:
+            return False
+            
+        template = self.env.ref(
+            'micro_saas_correo.email_template_bienvenida_instancia',
+            raise_if_not_found=False,
+        )
+        if not template:
+            return False
+            
+        template.send_mail(self.id, force_send=True)
+        
+        # Actualizar estado de envío
+        # Usamos super().write para evitar disparar el write nuevamente de forma infinita 
+        # (aunque aquí no cambiamos el state a running, es buena práctica)
+        super(OdooDockerInstanceCorreo, self).write({
+            'correo_bienvenida_enviado': True,
+            'correo_bienvenida_fecha': fields.Datetime.now(),
+        })
+        return True

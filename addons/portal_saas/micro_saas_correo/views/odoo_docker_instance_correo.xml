@@ -52,6 +52,9 @@
                            readonly="1"
                            string="Fecha de envío"
                            invisible="correo_bienvenida_enviado == False"/>
+                    <field name="enviar_bienvenida_auto"
+                           widget="boolean_toggle"
+                           string="Enviar automáticamente"/>
                     <field name="partner_id"
                            readonly="state != 'draft'"
                            string="Cliente"/>
