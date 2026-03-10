@@ -17,9 +17,41 @@ class SubscriptionPackage(models.Model):
     # Este campo sirve para saber cuántos usuarios máximo soporta esta suscripción
     x_max_users = fields.Integer(string='Límite de Usuarios', default=0)
 
-    # Líneas individuales por usuario (se usaría un nuevo modelo subscription.user.line)
-    # Por ahora registramos aquí una función que puede ser llamada desde cuenta
-    
+    @api.depends('start_date', 'sale_order_id')
+    def _compute_next_invoice_date(self):
+        """
+        Sobrescribe la función nativa del paquete de suscripción.
+        Calcula dinámicamente el next_invoice_date y close_date basado en
+        los meses comprados (saas_months / x_months) en la orden de venta.
+        Si la suscripción no tiene meses dinámicos, usa el plan por defecto.
+        """
+        for sub in self:
+            if sub.start_date:
+                months = 0
+                if sub.sale_order_id:
+                    # Localiza la línea del producto de suscripción
+                    saas_lines = sub.sale_order_id.order_line.filtered(
+                        lambda l: l.product_id.is_subscription or getattr(l.product_template_id, 'is_saas_package', False)
+                    )
+                    if saas_lines:
+                        line = saas_lines[0]
+                        # Extrae el número de meses usando los campos disponibles (soporta múltiples módulos)
+                        if hasattr(line, 'saas_months') and line.saas_months > 0:
+                            months = int(line.saas_months)
+                        elif hasattr(line, 'x_months') and line.x_months > 0:
+                            months = int(line.x_months)
+
+                if months > 0:
+                    # Lógica Dinámica: Sumamos los meses comprados a la fecha de inicio
+                    new_date = sub.start_date + relativedelta(months=months)
+                    sub.next_invoice_date = new_date
+                    sub.close_date = new_date  # Actualizamos también la fecha de cierre de la suscripción
+                elif sub.plan_id:
+                    # Lógica de fallback: Si no hay meses dinámicos, usamos el plan
+                    sub.next_invoice_date = sub.start_date + relativedelta(days=sub.plan_id.renewal_time)
+                else:
+                    sub.next_invoice_date = False
+
     def get_cotermination_months(self, from_date=None):
         """
         Calcula cuántos meses faltan desde la fecha actual (o from_date)
